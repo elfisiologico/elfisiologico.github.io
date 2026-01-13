@@ -9,15 +9,16 @@
 
   <style>
     :root {
-      --black:#000;
-      --white:#fff;
+      --black:#000000;
+      --white:#ffffff;
       --yellow:#FCBF06;
-      --card:#111;
+      --card:#111111;
+      --muted:#b5b5b5;
     }
 
     body {
       margin:0;
-      font-family:'Inter',sans-serif;
+      font-family:'Inter', sans-serif;
       background:var(--black);
       color:var(--white);
     }
@@ -42,8 +43,8 @@
     }
 
     p {
-      color:#ccc;
-      max-width:700px;
+      color:var(--muted);
+      max-width:720px;
     }
 
     .list {
@@ -54,15 +55,19 @@
 
     .card {
       background:var(--card);
-      padding:1.5rem;
-      border-radius:14px;
-      box-shadow:0 0 0 1px rgba(255,255,255,.05),
-                 0 20px 40px rgba(0,0,0,.6);
-      transition:transform .25s ease;
+      padding:1.75rem;
+      border-radius:16px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.05),
+        0 20px 40px rgba(0,0,0,0.6);
+      transition:transform .25s ease, box-shadow .25s ease;
     }
 
     .card:hover {
       transform:translateY(-4px);
+      box-shadow:
+        0 0 0 1px rgba(252,191,6,0.4),
+        0 30px 60px rgba(0,0,0,0.8);
     }
 
     .meta {
@@ -73,58 +78,52 @@
 
     .title {
       font-size:1.1rem;
-      color:var(--white);
       font-weight:600;
+      color:var(--white);
     }
 
     .tag {
       display:inline-block;
-      margin-top:.5rem;
+      margin-top:.6rem;
       font-size:.75rem;
       color:var(--yellow);
+      font-weight:500;
     }
 
     a {
       text-decoration:none;
       color:inherit;
+      display:block;
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
-    <div class="brand">El_FisioLógico</div>
-    <h1 id="area"></h1>
-    <p id="description"></p>
 
-    <section class="list" id="articles"></section>
-  </main>
+<main class="container">
 
-<script>
-fetch('manifest.json')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('area').textContent = data.area;
-    document.getElementById('description').textContent = data.description;
+  <div class="brand">El_FisioLógico</div>
+  <h1>Blood Flow Restriction (BFR)</h1>
 
-    const container = document.getElementById('articles');
+  <p>
+    Evidencia científica sobre entrenamiento con restricción del flujo sanguíneo,
+    comparativas con cargas altas y aplicaciones clínicas.
+  </p>
 
-    data.articles
-      .sort((a,b)=>b.year-a.year)
-      .forEach(article => {
-        const card = document.createElement('a');
-        card.href = article.file;
-        card.className = 'card';
+  <section class="list">
 
-        card.innerHTML = `
-          <div class="meta">${article.year} · ${article.level}</div>
-          <div class="title">${article.title}</div>
-          <div class="tag">${article.focus}</div>
-        `;
+    <!-- ARTÍCULO 1 -->
+    <a href="2026-bfr-vs-high-load.html" class="card">
+      <div class="meta">2026 · Ensayo clínico</div>
+      <div class="title">BFR vs High-Load Resistance Training</div>
+      <div class="tag">Fuerza y activación neuromuscular</div>
+    </a>
 
-        container.appendChild(card);
-      });
-  });
-</script>
+    <!-- AQUÍ AÑADIRÁS MÁS -->
+
+  </section>
+
+</main>
+
 </body>
 </html>
