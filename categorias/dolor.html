@@ -8,142 +8,78 @@
   <meta name="description" content="Categoría Dolor: análisis crítico de la evidencia científica en dolor agudo y crónico, sensibilización y abordaje desde la fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --black:#000000;
-      --white:#ffffff;
-      --yellow:#FCBF06;
-      --muted:#b5b5b5;
-      --card:#111111;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--black);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1.5rem 4rem;
-    }
-
-    nav {
-      margin-bottom: 2.5rem;
-    }
-
-    nav a {
-      color: var(--yellow);
-      text-decoration: none;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .lead {
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin-bottom: 3rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    section h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-    }
-
-    section p {
-      max-width: 720px;
-    }
-
-    .articles {
-      background: var(--card);
-      border: 1px solid #1c1c1c;
-      padding: 1.5rem;
-    }
-
-    .articles p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid #1c1c1c;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="../assets/css/base.css">
 </head>
 
 <body>
-  <main>
 
-    <nav>
-      <a href="../index.html">← Volver al índice</a>
-    </nav>
+<main>
 
-    <header>
-      <h1>Dolor</h1>
-      <p class="lead">
-        Análisis crítico del dolor desde una perspectiva biopsicosocial, integrando neurociencia, clínica y fisioterapia basada en evidencia.
-      </p>
-    </header>
+  <!-- Navegación -->
+  <nav style="margin-bottom:2.5rem;">
+    <a href="../index.html" class="mono muted">← Volver al índice</a>
+  </nav>
 
-    <section>
-      <h2>Marco clínico</h2>
-      <p>
-        El dolor no puede entenderse únicamente como una señal nociceptiva periférica.
-        En esta categoría se incluyen artículos que abordan el dolor como una experiencia compleja,
-        modulada por factores centrales, contextuales y de aprendizaje, con especial énfasis en el dolor crónico.
-      </p>
-    </section>
+  <!-- Header editorial -->
+  <header style="margin-bottom:3rem;">
+    <h1>Dolor</h1>
+    <p class="muted" style="max-width:720px; font-size:1.1rem;">
+      Análisis crítico del dolor desde una perspectiva biopsicosocial,
+      integrando neurociencia, clínica y fisioterapia basada en evidencia.
+    </p>
+  </header>
 
-    <section>
-      <h2>Tipo de evidencia incluida</h2>
-      <p>
-        Se recogen ensayos clínicos, estudios experimentales, revisiones sistemáticas y modelos teóricos
-        relacionados con dolor agudo y crónico, sensibilización central, educación en dolor y estrategias
-        de intervención desde la fisioterapia.
-      </p>
-    </section>
+  <!-- Marco clínico -->
+  <section class="card">
+    <h2>Marco clínico</h2>
+    <p>
+      El dolor no puede entenderse únicamente como una señal nociceptiva periférica.
+      Se trata de una experiencia compleja, modulada por factores centrales,
+      contextuales, emocionales y de aprendizaje.
+    </p>
+    <p>
+      Esta categoría reúne artículos que abordan el dolor desde modelos contemporáneos,
+      con especial énfasis en el dolor persistente, la sensibilización central
+      y las implicaciones clínicas para la fisioterapia.
+    </p>
+  </section>
 
-    <section class="articles">
-      <h2>Artículos disponibles</h2>
-      <p>
-        Aún no hay artículos publicados en esta categoría.
-        <br />
-        Los artículos aparecerán aquí conforme se vayan incorporando al repositorio.
-      </p>
-    </section>
+  <!-- Tipo de evidencia -->
+  <section class="card">
+    <h2>Tipo de evidencia incluida</h2>
+    <p>
+      Se incluyen ensayos clínicos, estudios experimentales, revisiones sistemáticas
+      y modelos teóricos relacionados con dolor agudo y crónico, educación en dolor,
+      mecanismos de sensibilización y estrategias de intervención desde la fisioterapia.
+    </p>
+  </section>
 
-    <footer>
-      <p>
-        © <strong>El FisioLógico</strong> · Categoría Dolor
-      </p>
-    </footer>
+  <!-- Artículos -->
+  <section class="card">
+    <h2>Artículos disponibles</h2>
 
-  </main>
+    <p class="muted">
+      Aún no hay artículos publicados en esta categoría.
+      <br />
+      Los artículos aparecerán aquí conforme se vayan incorporando al repositorio.
+    </p>
+
+    <!-- Cuando haya artículos, se insertan aquí como <article class="article-card"> -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <strong>El FisioLógico</strong> · Categoría Dolor
+  </footer>
+
+</main>
+
 </body>
 </html>
+
