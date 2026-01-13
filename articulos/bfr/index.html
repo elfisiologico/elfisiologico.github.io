@@ -1,136 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>El FisioLógico · BFR</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>El FisioLógico · Categoría</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --black:#000000;
-      --white:#ffffff;
-      --yellow:#FCBF06;
-      --card:#111111;
-      --muted:#b5b5b5;
-    }
+<style>
+:root{
+  --black:#000;
+  --white:#fff;
+  --yellow:#FCBF06;
+  --card:#111;
+  --muted:#ccc;
+}
 
-    body {
-      margin:0;
-      font-family:'Inter', sans-serif;
-      background:var(--black);
-      color:var(--white);
-    }
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--black);
+  color:var(--white);
+}
 
-    .container {
-      max-width:1000px;
-      margin:auto;
-      padding:3rem 1.5rem;
-    }
+a{color:inherit;text-decoration:none;}
 
-    .brand {
-      color:var(--yellow);
-      letter-spacing:.12em;
-      font-size:.8rem;
-      text-transform:uppercase;
-      margin-bottom:1rem;
-    }
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:3rem 1.5rem;
+}
 
-    h1 {
-      color:var(--yellow);
-      margin-bottom:.5rem;
-    }
+h1{
+  color:var(--yellow);
+  margin-bottom:.5rem;
+}
 
-    p {
-      color:var(--muted);
-      max-width:720px;
-    }
+p.description{
+  color:var(--muted);
+  max-width:700px;
+}
 
-    .list {
-      margin-top:3rem;
-      display:grid;
-      gap:1.5rem;
-    }
+.list{
+  margin-top:3rem;
+  display:grid;
+  gap:1.5rem;
+}
 
-    .card {
-      background:var(--card);
-      padding:1.75rem;
-      border-radius:16px;
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.05),
-        0 20px 40px rgba(0,0,0,0.6);
-      transition:transform .25s ease, box-shadow .25s ease;
-    }
+.article{
+  background:var(--card);
+  padding:1.5rem;
+  border-radius:14px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.05);
+  transition:.25s ease;
+}
 
-    .card:hover {
-      transform:translateY(-4px);
-      box-shadow:
-        0 0 0 1px rgba(252,191,6,0.4),
-        0 30px 60px rgba(0,0,0,0.8);
-    }
+.article:hover{
+  box-shadow:0 0 0 1px rgba(252,191,6,.4);
+}
 
-    .meta {
-      font-size:.8rem;
-      color:#999;
-      margin-bottom:.4rem;
-    }
+.article h2{
+  margin:0 0 .5rem 0;
+  font-size:1.2rem;
+}
 
-    .title {
-      font-size:1.1rem;
-      font-weight:600;
-      color:var(--white);
-    }
+.article p{
+  margin:0 0 .8rem 0;
+  color:#d0d0d0;
+  font-size:.95rem;
+}
 
-    .tag {
-      display:inline-block;
-      margin-top:.6rem;
-      font-size:.75rem;
-      color:var(--yellow);
-      font-weight:500;
-    }
-
-    a {
-      text-decoration:none;
-      color:inherit;
-      display:block;
-    }
-  </style>
+.meta{
+  font-size:.8rem;
+  color:var(--yellow);
+}
+</style>
 </head>
 
 <body>
-
 <main class="container">
 
-  <div class="brand">El_FisioLógico</div>
-  <h1>Blood Flow Restriction (BFR)</h1>
+<header>
+  <h1 id="categoryTitle"></h1>
+  <p class="description" id="categoryDescription"></p>
+</header>
 
-  <p>
-    Evidencia científica sobre entrenamiento con restricción del flujo sanguíneo,
-    comparativas con cargas altas y aplicaciones clínicas.
-  </p>
-
-  <section class="list">
-
-    <!-- ARTÍCULO 1 -->
-    <a href="2026-bfr-vs-high-load.html" class="card">
-      <div class="meta">2026 · Ensayo clínico</div>
-      <div class="title">BFR vs High-Load Resistance Training</div>
-      <div class="tag">Fuerza y activación neuromuscular</div>
-    </a>
-    
-    <!-- ARTÍCULO 2 -->
-    <a href="2026-bfr-core-stabilization-cronic-low-back-pain.html" class="card">
-      <div class="meta">2026 · Ensayo clínico</div>
-      <div class="title">BFR vs High-Load Resistance Training</div>
-      <div class="tag">Fuerza y activación neuromuscular</div>
-    </a>
-
-    <!-- AQUÍ AÑADIRÁS MÁS -->
-
-  </section>
+<section class="list" id="articleList">
+  <!-- artículos -->
+</section>
 
 </main>
+
+<script>
+const currentCategory = location.pathname.split('/').filter(Boolean).pop();
+
+fetch('/articulos.json')
+  .then(r => r.json())
+  .then(data => {
+
+    const category = data.categories.find(c => c.id === currentCategory);
+    if(!category) return;
+
+    document.title = `El FisioLógico · ${category.title}`;
+    document.getElementById('categoryTitle').textContent = category.title;
+    document.getElementById('categoryDescription').textContent = category.description;
+
+    const list = document.getElementById('articleList');
+
+    data.articles
+      .filter(a => a.category === currentCategory)
+      .forEach(article => {
+
+        const div = document.createElement('article');
+        div.className = 'article';
+
+        div.innerHTML = `
+          <h2>${article.title}</h2>
+          <p>${article.summary}</p>
+          <div class="meta">
+            ${article.year} · ${article.tags.join(' · ')}
+          </div>
+        `;
+
+        div.onclick = () => location.href = article.path;
+        list.appendChild(div);
+      });
+  });
+</script>
 
 </body>
 </html>
