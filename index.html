@@ -9,7 +9,6 @@
   <meta name="keywords" content="fisioterapia basada en evidencia, anatomía funcional, anatomía clínica, dolor crónico, BFR, tDCS, fascia, ecografía musculoesquelética, neurociencia del dolor, fisioterapia invasiva, ATM" />
   <meta name="author" content="El FisioLógico" />
   <link rel="canonical" href="https://elfisiologico.github.io/" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google Font -->
@@ -34,10 +33,7 @@
       line-height:1.6;
     }
 
-    a {
-      color:inherit;
-      text-decoration:none;
-    }
+    a { color:inherit; text-decoration:none; }
 
     .container {
       max-width:1100px;
@@ -45,7 +41,6 @@
       padding:3rem 1.5rem;
     }
 
-    /* ===== Hero ===== */
     .brand {
       color:var(--yellow);
       letter-spacing:.12em;
@@ -65,7 +60,6 @@
       font-size:1.05rem;
     }
 
-    /* ===== Grid ===== */
     .grid {
       margin-top:4rem;
       display:grid;
@@ -133,76 +127,86 @@
     <h1>Repositorio Científico en Fisioterapia</h1>
     <p class="intro">
       Plataforma de análisis crítico de artículos científicos en fisioterapia,
-      anatomía aplicada, dolor y ciencias del movimiento. Contenido orientado a la
-      toma de decisiones clínicas, la docencia avanzada y la integración de evidencia
-      en práctica real.
+      anatomía aplicada, dolor y ciencias del movimiento.
     </p>
   </section>
 
   <!-- CATEGORÍAS -->
-  <section class="grid">
-
-    <a href="/articulos/anatomia/" class="card">
-      <h2>Anatomía</h2>
-      <p>Anatomía funcional y clínica aplicada a la fisioterapia, el movimiento y el razonamiento terapéutico.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/bfr/" class="card">
-      <h2>Blood Flow Restriction (BFR)</h2>
-      <p>Entrenamiento con restricción del flujo sanguíneo: comparativas con cargas altas, adaptaciones neuromusculares, seguridad y aplicaciones clínicas.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/tdcs/" class="card">
-      <h2>tDCS</h2>
-      <p>Estimulación transcraneal por corriente directa: mecanismos neurofisiológicos, evidencia clínica y aplicaciones en dolor y rendimiento.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/ecografia/" class="card">
-      <h2>Ecografía musculoesquelética</h2>
-      <p>Uso clínico de la ecografía en fisioterapia: evaluación de tejidos, razonamiento diagnóstico y apoyo a técnicas invasivas.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/fascia/" class="card">
-      <h2>Fascia</h2>
-      <p>Estructura fascial, biomecánica, continuidad tisular y su implicación en dolor, movimiento y tratamiento.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/dolor/" class="card">
-      <h2>Dolor</h2>
-      <p>Dolor agudo y crónico desde un enfoque biopsicosocial, neurofisiológico y clínico basado en evidencia.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/neurociencia/" class="card">
-      <h2>Neurociencia</h2>
-      <p>Procesamiento central del movimiento, control motor, plasticidad neural y su aplicación clínica.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/fisio-invasiva/" class="card">
-      <h2>Fisioterapia invasiva</h2>
-      <p>Punción seca, electrólisis, neuromodulación percutánea y técnicas invasivas guiadas por imagen.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-    <a href="/articulos/atm/" class="card">
-      <h2>ATM</h2>
-      <p>Dolor orofacial y disfunción temporomandibular desde la fisioterapia, la neurociencia y el razonamiento clínico.</p>
-      <span>Explorar artículos →</span>
-    </a>
-
-  </section>
+  <section class="grid" id="categories"></section>
 
   <footer>
     © El FisioLógico · Fisioterapia, evidencia científica y pensamiento crítico
   </footer>
 
 </main>
+
+<!-- ========================= -->
+<!-- JSON CANÓNICO DE ARTÍCULOS -->
+<!-- ========================= -->
+<script type="application/json" id="articles-data">
+[
+  {
+    "id": "2026-bfr-vs-high-load",
+    "year": 2026,
+    "category": ["BFR", "Entrenamiento"],
+    "title": "BFR vs High-Load Resistance Training",
+    "subtitle": "Fuerza y activación neuromuscular",
+    "type": "Ensayo clínico",
+    "path": "articles/2026-bfr-vs-high-load.html",
+    "keywords": ["blood flow restriction", "strength", "EMG"]
+  },
+  {
+    "id": "2026-bfr-core-stabilization-clbp",
+    "year": 2026,
+    "category": ["BFR", "Dolor lumbar"],
+    "title": "BFR + Core Stabilization",
+    "subtitle": "Chronic Low Back Pain",
+    "type": "Ensayo clínico",
+    "path": "articles/2026-bfr-core-stabilization-clbp.html",
+    "keywords": ["low back pain", "core", "rehabilitation"]
+  },
+  {
+    "id": "2025-anatomy-fascia-thoracolumbar",
+    "year": 2025,
+    "category": ["Anatomía", "Fascia"],
+    "title": "Thoracolumbar Fascia",
+    "subtitle": "Anatomía funcional y relevancia clínica",
+    "type": "Revisión narrativa",
+    "path": "articles/2025-thoracolumbar-fascia.html",
+    "keywords": ["fascia", "anatomy", "low back pain"]
+  }
+]
+</script>
+
+<script>
+  const articles = JSON.parse(
+    document.getElementById('articles-data').textContent
+  );
+
+  const categories = {};
+
+  articles.forEach(article => {
+    article.category.forEach(cat => {
+      categories[cat] = true;
+    });
+  });
+
+  const container = document.getElementById('categories');
+
+  Object.keys(categories).sort().forEach(cat => {
+    const card = document.createElement('a');
+    card.className = 'card';
+    card.href = `category.html?cat=${encodeURIComponent(cat)}`;
+
+    card.innerHTML = `
+      <h2>${cat}</h2>
+      <p>Artículos científicos relacionados con ${cat}.</p>
+      <span>Explorar artículos →</span>
+    `;
+
+    container.appendChild(card);
+  });
+</script>
 
 </body>
 </html>
