@@ -8,142 +8,78 @@
   <meta name="description" content="Categoría Ecografía: análisis crítico de la evidencia científica en ecografía musculoesquelética aplicada a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --black:#000000;
-      --white:#ffffff;
-      --yellow:#FCBF06;
-      --muted:#b5b5b5;
-      --card:#111111;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--black);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1.5rem 4rem;
-    }
-
-    nav {
-      margin-bottom: 2.5rem;
-    }
-
-    nav a {
-      color: var(--yellow);
-      text-decoration: none;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .lead {
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin-bottom: 3rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    section h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-    }
-
-    section p {
-      max-width: 720px;
-    }
-
-    .articles {
-      background: var(--card);
-      border: 1px solid #1c1c1c;
-      padding: 1.5rem;
-    }
-
-    .articles p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid #1c1c1c;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="../assets/css/base.css">
 </head>
 
 <body>
-  <main>
 
-    <nav>
-      <a href="../index.html">← Volver al índice</a>
-    </nav>
+<main>
 
-    <header>
-      <h1>Ecografía</h1>
-      <p class="lead">
-        Análisis crítico de la ecografía musculoesquelética como herramienta diagnóstica y de apoyo a la intervención en fisioterapia.
-      </p>
-    </header>
+  <!-- Navegación -->
+  <nav style="margin-bottom:2.5rem;">
+    <a href="../index.html" class="mono muted">← Volver al índice</a>
+  </nav>
 
-    <section>
-      <h2>Marco clínico</h2>
-      <p>
-        La ecografía musculoesquelética permite una evaluación dinámica, en tiempo real y contextualizada
-        de los tejidos. En esta categoría se incluyen artículos que abordan su uso como herramienta
-        diagnóstica, de razonamiento clínico y de guía en procedimientos dentro de la fisioterapia.
-      </p>
-    </section>
+  <!-- Header editorial -->
+  <header style="margin-bottom:3rem;">
+    <h1>Ecografía</h1>
+    <p class="muted" style="max-width:720px; font-size:1.1rem;">
+      Análisis crítico de la ecografía musculoesquelética como herramienta diagnóstica,
+      de razonamiento clínico y de apoyo a la intervención en fisioterapia.
+    </p>
+  </header>
 
-    <section>
-      <h2>Tipo de evidencia incluida</h2>
-      <p>
-        Se recogen estudios de validez y fiabilidad, correlaciones imagen–clínica,
-        ensayos clínicos, revisiones sistemáticas y artículos que analizan el papel de la ecografía
-        en la toma de decisiones y la práctica clínica fisioterapéutica.
-      </p>
-    </section>
+  <!-- Marco clínico -->
+  <section class="card">
+    <h2>Marco clínico</h2>
+    <p>
+      La ecografía musculoesquelética permite una evaluación dinámica, en tiempo real y
+      contextualizada de los tejidos. Su valor clínico no reside únicamente en la imagen,
+      sino en la integración de esta información dentro del razonamiento clínico.
+    </p>
+    <p>
+      Esta categoría recoge artículos que analizan el uso de la ecografía como herramienta
+      diagnóstica, como apoyo a la toma de decisiones y como guía en procedimientos
+      terapéuticos dentro de la fisioterapia.
+    </p>
+  </section>
 
-    <section class="articles">
-      <h2>Artículos disponibles</h2>
-      <p>
-        Aún no hay artículos publicados en esta categoría.
-        <br />
-        Los artículos aparecerán aquí conforme se vayan incorporando al repositorio.
-      </p>
-    </section>
+  <!-- Tipo de evidencia -->
+  <section class="card">
+    <h2>Tipo de evidencia incluida</h2>
+    <p>
+      Se incluyen estudios de validez y fiabilidad, correlaciones imagen–clínica,
+      ensayos clínicos, revisiones sistemáticas y trabajos que evalúan el impacto de la
+      ecografía en la precisión diagnóstica y la práctica clínica fisioterapéutica.
+    </p>
+  </section>
 
-    <footer>
-      <p>
-        © <strong>El FisioLógico</strong> · Categoría Ecografía
-      </p>
-    </footer>
+  <!-- Artículos -->
+  <section class="card">
+    <h2>Artículos disponibles</h2>
 
-  </main>
+    <p class="muted">
+      Aún no hay artículos publicados en esta categoría.
+      <br />
+      Los artículos aparecerán aquí conforme se vayan incorporando al repositorio.
+    </p>
+
+    <!-- Cuando haya artículos, se insertan aquí como <article class="article-card"> -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <strong>El FisioLógico</strong> · Categoría Ecografía
+  </footer>
+
+</main>
+
 </body>
 </html>
+
