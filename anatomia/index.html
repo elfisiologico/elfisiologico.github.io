@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>El FisioLógico · Anatomía</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Artículos científicos de anatomía funcional y clínica aplicados a la fisioterapia y al razonamiento terapéutico." />
+  <meta name="keywords" content="anatomía funcional, anatomía clínica, fisioterapia, razonamiento clínico" />
+  <meta name="author" content="El FisioLógico" />
+  <link rel="canonical" href="https://elfisiologico.github.io/articulos/anatomia/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#000;
+      --white:#fff;
+      --yellow:#FCBF06;
+      --card:#111;
+      --muted:#ccc;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:var(--black);
+      color:var(--white);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none;}
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:3rem 1.5rem;
+    }
+
+    header{
+      margin-bottom:3rem;
+    }
+
+    .brand{
+      color:var(--yellow);
+      letter-spacing:.12em;
+      font-size:.75rem;
+      text-transform:uppercase;
+      margin-bottom:.75rem;
+    }
+
+    h1{
+      color:var(--yellow);
+      margin:0 0 .75rem 0;
+    }
+
+    .description{
+      color:var(--muted);
+      max-width:760px;
+      font-size:1.05rem;
+    }
+
+    .list{
+      display:grid;
+      gap:1.5rem;
+    }
+
+    .article{
+      background:var(--card);
+      padding:1.75rem;
+      border-radius:16px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.05),
+        0 20px 40px rgba(0,0,0,0.6);
+      transition:.25s ease;
+      cursor:pointer;
+    }
+
+    .article:hover{
+      box-shadow:
+        0 0 0 1px rgba(252,191,6,.4),
+        0 30px 60px rgba(0,0,0,.8);
+      transform:translateY(-4px);
+    }
+
+    .article h2{
+      margin:0 0 .5rem 0;
+      font-size:1.25rem;
+      color:var(--white);
+    }
+
+    .article p{
+      margin:0 0 .75rem 0;
+      color:#d0d0d0;
+      font-size:.95rem;
+    }
+
+    .meta{
+      font-size:.8rem;
+      color:var(--yellow);
+    }
+
+    footer{
+      margin-top:5rem;
+      padding-top:2rem;
+      border-top:1px solid #222;
+      font-size:.8rem;
+      color:#888;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+<main class="container">
+
+  <header>
+    <div class="brand">El_FisioLógico · Categoría</div>
+    <h1>Anatomía</h1>
+    <p class="description">
+      Anatomía funcional y clínica aplicada a la fisioterapia, el movimiento
+      y la toma de decisiones terapéuticas basadas en evidencia.
+    </p>
+  </header>
+
+  <section class="list" id="articleList">
+    <!-- Artículos de anatomía -->
+  </section>
+
+  <footer>
+    © El FisioLógico · Repositorio científico en fisioterapia
+  </footer>
+
+</main>
+
+<script>
+fetch('/articulos.json')
+  .then(res => res.json())
+  .then(data => {
+    const list = document.getElementById('articleList');
+
+    const articles = data.articles.filter(
+      a => a.category === 'anatomia'
+    );
+
+    if (articles.length === 0) {
+      list.innerHTML = '<p style="color:#888">No hay artículos todavía en esta categoría.</p>';
+      return;
+    }
+
+    articles.forEach(article => {
+      const card = document.createElement('article');
+      card.className = 'article';
+      card.onclick = () => location.href = article.path;
+
+      card.innerHTML = `
+        <h2>${article.title}</h2>
+        <p>${article.summary}</p>
+        <div class="meta">
+          ${article.year ?? ''} · ${article.tags?.join(' · ') ?? ''}
+        </div>
+      `;
+
+      list.appendChild(card);
+    });
+  })
+  .catch(err => {
+    console.error('Error cargando artículos:', err);
+  });
+</script>
+
+</body>
+</html>
