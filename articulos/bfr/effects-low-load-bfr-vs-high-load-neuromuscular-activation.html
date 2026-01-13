@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Effects of Low-Load BFR vs High-Load Training · El FisioLógico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap');
+
+:root{
+  --black:#000000;
+  --yellow:#FCBF06;
+  --white:#FFFFFF;
+  --muted:#A1A1A1;
+  --card:#111111;
+  --border:#1e1e1e;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:3rem 1.5rem;
+}
+
+h1,h2,h3{
+  color:var(--yellow);
+  margin-top:2.5rem;
+}
+
+h1{
+  font-size:2.2rem;
+  margin-top:0;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:1.5rem;
+  margin-top:1.5rem;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:1rem;
+  font-size:.95rem;
+}
+
+th,td{
+  padding:.75rem;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+}
+
+th{
+  color:var(--yellow);
+  text-align:left;
+  font-weight:600;
+}
+
+.score{
+  font-weight:700;
+  color:var(--yellow);
+}
+
+ul{
+  margin-left:1.2rem;
+}
+
+.highlight{
+  border-left:4px solid var(--yellow);
+  padding-left:1rem;
+  margin-top:1.5rem;
+  font-weight:500;
+}
+
+.quiz-question{
+  margin-bottom:1.5rem;
+}
+
+.quiz-question p{
+  margin-bottom:.5rem;
+}
+
+.quiz-question button{
+  display:block;
+  width:100%;
+  background:#1a1a1a;
+  color:var(--white);
+  border:1px solid var(--border);
+  padding:.6rem;
+  margin:.3rem 0;
+  border-radius:6px;
+  cursor:pointer;
+  text-align:left;
+}
+
+.quiz-question button:hover{
+  background:#222;
+}
+
+.feedback{
+  margin-top:.5rem;
+  font-size:.9rem;
+}
+
+.correct{ color:#6ee7a8; }
+.incorrect{ color:#ff8c8c; }
+
+footer{
+  margin-top:4rem;
+  padding-top:2rem;
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:.85rem;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- 1) HEADER -->
+<header>
+  <h1>Effects of Low-Load Blood-Flow Restriction Training Versus High-Load Resistance Training on Neuromuscular Performance and Neuromuscular Activation</h1>
+  <p class="meta">
+    Ledergerber R., Ritsche P., Lichtenstein E., Prechtl L., Faude O., Keller M.<br>
+    2026 · Scandinavian Journal of Medicine & Science in Sports · Ensayo Clínico Aleatorizado (RCT)
+  </p>
+</header>
+
+<!-- 2) JUSTIFICACIÓN METODOLÓGICA -->
+<section>
+  <h2>Justificación Metodológica</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Dimensión</th>
+          <th>Score (0–5)</th>
+          <th>Evidencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Diseño</td>
+          <td class="score">4/5</td>
+          <td>
+            Ensayo clínico aleatorizado, preregistrado (OSF), con análisis mediante modelos mixtos y evaluadores cegados. 
+            No incluye grupo control pasivo ni doble ciego completo, lo que limita el control del efecto expectativa.
+          </td>
+        </tr>
+        <tr>
+          <td>Muestra</td>
+          <td class="score">3/5</td>
+          <td>
+            Tamaño muestral adecuado para detectar efectos pequeños–moderados (n=37), pero población muy específica 
+            (adultos sanos de mediana edad, no entrenados), lo que reduce la generalización clínica.
+          </td>
+        </tr>
+        <tr>
+          <td>Control de Sesgos</td>
+          <td class="score">3/5</td>
+          <td>
+            Aleatorización estratificada y buena adherencia. Sin embargo, la imposibilidad de cegar a participantes y 
+            entrenadores introduce sesgo de rendimiento inevitable en intervenciones de ejercicio.
+          </td>
+        </tr>
+        <tr>
+          <td>Variables</td>
+          <td class="score">4/5</td>
+          <td>
+            Uso de variables neuromusculares robustas (VA por interpolated twitch, RFD, fuerza isométrica y dinámica). 
+            Medidas fiables, aunque algunas con CoV moderado que obliga a interpretar cambios pequeños con cautela.
+          </td>
+        </tr>
+        <tr>
+          <td>Transferencia Clínica</td>
+          <td class="score">3/5</td>
+          <td>
+            Intervención reproducible y segura. No obstante, la población sana y la ausencia de seguimiento limitan la 
+            extrapolación directa a pacientes con dolor o patología estructural.
+          </td>
+        </tr>
+        <tr>
+          <td>Coherencia</td>
+          <td class="score">4/5</td>
+          <td>
+            Resultados congruentes con la fisiología del entrenamiento: la carga mecánica sigue siendo el estímulo clave 
+            para la adaptación neural. No se observan conclusiones forzadas ni incoherencias internas.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 3) FICHA TÉCNICA -->
+<section>
+  <h2>Ficha Técnica</h2>
+  <div class="card">
+    <p><strong>Población:</strong> Adultos sanos de 37–59 años, sin entrenamiento de fuerza previo en ≥2 años.</p>
+    <p><strong>Intervención:</strong></p>
+    <ul>
+      <li>Fase 1 (8 semanas): BFR baja carga (20–35% 1RM) vs alta carga (70–85% 1RM).</li>
+      <li>Fase 2 (2 semanas): ambos grupos realizan entrenamiento de alta carga.</li>
+    </ul>
+    <p><strong>Resultados clave:</strong></p>
+    <ul>
+      <li>La alta carga produce mayores mejoras en fuerza máxima, RFD y activación voluntaria.</li>
+      <li>El BFR mejora la fuerza, pero con adaptaciones neurales atenuadas.</li>
+      <li>Dos semanas de alta carga tras BFR no normalizan completamente la activación neural.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4) ANÁLISIS CRÍTICO -->
+<section>
+  <h2>Análisis Crítico</h2>
+  <div class="card">
+    <p>
+      El estudio aborda una cuestión relevante: si el BFR puede igualar las adaptaciones neuromusculares inducidas por 
+      el entrenamiento con altas cargas. Metodológicamente es sólido, especialmente en la medición de activación 
+      voluntaria mediante técnicas neurofisiológicas más allá del EMG superficial.
+    </p>
+    <p>
+      Los resultados refuerzan una idea clave: la activación neural y la producción rápida de fuerza dependen 
+      fundamentalmente de la tensión mecánica. El BFR genera estímulo metabólico suficiente para hipertrofia y 
+      cierta ganancia de fuerza, pero no reproduce el patrón de adaptación neural observado con cargas altas.
+    </p>
+    <p>
+      Es especialmente relevante la interpretación prudente de la RFD. Los autores reconocen que la disminución 
+      inicial en el grupo BFR podría deberse a fatiga residual o alteraciones contractiles transitorias, evitando 
+      atribuirlo de forma simplista a “peor adaptación”.
+    </p>
+    <p>
+      La validez interna es buena, pero la externa es limitada: no hay pacientes, no hay dolor, no hay restricción 
+      real al uso de carga mecánica. Por tanto, extrapolar estos resultados directamente a rehabilitación requiere 
+      cautela.
+    </p>
+    <p class="highlight">
+      El estudio aporta evidencia de que el BFR es una herramienta útil como estrategia transitoria o preparatoria, 
+      pero no sustituye al entrenamiento con carga mecánica cuando el objetivo es optimizar la función neuromuscular 
+      y la capacidad neural.
+    </p>
+    <p class="meta">
+      Fuente: Scandinavian Journal of Medicine & Science in Sports, 2026 :contentReference[oaicite:0]{index=0}
+    </p>
+  </div>
+</section>
+
+<!-- 5) APLICABILIDAD CLÍNICA -->
+<section>
+  <h2>Aplicabilidad Clínica</h2>
+  <div class="card">
+    <p><strong>Electrólisis Percutánea:</strong> No evaluada. El estudio no permite inferir efectos combinados ni sinergias.</p>
+    <p><strong>Neuromodulación:</strong> No evaluada directamente. Aunque mide activación neural, no analiza intervención neuromoduladora.</p>
+    <p><strong>Punción Seca:</strong> No evaluada. Ningún componente invasivo terapéutico.</p>
+    <p><strong>Ejercicio terapéutico / BFR:</strong> Evidencia clara para usar BFR cuando la carga alta no es viable inicialmente, 
+    con la advertencia de que debe progresarse a cargas altas para optimizar adaptación neural.</p>
+  </div>
+</section>
+
+<!-- 6) QUIZ FORMATIVO -->
+<section>
+  <h2>Quiz Formativo</h2>
+  <div class="card">
+
+    <div class="quiz-question" data-correct="1">
+      <p>1. ¿Qué variable refleja mejor la adaptación neural central en este estudio?</p>
+      <button>EMG superficial</button>
+      <button>Activación voluntaria (VA)</button>
+      <button>Hipertrofia muscular</button>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-question" data-correct="0">
+      <p>2. ¿Qué entrenamiento produjo mayores mejoras en RFD?</p>
+      <button>Alta carga</button>
+      <button>BFR baja carga</button>
+      <button>Ambos por igual</button>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-question" data-correct="2">
+      <p>3. Tras BFR, ¿qué ocurrió con 2 semanas de alta carga?</p>
+      <button>Normalizó completamente la activación neural</button>
+      <button>No produjo ningún cambio</button>
+      <button>Mejoró, pero sin igualar a alta carga continua</button>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-question" data-correct="1">
+      <p>4. ¿Cuál es la principal limitación clínica del estudio?</p>
+      <button>Uso de modelos estadísticos complejos</button>
+      <button>Población sana sin patología</button>
+      <button>Duración excesiva del protocolo</button>
+      <div class="feedback"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 7) FOOTER -->
+<footer>
+  © El FisioLógico · Artículo científico
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.quiz-question').forEach(q=>{
+  const correct = q.dataset.correct;
+  const feedback = q.querySelector('.feedback');
+  q.querySelectorAll('button').forEach((btn,i)=>{
+    btn.onclick=()=>{
+      if(i==correct){
+        feedback.innerHTML='<span class="correct">Correcto.</span> La respuesta se ajusta a los resultados del estudio.';
+      }else{
+        feedback.innerHTML='<span class="incorrect">Incorrecto.</span> Revisa los resultados y la discusión del artículo.';
+      }
+    };
+  });
+});
+</script>
+
+</body>
+</html>
