@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title>El FisioLógico · BFR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>BFR · Artículos · El Fisiológico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black:#000;
+      --white:#fff;
+      --yellow:#FCBF06;
+      --card:#111;
+    }
+
+    body {
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:var(--black);
+      color:var(--white);
+    }
+
+    .container {
+      max-width:1000px;
+      margin:auto;
+      padding:3rem 1.5rem;
+    }
+
+    .brand {
+      color:var(--yellow);
+      letter-spacing:.12em;
+      font-size:.8rem;
+      text-transform:uppercase;
+      margin-bottom:1rem;
+    }
+
+    h1 {
+      color:var(--yellow);
+      margin-bottom:.5rem;
+    }
+
+    p {
+      color:#ccc;
+      max-width:700px;
+    }
+
+    .list {
+      margin-top:3rem;
+      display:grid;
+      gap:1.5rem;
+    }
+
+    .card {
+      background:var(--card);
+      padding:1.5rem;
+      border-radius:14px;
+      box-shadow:0 0 0 1px rgba(255,255,255,.05),
+                 0 20px 40px rgba(0,0,0,.6);
+      transition:transform .25s ease;
+    }
+
+    .card:hover {
+      transform:translateY(-4px);
+    }
+
+    .meta {
+      font-size:.8rem;
+      color:#999;
+      margin-bottom:.4rem;
+    }
+
+    .title {
+      font-size:1.1rem;
+      color:var(--white);
+      font-weight:600;
+    }
+
+    .tag {
+      display:inline-block;
+      margin-top:.5rem;
+      font-size:.75rem;
+      color:var(--yellow);
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+  </style>
 </head>
 
 <body>
+  <main class="container">
+    <div class="brand">El_FisioLógico</div>
+    <h1 id="area"></h1>
+    <p id="description"></p>
 
-<nav>
-  <a href="../../index.html">Inicio</a> /
-  <a href="../index.html">Artículos</a>
-</nav>
+    <section class="list" id="articles"></section>
+  </main>
 
-<h1>Blood Flow Restriction (BFR)</h1>
+<script>
+fetch('manifest.json')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('area').textContent = data.area;
+    document.getElementById('description').textContent = data.description;
 
-<ul>
-  <li>
-    <a href="2026-bfr-vs-high-load.html">
-      2026 · BFR vs High-Load Resistance Training
-    </a>
-  </li>
-</ul>
+    const container = document.getElementById('articles');
 
+    data.articles
+      .sort((a,b)=>b.year-a.year)
+      .forEach(article => {
+        const card = document.createElement('a');
+        card.href = article.file;
+        card.className = 'card';
+
+        card.innerHTML = `
+          <div class="meta">${article.year} · ${article.level}</div>
+          <div class="title">${article.title}</div>
+          <div class="tag">${article.focus}</div>
+        `;
+
+        container.appendChild(card);
+      });
+  });
+</script>
 </body>
 </html>
