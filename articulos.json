@@ -1,0 +1,22 @@
+[
+  {
+    "id": "2026-bfr-vs-high-load",
+    "year": 2026,
+    "category": ["BFR", "Entrenamiento"],
+    "title": "BFR vs High-Load Resistance Training",
+    "subtitle": "Fuerza y activación neuromuscular",
+    "type": "Ensayo clínico",
+    "path": "articulos/2026-bfr-vs-high-load.html",
+    "keywords": ["blood flow restriction", "strength", "EMG"]
+  },
+  {
+    "id": "2026-bfr-core-stabilization-clbp",
+    "year": 2026,
+    "category": ["BFR", "Dolor lumbar"],
+    "title": "BFR + Core Stabilization",
+    "subtitle": "Chronic Low Back Pain",
+    "type": "Ensayo clínico",
+    "path": "articulos/2026-bfr-core-stabilization-clbp.html",
+    "keywords": ["low back pain", "core", "rehabilitation"]
+  },
+]
