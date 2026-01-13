@@ -1,0 +1,50 @@
+{
+  "categories": [
+    {
+      "id": "anatomia",
+      "title": "Anatomía",
+      "description": "Anatomía funcional y clínica aplicada a la fisioterapia."
+    },
+    {
+      "id": "bfr",
+      "title": "Blood Flow Restriction (BFR)",
+      "description": "Entrenamiento con restricción del flujo sanguíneo y adaptaciones neuromusculares."
+    },
+    {
+      "id": "tdcs",
+      "title": "tDCS",
+      "description": "Estimulación transcraneal por corriente directa y aplicaciones clínicas."
+    },
+    {
+      "id": "ecografia",
+      "title": "Ecografía musculoesquelética",
+      "description": "Evaluación ecográfica de tejidos y apoyo al razonamiento clínico."
+    },
+    {
+      "id": "fascia",
+      "title": "Fascia",
+      "description": "Biomecánica fascial, continuidad tisular y dolor."
+    },
+    {
+      "id": "dolor",
+      "title": "Dolor",
+      "description": "Dolor agudo y crónico desde un enfoque biopsicosocial."
+    },
+    {
+      "id": "neurociencia",
+      "title": "Neurociencia",
+      "description": "Control motor, plasticidad neural y procesamiento central."
+    },
+    {
+      "id": "fisio-invasiva",
+      "title": "Fisioterapia invasiva",
+      "description": "Punción seca, electrólisis y neuromodulación percutánea."
+    },
+    {
+      "id": "atm",
+      "title": "ATM",
+      "description": "Dolor orofacial y disfunción temporomandibular."
+    }
+  ],
+  "articles": []
+}
