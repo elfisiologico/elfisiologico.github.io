@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Effects of Low-Load Blood-Flow Restriction vs High-Load Resistance Training · 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Análisis crítico del estudio sobre BFR vs entrenamiento de alta carga en activación neuromuscular y rendimiento.">
+<meta name="description" content="Análisis crítico del ensayo clínico que compara BFR a baja carga frente a entrenamiento de alta carga sobre activación neuromuscular y rendimiento.">
 <meta name="author" content="El FisioLógico">
 
 <style>
@@ -24,96 +24,87 @@ body{
   line-height:1.7;
 }
 
-/* ===== BOTÓN VOLVER ===== */
-.back-nav{
-  max-width:1100px;
-  margin:1.5rem auto 0;
-  padding:0 1.5rem;
-}
-
-.back-nav a{
-  color:var(--yellow);
-  text-decoration:none;
-  font-size:.9rem;
-  font-weight:500;
-  letter-spacing:.04em;
-}
-
-.back-nav a:hover{
-  text-decoration:underline;
-}
-/* ======================= */
-
 .container{
   max-width:1100px;
   margin:auto;
   padding:3rem 1.5rem;
 }
 
-h1,h2,h3{
-  color:var(--yellow);
-  letter-spacing:.02em;
+.back-nav{
+  padding:1rem 1.5rem;
 }
 
-h1{font-size:2.2rem;}
-h2{margin-top:3rem;}
-h3{margin-top:2rem;}
+.back-nav a{
+  color:var(--yellow);
+  text-decoration:none;
+  font-weight:600;
+}
+
+h1,h2,h3{
+  color:var(--yellow);
+}
+
+h1{
+  font-size:2.2rem;
+  margin-bottom:.5rem;
+}
 
 .meta{
   color:var(--muted);
   font-size:.9rem;
-  margin-top:.5rem;
+  margin-bottom:2rem;
 }
 
 .card{
   background:var(--card);
-  padding:1.5rem;
   border-radius:8px;
-  margin-top:1.5rem;
+  padding:1.5rem;
+  margin-bottom:2rem;
 }
 
 table{
   width:100%;
   border-collapse:collapse;
-  margin-top:1.5rem;
 }
 
 th,td{
-  border-bottom:1px solid #222;
   padding:.75rem;
-  text-align:left;
+  border-bottom:1px solid #222;
   vertical-align:top;
 }
 
 th{
+  text-align:left;
   color:var(--yellow);
   font-weight:600;
 }
 
 .score{
-  font-family:'JetBrains Mono', monospace;
   font-weight:700;
+  color:var(--yellow);
+  text-align:center;
+}
+
+ul{
+  padding-left:1.2rem;
 }
 
 .highlight{
   border-left:4px solid var(--yellow);
-  padding:1rem 1.5rem;
-  margin-top:2rem;
-  background:#0d0d0d;
-}
-
-.quiz{
-  margin-top:2rem;
+  padding-left:1rem;
+  margin-top:1.5rem;
+  font-weight:600;
 }
 
 .quiz button{
   display:block;
   width:100%;
+  margin:.5rem 0;
+  padding:.75rem;
   background:#1a1a1a;
   color:var(--white);
   border:1px solid #333;
-  padding:.75rem;
-  margin:.5rem 0;
+  border-radius:6px;
   cursor:pointer;
   text-align:left;
 }
@@ -123,103 +114,175 @@ th{
 }
 
 .feedback{
-  margin-top:.5rem;
+  margin-top:.75rem;
   font-size:.9rem;
 }
 
-.correct{color:#6ee7a8;}
-.incorrect{color:#f87171;}
+.correct{
+  color:#7CFC00;
+}
+
+.incorrect{
+  color:#FF6B6B;
+}
 
 footer{
-  margin-top:4rem;
-  padding-top:2rem;
-  border-top:1px solid #222;
+  text-align:center;
+  padding:2rem 1rem;
   color:var(--muted);
   font-size:.85rem;
-  text-align:center;
 }
 </style>
 </head>
 
 <body>
 
-<!-- BOTÓN VOLVER -->
-<nav class="back-nav">
+<div class="back-nav">
   <a href="../../index.html">← Volver al índice</a>
-</nav>
+</div>
 
-<div class="container">
-
-<!-- 1. HEADER -->
-<header>
+<header class="container">
   <h1>Effects of Low-Load Blood-Flow Restriction Training Versus High-Load Resistance Training on Neuromuscular Performance and Neuromuscular Activation</h1>
   <div class="meta">
-    Ledergerber R., Ritsche P., Lichtenstein E., Prechtl L., Faude O., Keller M. · 2026 · Scandinavian Journal of Medicine & Science in Sports · RCT
+    Ledergerber R., Ritsche P., Lichtenstein E., Prechtl L., Faude O., Keller M. · 2026 · Scandinavian Journal of Medicine & Science in Sports · Ensayo clínico aleatorizado
   </div>
 </header>
 
-<!-- 2. JUSTIFICACIÓN METODOLÓGICA -->
-<section>
-<h2>Justificación metodológica</h2>
+<main class="container">
 
-<table>
-<thead>
-<tr>
-  <th>Dimensión</th>
-  <th>Score (0–5)</th>
-  <th>Evidencia</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Diseño</td>
-  <td class="score">4.5</td>
-  <td>RCT preregistrado, con análisis longitudinal y modelo mixto. No incluye grupo control pasivo, lo que limita interpretación absoluta pero es coherente con la pregunta comparativa.</td>
-</tr>
-<tr>
-  <td>Muestra</td>
-  <td class="score">3.5</td>
-  <td>Muestra moderada (n=37), adultos sanos de mediana edad. Dropout aceptable pero con desequilibrio por sexo en HL que puede introducir confusión residual.</td>
-</tr>
-<tr>
-  <td>Control de sesgos</td>
-  <td class="score">4</td>
-  <td>Asignación estratificada, evaluadores cegados, preregistro y datos abiertos. Imposible cegamiento de intervención, correctamente reconocido.</td>
-</tr>
-<tr>
-  <td>Variables</td>
-  <td class="score">4.5</td>
-  <td>Uso de VA con técnica de interpolated twitch, RFD y fuerza dinámica/isométrica. Variables neurofisiológicas bien elegidas, con fiabilidad reportada.</td>
-</tr>
-<tr>
-  <td>Transferencia clínica</td>
-  <td class="score">4</td>
-  <td>Pregunta clínica clara: BFR como fase preparatoria. Población sana limita extrapolación directa a pacientes, pero razonamiento es sólido.</td>
-</tr>
-<tr>
-  <td>Coherencia</td>
-  <td class="score">5</td>
-  <td>Hipótesis, métodos, resultados y discusión alineados. Interpretación prudente, sin sobreextender conclusiones.</td>
-</tr>
-</tbody>
-</table>
+<section class="card">
+  <h2>Justificación metodológica</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Dimensión</th>
+        <th>Score (0–5)</th>
+        <th>Evidencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Diseño</td>
+        <td class="score">4</td>
+        <td>RCT preregistrado con análisis por modelos mixtos y cegamiento de evaluadores. Ausencia de grupo control pasivo limita inferencia absoluta.</td>
+      </tr>
+      <tr>
+        <td>Muestra</td>
+        <td class="score">3</td>
+        <td>Tamaño moderado (n=37) en adultos sanos no entrenados. Drop-out del 22% y desequilibrio final por sexo.</td>
+      </tr>
+      <tr>
+        <td>Control de sesgos</td>
+        <td class="score">3</td>
+        <td>Asignación aleatoria y covariables ajustadas, pero sin estratificación por activación voluntaria basal.</td>
+      </tr>
+      <tr>
+        <td>Variables</td>
+        <td class="score">4</td>
+        <td>Uso de VA mediante interpolated twitch, RFD y 1-RM. Medidas válidas pero con sensibilidad limitada para cambios cortos.</td>
+      </tr>
+      <tr>
+        <td>Transferencia clínica</td>
+        <td class="score">3</td>
+        <td>Resultados claros en contexto de ejercicio, transferencia indirecta a rehabilitación clínica.</td>
+      </tr>
+      <tr>
+        <td>Coherencia</td>
+        <td class="score">4</td>
+        <td>Resultados consistentes con fisiología del entrenamiento y literatura previa sobre carga mecánica.</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
-<!-- RESTO DEL DOCUMENTO SIN CAMBIOS -->
+<section class="card">
+  <h2>Ficha técnica</h2>
+  <p><strong>Población:</strong> Adultos sanos de 37–59 años sin experiencia reciente en entrenamiento de fuerza.</p>
+  <p><strong>Intervención:</strong> 8 semanas de LL-BFR (20–35% 1RM, 50% AOP) vs HL (70–85% 1RM), seguidas de 2 semanas de HL en ambos grupos.</p>
+  <p><strong>Resultados clave:</strong></p>
+  <ul>
+    <li>HL superior a BFR en fuerza máxima y RFD.</li>
+    <li>La activación voluntaria solo mejora claramente con HL.</li>
+    <li>2 semanas de HL tras BFR no igualan adaptación neural.</li>
+    <li>El salto vertical no muestra diferencias relevantes.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Análisis crítico</h2>
+  <p>
+    El estudio está bien diseñado para responder una pregunta concreta: si la restricción de flujo a baja carga puede sustituir a la carga mecánica alta cuando se analizan adaptaciones neuromusculares. La elección de activación voluntaria mediante interpolated twitch es metodológicamente sólida, pero poco sensible para detectar cambios pequeños a corto plazo, lo que obliga a interpretar los resultados con cautela.
+  </p>
+  <p>
+    Los datos muestran de forma consistente que el entrenamiento con alta carga genera mayores mejoras en fuerza máxima, RFD y activación neural. El descenso inicial de RFD en BFR sugiere fatiga residual o alteraciones contractiles más que una verdadera adaptación neural, lo que refuerza la idea de que EMG o RFD no deben interpretarse como equivalentes directos de función clínica.
+  </p>
+  <p>
+    La fase secuencial BFR→HL es clínicamente interesante, pero la duración de 2 semanas parece insuficiente para revertir adaptaciones neurales atenuadas. Esto cuestiona el uso de BFR como sustituto prolongado de la carga mecánica cuando el objetivo es optimizar control neural y producción rápida de fuerza.
+  </p>
+  <div class="highlight">
+    El estudio aporta evidencia de que la carga mecánica sigue siendo un estímulo irremplazable para la optimización neuromuscular, mientras que el BFR debe entenderse como una herramienta transitoria y contextual, no como equivalente funcional al entrenamiento de alta carga.
+  </div>
+</section>
+
+<section class="card">
+  <h2>Aplicabilidad clínica</h2>
+  <ul>
+    <li><strong>Electrólisis Percutánea:</strong> No evaluada. Los resultados no permiten inferir efectos directos.</li>
+    <li><strong>Neuromodulación:</strong> No evaluada. VA y RFD no deben extrapolarse a cambios corticales inducidos.</li>
+    <li><strong>Punción Seca:</strong> No evaluada. Sin transferencia directa.</li>
+    <li><strong>Ejercicio terapéutico / BFR:</strong> BFR útil en fases iniciales con restricción de carga, pero debe progresar a HL para restaurar adaptación neural.</li>
+  </ul>
+</section>
+
+<section class="card quiz">
+  <h2>Quiz formativo</h2>
+
+  <div>
+    <p><strong>1. ¿Qué variable refleja de forma más directa la adaptación neural central?</strong></p>
+    <button onclick="check(this,false)">EMG superficial</button>
+    <button onclick="check(this,true)">Activación voluntaria</button>
+    <button onclick="check(this,false)">Hipertrofia muscular</button>
+    <div class="feedback"></div>
+  </div>
+
+  <div>
+    <p><strong>2. ¿Por qué el RFD puede disminuir tras BFR?</strong></p>
+    <button onclick="check(this,true)">Fatiga residual y alteración contractil</button>
+    <button onclick="check(this,false)">Pérdida de masa muscular</button>
+    <button onclick="check(this,false)">Error estadístico</button>
+    <div class="feedback"></div>
+  </div>
+
+  <div>
+    <p><strong>3. ¿Qué limitación clave presenta la fase HL posterior a BFR?</strong></p>
+    <button onclick="check(this,false)">Exceso de carga</button>
+    <button onclick="check(this,true)">Duración insuficiente</button>
+    <button onclick="check(this,false)">Falta de supervisión</button>
+    <div class="feedback"></div>
+  </div>
+
+  <div>
+    <p><strong>4. ¿Qué error clínico sería una mala interpretación del estudio?</strong></p>
+    <button onclick="check(this,true)">Asumir que BFR sustituye a HL para función neural</button>
+    <button onclick="check(this,false)">Usar BFR en fases iniciales</button>
+    <button onclick="check(this,false)">Priorizar carga progresiva</button>
+    <div class="feedback"></div>
+  </div>
+</section>
+
+</main>
 
 <footer>
-© El FisioLógico · Repositorio científico en fisioterapia
+  © El FisioLógico · Repositorio científico en fisioterapia
 </footer>
 
-</div>
-
 <script>
-function answer(btn,correct){
+function check(btn,correct){
   const fb = btn.parentElement.querySelector('.feedback');
   if(correct){
-    fb.innerHTML = "<span class='correct'>Correcto.</span> Justificación metodológica: la VA mide drive neural real. Traducción clínica: EMG alto no garantiza función.";
+    fb.innerHTML = "<span class='correct'>Correcto.</span> Justificación: la activación voluntaria estima el drive neural central. Traducción clínica: EMG o fuerza no son sinónimos de control neural.";
   }else{
-    fb.innerHTML = "<span class='incorrect'>Incorrecto.</span> Error típico: extrapolar marcadores indirectos sin carga mecánica suficiente.";
+    fb.innerHTML = "<span class='incorrect'>Incorrecto.</span> Justificación: confunde variables periféricas con adaptación central. Traducción clínica: no extrapoles señal a función.";
   }
 }
 </script>
