@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Área de pacientes de El FisioLógico. Información sobre dolor y movimiento sin efecto nocebo.">
+  <title>El FisioLógico | Área de Pacientes</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              white: '#FFFFFF',
+              yellow: '#FCBF06',
+              darkGray: '#121212',
+              mediumGray: '#2A2A2A',
+              lightGray: '#A1A1A1',
+            }
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+            logo: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-brand-black text-white font-sans">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-brand-mediumGray h-20 flex items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+
+      <div class="flex items-center gap-4">
+
+        <!-- VOLVER A INDEX -->
+        <a href="/index.html" class="text-gray-400 hover:text-brand-yellow transition-colors">
+          <i data-lucide="arrow-left" class="w-6 h-6"></i>
+        </a>
+
+        <!-- LOGO TEXTO -->
+        <div class="flex items-center tracking-tight select-none">
+          <span class="text-white font-logo font-bold text-2xl tracking-tighter">Fisio</span>
+          <span class="text-brand-yellow font-logo font-bold text-2xl tracking-tighter">Lógico</span>
+        </div>
+
+      </div>
+
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow hidden md:block">
+        Área de Pacientes
+      </span>
+
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="container mx-auto px-6 pt-32 pb-20 max-w-4xl">
+
+    <h1 class="font-heading font-black text-4xl md:text-6xl text-white mb-8">
+      ENTENDIENDO EL <span class="text-brand-yellow">DOLOR</span> Y EL MOVIMIENTO
+    </h1>
+
+    <p class="text-xl text-brand-lightGray leading-relaxed mb-12">
+      Bienvenido al área educativa para pacientes. Aquí desmitificamos conceptos complejos sobre tu salud musculoesquelética para que tomes el control de tu recuperación.
+    </p>
+
+    <!-- BLOQUES -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+      <div class="bg-brand-darkGray p-6 border-l-2 border-brand-yellow">
+        <i data-lucide="brain" class="text-brand-yellow mb-4 w-8 h-8"></i>
+        <h3 class="font-bold text-white text-lg mb-2">Neurociencia del Dolor</h3>
+        <p class="text-sm text-gray-400">
+          El dolor no siempre significa daño. Entender cómo tu cerebro procesa las señales es el primer paso para recuperarte.
+        </p>
+      </div>
+
+      <div class="bg-brand-darkGray p-6 border-l-2 border-brand-yellow">
+        <i data-lucide="activity" class="text-brand-yellow mb-4 w-8 h-8"></i>
+        <h3 class="font-bold text-white text-lg mb-2">Movimiento Consciente</h3>
+        <p class="text-sm text-gray-400">
+          El reposo absoluto rara vez es la solución. Aprende a dosificar la carga y el movimiento para sanar tejidos.
+        </p>
+      </div>
+
+      <div class="bg-brand-darkGray p-6 border-l-2 border-brand-yellow">
+        <i data-lucide="shield-check" class="text-brand-yellow mb-4 w-8 h-8"></i>
+        <h3 class="font-bold text-white text-lg mb-2">Sin Efecto Nocebo</h3>
+        <p class="text-sm text-gray-400">
+          Evitamos lenguaje que genera miedo. Usamos lenguaje que informa y empodera.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="border border-brand-mediumGray p-8 bg-brand-darkGray/50">
+
+      <h2 class="font-heading font-bold text-2xl text-white mb-4">
+        ¿Buscas consulta profesional?
+      </h2>
+
+      <p class="text-gray-400 mb-6">
+        La fisioterapia basada en evidencia requiere una evaluación individualizada.
+      </p>
+
+      <div id="contact-container">
+
+        <button
+          id="contact-btn"
+          onclick="handleContactClick()"
+          class="px-8 py-3 font-bold uppercase text-sm tracking-wider transition-all duration-300 flex items-center gap-2 min-w-[280px] justify-center bg-white text-black hover:bg-brand-yellow hover:text-black"
+        >
+          CONTACTAR ESPECIALISTA
+        </button>
+
+        <p id="contact-hint" class="text-xs text-gray-500 mt-2 hidden">
+          Haz clic para copiar el correo
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- SCRIPTS -->
+  <script>
+    lucide.createIcons();
+
+    let emailState = 'initial';
+    const contactBtn = document.getElementById('contact-btn');
+    const contactHint = document.getElementById('contact-hint');
+
+    function handleContactClick() {
+      if (emailState === 'initial') {
+        emailState = 'revealed';
+        contactBtn.innerHTML = `
+          <i data-lucide="copy" class="w-[18px] h-[18px]"></i>
+          <span class="normal-case">info@elfisiologico.com</span>
+        `;
+        contactBtn.className =
+          "px-8 py-3 font-bold uppercase text-sm tracking-wider transition-all duration-300 flex items-center gap-2 min-w-[280px] justify-center bg-transparent border border-brand-yellow text-brand-yellow hover:bg-brand-yellow hover:text-black";
+        contactHint.classList.remove('hidden');
+        lucide.createIcons();
+      } else {
+        navigator.clipboard.writeText('info@elfisiologico.com');
+        emailState = 'copied';
+        contactBtn.innerHTML = `
+          <i data-lucide="check" class="w-[18px] h-[18px]"></i>
+          <span class="normal-case">Copiado al portapapeles</span>
+        `;
+        lucide.createIcons();
+
+        setTimeout(() => {
+          emailState = 'revealed';
+          contactBtn.innerHTML = `
+            <i data-lucide="copy" class="w-[18px] h-[18px]"></i>
+            <span class="normal-case">info@elfisiologico.com</span>
+          `;
+          lucide.createIcons();
+        }, 2000);
+      }
+    }
+  </script>
+
+</body>
+</html>
