@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Repositorio clínico y divulgativo sobre fisioterapia basada en evidencia. Análisis crítico, sin conflictos de interés.">
+  <title>El FisioLógico | Repositorio Científico</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              white: '#FFFFFF',
+              yellow: '#FCBF06',
+              darkGray: '#121212',
+              mediumGray: '#2A2A2A',
+              lightGray: '#A1A1A1',
+            }
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+            logo: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+    .scientific-grid {
+      background-image:
+        linear-gradient(#2A2A2A 1px, transparent 1px),
+        linear-gradient(90deg, #2A2A2A 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: center center;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-brand-black text-white font-sans flex flex-col">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-brand-mediumGray h-20 flex items-center">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+
+      <div class="flex items-center gap-4">
+
+        <!-- VOLVER A HOME -->
+        <a href="/index.html" class="text-gray-400 hover:text-brand-yellow transition-colors">
+          <i data-lucide="arrow-left" class="w-6 h-6"></i>
+        </a>
+
+        <div class="flex items-center tracking-tight select-none">
+          <span class="text-white font-logo font-bold text-2xl tracking-tighter">Fisio</span>
+          <span class="text-brand-yellow font-logo font-bold text-2xl tracking-tighter">Lógico</span>
+        </div>
+
+      </div>
+
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-yellow hidden md:block">
+        Repositorio Científico
+      </span>
+
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container mx-auto px-6 pt-32 pb-20 max-w-5xl flex-grow">
+
+    <div class="mb-16">
+      <h1 class="font-heading font-black text-4xl md:text-6xl text-white mb-6 leading-tight">
+        DECONSTRUYENDO LA <br />
+        <span class="text-brand-yellow">EVIDENCIA CIENTÍFICA</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-brand-lightGray leading-relaxed max-w-3xl border-l-4 border-brand-yellow pl-6">
+        Un archivo vivo de análisis crítico. No leemos abstracts; auditamos metodologías para filtrar el ruido y extraer la aplicabilidad clínica real.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+      <div class="bg-brand-darkGray p-8 border border-brand-mediumGray hover:border-white transition-colors group">
+        <i data-lucide="file-search" class="text-brand-yellow mb-6 w-10 h-10 group-hover:scale-110 transition-transform"></i>
+        <h3 class="font-heading font-bold text-white text-xl mb-3">Análisis Crítico</h3>
+        <p class="text-gray-400 leading-relaxed">
+          Evaluamos sesgos, tamaño del efecto e intervalos de confianza. Lo que el paper dice vs. lo que los datos realmente demuestran.
+        </p>
+      </div>
+
+      <div class="bg-brand-darkGray p-8 border border-brand-mediumGray hover:border-white transition-colors group">
+        <i data-lucide="scale" class="text-brand-yellow mb-6 w-10 h-10 group-hover:scale-110 transition-transform"></i>
+        <h3 class="font-heading font-bold text-white text-xl mb-3">Sin Conflictos</h3>
+        <p class="text-gray-400 leading-relaxed">
+          Revisiones independientes. Rechazamos el cherry-picking y la validación de narrativas comerciales.
+        </p>
+      </div>
+
+      <div class="bg-brand-darkGray p-8 border border-brand-mediumGray hover:border-white transition-colors group">
+        <i data-lucide="book-open-check" class="text-brand-yellow mb-6 w-10 h-10 group-hover:scale-110 transition-transform"></i>
+        <h3 class="font-heading font-bold text-white text-xl mb-3">Transferencia Clínica</h3>
+        <p class="text-gray-400 leading-relaxed">
+          La estadística solo importa si cambia decisiones clínicas reales el lunes por la mañana.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="bg-[#111] border border-brand-mediumGray p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden hover:border-brand-yellow transition-colors">
+      <div class="scientific-grid absolute inset-0 opacity-10 pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-xl">
+        <h2 class="font-heading font-bold text-3xl text-white mb-4">
+          Acceso a la Base de Conocimiento
+        </h2>
+        <p class="text-gray-400 text-lg">
+          Explora la biblioteca completa de artículos, protocolos y análisis clínicos avanzados.
+        </p>
+      </div>
+
+      <a
+        href="https://elfisiologico.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative z-10 px-8 py-4 bg-brand-yellow text-black font-bold text-lg tracking-widest uppercase hover:bg-white transition-all flex items-center gap-3"
+      >
+        Ir al Repositorio
+        <i data-lucide="external-link" class="w-5 h-5"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-mediumGray bg-brand-darkGray py-12">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center tracking-tight select-none">
+        <span class="text-white font-logo font-bold text-xl tracking-tighter">Fisio</span>
+        <span class="text-brand-yellow font-logo font-bold text-xl tracking-tighter">Lógico</span>
+      </div>
+      <div class="text-gray-500 text-xs text-center md:text-right">
+        <p class="mb-2">© 2024 El FisioLógico</p>
+        <p>Contenido clínico. No sustituye criterio profesional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
