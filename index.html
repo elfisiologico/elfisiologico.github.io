@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="El FisioLógico: fisioterapia basada en evidencia, razonamiento clínico y transferencia real. Acceso a pacientes y repositorio científico.">
-  <title>El FisioLógico · Fisioterapia basada en evidencia</title>
+<meta charset="utf-8">
+<title>El FisioLógico · Fisioterapia basada en evidencia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="El FisioLógico: fisioterapia basada en evidencia, razonamiento clínico y transferencia real.">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Lucide -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              black: '#000000',
-              yellow: '#FCBF06',
-              darkGray: '#121212',
-              mediumGray: '#2A2A2A',
-              lightGray: '#A1A1A1',
-            }
-          },
-          fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
-            heading: ['Montserrat', 'sans-serif'],
-            logo: ['Inter', 'sans-serif'],
-          }
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          black:'#000000',
+          white:'#FFFFFF',
+          yellow:'#FCBF06',
+          darkGray:'#121212',
+          mediumGray:'#2A2A2A',
+          lightGray:'#A1A1A1'
         }
+      },
+      fontFamily:{
+        sans:['Roboto','sans-serif'],
+        heading:['Montserrat','sans-serif'],
+        logo:['Inter','sans-serif']
       }
     }
-  </script>
+  }
+}
+</script>
 
-  <style>
-    body { background:#000; color:#fff; }
-
-    .scientific-grid {
-      background-image:
-        linear-gradient(#2A2A2A 1px, transparent 1px),
-        linear-gradient(90deg, #2A2A2A 1px, transparent 1px);
-      background-size: 40px 40px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 45%, rgba(0,0,0,0));
-      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 45%, rgba(0,0,0,0));
-    }
-  </style>
+<style>
+body{background:#000;color:#fff}
+.scientific-grid{
+  background-image:
+  linear-gradient(#2A2A2A 1px,transparent 1px),
+  linear-gradient(90deg,#2A2A2A 1px,transparent 1px);
+  background-size:40px 40px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,1) 40%,rgba(0,0,0,0));
+}
+</style>
 </head>
 
 <body class="min-h-screen bg-brand-black text-white flex flex-col font-sans">
 
-  <!-- NAV -->
-  <nav class="fixed top-0 left-0 right-0 z-50 py-6 px-8 bg-gradient-to-b from-black to-transparent">
-    <div class="flex items-center tracking-tight select-none">
-      <span class="font-logo font-bold text-2xl">Fisio</span>
-      <span class="font-logo font-bold text-2xl text-brand-yellow">Lógico</span>
-    </div>
-  </nav>
+<nav class="fixed top-0 left-0 right-0 z-50 py-6 px-6 md:px-12 bg-gradient-to-b from-brand-black to-transparent">
+  <div class="flex items-center tracking-tight select-none">
+    <span class="font-logo font-bold text-2xl">Fisio</span>
+    <span class="font-logo font-bold text-2xl text-brand-yellow">Lógico</span>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <header class="relative pt-40 pb-28 overflow-hidden">
-    <div class="scientific-grid absolute inset-0 opacity-20"></div>
+<header class="relative pt-32 pb-16 px-6 md:px-12 container mx-auto text-center">
+  <div class="scientific-grid absolute inset-0 opacity-20"></div>
+  <h1 class="font-heading font-black text-5xl md:text-7xl lg:text-8xl mb-6 relative z-10">
+    EL FISIO<span class="text-brand-yellow">LÓGICO</span>
+  </h1>
+  <p class="text-brand-lightGray text-lg md:text-2xl max-w-3xl mx-auto relative z-10">
+    Fisioterapia basada en <strong class="text-white">evidencia</strong>, <strong class="text-white">razonamiento clínico</strong> y transferencia real.
+  </p>
+</header>
 
-    <div class="relative z-10 container mx-auto px-6 text-center">
-      <h1 class="font-heading font-black text-6xl md:text-8xl tracking-tight">
-        EL FISIO<span class="text-brand-yellow">LÓGICO</span>
-      </h1>
+<main class="flex-grow container mx-auto px-6 md:px-12 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-6xl mx-auto">
 
-      <p class="text-brand-lightGray text-xl md:text-2xl max-w-3xl mx-auto mt-8 leading-relaxed">
-        Fisioterapia basada en <strong class="text-white">evidencia</strong>,  
-        <strong class="text-white">razonamiento clínico</strong>  
-        y transferencia real.
-      </p>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <main class="flex-grow container mx-auto px-6 pb-32">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-
-      <!-- PACIENTES -->
-      <a href="/pacientes/"
-         class="group bg-brand-darkGray border border-brand-mediumGray p-12 hover:border-white transition-all duration-300">
-        <h2 class="font-heading text-3xl mb-6">
-          Área Pacientes
-        </h2>
-        <p class="text-brand-lightGray text-lg leading-relaxed">
-          Educación en dolor y movimiento sin nocebo, sin miedo y sin simplificaciones peligrosas.
+    <!-- PACIENTES -->
+    <section class="bg-brand-darkGray border border-brand-mediumGray p-8 md:p-12 hover:border-white transition flex flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <i data-lucide="user" class="text-brand-yellow w-8 h-8"></i>
+          <h2 class="font-heading font-bold text-2xl md:text-3xl">ÁREA PACIENTES</h2>
+        </div>
+        <p class="text-brand-lightGray text-lg mb-8">
+          Educación en dolor y movimiento sin mitos ni nocebo.
         </p>
+      </div>
+      <a href="/patients/" class="py-4 border border-white text-white font-bold tracking-widest uppercase hover:bg-white hover:text-black flex items-center justify-center gap-3">
+        Acceder
+        <i data-lucide="arrow-right"></i>
       </a>
+    </section>
 
-      <!-- REPOSITORIO -->
-      <a href="/repositorio/"
-         class="group bg-brand-darkGray border border-brand-mediumGray p-12 hover:border-brand-yellow transition-all duration-300">
-        <h2 class="font-heading text-3xl mb-6">
-          Repositorio Científico
-        </h2>
-        <p class="text-brand-lightGray text-lg leading-relaxed">
-          Artículos analizados críticamente en fisioterapia, dolor, BFR, neurociencia y práctica clínica real.
+    <!-- REPOSITORIO -->
+    <section class="bg-brand-darkGray border border-brand-mediumGray p-8 md:p-12 hover:border-brand-yellow transition flex flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <i data-lucide="book-open" class="text-brand-yellow w-8 h-8"></i>
+          <h2 class="font-heading font-bold text-2xl md:text-3xl">REPOSITORIO CIENTÍFICO</h2>
+        </div>
+        <p class="text-brand-lightGray text-lg mb-8">
+          Artículos analizados críticamente en fisioterapia y neurociencia.
         </p>
+      </div>
+      <a href="/repository/" class="py-4 bg-brand-yellow text-black font-bold tracking-widest uppercase hover:bg-transparent hover:text-brand-yellow border border-brand-yellow flex items-center justify-center gap-3">
+        Acceder
+        <i data-lucide="arrow-right"></i>
       </a>
+    </section>
 
-    </div>
-  </main>
+  </div>
+</main>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-brand-mediumGray py-12 text-center text-brand-lightGray">
-    El FisioLógico · Criterio clínico aplicado
-  </footer>
+<footer class="py-16 bg-brand-darkGray border-t border-brand-mediumGray text-center">
+  <h3 class="font-heading font-bold text-xl md:text-2xl mb-2">
+    EL FISIOLÓGICO NO ES DIVULGACIÓN RÁPIDA
+  </h3>
+  <p class="text-brand-lightGray">Es criterio clínico aplicado</p>
+</footer>
 
-  <script>
-    lucide.createIcons();
-  </script>
+<script>lucide.createIcons()</script>
+</body>
+</html>
+
 
 </body>
 </html>
