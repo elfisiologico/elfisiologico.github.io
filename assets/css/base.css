@@ -93,6 +93,11 @@ nav a {
 }
 
 /* ---------- Categorías: tarjetas de artículo ---------- */
+.article-link {
+  display: block;
+  color: inherit;
+}
+
 .article-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -102,15 +107,38 @@ nav a {
   transition: border-color .2s ease;
 }
 
-.article-card:hover {
+.article-link:hover .article-card {
   border-color: var(--accent);
 }
 
-.article-card h3 { margin-bottom: .3rem; }
+.article-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.article-card h3 {
+  margin-bottom: .3rem;
+  color: var(--accent);
+}
+
 .article-card p {
   margin: 0;
   color: var(--muted);
   font-size: .95rem;
+}
+
+/* ---------- Badge de puntuación (categorías) ---------- */
+.score-badge {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 /* ---------- Tablas ---------- */
@@ -142,6 +170,25 @@ ul li { margin-bottom: .6rem; }
   background: var(--accent-soft);
   font-weight: 600;
   color: var(--accent);
+}
+
+/* ---------- Bloque valoración metodológica (artículos) ---------- */
+.score-summary {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.score-box {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  white-space: nowrap;
 }
 
 /* ---------- Quiz ---------- */
@@ -192,4 +239,3 @@ footer {
   font-size: .85rem;
   color: var(--muted);
 }
-
