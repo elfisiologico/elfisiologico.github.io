@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Effect of Blood Flow Restriction Training with Core Stabilization Exercise · 2026</title>
+<title>Electrical Evoked Potentials After Perioperative Pain Neuroscience Education · 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Análisis crítico del efecto del BFR combinado con ejercicios de estabilización del core en dolor lumbar crónico inespecífico.">
+<meta name="description" content="Análisis crítico de un RCT sobre educación en neurociencia del dolor perioperatoria y potenciales evocados EEG durante CPM.">
 <meta name="author" content="El FisioLógico">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
   --yellow:#FCBF06;
   --muted:#A1A1A1;
   --card:#111111;
+  --border:#272727;
 }
 
 body{
@@ -52,6 +53,7 @@ h1,h2,h3{
   padding:1.5rem;
   border-radius:6px;
   margin-bottom:2rem;
+  border:1px solid var(--border);
 }
 
 table{
@@ -76,14 +78,28 @@ th{
   font-weight:600;
 }
 
+.score-summary{
+  display:flex;
+  align-items:center;
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+
+.score-box{
+  font-family:'JetBrains Mono', monospace;
+  font-size:1.4rem;
+  font-weight:700;
+  color:var(--yellow);
+  border:1px solid var(--yellow);
+  padding:.6rem 1rem;
+  border-radius:6px;
+  white-space:nowrap;
+}
+
 .highlight{
   border-left:4px solid var(--yellow);
   padding:1rem;
   background:#0d0d0d;
-  margin-top:2rem;
-}
-
-.quiz{
   margin-top:2rem;
 }
 
@@ -120,11 +136,11 @@ footer{
 </nav>
 
 <header class="container">
-  <h1>Effect of blood flow restriction training with core stabilization exercise on muscle activity and muscle thickness in subjects with nonspecific chronic low back pain</h1>
+  <h1>Electrical Evoked Potentials After Perioperative Pain Neuroscience Education or Back School Education</h1>
   <p>
-    Werasirirat P., Namsawang J., Singhasoot N., Luangpon N., Snieckus A., Muanjai P.<br>
-    <strong>2026 · Journal of Back and Musculoskeletal Rehabilitation</strong><br>
-    Diseño: Ensayo clínico aleatorizado, paralelo, simple ciego
+    Goudman L., Huysmans E., Van Bogaert W., Coppieters I., Ickmans K., Nijs J., Buyl R., Moens M.<br>
+    <strong>2026 · Journal of Clinical Medicine</strong><br>
+    Diseño: Subanálisis EEG predefinido de un ensayo clínico aleatorizado
   </p>
 </header>
 
@@ -145,47 +161,56 @@ footer{
 <tr>
 <td>Diseño</td>
 <td class="score">4</td>
-<td>RCT con asignación aleatoria y cegamiento del participante. Falta grupo control sin intervención y seguimiento a medio-largo plazo  [oai_citation:0‡Effect of blood flow restriction training with core stabilization exercise on muscle activity and muscle thickness in subjects with nonspecific chronic low back pain.pdf](sediment://file_00000000d26471f4a68dd3c7424bedee).</td>
+<td>Subanálisis preespecificado dentro de un RCT multicéntrico. Comparador activo adecuado. El EEG no fue endpoint primario del ensayo original.</td>
 </tr>
 <tr>
 <td>Muestra</td>
-<td class="score">3</td>
-<td>N=38, tamaño calculado por potencia estadística, pero población joven (≈20 años) limita generalización clínica.</td>
+<td class="score">2</td>
+<td>N=23 con EEG completo (9 PPNE, 14 PBSE). Tamaño muy limitado y pérdida de la aleatorización original.</td>
 </tr>
 <tr>
 <td>Control de sesgos</td>
 <td class="score">3</td>
-<td>Cegamiento parcial. No se reporta cegamiento del evaluador en EMG/US. Riesgo moderado de sesgo de medición.</td>
+<td>Cegamiento parcial; evaluadores cegados en la medida de lo posible. Análisis por casos completos con riesgo de sesgo.</td>
 </tr>
 <tr>
 <td>Variables</td>
-<td class="score">4</td>
-<td>EMG normalizado, ecografía con ICC excelente y MODQ. Interpretación funcional indirecta.</td>
+<td class="score">3</td>
+<td>Potenciales evocados EEG durante CPM. Variable neurofisiológica válida pero indirecta respecto a resultados clínicos.</td>
 </tr>
 <tr>
 <td>Transferencia clínica</td>
-<td class="score">3</td>
-<td>Resultados prometedores pero basados en marcadores intermedios (EMG/grosor ≠ función).</td>
+<td class="score">2</td>
+<td>No se observan diferencias entre intervenciones. Aplicabilidad clínica limitada.</td>
 </tr>
 <tr>
 <td>Coherencia</td>
 <td class="score">4</td>
-<td>Hipótesis, métodos y discusión alineados con literatura previa sobre BFR y estabilización.</td>
+<td>Hipótesis clara y discusión alineada con resultados negativos y literatura previa.</td>
 </tr>
 </tbody>
 </table>
+
+<div class="score-summary">
+  <div class="score-box">18 / 30</div>
+  <div>
+    <strong>Valoración metodológica global</strong><br>
+    Evidencia exploratoria, limitada por tamaño muestral y endpoints intermedios.
+  </div>
+</div>
+
 </section>
 
 <section class="card">
 <h2>Ficha técnica</h2>
 <ul>
-<li><strong>Población:</strong> Adultos 18–45 años con dolor lumbar crónico inespecífico.</li>
-<li><strong>Intervención:</strong> 4 semanas, 3 sesiones/semana. CSE con o sin BFR (80% AOP en muslo).</li>
+<li><strong>Población:</strong> Adultos (18–65 años) con dolor lumbar irradiado, candidatos a cirugía lumbar.</li>
+<li><strong>Intervención:</strong> Dos sesiones perioperatorias de Pain Neuroscience Education vs Back School Education.</li>
 <li><strong>Resultados clave:</strong>
   <ul>
-    <li>Aumento EMG TrA, MF y Gmax solo en grupo BFR+CSE.</li>
-    <li>Incremento de grosor muscular en reposo y contracción superior con BFR.</li>
-    <li>Reducción mayor de discapacidad (MODQ) con BFR+CSE.</li>
+    <li>Reducción de amplitud de potenciales evocados durante CPM en nervio sural no sintomático.</li>
+    <li>Ausencia de diferencias entre PPNE y PBSE.</li>
+    <li>Mejoras clínicas similares en dolor en ambos grupos.</li>
   </ul>
 </li>
 </ul>
@@ -194,17 +219,17 @@ footer{
 <section class="card">
 <h2>Análisis crítico</h2>
 <p>
-El estudio presenta un diseño sólido para una intervención de corta duración, con medidas instrumentales fiables. Sin embargo, la edad media de la muestra (~20 años) introduce un sesgo de validez externa importante, alejándose del perfil clínico habitual del dolor lumbar crónico.
+El estudio explora si la educación en neurociencia del dolor produce cambios corticales medibles en un contexto perioperatorio. Aunque el uso de EEG y CPM añade sofisticación metodológica, introduce una distancia clara respecto a la experiencia clínica del paciente.
 </p>
 <p>
-El incremento de actividad EMG y grosor muscular no puede interpretarse directamente como mejora de fuerza, control motor o función. EMG refleja activación, no eficiencia ni coordinación, y el aumento de grosor no garantiza transferencia funcional ni reducción sostenida del dolor.
+El tamaño muestral reducido limita severamente la potencia estadística para detectar efectos neurofisiológicos sutiles. Además, el análisis restringido al electrodo Cz y al dominio temporal puede pasar por alto adaptaciones distribuidas o no fase-bloqueadas.
 </p>
 <p>
-El mecanismo propuesto de “efecto sistémico” del BFR es plausible pero sigue siendo indirecto. El diseño no permite aislar si la mejora se debe al estrés metabólico, a la novedad del estímulo o a un mayor compromiso atencional del paciente.
+La ausencia de diferencias en potenciales evocados no invalida el valor clínico de la PNE, pero sí cuestiona expectativas de cambios neurofisiológicos rápidos tras intervenciones educativas breves en un entorno quirúrgico complejo.
 </p>
 
 <div class="highlight">
-<strong>El estudio aporta evidencia</strong> preliminar de que el BFR puede potenciar respuestas neuromusculares durante ejercicios de baja carga, pero no demuestra superioridad funcional ni efectos a largo plazo clínicamente decisivos.
+<strong>El estudio aporta evidencia</strong> de que la PNE perioperatoria no se asocia a cambios detectables en potenciales evocados EEG durante CPM a corto plazo, reforzando una interpretación prudente de los biomarcadores neurofisiológicos.
 </div>
 </section>
 
@@ -212,33 +237,33 @@ El mecanismo propuesto de “efecto sistémico” del BFR es plausible pero sigu
 <h2>Aplicabilidad clínica</h2>
 <ul>
 <li><strong>Electrólisis Percutánea:</strong> No evaluada. No extrapolable.</li>
-<li><strong>Neuromodulación:</strong> No evaluada. Mecanismos distintos.</li>
-<li><strong>Punción seca:</strong> No evaluada. Sin relación directa.</li>
-<li><strong>Ejercicio terapéutico / BFR:</strong> Útil como modulador de carga en fases tempranas o pacientes con intolerancia mecánica, siempre como complemento, no sustituto.</li>
+<li><strong>Neuromodulación:</strong> Interés teórico, sin efectos demostrados en EEG.</li>
+<li><strong>Punción seca:</strong> No relacionada.</li>
+<li><strong>Ejercicio terapéutico:</strong> La PNE puede facilitar afrontamiento y adherencia, pero no sustituye la progresión de carga.</li>
 </ul>
 </section>
 
 <section class="card quiz">
 <h2>Quiz formativo</h2>
 
-<p><strong>1. ¿Un aumento de EMG implica mayor fuerza?</strong></p>
-<button onclick="feedback(this,false,'Incorrecto.','EMG refleja activación, no fuerza máxima.','Clínicamente no equivale a mejor función.')">Sí</button>
-<button onclick="feedback(this,true,'Correcto.','EMG ≠ fuerza.','Evita extrapolar activación a rendimiento.')">No</button>
+<p><strong>1. ¿La ausencia de cambios en EEG invalida la PNE?</strong></p>
+<button onclick="feedback(this,false,'Incorrecto.','EEG es un marcador indirecto.','La utilidad clínica no depende de cambios corticales medibles.')">Sí</button>
+<button onclick="feedback(this,true,'Correcto.','Neurofisiología ≠ experiencia clínica.','No confundas biomarcadores con resultados funcionales.')">No</button>
 <div class="feedback"></div>
 
-<p><strong>2. ¿El grosor muscular ecográfico garantiza reducción del dolor?</strong></p>
-<button onclick="feedback(this,false,'Incorrecto.','La relación estructura-dolor es débil.','No presumas efecto analgésico directo.')">Sí</button>
-<button onclick="feedback(this,true,'Correcto.','Estructura ≠ síntoma.','Prioriza resultados funcionales.')">No</button>
+<p><strong>2. ¿El CPM refleja directamente la función diaria del paciente?</strong></p>
+<button onclick="feedback(this,false,'Incorrecto.','CPM es un paradigma experimental.','No equivale a dolor funcional.')">Sí</button>
+<button onclick="feedback(this,true,'Correcto.','Es un marcador experimental.','Evita extrapolaciones clínicas directas.')">No</button>
 <div class="feedback"></div>
 
-<p><strong>3. ¿El BFR sustituye al ejercicio progresivo?</strong></p>
-<button onclick="feedback(this,false,'Incorrecto.','Es una herramienta, no un reemplazo.','Debe integrarse progresivamente.')">Sí</button>
-<button onclick="feedback(this,true,'Correcto.','Complemento, no sustituto.','Evita dependencia del BFR.')">No</button>
+<p><strong>3. ¿Un subanálisis EEG tiene el mismo peso que un endpoint primario?</strong></p>
+<button onclick="feedback(this,false,'Incorrecto.','Diseño exploratorio.','Menor potencia y mayor incertidumbre.')">Sí</button>
+<button onclick="feedback(this,true,'Correcto.','Subanálisis ≠ endpoint primario.','Interpreta con cautela.')">No</button>
 <div class="feedback"></div>
 
-<p><strong>4. ¿La población del estudio limita la generalización?</strong></p>
-<button onclick="feedback(this,true,'Correcto.','Muestra joven.','Cautela en pacientes mayores.')">Sí</button>
-<button onclick="feedback(this,false,'Incorrecto.','Edad condiciona respuesta.','No extrapoles sin criterio.')">No</button>
+<p><strong>4. ¿La PNE debe juzgarse solo por cambios neurofisiológicos?</strong></p>
+<button onclick="feedback(this,true,'Correcto.','La clínica es multifactorial.','Prioriza resultados relevantes para el paciente.')">No</button>
+<button onclick="feedback(this,false,'Incorrecto.','Reducirla al EEG es un error.','La educación actúa en múltiples niveles.')">Sí</button>
 <div class="feedback"></div>
 
 </section>
