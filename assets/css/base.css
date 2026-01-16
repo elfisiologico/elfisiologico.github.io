@@ -84,31 +84,30 @@ nav a {
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: var(--shadow);
-  transition: transform .2s ease, border-color .2s ease;
-}
-
-.card:hover {
-  border-color: var(--accent);
-  transform: translateY(-4px);
 }
 
 /* ---------- Categorías: tarjetas de artículo ---------- */
-.article-link {
-  display: block;
-  color: inherit;
-}
-
 .article-card {
+  position: relative;                 /* delimita hitbox */
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1.2rem;
   margin-bottom: 1rem;
-  transition: border-color .2s ease;
+  transition: border-color .2s ease, transform .2s ease;
 }
 
-.article-link:hover .article-card {
+.article-card:hover {
   border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Enlace interno seguro: toda la tarjeta clicable SIN envolver el article */
+.article-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
 }
 
 .article-card-header {
