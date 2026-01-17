@@ -1,7 +1,7 @@
 /* =========================================================
    EL FISIOLÓGICO · BASE CSS (DEFINITIVO)
    Contrato visual único del repositorio
-   Versión: v1.0 · 2026-01-17
+   Versión: v1.1 · 2026-01-17
    ========================================================= */
 
 /* -----------------------------
@@ -193,7 +193,6 @@ p{ margin:0 0 var(--space-3); }
   z-index: 2;
 }
 
-/* Stretched link seguro */
 .stretched-link::after{
   content:"";
   position:absolute;
@@ -201,20 +200,15 @@ p{ margin:0 0 var(--space-3); }
   z-index:1;
 }
 
-/* Descripción */
 .article-card-desc{
   color:var(--muted);
   font-size:.96rem;
 }
 
-/* Score */
 .article-card-score{
-  position:relative;
-  z-index: 2;
-
   display:flex;
-  align-items:baseline;
-  gap:.2rem;
+  align-items:center;
+  gap:.25rem;
 
   font-family: var(--font-mono);
   color: var(--accent);
@@ -250,16 +244,19 @@ p{ margin:0 0 var(--space-3); }
   color: var(--accent);
   border:1px solid rgba(252,191,6,.6);
   background: rgba(252,191,6,.07);
-  padding:.85rem 1.05rem;
   border-radius: 12px;
 
   display:flex;
-  align-items:baseline;
-  gap:.25rem;
+  align-items:center;
+  justify-content:center;
+  gap:.35rem;
+
+  padding: .9rem 1.1rem;
+  white-space: nowrap;
 }
 
-.score-number{ font-size:1.65rem; font-weight:900; }
-.score-total{ font-size:1.1rem; font-weight:800; }
+.score-number{ font-size:1.65rem; font-weight:900; line-height:1; }
+.score-total{ font-size:1.1rem; font-weight:800; line-height:1; }
 
 /* -----------------------------
    10) TABLES
@@ -286,6 +283,13 @@ p{ margin:0 0 var(--space-3); }
   font-family: var(--font-mono);
   color:var(--accent);
   font-weight:800;
+}
+
+.methodology-table th:nth-child(2),
+.methodology-table td:nth-child(2){
+  white-space: nowrap;
+  min-width: 110px;
+  text-align: center;
 }
 
 /* -----------------------------
@@ -335,8 +339,22 @@ p{ margin:0 0 var(--space-3); }
   color: var(--text);
 }
 
+.quiz-wrap .fb{
+  display:none;
+  margin-top: var(--space-3);
+}
+
+.quiz-wrap .q.is-done .fb{
+  display:block;
+}
+
+.quiz-wrap .q.is-done .opts button{
+  pointer-events:none;
+  opacity:.85;
+}
+
 /* -----------------------------
-   13) FOOTER (ÚNICO)
+   13) FOOTER
 ----------------------------- */
 .footer{
   margin-top: var(--space-6);
