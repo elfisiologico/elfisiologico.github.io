@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
@@ -8,125 +8,84 @@
   <meta name="description" content="Categoría BFR: análisis crítico de la evidencia científica sobre entrenamiento con restricción del flujo sanguíneo en fisioterapia y ejercicio terapéutico." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Fonts -->
+  <!-- Fonts (si en el futuro quieres “cero dependencias”, se puede auto-hostear) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Base CSS -->
+  <!-- Base CSS (CONTRATO ÚNICO) -->
   <link rel="stylesheet" href="../assets/css/base.css">
-
-  <!-- Estilos específicos de categoría -->
-  <style>
-    .article-link{
-      display:block;
-      color:inherit;
-      text-decoration:none;
-    }
-
-    .article-card-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1rem;
-    }
-
-    .score-badge{
-      font-family:var(--font-mono);
-      font-size:.85rem;
-      font-weight:600;
-      color:var(--accent);
-      border:1px solid var(--accent);
-      padding:.25rem .5rem;
-      border-radius:4px;
-      white-space:nowrap;
-    }
-  </style>
 </head>
 
 <body>
 
-<!-- HEADER GLOBAL -->
-<header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
-  <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
-    
-    <a href="../categorias/index.html">
-      <span style="font-weight:700;">Fisio</span>
-      <span style="font-weight:700; color:#FCBF06;">Lógico</span>
-    </a>
-
-    <span class="mono muted" style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">
-      Categoría
-    </span>
-  </div>
-</header>
-
-<main>
-
-  <!-- Navegación -->
-  <nav style="margin-bottom:2.5rem;">
-    <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
-  </nav>
-
-  <!-- Header editorial -->
-  <header style="margin-bottom:3rem;">
-    <h1>BFR</h1>
-    <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Análisis crítico del entrenamiento con restricción del flujo sanguíneo (Blood Flow Restriction)
-      y su aplicación clínica en fisioterapia, dolor y readaptación funcional.
-    </p>
+  <!-- HEADER GLOBAL (CANÓNICO) -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="../index.html" aria-label="Volver al repositorio">
+        <span class="brand-a">Fisio</span><span class="brand-b">Lógico</span>
+      </a>
+      <span class="page-kicker">Categoría</span>
+    </div>
   </header>
 
-  <!-- Marco clínico -->
-  <section class="card">
-    <h2>Marco clínico</h2>
-    <p>
-      El entrenamiento con restricción del flujo sanguíneo permite inducir adaptaciones musculares
-      con cargas bajas, siendo una herramienta de interés en rehabilitación, dolor persistente
-      y fases tempranas de readaptación funcional.
-    </p>
-    <p>
-      Esta categoría recoge artículos analizados desde una perspectiva crítica, priorizando
-      transferencia clínica real y evitando interpretaciones promocionales.
-    </p>
-  </section>
+  <main class="container">
 
-  <!-- Artículos -->
-  <section class="card">
-    <h2>Artículos disponibles</h2>
-    <!-- ARTÍCULO 0 (RUTA CORREGIDA) -->
+    <!-- Navegación -->
+    <nav class="back-nav">
+      <a href="../index.html">← Volver al repositorio</a>
+    </nav>
 
-    <!-- =========================================================
-TARJETA DE ARTÍCULO · CATEGORÍA: BFR
-========================================================= -->
-<article class="article-card">
-  <div class="article-card-content">
-    <h3>
-      <a href="../articulos/bfr/efectos-bfr-vs-alta-carga-activacion-neuromuscular-2026.html">
-        Effects of Low-Load Blood-Flow Restriction Training Versus High-Load Resistance Training on Neuromuscular Performance and Neuromuscular Activation
-      </a>
-    </h3>
-    <p>
-      Ensayo clínico aleatorizado que compara 8 semanas de entrenamiento con restricción del flujo sanguíneo a baja carga frente a entrenamiento tradicional de alta carga en adultos de mediana edad, con foco en activación voluntaria, fuerza máxima, RFD y transferencia funcional.
-    </p>
-  </div>
-  <div class="article-card-score">
-    <span class="score-value">24</span>
-    <span class="score-max">/30</span>
-  </div>
-</article>
+    <!-- Hero editorial -->
+    <header class="page-hero">
+      <h1>BFR</h1>
+      <p>
+        Análisis crítico del entrenamiento con restricción del flujo sanguíneo (Blood Flow Restriction)
+        y su aplicación clínica en fisioterapia, dolor y readaptación funcional.
+      </p>
+    </header>
 
+    <!-- Marco clínico -->
+    <section class="card">
+      <h2>Marco clínico</h2>
+      <p>
+        El entrenamiento con restricción del flujo sanguíneo permite inducir adaptaciones musculares
+        con cargas bajas, siendo una herramienta de interés en rehabilitación, dolor persistente
+        y fases tempranas de readaptación funcional.
+      </p>
+      <p>
+        Esta categoría recoge artículos analizados desde una perspectiva crítica, priorizando
+        transferencia clínica real y evitando interpretaciones promocionales.
+      </p>
+    </section>
 
-    <!-- ARTÍCULO 0 (RUTA CORREGIDA) -->
-    
+    <!-- Artículos -->
+    <section class="card">
+      <h2>Artículos disponibles</h2>
 
-  </section>
+      <article class="article-card">
+        <h3 class="article-card-title">
+          <a class="stretched-link" href="../articulos/bfr/efectos-bfr-vs-alta-carga-activacion-neuromuscular-2026.html">
+            Effects of Low-Load Blood-Flow Restriction Training Versus High-Load Resistance Training on Neuromuscular Performance and Neuromuscular Activation
+          </a>
+        </h3>
 
-</main>
+        <p class="article-card-desc">
+          Ensayo clínico aleatorizado que compara 8 semanas de entrenamiento con restricción del flujo sanguíneo a baja carga frente a entrenamiento tradicional de alta carga en adultos de mediana edad, con foco en activación voluntaria, fuerza máxima, RFD y transferencia funcional.
+        </p>
 
-<footer>
-© El FisioLógico · Categoría BFR
-</footer>
+        <div class="article-card-score" aria-label="Puntuación metodológica">
+          <span class="score-value">24</span><span class="score-max">/30</span>
+        </div>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      © El FisioLógico · Repositorio científico en fisioterapia
+    </footer>
+
+  </main>
 
 </body>
 </html>
