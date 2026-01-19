@@ -222,4 +222,64 @@
       </div>
 
       <div class="q">
-        <p class="q-title"><strong>4. ¿Puede el BFR considerarse equivalente al entrenamient
+        <p class="q-title"><strong>4. ¿Puede el BFR considerarse equivalente al entrenamiento de alta carga?</strong></p>
+
+        <div class="opts">
+          <button data-correct="false">Sí, en todos los contextos.</button>
+          <button data-correct="true">No, solo como estrategia contextual.</button>
+          <button data-correct="false">Solo para adaptaciones neurales.</button>
+        </div>
+
+        <div class="fb">
+          <div class="fb-box ok">
+            <p><strong>Correcto.</strong></p>
+            <p>El BFR es una herramienta, no un sustituto.</p>
+            <p>Debe usarse con criterios clínicos claros.</p>
+          </div>
+
+          <div class="fb-box ko">
+            <p><strong>Incorrecto.</strong></p>
+            <p>Extrapola indebidamente los resultados.</p>
+            <p>Puede limitar la recuperación funcional a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © El FisioLógico · Repositorio científico en fisioterapia
+</footer>
+
+<script>
+(function () {
+  const questions = document.querySelectorAll(".quiz-wrap .q");
+  if (!questions.length) return;
+
+  questions.forEach(q => {
+    const buttons = q.querySelectorAll(".opts button");
+    const ok = q.querySelector(".fb-box.ok");
+    const ko = q.querySelector(".fb-box.ko");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (q.classList.contains("is-done")) return;
+
+        q.classList.add("is-done");
+
+        if (btn.dataset.correct === "true") {
+          ok.classList.add("show");
+        } else {
+          ko.classList.add("show");
+        }
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
