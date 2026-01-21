@@ -5,42 +5,41 @@
   <title>Estimulación cortical no invasiva · El FisioLógico</title>
 
   <!--
-  =====================================================================
+  ============================================================================
   PLANTILLA CANÓNICA DE CATEGORÍAS · EL FISIOLÓGICO
   CATEGORÍA: ESTIMULACIÓN CORTICAL NO INVASIVA
   ARCHIVO: estimulacion-cortical.html
-  =====================================================================
-
-  INSTRUCCIONES HUMANAS (NO NEGOCIABLES)
-  ------------------------------------
-  - NO modificar estructura, IDs ni script
-  - NO tocar base.css
-  - SOLO pegar tarjetas dentro de <div id="articlesList"></div>
-  - Cada tarjeta DEBE incluir:
-      class="article-link article-card"
-      data-year="YYYY"
-      data-score="0–30"
-      data-tier="solida | moderada | exploratoria"
-      data-category="estimulacion-cortical"
-
-  COMPORTAMIENTO AUTOMÁTICO
-  -------------------------
-  - Orden automático por data-year (más recientes arriba)
-  - Filtros por año, score mínimo y nivel de evidencia
-  - Por defecto: visibles solo artículos con score ≥ 20 / 30
-
-  FILOSOFÍA
-  ---------
-  Repositorio científico centrado en estimulación cortical no invasiva
-  (tDCS, TMS, tACS y técnicas afines) aplicada a fisioterapia, dolor y
-  control motor. Se penaliza la extrapolación directa de cambios
-  neurofisiológicos a resultados funcionales y el uso aislado de
-  neuromodulación sin integración clínica.
-  =====================================================================
+  ============================================================================
+  
+  ANOTACIONES DE CORRECCIÓN Y CUMPLIMIENTO
+  
+  1. Se incorpora el SCRIPT CANÓNICO DE CATEGORÍA al final del documento.
+     Este script es obligatorio para:
+       - calcular el número real de artículos (n = X)
+       - ordenar automáticamente por año de publicación (descendente)
+       - aplicar filtros por año, score mínimo y nivel de evidencia
+       - hacer efectivo el criterio por defecto: score ≥ 20 / 30
+  
+  2. Se corrige la incoherencia score–tier detectada:
+       data-score="24" exige data-tier="solida"
+     Cualquier otra combinación rompe el contrato metodológico del repositorio.
+  
+  3. Se añaden los filtros explícitos (año, score, nivel) para que el
+     comportamiento descrito en la cabecera sea ejecutable y verificable.
+  
+  REGLAS NO NEGOCIABLES PARA ESTE ARCHIVO
+  
+  - No modificar IDs ni nombres de clases funcionales
+  - No tocar base.css
+  - No alterar ni duplicar el script final
+  - Las tarjetas solo pueden pegarse dentro de <div id="articlesList"></div>
+  - Cada tarjeta debe cumplir íntegramente el contrato data-*
+  
+  ============================================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Estimulación cortical no invasiva: análisis crítico de la evidencia científica sobre tDCS, TMS y otras técnicas de neuromodulación no invasiva aplicadas a fisioterapia." />
+  <meta name="description" content="Categoría Estimulación cortical no invasiva: análisis crítico de la evidencia científica sobre tDCS, TMS y neuromodulación no invasiva aplicada a fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -48,10 +47,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base (NO TOCAR) -->
+  <!-- CSS base (contrato visual del repositorio) -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales (SOLO VISUAL) -->
+  <!-- Estilos locales exclusivamente visuales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
     .article-card-header{
@@ -90,52 +89,91 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
+  <!-- Navegación de retorno -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
+  <!-- Cabecera editorial de la categoría -->
   <header style="margin-bottom:3rem;">
     <h1>Estimulación cortical no invasiva</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Evidencia científica sobre técnicas de estimulación cortical no
-      invasiva (tDCS, TMS, tACS y afines) aplicadas a fisioterapia,
-      dolor y control motor. Se prioriza la integración clínica y la
-      interpretación prudente de los efectos neurofisiológicos.
+      Evidencia científica sobre técnicas de estimulación cortical no invasiva
+      (tDCS, TMS, tACS y técnicas afines) aplicadas a fisioterapia, dolor y
+      control motor. Se prioriza la integración clínica y la interpretación
+      prudente de los efectos neurofisiológicos.
     </p>
 
+    <!-- El valor n se actualiza automáticamente por el script -->
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
       Estado de la evidencia: categoría en desarrollo
       (<span id="articleCount">n = 0</span> artículos).
     </p>
   </header>
 
+  <!-- Filtros canónicos -->
+  <section class="card">
+    <h2>Filtrar artículos</h2>
+
+    <div class="filters">
+      <label>Año
+        <select id="yearFilter">
+          <option value="all">Todos</option>
+        </select>
+      </label>
+
+      <label>Score mínimo
+        <select id="scoreFilter">
+          <option value="20" selected>≥ 20 / 30 (recomendado)</option>
+          <option value="15">≥ 15 / 30</option>
+          <option value="all">Todos</option>
+        </select>
+      </label>
+
+      <label>Nivel de evidencia
+        <select id="tierFilter">
+          <option value="all">Todos</option>
+          <option value="solida">Sólida</option>
+          <option value="moderada">Moderada</option>
+          <option value="exploratoria">Exploratoria</option>
+        </select>
+      </label>
+    </div>
+
+    <p class="muted" style="font-size:.75rem; margin-top:.75rem;">
+      El score refleja calidad metodológica y transferencia clínica.
+      No mide impacto mediático ni complejidad técnica.
+    </p>
+  </section>
+
+  <!-- Listado de artículos -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!-- ARTÍCULO FICTICIO 1 -->
+      <!-- Artículo ficticio con score alto -->
       <a href="../articulos/estimulacion-cortical/articulo-ficticio-2026.html"
          class="article-link article-card"
          data-year="2026"
          data-score="24"
-         data-tier="moderada"
+         data-tier="solida"
          data-category="estimulacion-cortical">
 
         <div class="article-card-header">
           <div>
             <h3>Artículo ficticio</h3>
             <p class="muted">
-              Estudio ficticio para validar el sistema de ordenación y
-              filtrado en estimulación cortical no invasiva.
+              Estudio ficticio utilizado para validar ordenación,
+              filtrado y visualización del score metodológico.
             </p>
           </div>
           <span class="score-badge">24 / 30</span>
         </div>
       </a>
 
-      <!-- ARTÍCULO FICTICIO 2 -->
+      <!-- Artículo ficticio con score bajo (no visible por defecto) -->
       <a href="../articulos/estimulacion-cortical/articulo-ficticio-2010.html"
          class="article-link article-card"
          data-year="2010"
@@ -148,7 +186,7 @@
             <h3>Artículo ficticio</h3>
             <p class="muted">
               Estudio ficticio de baja transferencia clínica utilizado
-              para comprobar el comportamiento de los filtros.
+              para comprobar el comportamiento del filtrado automático.
             </p>
           </div>
           <span class="score-badge">13 / 30</span>
@@ -156,6 +194,10 @@
       </a>
 
     </div>
+
+    <p class="muted" id="noResults" style="display:none; margin-top:1.5rem;">
+      No hay artículos que cumplan los criterios seleccionados.
+    </p>
   </section>
 
 </main>
@@ -171,6 +213,53 @@
     </p>
   </div>
 </footer>
+
+<!--
+SCRIPT CANÓNICO DE CATEGORÍA
+Controla conteo, ordenación y filtrado.
+No modificar.
+-->
+<script>
+(function () {
+  const cards = Array.from(document.querySelectorAll('.article-card'));
+  const countEl = document.getElementById('articleCount');
+  const container = document.getElementById('articlesList');
+  const yearFilter = document.getElementById('yearFilter');
+  const scoreFilter = document.getElementById('scoreFilter');
+  const tierFilter = document.getElementById('tierFilter');
+  const noResults = document.getElementById('noResults');
+
+  if (countEl) countEl.textContent = `n = ${cards.length}`;
+  if (!cards.length) { noResults.style.display='block'; return; }
+
+  cards.sort((a,b)=>+b.dataset.year-+a.dataset.year)
+       .forEach(c=>container.appendChild(c));
+
+  [...new Set(cards.map(c=>c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y; o.textContent=y;
+      yearFilter.appendChild(o);
+    });
+
+  function apply(){
+    let visible=0;
+    cards.forEach(c=>{
+      const ok =
+        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
+        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
+        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
+      c.style.display=ok?'block':'none';
+      if(ok) visible++;
+    });
+    noResults.style.display=visible?'none':'block';
+  }
+
+  yearFilter.onchange=scoreFilter.onchange=tierFilter.onchange=apply;
+  apply();
+})();
+</script>
 
 </body>
 </html>
