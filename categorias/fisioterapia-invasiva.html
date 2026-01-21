@@ -14,19 +14,22 @@
     - NO modificar la estructura del documento
     - NO tocar base.css
     - NO alterar el script final
-    - Las TARJETAS DE ARTÍCULOS se pegan
-      ÚNICAMENTE dentro del div id="articlesList"
-    - Esta categoría INCLUYE exclusivamente técnicas
-      con penetración tisular:
+    - Pegar TARJETAS ÚNICAMENTE dentro de:
+        <div id="articlesList"></div>
+    - INCLUIR solo estudios con penetración tisular:
         · punción seca
         · electrólisis percutánea
-        · técnicas percutáneas guiadas
-    - La invasividad DEFINE la categoría
+        · técnicas invasivas guiadas o no por imagen
+    - La INVASIVIDAD define la categoría
+    - EXCLUIR:
+        · terapia manual no invasiva
+        · electroterapia superficial
+        · estudios teóricos sin intervención clínica
     =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Fisioterapia invasiva: análisis crítico de la evidencia científica sobre punción seca, electrólisis percutánea y técnicas invasivas aplicadas a fisioterapia." />
+  <meta name="description" content="Categoría Fisioterapia invasiva: análisis crítico de la evidencia científica sobre punción seca, electrólisis y técnicas percutáneas aplicadas a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -105,9 +108,9 @@
     <h1>Fisioterapia invasiva</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría agrupa estudios donde la intervención implica penetración
-      tisular con fines terapéuticos. La inclusión se define por la invasividad,
-      no por el tejido tratado ni por la narrativa fisiológica asociada.
+      Esta categoría agrupa estudios que emplean técnicas con penetración tisular
+      como punción seca o electrólisis percutánea. La evaluación se centra en
+      seguridad, efectos clínicos reales y coherencia con los mecanismos propuestos.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -142,8 +145,8 @@
     </div>
 
     <p class="filters-note">
-      El score metodológico penaliza especialmente outcomes surrogate
-      y extrapolaciones mecanicistas sin impacto clínico directo.
+      El score penaliza estudios sin comparador adecuado,
+      sin medidas clínicas directas o con interpretación mecanicista no demostrada.
     </p>
   </section>
 
@@ -151,29 +154,26 @@
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
       <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
-        data-year="2024"
-        data-score="19"
+        data-year="2023"
+        data-score="18"
         data-tier="moderada"
         data-category="fisioterapia-invasiva">
 
-        <a class="article-link" href="../articulos/fisioterapia-invasiva/percutaneous-electrolysis-achilles-2024.html">
-
-          <span class="recommended-tag">Recomendado</span>
+        <a class="article-link" href="../articulos/fisioterapia-invasiva/dry-needling-vs-sham-shoulder-pain-2023.html">
 
           <div class="article-card-header">
-            <h3>Ultrasound-guided percutaneous electrolysis for chronic Achilles tendinopathy</h3>
-            <span class="score-badge">19 / 30</span>
+            <h3>Dry needling versus sham intervention for shoulder pain: randomized controlled trial</h3>
+            <span class="score-badge">18 / 30</span>
           </div>
 
           <p>
-            Ensayo controlado que evalúa electrólisis percutánea ecoguiada.
-            Mejora moderada del dolor frente a control activo,
-            con incertidumbre en mecanismos tisulares propuestos.
+            Ensayo aleatorizado que compara punción seca frente a intervención simulada.
+            Resultados modestos sobre dolor a corto plazo, con transferencia clínica
+            limitada por tamaño muestral y seguimiento breve.
           </p>
 
         </a>
@@ -185,8 +185,8 @@
     </div>
 
     <p class="no-results" id="noResults">
-      Solo se incorporan estudios con definición clara de la técnica invasiva
-      y outcomes clínicos interpretables.
+      Solo se incluyen estudios con técnicas invasivas reales
+      y resultados clínicamente interpretables.
     </p>
   </section>
 
