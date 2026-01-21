@@ -2,122 +2,88 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Ejercicio Terapéutico · El FisioLógico</title>
+  <title>Ejercicio terapéutico · El FisioLógico</title>
 
   <!--
-    ========================================================
-    CATEGORÍA: EJERCICIO TERAPÉUTICO
+    =========================================================
+    PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
+    Categoría: EJERCICIO TERAPÉUTICO
     Archivo: ejercicio.html
 
     INSTRUCCIONES PARA HUMANOS:
-    - Este archivo define SOLO la categoría
-    - NO modificar base.css
-    - Las tarjetas de artículos se añaden MANUALMENTE más abajo
-    ========================================================
+    - NO modificar la estructura del documento
+    - NO tocar base.css
+    - NO alterar el script final
+    - Las TARJETAS DE ARTÍCULOS se pegan
+      ÚNICAMENTE dentro del div id="articlesList"
+    =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Análisis crítico de la evidencia científica sobre ejercicio terapéutico en fisioterapia clínica." />
+  <meta name="description" content="Categoría Ejercicio terapéutico: análisis crítico de la evidencia científica sobre ejercicio dosificado y progresado aplicado a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Tipografías corporativas -->
+  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS BASE DEL PROYECTO (NO TOCAR) -->
+  <!-- CSS base -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- ESTILOS LOCALES DE CATEGORÍA -->
+  <!-- Estilos locales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1rem;
+      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
     }
-
     .score-badge{
-      font-family:var(--font-mono);
-      font-size:.85rem;
-      font-weight:600;
-      color:var(--accent);
-      border:1px solid var(--accent);
-      padding:.25rem .5rem;
-      border-radius:4px;
-      white-space:nowrap;
+      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
+      color:var(--accent); border:1px solid var(--accent);
+      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
-    .filters{
-      display:flex;
-      gap:1.5rem;
-      flex-wrap:wrap;
-      margin-bottom:.75rem;
-    }
-
+    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
     .filters label{
-      display:flex;
-      flex-direction:column;
-      gap:.35rem;
-      font-family:var(--font-mono);
-      font-size:.75rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+      display:flex; flex-direction:column; gap:.35rem;
+      font-family:var(--font-mono); font-size:.75rem;
+      letter-spacing:.08em; text-transform:uppercase;
     }
-
     .filters select{
-      background:#0f0f0f;
-      color:#fff;
-      border:1px solid #2a2a2a;
-      padding:.45rem .6rem;
-      border-radius:4px;
-      font-family:'Inter', sans-serif;
-      font-size:.85rem;
+      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
+      padding:.45rem .6rem; border-radius:4px;
+      font-family:'Inter', sans-serif; font-size:.85rem;
     }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
-      font-size:.75rem;
-      color:var(--muted);
-      max-width:720px;
-      line-height:1.4;
+      font-size:.75rem; color:var(--muted);
+      max-width:720px; line-height:1.4;
     }
-
     .recommended-tag{
-      display:inline-block;
-      font-size:.65rem;
-      font-family:var(--font-mono);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#000;
-      background:var(--accent);
-      padding:.15rem .35rem;
-      border-radius:3px;
-      margin-bottom:.35rem;
+      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
+      letter-spacing:.08em; text-transform:uppercase;
+      color:#000; background:var(--accent);
+      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
     }
-
     .no-results{
-      display:none;
-      font-size:.9rem;
-      color:var(--muted);
-      margin-top:.5rem;
-      max-width:720px;
+      display:none; font-size:.9rem; color:var(--muted);
+      margin-top:1.5rem; max-width:720px; line-height:1.5;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER GLOBAL (NO MODIFICAR) -->
+<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
-  <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between;">
+  <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
-      <strong>Fisio</strong><strong style="color:#FCBF06;">Lógico</strong>
+      <span style="font-weight:700;">Fisio</span>
+      <span style="font-weight:700; color:#FCBF06;">Lógico</span>
     </a>
-    <span class="mono muted" style="font-size:.75rem;">Categoría</span>
+    <span class="mono muted" style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">
+      Categoría
+    </span>
   </div>
 </header>
 
@@ -128,23 +94,20 @@
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!--
-    ========================================================
-    BLOQUE EDITORIAL DE LA CATEGORÍA
-    EDITAR SOLO TEXTO (NO ESTRUCTURA)
-    ========================================================
-  -->
+  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
-    <h1>Ejercicio Terapéutico</h1>
+    <h1>Ejercicio terapéutico</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Análisis crítico de la evidencia científica sobre ejercicio terapéutico como
-      intervención principal en fisioterapia, incluyendo dosificación, progresión,
-      carga y transferencia funcional real.
+      Esta categoría incluye estudios donde el ejercicio es la intervención principal,
+      correctamente dosificada y progresada. Se priorizan outcomes clínicos (función,
+      dolor, discapacidad) y se penalizan inferencias basadas exclusivamente en variables
+      surrogate o protocolos sin control de carga.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo
+      (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
@@ -154,11 +117,8 @@
 
     <div class="filters">
       <label>Año
-        <select id="yearFilter">
-          <option value="all">Todos</option>
-        </select>
+        <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
       <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
@@ -166,7 +126,6 @@
           <option value="all">Todos</option>
         </select>
       </label>
-
       <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
@@ -178,61 +137,61 @@
     </div>
 
     <p class="filters-note">
-      El score metodológico gobierna la visibilidad de los artículos.
-      No refleja intensidad ni dificultad del ejercicio.
+      El score refleja calidad metodológica, control de carga y transferencia clínica,
+      no la intensidad percibida ni la novedad del programa.
     </p>
   </section>
 
-  <!--
-    ========================================================
-    LISTADO DE ARTÍCULOS
-    INSTRUCCIONES IMPORTANTES:
-    - INSERTAR AQUÍ nuevas tarjetas <article>
-    - CADA tarjeta debe incluir data-year, data-score y data-tier
-    - BORRAR el ejemplo ficticio cuando haya artículos reales
-    ========================================================
-  -->
-  <section class="card">
+  <!-- LISTADO -->
+  <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
+    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO · BORRAR -->
+      <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
         data-year="2024"
         data-score="22"
         data-tier="moderada"
         data-category="ejercicio">
 
-        <a class="article-link" href="#">
+        <a class="article-link" href="../articulos/ejercicio/progressive-resistance-exercise-knee-oa-2024.html">
           <span class="recommended-tag">Recomendado</span>
-
           <div class="article-card-header">
-            <h3>Ejercicio de fuerza progresivo en dolor lumbar crónico</h3>
+            <h3>Progressive resistance exercise for knee osteoarthritis: functional outcomes at 16 weeks</h3>
             <span class="score-badge">22 / 30</span>
           </div>
-
           <p>
-            Ensayo controlado con outcomes clínicos, limitaciones en control de cointervenciones
-            y seguimiento a corto plazo.
+            Ensayo controlado que evalúa ejercicio de fuerza progresivo en artrosis de rodilla.
+            Resultados funcionales clínicamente relevantes con adecuada dosificación y seguimiento.
           </p>
         </a>
       </article>
       <!-- FIN EJEMPLO -->
 
+      <!-- PEGAR AQUÍ TARJETAS REALES -->
+
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría se construirá progresivamente con análisis de alta transferencia clínica.
+      La categoría se ampliará con estudios que describan claramente dosis,
+      progresión y outcomes clínicos relevantes.
     </p>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
-  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
-    <strong>Fisio<span style="color:#FCBF06;">Lógico</span></strong>
-    <span class="muted" style="font-size:.75rem;">© El FisioLógico · Ejercicio Terapéutico</span>
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+    <div>
+      <span style="font-weight:600;">Fisio</span>
+      <span style="font-weight:600; color:#FCBF06;">Lógico</span>
+    </div>
+    <p class="muted" style="font-size:.75rem;">
+      © El FisioLógico · Categoría Ejercicio terapéutico
+    </p>
   </div>
 </footer>
 
@@ -240,8 +199,8 @@
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
-  document.getElementById('articleCount').textContent = cards.length;
-
+  const countEl = document.getElementById('articleCount');
+  if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
   const yearFilter = document.getElementById('yearFilter');
@@ -249,16 +208,14 @@
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  cards.sort((a,b)=>b.dataset.score-a.dataset.score);
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y; o.textContent=y; yearFilter.appendChild(o);
+    });
 
-  const years = [...new Set(cards.map(c=>c.dataset.year))].sort((a,b)=>b-a);
-  years.forEach(y=>{
-    const o=document.createElement('option');
-    o.value=y;o.textContent=y;
-    yearFilter.appendChild(o);
-  });
-
-  function apply(){
+  function applyFilters(){
     let visible=0;
     cards.forEach(c=>{
       const ok =
@@ -268,11 +225,11 @@
       c.style.display=ok?'block':'none';
       if(ok) visible++;
     });
-    noResults.style.display=visible?'none':'block';
+    noResults.style.display=visible? 'none':'block';
   }
 
-  yearFilter.onchange=scoreFilter.onchange=tierFilter.onchange=apply;
-  apply();
+  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
+  applyFilters();
 })();
 </script>
 
