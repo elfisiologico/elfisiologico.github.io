@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Dolor · El FisioLógico</title>
+
+  <!--
+    =========================================================
+    PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
+    Categoría: DOLOR
+    Archivo: dolor.html
+    =========================================================
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Categoría Dolor: análisis crítico de la evidencia científica en dolor musculoesquelético y persistente aplicado a la fisioterapia clínica." />
+  <meta name="author" content="El FisioLógico" />
+
+  <!-- Tipografías corporativas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS base del proyecto (NO MODIFICAR) -->
+  <link rel="stylesheet" href="../assets/css/base.css">
+
+  <!-- Estilos locales de categoría -->
+  <style>
+    .article-link{ display:block; color:inherit; text-decoration:none; }
+
+    .article-card-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:1rem;
+    }
+
+    .score-badge{
+      font-family:var(--font-mono);
+      font-size:.85rem;
+      font-weight:600;
+      color:var(--accent);
+      border:1px solid var(--accent);
+      padding:.25rem .5rem;
+      border-radius:4px;
+      white-space:nowrap;
+    }
+
+    header h1{ color:var(--accent); }
+
+    .filters{
+      display:flex;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:.75rem;
+    }
+
+    .filters label{
+      display:flex;
+      flex-direction:column;
+      gap:.35rem;
+      font-family:var(--font-mono);
+      font-size:.75rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .filters select{
+      background:#0f0f0f;
+      color:#fff;
+      border:1px solid #2a2a2a;
+      padding:.45rem .6rem;
+      border-radius:4px;
+      font-family:'Inter', sans-serif;
+      font-size:.85rem;
+    }
+
+    .filters select:focus{
+      outline:none;
+      border-color:var(--accent);
+    }
+
+    .filters-note{
+      font-size:.75rem;
+      color:var(--muted);
+      max-width:720px;
+      line-height:1.4;
+    }
+
+    .recommended-tag{
+      display:inline-block;
+      font-size:.65rem;
+      font-family:var(--font-mono);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#000;
+      background:var(--accent);
+      padding:.15rem .35rem;
+      border-radius:3px;
+      margin-bottom:.35rem;
+    }
+
+    .no-results{
+      display:none;
+      font-size:.9rem;
+      color:var(--muted);
+      margin-top:1.5rem;
+      max-width:720px;
+      line-height:1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER GLOBAL -->
+<header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
+  <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
+    <a href="../categorias/index.html" style="text-decoration:none;">
+      <span style="font-weight:700;">Fisio</span>
+      <span style="font-weight:700; color:#FCBF06;">Lógico</span>
+    </a>
+
+    <span class="mono muted" style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">
+      Categoría
+    </span>
+  </div>
+</header>
+
+<main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
+
+  <!-- NAVEGACIÓN -->
+  <nav style="margin-bottom:2.5rem;">
+    <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
+  </nav>
+
+  <!-- HEADER EDITORIAL -->
+  <header style="margin-bottom:3rem;">
+    <h1>Dolor</h1>
+
+    <p class="muted" style="max-width:720px; font-size:1.1rem;">
+      Esta categoría agrupa estudios centrados en dolor musculoesquelético, dolor persistente
+      y discapacidad asociada, analizados desde una perspectiva clínica y metodológica.
+      Se priorizan outcomes clínicos relevantes (dolor, función, discapacidad) y se penalizan
+      interpretaciones basadas únicamente en variables surrogate.
+    </p>
+
+    <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
+      Estado de la evidencia: categoría en desarrollo
+      (<span id="articleCount">n = 0</span> artículos).
+    </p>
+  </header>
+
+  <!-- FILTROS -->
+  <section class="card">
+    <h2>Filtrar artículos</h2>
+
+    <div class="filters">
+      <label>
+        Año
+        <select id="yearFilter">
+          <option value="all">Todos</option>
+        </select>
+      </label>
+
+      <label>
+        Score mínimo
+        <select id="scoreFilter">
+          <option value="20" selected>≥ 20 / 30 (recomendado)</option>
+          <option value="15">≥ 15 / 30</option>
+          <option value="all">Todos</option>
+        </select>
+      </label>
+
+      <label>
+        Nivel de evidencia
+        <select id="tierFilter">
+          <option value="all">Todos</option>
+          <option value="solida">Sólida</option>
+          <option value="moderada">Moderada</option>
+          <option value="exploratoria">Exploratoria</option>
+        </select>
+      </label>
+    </div>
+
+    <p class="filters-note">
+      El score metodológico refleja la calidad del diseño y la relevancia clínica real,
+      no la significación estadística aislada ni el tamaño del efecto sin contexto.
+    </p>
+  </section>
+
+  <!-- LISTADO DE ARTÍCULOS -->
+  <section class="card" id="articles">
+    <h2>Artículos disponibles</h2>
+
+    <!--
+      ZONA ÚNICA PARA INSERTAR TARJETAS
+      - Pegar aquí cada <article class="article-card"> real
+      - No tocar el id="articlesList"
+    -->
+    <div id="articlesList">
+
+      <!--
+        EJEMPLO DE TARJETA (FICTICIA) · SOLO PARA REFERENCIA
+        - Mantén este bloque como guía o elimínalo cuando añadas artículos reales
+        - Si lo dejas, recuerda que contará en n y aparecerá en filtros
+      -->
+      <article class="article-card"
+        data-year="2026"
+        data-score="21"
+        data-tier="moderada"
+        data-category="dolor">
+
+        <a class="article-link" href="../articulos/dolor/pain-education-vs-exercise-outcomes-2026.html">
+
+          <span class="recommended-tag">Recomendado</span>
+
+          <div class="article-card-header">
+            <h3>
+              Pain neuroscience education versus exercise therapy for persistent musculoskeletal pain: clinical outcomes at 12 weeks
+            </h3>
+            <span class="score-badge">21 / 30</span>
+          </div>
+
+          <p>
+            Ensayo controlado que compara educación en neurociencia del dolor frente a ejercicio terapéutico,
+            midiendo dolor y discapacidad. Resultados clínicos interpretables, con transferencia moderada
+            condicionada por dosis, adherencia y comparadores.
+          </p>
+
+        </a>
+      </article>
+
+      <!-- FIN DEL EJEMPLO -->
+
+      <!--
+        A PARTIR DE AQUÍ: PEGAR TARJETAS REALES (UNA POR ARTÍCULO)
+      -->
+
+    </div>
+
+    <p class="no-results" id="noResults">
+      Esta categoría se irá construyendo progresivamente a medida que se incorporen
+      análisis con resultados clínicos relevantes y razonamiento metodológico sólido.
+    </p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+    <div>
+      <span style="font-weight:600;">Fisio</span>
+      <span style="font-weight:600; color:#FCBF06;">Lógico</span>
+    </div>
+
+    <p class="muted" style="font-size:.75rem;">
+      © El FisioLógico · Categoría Dolor
+    </p>
+  </div>
+</footer>
+
+<!-- SCRIPT CANÓNICO -->
+<script>
+(function () {
+  const cards = Array.from(document.querySelectorAll('.article-card'));
+
+  const countEl = document.getElementById('articleCount');
+  if (countEl) countEl.textContent = `n = ${cards.length}`;
+
+  if (!cards.length) return;
+
+  const container = document.getElementById('articlesList');
+  const yearFilter = document.getElementById('yearFilter');
+  const scoreFilter = document.getElementById('scoreFilter');
+  const tierFilter = document.getElementById('tierFilter');
+  const noResults = document.getElementById('noResults');
+
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
+
+  [...new Set(cards.map(c=>c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y;
+      o.textContent=y;
+      yearFilter.appendChild(o);
+    });
+
+  function applyFilters(){
+    let visible=0;
+    cards.forEach(c=>{
+      const ok =
+        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
+        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
+        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
+      c.style.display=ok?'block':'none';
+      if(ok) visible++;
+    });
+    noResults.style.display=visible? 'none':'block';
+  }
+
+  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
+  applyFilters();
+})();
+</script>
+
+</body>
+</html>
