@@ -16,15 +16,11 @@
     - NO alterar el script final
     - Pegar TARJETAS ÚNICAMENTE dentro de:
         <div id="articlesList"></div>
-    - INCLUIR solo estudios con penetración tisular:
-        · punción seca
-        · electrólisis percutánea
-        · técnicas invasivas guiadas o no por imagen
-    - La INVASIVIDAD define la categoría
-    - EXCLUIR:
-        · terapia manual no invasiva
-        · electroterapia superficial
-        · estudios teóricos sin intervención clínica
+
+    CRITERIO EDITORIAL:
+    - Incluir solo técnicas con penetración tisular real
+    - Evaluar seguridad, efecto clínico y coherencia causal
+    - Penalizar explicaciones mecanicistas no demostradas
     =========================================================
   -->
 
@@ -32,15 +28,12 @@
   <meta name="description" content="Categoría Fisioterapia invasiva: análisis crítico de la evidencia científica sobre punción seca, electrólisis y técnicas percutáneas aplicadas a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
     .article-card-header{
@@ -83,7 +76,6 @@
 
 <body>
 
-<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
   <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
@@ -98,19 +90,17 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
-  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
     <h1>Fisioterapia invasiva</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría agrupa estudios que emplean técnicas con penetración tisular
-      como punción seca o electrólisis percutánea. La evaluación se centra en
-      seguridad, efectos clínicos reales y coherencia con los mecanismos propuestos.
+      Estudios que emplean técnicas con penetración tisular real como punción seca
+      o electrólisis percutánea. Se prioriza la evaluación de seguridad, efectos
+      clínicos y coherencia entre intervención y resultados.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -119,7 +109,6 @@
     </p>
   </header>
 
-  <!-- FILTROS -->
   <section class="card">
     <h2>Filtrar artículos</h2>
 
@@ -146,53 +135,48 @@
 
     <p class="filters-note">
       El score penaliza estudios sin comparador adecuado,
-      sin medidas clínicas directas o con interpretación mecanicista no demostrada.
+      sin outcomes clínicos directos o con interpretación causal no demostrada.
     </p>
   </section>
 
-  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
+      <!--
+        EJEMPLO FICTICIO · SOLO GUÍA HUMANA
+        ESTE BLOQUE CUENTA PARA n Y FILTROS
+        ELIMINAR EN PRODUCCIÓN
+      -->
       <article class="article-card"
         data-year="2023"
         data-score="18"
         data-tier="moderada"
         data-category="fisioterapia-invasiva">
 
-        <a class="article-link" href="../articulos/fisioterapia-invasiva/dry-needling-vs-sham-shoulder-pain-2023.html">
-
+        <a class="article-link" href="#">
           <div class="article-card-header">
-            <h3>Dry needling versus sham intervention for shoulder pain: randomized controlled trial</h3>
+            <h3>Dry needling versus sham intervention for shoulder pain</h3>
             <span class="score-badge">18 / 30</span>
           </div>
-
           <p>
             Ensayo aleatorizado que compara punción seca frente a intervención simulada.
-            Resultados modestos sobre dolor a corto plazo, con transferencia clínica
-            limitada por tamaño muestral y seguimiento breve.
+            Efectos modestos sobre dolor a corto plazo, con transferencia clínica limitada.
           </p>
-
         </a>
       </article>
-      <!-- FIN EJEMPLO -->
-
-      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      Solo se incluyen estudios con técnicas invasivas reales
+      Solo se incorporan estudios con técnicas invasivas reales
       y resultados clínicamente interpretables.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
@@ -205,7 +189,6 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
@@ -213,10 +196,15 @@
   if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
+  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
+
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
 
   [...new Set(cards.map(c => c.dataset.year))]
     .sort((a,b)=>b-a)
