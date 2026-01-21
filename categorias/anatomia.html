@@ -9,22 +9,6 @@
     PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
     Categoría: ANATOMÍA
     Archivo: anatomia.html
-
-    INSTRUCCIONES PARA HUMANOS (OBLIGATORIAS):
-    - NO modificar la estructura del documento
-    - NO tocar base.css
-    - NO alterar el script final
-    - Pegar TARJETAS DE ARTÍCULOS ÚNICAMENTE dentro de:
-        <div id="articlesList"></div>
-    - Cada tarjeta DEBE incluir:
-        · class="article-card"
-        · data-year (AÑO DE PUBLICACIÓN)
-        · data-score (0–30)
-        · data-tier (solida | moderada | exploratoria)
-        · data-category="anatomia"
-    - El ORDEN es AUTOMÁTICO por AÑO (↓ más recientes primero)
-    - El SCORE sirve para FILTRAR, NO para ordenar
-    - Se excluye anatomía descriptiva sin transferencia clínica
     =========================================================
   -->
 
@@ -184,7 +168,46 @@
 
     <div id="articlesList">
 
-      <!-- PEGAR AQUÍ TARJETAS REALES -->
+      <!-- TARJETA FICTICIA 1 -->
+      <a href="../articulos/anatomia/functional-anatomy-shoulder-stability-2024.html"
+         class="article-link article-card"
+         data-year="2024"
+         data-score="23"
+         data-tier="moderada"
+         data-category="anatomia">
+
+        <div class="article-card-header">
+          <div>
+            <span class="recommended-tag">Recomendado</span>
+            <h3>Análisis funcional de la estabilidad glenohumeral</h3>
+            <p class="muted">
+              Relación entre arquitectura capsuloligamentosa y control neuromuscular
+              en tareas funcionales del hombro.
+            </p>
+          </div>
+          <span class="score-badge">23 / 30</span>
+        </div>
+      </a>
+
+      <!-- TARJETA FICTICIA 2 -->
+      <a href="../articulos/anatomia/lumbar-fascia-clinical-relevance-2019.html"
+         class="article-link article-card"
+         data-year="2019"
+         data-score="16"
+         data-tier="exploratoria"
+         data-category="anatomia">
+
+        <div class="article-card-header">
+          <div>
+            <h3>Relevancia clínica de la fascia toracolumbar</h3>
+            <p class="muted">
+              Estudio exploratorio sobre disposición fascial lumbar
+              y patrones de carga mecánica en población asintomática.
+            </p>
+          </div>
+          <span class="score-badge">16 / 30</span>
+        </div>
+      </a>
 
     </div>
 
@@ -221,12 +244,10 @@
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  // ORDEN CANÓNICO: MÁS RECIENTES PRIMERO
   cards
     .sort((a,b)=>parseInt(b.dataset.year,10)-parseInt(a.dataset.year,10))
     .forEach(c=>container.appendChild(c));
 
-  // FILTRO DE AÑOS
   [...new Set(cards.map(c=>c.dataset.year))]
     .sort((a,b)=>b-a)
     .forEach(y=>{
