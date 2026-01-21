@@ -16,18 +16,21 @@
     - NO alterar el script final
     - Pegar TARJETAS ÚNICAMENTE dentro de:
         <div id="articlesList"></div>
+
+    CRITERIO EDITORIAL:
     - INCLUIR solo estudios con estimulación cerebral no invasiva:
         · tDCS, tACS, tRNS
         · TMS, rTMS, iTBS, cTBS
-    - La INTENCIÓN de modular excitabilidad cortical define la categoría
-    - EXCLUIR:
+    - La intención de modular excitabilidad cortical DEFINE la categoría
+    - NUNCA mezclar con:
         · Electroterapia periférica (TENS, NMES)
         · Neurociencia sin intervención
+        · Ejercicio como intervención principal
     =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Neuromodulación cerebral: análisis crítico de la evidencia científica sobre tDCS y TMS aplicada a la fisioterapia y el control del dolor." />
+  <meta name="description" content="Categoría Neuromodulación cerebral: análisis crítico de la evidencia científica sobre tDCS y TMS aplicada a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -81,7 +84,6 @@
 
 <body>
 
-<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
   <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
@@ -96,28 +98,25 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
-  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
     <h1>Neuromodulación cerebral (tDCS / TMS)</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
       Estudios que aplican estimulación cerebral no invasiva con intención explícita
-      de modular la excitabilidad cortical. Se priorizan outcomes clínicos y se
-      penaliza la extrapolación de marcadores fisiológicos a función o dolor.
+      de modular la excitabilidad cortical. No se incluyen estudios de neurociencia
+      sin intervención ni electroterapia periférica. La relevancia clínica prevalece
+      sobre marcadores fisiológicos aislados.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo
-      (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
-  <!-- FILTROS -->
   <section class="card">
     <h2>Filtrar artículos</h2>
 
@@ -144,53 +143,48 @@
 
     <p class="filters-note">
       El score penaliza estudios con outcomes exclusivamente surrogate
-      (EEG, excitabilidad, activación) sin correlato clínico directo.
+      (EEG, excitabilidad, activación cortical) sin correlato clínico directo.
     </p>
   </section>
 
-  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
+      <!--
+        EJEMPLO FICTICIO · SOLO GUÍA HUMANA
+        ESTE BLOQUE CUENTA PARA n Y FILTROS
+        ELIMINAR EN PRODUCCIÓN
+      -->
       <article class="article-card"
         data-year="2024"
         data-score="19"
         data-tier="moderada"
         data-category="tdcs">
 
-        <a class="article-link" href="../articulos/tdcs/tdcs-vs-sham-chronic-pain-2024.html">
-
+        <a class="article-link" href="#">
           <div class="article-card-header">
-            <h3>Transcranial direct current stimulation versus sham for chronic musculoskeletal pain: randomized controlled trial</h3>
+            <h3>tDCS versus sham stimulation for chronic musculoskeletal pain</h3>
             <span class="score-badge">19 / 30</span>
           </div>
-
           <p>
-            Ensayo aleatorizado que evalúa tDCS frente a estimulación simulada.
-            Efectos modestos sobre dolor, con transferencia clínica limitada
-            por tamaño del efecto y heterogeneidad de la muestra.
+            Ensayo aleatorizado con efectos pequeños sobre dolor y alta heterogeneidad
+            interindividual, que limita la transferencia clínica directa.
           </p>
-
         </a>
       </article>
-      <!-- FIN EJEMPLO -->
-
-      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
       Solo se incluyen estudios con intervención cerebral explícita
-      y outcomes clínicamente interpretables.
+      y resultados clínicamente interpretables.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
@@ -203,7 +197,6 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
@@ -211,12 +204,17 @@
   if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
+  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  [...new Set(cards.map(c => c.dataset.year))]
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
+
+  [...new Set(cards.map(c=>c.dataset.year))]
     .sort((a,b)=>b-a)
     .forEach(y=>{
       const o=document.createElement('option');
