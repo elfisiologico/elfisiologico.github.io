@@ -1,0 +1,30 @@
+<a href="../articulos/SLUG_CATEGORIA/slug-del-articulo-YYYY.html"
+   class="article-link article-card"
+   data-year="YYYY"
+   data-score="XX"
+   data-tier="solida | moderada | exploratoria"
+   data-category="slug_categoria">
+
+  <div class="article-card-header">
+    <div>
+
+      <!-- ETIQUETA EDITORIAL (OPCIONAL) -->
+      <!-- Mostrar SOLO si score ≥ 20 -->
+      <span class="recommended-tag">Recomendado</span>
+
+      <!-- TÍTULO DEL ARTÍCULO -->
+      <h3>Título del artículo científico</h3>
+
+      <!-- DESCRIPCIÓN CLÍNICA BREVE -->
+      <p class="muted">
+        Descripción clínica concisa del estudio, centrada en transferencia
+        funcional y relevancia fisioterapéutica. No descriptiva, no hype.
+      </p>
+
+    </div>
+
+    <!-- SCORE METODOLÓGICO -->
+    <span class="score-badge">XX / 30</span>
+  </div>
+
+</a>
