@@ -18,35 +18,7 @@
 
   <!-- Estilos locales de categoría (NO TOCAR base.css) -->
   <style>
-    /* ------------------------------
-       HEADER EDITORIAL
-    ------------------------------ */
-    .category-header{
-      margin-bottom:4rem;
-    }
-    .category-header h1::after{
-      content:'';
-      display:block;
-      width:48px;
-      height:3px;
-      background:var(--accent);
-      margin-top:.75rem;
-    }
-
-    @media(max-width:768px){
-      .category-header{
-        margin-bottom:2.5rem;
-      }
-    }
-
-    /* ------------------------------
-       TARJETAS Y LINKS
-    ------------------------------ */
-    .article-link{
-      display:block;
-      color:inherit;
-      text-decoration:none;
-    }
+    .article-link{ display:block; color:inherit; text-decoration:none; }
 
     .article-card-header{
       display:flex;
@@ -66,22 +38,11 @@
       white-space:nowrap;
     }
 
-    .recommended-tag{
-      display:inline-block;
-      font-size:.65rem;
-      font-family:var(--font-mono);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#000;
-      background:var(--accent);
-      padding:.15rem .35rem;
-      border-radius:3px;
-      margin-bottom:.35rem;
+    /* TÍTULO DE CATEGORÍA EN AMARILLO */
+    header h1{
+      color:var(--accent);
     }
 
-    /* ------------------------------
-       FILTROS
-    ------------------------------ */
     .filters{
       display:flex;
       gap:1.5rem;
@@ -103,10 +64,10 @@
       background:#0f0f0f;
       color:#fff;
       border:1px solid #2a2a2a;
-      padding:.35rem .55rem;
+      padding:.45rem .6rem;
       border-radius:4px;
       font-family:'Inter', sans-serif;
-      font-size:.8rem;
+      font-size:.85rem;
     }
 
     .filters select:focus{
@@ -121,16 +82,17 @@
       line-height:1.4;
     }
 
-    /* ------------------------------
-       SECCIÓN ARTÍCULOS
-    ------------------------------ */
-    .articles-section h2::after{
-      content:'';
-      display:block;
-      width:72px;
-      height:3px;
+    .recommended-tag{
+      display:inline-block;
+      font-size:.65rem;
+      font-family:var(--font-mono);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#000;
       background:var(--accent);
-      margin-top:.5rem;
+      padding:.15rem .35rem;
+      border-radius:3px;
+      margin-bottom:.35rem;
     }
 
     .no-results{
@@ -138,8 +100,6 @@
       font-size:.9rem;
       color:var(--muted);
       margin-top:1.5rem;
-      max-width:720px;
-      line-height:1.5;
     }
   </style>
 </head>
@@ -161,13 +121,11 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
-  <!-- Navegación -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
-  <header class="category-header">
+  <header style="margin-bottom:3rem;">
     <h1>Anatomía</h1>
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
       Análisis crítico de la evidencia científica en anatomía funcional y clínica aplicada a la fisioterapia,
@@ -178,8 +136,7 @@
     </p>
   </header>
 
-  <!-- FILTROS -->
-  <section class="card filters-card">
+  <section class="card">
     <h2>Filtrar artículos</h2>
 
     <div class="filters">
@@ -216,8 +173,7 @@
     </p>
   </section>
 
-  <!-- ARTÍCULOS -->
-  <section class="card articles-section" id="articles">
+  <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
@@ -225,8 +181,7 @@
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría se irá construyendo progresivamente a medida que se incorporen
-      análisis con rigor metodológico y transferencia clínica demostrable.
+      No hay artículos que cumplan los criterios actuales.
     </p>
   </section>
 
