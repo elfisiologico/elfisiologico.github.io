@@ -5,32 +5,39 @@
   <title>ATM · El FisioLógico</title>
 
   <!--
-    =========================================================
-    PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
-    Categoría: ARTICULACIÓN TEMPOROMANDIBULAR (ATM)
-    Archivo: atm.html
+  =====================================================================
+  PLANTILLA CANÓNICA DE CATEGORÍAS · EL FISIOLÓGICO
+  CATEGORÍA: ATM (ARTICULACIÓN TEMPOROMANDIBULAR)
+  ARCHIVO: atm.html
+  =====================================================================
 
-    INSTRUCCIONES PARA HUMANOS (LECTURA OBLIGATORIA):
-    - NO modificar la estructura del documento
-    - NO tocar base.css
-    - NO alterar el script final
-    - Pegar TARJETAS DE ARTÍCULOS ÚNICAMENTE dentro de:
-        <div id="articlesList"></div>
-    - Cada tarjeta DEBE incluir:
-        · class="article-card"
-        · data-year
-        · data-score
-        · data-tier
-        · data-category="atm"
-    - Las tarjetas se ORDENAN automáticamente por SCORE (↓)
-    - ATM ≠ solo mandíbula:
-        integrar dolor orofacial, cervical,
-        control motor y procesamiento central
-    =========================================================
+  INSTRUCCIONES HUMANAS (NO NEGOCIABLES)
+  ------------------------------------
+  - NO modificar estructura, IDs ni script
+  - NO tocar base.css
+  - SOLO pegar tarjetas dentro de <div id="articlesList"></div>
+  - Cada tarjeta DEBE incluir:
+      class="article-link article-card"
+      data-year="YYYY"
+      data-score="0–30"
+      data-tier="solida | moderada | exploratoria"
+      data-category="atm"
+
+  COMPORTAMIENTO AUTOMÁTICO
+  -------------------------
+  - Orden automático por data-year (más recientes arriba)
+  - Filtros por año, score mínimo y nivel de evidencia
+  - Por defecto: visibles solo artículos con score ≥ 20 / 30
+
+  FILOSOFÍA
+  ---------
+  Repositorio científico centrado en razonamiento clínico en dolor
+  orofacial y disfunción temporomandibular, no descripción aislada.
+  =====================================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría ATM: análisis crítico de la evidencia científica en articulación temporomandibular y dolor orofacial desde la fisioterapia clínica." />
+  <meta name="description" content="Categoría ATM: análisis crítico de la evidencia científica en articulación temporomandibular, dolor orofacial y fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -44,14 +51,12 @@
   <!-- Estilos locales (SOLO VISUAL) -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
       display:flex;
       justify-content:space-between;
       align-items:flex-start;
       gap:1rem;
     }
-
     .score-badge{
       font-family:var(--font-mono);
       font-size:.85rem;
@@ -62,16 +67,13 @@
       border-radius:4px;
       white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
     .filters{
       display:flex;
       gap:1.5rem;
       flex-wrap:wrap;
       margin-bottom:.75rem;
     }
-
     .filters label{
       display:flex;
       flex-direction:column;
@@ -81,7 +83,6 @@
       letter-spacing:.08em;
       text-transform:uppercase;
     }
-
     .filters select{
       background:#0f0f0f;
       color:#fff;
@@ -91,19 +92,13 @@
       font-family:'Inter', sans-serif;
       font-size:.85rem;
     }
-
-    .filters select:focus{
-      outline:none;
-      border-color:var(--accent);
-    }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
       font-size:.75rem;
       color:var(--muted);
       max-width:720px;
       line-height:1.4;
     }
-
     .recommended-tag{
       display:inline-block;
       font-size:.65rem;
@@ -116,7 +111,6 @@
       border-radius:3px;
       margin-bottom:.35rem;
     }
-
     .no-results{
       display:none;
       font-size:.9rem;
@@ -130,7 +124,6 @@
 
 <body>
 
-<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
   <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
@@ -149,14 +142,13 @@
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
-    <h1>Articulación temporomandibular</h1>
+    <h1>ATM</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Evidencia científica sobre ATM y dolor orofacial desde una perspectiva
-      integradora: musculoesquelética, cervical, de control motor
-      y de procesamiento central.
+      Evidencia científica sobre la articulación temporomandibular y el dolor
+      orofacial desde una perspectiva clínica, integradora y fisioterapéutica.
+      Se prioriza transferencia clínica real frente a modelos biomecánicos aislados.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -165,7 +157,6 @@
     </p>
   </header>
 
-  <!-- FILTROS -->
   <section class="card">
     <h2>Filtrar artículos</h2>
 
@@ -173,7 +164,6 @@
       <label>Año
         <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
       <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
@@ -181,7 +171,6 @@
           <option value="all">Todos</option>
         </select>
       </label>
-
       <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
@@ -193,51 +182,66 @@
     </div>
 
     <p class="filters-note">
-      Evitar interpretaciones estructuralistas.
-      Priorizar outcomes clínicos y contexto biopsicosocial.
+      Por defecto se prioriza evidencia con mayor calidad metodológica
+      y aplicabilidad clínica en dolor temporomandibular.
     </p>
   </section>
 
-  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO · SOLO GUÍA HUMANA -->
-      <article class="article-card"
-        data-year="2024"
-        data-score="22"
-        data-tier="moderada"
-        data-category="atm">
+      <!-- ARTÍCULO FICTICIO 1 -->
+      <a href="../articulos/atm/articulo-ficticio-2025.html"
+         class="article-link article-card"
+         data-year="2025"
+         data-score="24"
+         data-tier="moderada"
+         data-category="atm">
 
-        <a class="article-link" href="#">
-          <span class="recommended-tag">Ejemplo</span>
-
-          <div class="article-card-header">
-            <h3>Effectiveness of physiotherapy interventions for temporomandibular disorders</h3>
-            <span class="score-badge">22 / 30</span>
+        <div class="article-card-header">
+          <div>
+            <span class="recommended-tag">Recomendado</span>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Artículo ficticio diseñado para validar el sistema de filtrado,
+              ordenación y priorización clínica en la categoría ATM.
+            </p>
           </div>
+          <span class="score-badge">24 / 30</span>
+        </div>
+      </a>
 
-          <p>
-            Revisión sistemática sobre fisioterapia en TMD,
-            integrando dolor, función y calidad metodológica.
-          </p>
-        </a>
-      </article>
-      <!-- FIN EJEMPLO -->
+      <!-- ARTÍCULO FICTICIO 2 -->
+      <a href="../articulos/atm/articulo-ficticio-2018.html"
+         class="article-link article-card"
+         data-year="2018"
+         data-score="14"
+         data-tier="exploratoria"
+         data-category="atm">
+
+        <div class="article-card-header">
+          <div>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Artículo ficticio con baja puntuación metodológica para comprobar
+              el correcto funcionamiento de los filtros editoriales en ATM.
+            </p>
+          </div>
+          <span class="score-badge">14 / 30</span>
+        </div>
+      </a>
 
     </div>
 
     <p class="no-results" id="noResults">
-      Se incorporarán estudios con análisis clínico riguroso
-      y enfoque no reduccionista.
+      No hay artículos que cumplan los criterios seleccionados.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
     <div>
@@ -250,51 +254,60 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO (NO TOCAR) -->
+<!-- SCRIPT CANÓNICO DE CATEGORÍAS (NO TOCAR) -->
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
+
   const cards = Array.from(document.querySelectorAll('.article-card'));
   const countEl = document.getElementById('articleCount');
-  if (countEl) countEl.textContent = `n = ${cards.length}`;
-  if (!cards.length) return;
-
   const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  // ORDEN CANÓNICO POR SCORE (DESCENDENTE)
+  if (countEl) countEl.textContent = `n = ${cards.length}`;
+
+  if (!cards.length) {
+    noResults.style.display = 'block';
+    return;
+  }
+
   cards
-    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
-    .forEach(c=>container.appendChild(c));
+    .sort((a, b) => +b.dataset.year - +a.dataset.year)
+    .forEach(card => container.appendChild(card));
 
-  // FILTRO DE AÑOS
-  [...new Set(cards.map(c=>c.dataset.year))]
-    .sort((a,b)=>b-a)
-    .forEach(y=>{
-      const o=document.createElement('option');
-      o.value=y;
-      o.textContent=y;
-      yearFilter.appendChild(o);
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a, b) => b - a)
+    .forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearFilter.appendChild(option);
     });
 
-  function applyFilters(){
-    let visible=0;
-    cards.forEach(c=>{
-      const ok =
-        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
-        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
-        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
-      c.style.display = ok ? 'block' : 'none';
-      if(ok) visible++;
+  function applyFilters() {
+    let visible = 0;
+
+    cards.forEach(card => {
+      const show =
+        (yearFilter.value === 'all' || card.dataset.year === yearFilter.value) &&
+        (scoreFilter.value === 'all' || +card.dataset.score >= +scoreFilter.value) &&
+        (tierFilter.value === 'all' || card.dataset.tier === tierFilter.value);
+
+      card.style.display = show ? 'block' : 'none';
+      if (show) visible++;
     });
+
     noResults.style.display = visible ? 'none' : 'block';
   }
 
-  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
+  yearFilter.addEventListener('change', applyFilters);
+  scoreFilter.addEventListener('change', applyFilters);
+  tierFilter.addEventListener('change', applyFilters);
+
   applyFilters();
-})();
+});
 </script>
 
 </body>
