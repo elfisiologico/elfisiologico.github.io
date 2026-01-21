@@ -5,11 +5,34 @@
   <title>Anatomía · El FisioLógico</title>
 
   <!--
-    =========================================================
-    PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
-    Categoría: ANATOMÍA
-    Archivo: anatomia.html
-    =========================================================
+  =====================================================================
+  PLANTILLA CANÓNICA DE CATEGORÍAS · EL FISIOLÓGICO
+  CATEGORÍA: ANATOMÍA
+  ARCHIVO: anatomia.html
+  =====================================================================
+
+  INSTRUCCIONES HUMANAS (NO NEGOCIABLES)
+  ------------------------------------
+  - NO modificar estructura, IDs ni script
+  - NO tocar base.css
+  - SOLO pegar tarjetas dentro de <div id="articlesList"></div>
+  - Cada tarjeta DEBE incluir:
+      class="article-link article-card"
+      data-year="YYYY"
+      data-score="0–30"
+      data-tier="solida | moderada | exploratoria"
+      data-category="anatomia"
+
+  COMPORTAMIENTO AUTOMÁTICO
+  -------------------------
+  - Orden automático por data-year (más recientes arriba)
+  - Filtros por año, score mínimo y nivel de evidencia
+  - Por defecto: visibles solo artículos con score ≥ 20 / 30
+
+  FILOSOFÍA
+  ---------
+  Esto es un repositorio científico curado, no un blog.
+  =====================================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -158,8 +181,8 @@
     </div>
 
     <p class="filters-note">
-      El score refleja la calidad del razonamiento anatómico-clínico,
-      no el grado de detalle morfológico.
+      Por defecto se muestran artículos con mayor calidad metodológica.
+      Ajusta los filtros para explorar evidencia preliminar.
     </p>
   </section>
 
@@ -168,29 +191,29 @@
 
     <div id="articlesList">
 
-      <!-- TARJETA FICTICIA 1 -->
-      <a href="../articulos/anatomia/functional-anatomy-shoulder-stability-2024.html"
+      <!-- ARTÍCULO FICTICIO 1 -->
+      <a href="../articulos/anatomia/articulo-ficticio-2024.html"
          class="article-link article-card"
          data-year="2024"
-         data-score="23"
+         data-score="22"
          data-tier="moderada"
          data-category="anatomia">
 
         <div class="article-card-header">
           <div>
             <span class="recommended-tag">Recomendado</span>
-            <h3>Análisis funcional de la estabilidad glenohumeral</h3>
+            <h3>Artículo ficticio</h3>
             <p class="muted">
-              Relación entre arquitectura capsuloligamentosa y control neuromuscular
-              en tareas funcionales del hombro.
+              Estudio ficticio utilizado para validar el sistema de ordenación,
+              filtrado y puntuación metodológica en la categoría Anatomía.
             </p>
           </div>
-          <span class="score-badge">23 / 30</span>
+          <span class="score-badge">22 / 30</span>
         </div>
       </a>
 
-      <!-- TARJETA FICTICIA 2 -->
-      <a href="../articulos/anatomia/lumbar-fascia-clinical-relevance-2019.html"
+      <!-- ARTÍCULO FICTICIO 2 -->
+      <a href="../articulos/anatomia/articulo-ficticio-2019.html"
          class="article-link article-card"
          data-year="2019"
          data-score="16"
@@ -199,10 +222,10 @@
 
         <div class="article-card-header">
           <div>
-            <h3>Relevancia clínica de la fascia toracolumbar</h3>
+            <h3>Artículo ficticio</h3>
             <p class="muted">
-              Estudio exploratorio sobre disposición fascial lumbar
-              y patrones de carga mecánica en población asintomática.
+              Artículo ficticio con menor puntuación metodológica para comprobar
+              el correcto funcionamiento de los filtros editoriales.
             </p>
           </div>
           <span class="score-badge">16 / 30</span>
@@ -212,7 +235,7 @@
     </div>
 
     <p class="no-results" id="noResults">
-      Se incorporarán estudios con relevancia anatómica-clínica demostrable.
+      No hay artículos que cumplan los criterios seleccionados.
     </p>
   </section>
 
@@ -230,7 +253,7 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO RECTIFICADO (ROBUSTO) -->
+<!-- SCRIPT CANÓNICO DE CATEGORÍAS (NO TOCAR) -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -249,31 +272,30 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  // ORDEN CANÓNICO: MÁS RECIENTES PRIMERO
+  // ORDEN AUTOMÁTICO POR FECHA DE PUBLICACIÓN (MÁS RECIENTES PRIMERO)
   cards
-    .sort((a, b) => parseInt(b.dataset.year, 10) - parseInt(a.dataset.year, 10))
+    .sort((a, b) => +b.dataset.year - +a.dataset.year)
     .forEach(card => container.appendChild(card));
 
-  // FILTRO DE AÑOS
-  const years = [...new Set(cards.map(c => c.dataset.year))]
-    .sort((a, b) => b - a);
-
-  years.forEach(year => {
-    const option = document.createElement('option');
-    option.value = year;
-    option.textContent = year;
-    yearFilter.appendChild(option);
-  });
+  // CARGA DE AÑOS DISPONIBLES
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a, b) => b - a)
+    .forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearFilter.appendChild(option);
+    });
 
   function applyFilters() {
     let visible = 0;
 
     cards.forEach(card => {
-      const yearOK  = yearFilter.value === 'all' || card.dataset.year === yearFilter.value;
-      const scoreOK = scoreFilter.value === 'all' || +card.dataset.score >= +scoreFilter.value;
-      const tierOK  = tierFilter.value === 'all' || card.dataset.tier === tierFilter.value;
+      const show =
+        (yearFilter.value === 'all' || card.dataset.year === yearFilter.value) &&
+        (scoreFilter.value === 'all' || +card.dataset.score >= +scoreFilter.value) &&
+        (tierFilter.value === 'all' || card.dataset.tier === tierFilter.value);
 
-      const show = yearOK && scoreOK && tierOK;
       card.style.display = show ? 'block' : 'none';
       if (show) visible++;
     });
