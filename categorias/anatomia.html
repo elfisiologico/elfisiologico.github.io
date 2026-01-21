@@ -18,11 +18,12 @@
         <div id="articlesList"></div>
     - Cada tarjeta DEBE incluir:
         · class="article-card"
-        · data-year
-        · data-score
-        · data-tier
+        · data-year (AÑO DE PUBLICACIÓN)
+        · data-score (0–30)
+        · data-tier (solida | moderada | exploratoria)
         · data-category="anatomia"
-    - Las tarjetas se ORDENAN automáticamente por SCORE (↓)
+    - El ORDEN es AUTOMÁTICO por AÑO (↓ más recientes primero)
+    - El SCORE sirve para FILTRAR, NO para ordenar
     - Se excluye anatomía descriptiva sin transferencia clínica
     =========================================================
   -->
@@ -42,14 +43,12 @@
   <!-- Estilos locales (SOLO VISUAL) -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
       display:flex;
       justify-content:space-between;
       align-items:flex-start;
       gap:1rem;
     }
-
     .score-badge{
       font-family:var(--font-mono);
       font-size:.85rem;
@@ -60,16 +59,13 @@
       border-radius:4px;
       white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
     .filters{
       display:flex;
       gap:1.5rem;
       flex-wrap:wrap;
       margin-bottom:.75rem;
     }
-
     .filters label{
       display:flex;
       flex-direction:column;
@@ -79,7 +75,6 @@
       letter-spacing:.08em;
       text-transform:uppercase;
     }
-
     .filters select{
       background:#0f0f0f;
       color:#fff;
@@ -89,19 +84,13 @@
       font-family:'Inter', sans-serif;
       font-size:.85rem;
     }
-
-    .filters select:focus{
-      outline:none;
-      border-color:var(--accent);
-    }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
       font-size:.75rem;
       color:var(--muted);
       max-width:720px;
       line-height:1.4;
     }
-
     .recommended-tag{
       display:inline-block;
       font-size:.65rem;
@@ -114,7 +103,6 @@
       border-radius:3px;
       margin-bottom:.35rem;
     }
-
     .no-results{
       display:none;
       font-size:.9rem;
@@ -168,7 +156,6 @@
       <label>Año
         <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
       <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
@@ -176,7 +163,6 @@
           <option value="all">Todos</option>
         </select>
       </label>
-
       <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
@@ -198,27 +184,7 @@
 
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
-      <article class="article-card"
-        data-year="2025"
-        data-score="22"
-        data-tier="moderada"
-        data-category="anatomia">
-
-        <a class="article-link" href="../articulos/anatomia/lumbar-fascia-functional-correlations-2025.html">
-          <span class="recommended-tag">Ejemplo</span>
-
-          <div class="article-card-header">
-            <h3>Functional correlations between lumbar fascia morphology and trunk control</h3>
-            <span class="score-badge">22 / 30</span>
-          </div>
-
-          <p>
-            Estudio observacional sobre relaciones estructurales y control del tronco.
-            Transferencia clínica condicionada al contexto funcional.
-          </p>
-        </a>
-      </article>
+      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
@@ -241,6 +207,7 @@
   </div>
 </footer>
 
+<!-- SCRIPT CANÓNICO (NO TOCAR) -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
@@ -254,9 +221,9 @@
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  // ORDEN CANÓNICO POR SCORE (DESCENDENTE)
+  // ORDEN CANÓNICO: MÁS RECIENTES PRIMERO
   cards
-    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .sort((a,b)=>parseInt(b.dataset.year,10)-parseInt(a.dataset.year,10))
     .forEach(c=>container.appendChild(c));
 
   // FILTRO DE AÑOS
