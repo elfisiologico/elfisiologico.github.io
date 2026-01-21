@@ -5,15 +5,28 @@
   <title>ATM · El FisioLógico</title>
 
   <!--
+    =========================================================
     PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
+    Categoría: ARTICULACIÓN TEMPOROMANDIBULAR (ATM)
     Archivo: atm.html
 
-    INSTRUCCIONES PARA HUMANOS:
-    - NO modificar la estructura
+    INSTRUCCIONES PARA HUMANOS (LECTURA OBLIGATORIA):
+    - NO modificar la estructura del documento
     - NO tocar base.css
-    - Editar solo los textos editoriales
-    - Pegar nuevas tarjetas SOLO en la zona indicada
-    - ATM ≠ solo mandíbula: integrar dolor orofacial, cervical y control motor
+    - NO alterar el script final
+    - Pegar TARJETAS DE ARTÍCULOS ÚNICAMENTE dentro de:
+        <div id="articlesList"></div>
+    - Cada tarjeta DEBE incluir:
+        · class="article-card"
+        · data-year
+        · data-score
+        · data-tier
+        · data-category="atm"
+    - Las tarjetas se ORDENAN automáticamente por SCORE (↓)
+    - ATM ≠ solo mandíbula:
+        integrar dolor orofacial, cervical,
+        control motor y procesamiento central
+    =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,10 +38,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base (NO MODIFICAR) -->
+  <!-- CSS base (NO TOCAR) -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales -->
+  <!-- Estilos locales (SOLO VISUAL) -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
 
@@ -141,13 +154,14 @@
     <h1>Articulación temporomandibular</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Análisis crítico de la evidencia científica sobre la articulación temporomandibular
-      y el dolor orofacial, integrando factores musculares, articulares, cervicales
-      y de procesamiento central desde una perspectiva fisioterapéutica moderna.
+      Evidencia científica sobre ATM y dolor orofacial desde una perspectiva
+      integradora: musculoesquelética, cervical, de control motor
+      y de procesamiento central.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo
+      (<span id="articleCount">n = 0</span> artículos).
     </p>
   </header>
 
@@ -156,15 +170,11 @@
     <h2>Filtrar artículos</h2>
 
     <div class="filters">
-      <label>
-        Año
-        <select id="yearFilter">
-          <option value="all">Todos</option>
-        </select>
+      <label>Año
+        <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
 
-      <label>
-        Score mínimo
+      <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
           <option value="15">≥ 15 / 30</option>
@@ -172,8 +182,7 @@
         </select>
       </label>
 
-      <label>
-        Nivel de evidencia
+      <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
           <option value="solida">Sólida</option>
@@ -184,26 +193,18 @@
     </div>
 
     <p class="filters-note">
-      El dolor orofacial no se explica únicamente por alteraciones estructurales de la ATM.
-      Interpretar siempre en contexto biopsicosocial y de control motor.
+      Evitar interpretaciones estructuralistas.
+      Priorizar outcomes clínicos y contexto biopsicosocial.
     </p>
   </section>
 
-  <!-- LISTADO DE ARTÍCULOS -->
+  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!--
-        ZONA ÚNICA PARA PEGAR TARJETAS DE ARTÍCULOS
-        ------------------------------------------
-        - Pegar aquí nuevas tarjetas <article>
-        - Una tarjeta por artículo
-        - NO pegar fuera de este div
-      -->
-
-      <!-- EJEMPLO FICTICIO (BORRAR CUANDO AÑADAS ARTÍCULOS REALES) -->
+      <!-- EJEMPLO FICTICIO · SOLO GUÍA HUMANA -->
       <article class="article-card"
         data-year="2024"
         data-score="22"
@@ -219,25 +220,24 @@
           </div>
 
           <p>
-            Revisión sistemática que analiza intervenciones fisioterapéuticas
-            en trastornos temporomandibulares, con especial atención a dolor,
-            función mandibular y calidad metodológica.
+            Revisión sistemática sobre fisioterapia en TMD,
+            integrando dolor, función y calidad metodológica.
           </p>
         </a>
       </article>
-
-      <!-- FIN DEL EJEMPLO -->
+      <!-- FIN EJEMPLO -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría integrará estudios con análisis clínico riguroso,
-      evitando explicaciones reduccionistas centradas solo en la articulación.
+      Se incorporarán estudios con análisis clínico riguroso
+      y enfoque no reduccionista.
     </p>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
     <div>
@@ -250,13 +250,13 @@
   </div>
 </footer>
 
+<!-- SCRIPT CANÓNICO (NO TOCAR) -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
-  const count = document.getElementById('articleCount');
+  const countEl = document.getElementById('articleCount');
+  if (countEl) countEl.textContent = `n = ${cards.length}`;
   if (!cards.length) return;
-
-  count.textContent = cards.length;
 
   const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
@@ -264,45 +264,35 @@
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
+  // ORDEN CANÓNICO POR SCORE (DESCENDENTE)
   cards
-    .sort((a, b) => parseInt(b.dataset.score, 10) - parseInt(a.dataset.score, 10))
-    .forEach(card => container.appendChild(card));
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
 
-  const years = [...new Set(cards.map(c => c.dataset.year))].sort((a,b) => b-a);
-  years.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = y;
-    opt.textContent = y;
-    yearFilter.appendChild(opt);
-  });
-
-  function applyFilters(){
-    const year = yearFilter.value;
-    const score = scoreFilter.value;
-    const tier = tierFilter.value;
-    let visibleCount = 0;
-
-    cards.forEach(card => {
-      const cYear = card.dataset.year;
-      const cScore = parseInt(card.dataset.score, 10);
-      const cTier = card.dataset.tier;
-
-      let visible = true;
-      if (year !== 'all' && cYear !== year) visible = false;
-      if (score !== 'all' && cScore < parseInt(score, 10)) visible = false;
-      if (tier !== 'all' && cTier !== tier) visible = false;
-
-      card.style.display = visible ? 'block' : 'none';
-      if (visible) visibleCount++;
+  // FILTRO DE AÑOS
+  [...new Set(cards.map(c=>c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y;
+      o.textContent=y;
+      yearFilter.appendChild(o);
     });
 
-    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  function applyFilters(){
+    let visible=0;
+    cards.forEach(c=>{
+      const ok =
+        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
+        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
+        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
+      c.style.display = ok ? 'block' : 'none';
+      if(ok) visible++;
+    });
+    noResults.style.display = visible ? 'none' : 'block';
   }
 
-  yearFilter.addEventListener('change', applyFilters);
-  scoreFilter.addEventListener('change', applyFilters);
-  tierFilter.addEventListener('change', applyFilters);
-
+  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
   applyFilters();
 })();
 </script>
