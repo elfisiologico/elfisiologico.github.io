@@ -74,7 +74,6 @@
 
 <body>
 
-<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
   <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
@@ -89,12 +88,10 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
-  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
     <h1>Terapia manual</h1>
 
@@ -107,12 +104,10 @@
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo
-      (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
-  <!-- FILTROS -->
   <section class="card">
     <h2>Filtrar artículos</h2>
 
@@ -139,50 +134,46 @@
 
     <p class="filters-note">
       El score refleja la solidez metodológica y la transferencia clínica,
-      no la pericia técnica del terapeuta ni la tradición del abordaje.
+      no la tradición histórica ni la destreza manual percibida.
     </p>
   </section>
 
-  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
+      <!--
+        EJEMPLO FICTICIO · SOLO GUÍA HUMANA
+        ELIMINAR cuando se añadan artículos reales
+      -->
       <article class="article-card"
         data-year="2023"
         data-score="18"
         data-tier="moderada"
         data-category="terapia-manual">
 
-        <a class="article-link" href="../articulos/terapia-manual/spinal-manipulation-vs-sham-lbp-2023.html">
+        <a class="article-link" href="#">
           <div class="article-card-header">
-            <h3>Spinal manipulation versus sham intervention for chronic low back pain: clinical outcomes</h3>
+            <h3>Spinal manipulation versus sham intervention for chronic low back pain</h3>
             <span class="score-badge">18 / 30</span>
           </div>
           <p>
-            Ensayo controlado que compara manipulación vertebral frente a intervención simulada.
-            Efectos pequeños sobre dolor, con relevancia clínica limitada y alta dependencia del contexto.
+            Ensayo controlado con efectos pequeños sobre dolor y alta dependencia contextual.
           </p>
         </a>
       </article>
-      <!-- FIN EJEMPLO -->
-
-      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
       Se incorporarán estudios cuando aporten resultados clínicos interpretables
-      y análisis metodológico honesto, evitando narrativas tradicionales no contrastadas.
+      y análisis metodológico honesto.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
@@ -195,20 +186,25 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
   const countEl = document.getElementById('articleCount');
   if (countEl) countEl.textContent = cards.length;
+
   if (!cards.length) return;
 
+  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  [...new Set(cards.map(c => c.dataset.year))]
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
+
+  [...new Set(cards.map(c=>c.dataset.year))]
     .sort((a,b)=>b-a)
     .forEach(y=>{
       const o=document.createElement('option');
