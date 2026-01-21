@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Estimulación cortical no invasiva · El FisioLógico</title>
+
+  <!--
+  =====================================================================
+  PLANTILLA CANÓNICA DE CATEGORÍAS · EL FISIOLÓGICO
+  CATEGORÍA: ESTIMULACIÓN CORTICAL NO INVASIVA
+  ARCHIVO: estimulacion-cortical.html
+  =====================================================================
+
+  INSTRUCCIONES HUMANAS (NO NEGOCIABLES)
+  ------------------------------------
+  - NO modificar estructura, IDs ni script
+  - NO tocar base.css
+  - SOLO pegar tarjetas dentro de <div id="articlesList"></div>
+  - Cada tarjeta DEBE incluir:
+      class="article-link article-card"
+      data-year="YYYY"
+      data-score="0–30"
+      data-tier="solida | moderada | exploratoria"
+      data-category="estimulacion-cortical"
+
+  COMPORTAMIENTO AUTOMÁTICO
+  -------------------------
+  - Orden automático por data-year (más recientes arriba)
+  - Filtros por año, score mínimo y nivel de evidencia
+  - Por defecto: visibles solo artículos con score ≥ 20 / 30
+
+  FILOSOFÍA
+  ---------
+  Repositorio científico centrado en estimulación cortical no invasiva
+  (tDCS, TMS, tACS y técnicas afines) aplicada a fisioterapia, dolor y
+  control motor. Se penaliza la extrapolación directa de cambios
+  neurofisiológicos a resultados funcionales y el uso aislado de
+  neuromodulación sin integración clínica.
+  =====================================================================
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Categoría Estimulación cortical no invasiva: análisis crítico de la evidencia científica sobre tDCS, TMS y otras técnicas de neuromodulación no invasiva aplicadas a fisioterapia." />
+  <meta name="author" content="El FisioLógico" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS base (NO TOCAR) -->
+  <link rel="stylesheet" href="../assets/css/base.css">
+
+  <!-- Estilos locales (SOLO VISUAL) -->
+  <style>
+    .article-link{ display:block; color:inherit; text-decoration:none; }
+    .article-card-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:1rem;
+    }
+    .score-badge{
+      font-family:var(--font-mono);
+      font-size:.85rem;
+      font-weight:600;
+      color:var(--accent);
+      border:1px solid var(--accent);
+      padding:.25rem .5rem;
+      border-radius:4px;
+      white-space:nowrap;
+    }
+    header h1{ color:var(--accent); }
+  </style>
+</head>
+
+<body>
+
+<header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
+  <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
+    <a href="../categorias/index.html" style="text-decoration:none;">
+      <span style="font-weight:700;">Fisio</span>
+      <span style="font-weight:700; color:#FCBF06;">Lógico</span>
+    </a>
+    <span class="mono muted" style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">
+      Categoría
+    </span>
+  </div>
+</header>
+
+<main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
+
+  <nav style="margin-bottom:2.5rem;">
+    <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
+  </nav>
+
+  <header style="margin-bottom:3rem;">
+    <h1>Estimulación cortical no invasiva</h1>
+
+    <p class="muted" style="max-width:720px; font-size:1.1rem;">
+      Evidencia científica sobre técnicas de estimulación cortical no
+      invasiva (tDCS, TMS, tACS y afines) aplicadas a fisioterapia,
+      dolor y control motor. Se prioriza la integración clínica y la
+      interpretación prudente de los efectos neurofisiológicos.
+    </p>
+
+    <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
+      Estado de la evidencia: categoría en desarrollo
+      (<span id="articleCount">n = 0</span> artículos).
+    </p>
+  </header>
+
+  <section class="card" id="articles">
+    <h2>Artículos disponibles</h2>
+
+    <div id="articlesList">
+
+      <!-- ARTÍCULO FICTICIO 1 -->
+      <a href="../articulos/estimulacion-cortical/articulo-ficticio-2026.html"
+         class="article-link article-card"
+         data-year="2026"
+         data-score="24"
+         data-tier="moderada"
+         data-category="estimulacion-cortical">
+
+        <div class="article-card-header">
+          <div>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Estudio ficticio para validar el sistema de ordenación y
+              filtrado en estimulación cortical no invasiva.
+            </p>
+          </div>
+          <span class="score-badge">24 / 30</span>
+        </div>
+      </a>
+
+      <!-- ARTÍCULO FICTICIO 2 -->
+      <a href="../articulos/estimulacion-cortical/articulo-ficticio-2010.html"
+         class="article-link article-card"
+         data-year="2010"
+         data-score="13"
+         data-tier="exploratoria"
+         data-category="estimulacion-cortical">
+
+        <div class="article-card-header">
+          <div>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Estudio ficticio de baja transferencia clínica utilizado
+              para comprobar el comportamiento de los filtros.
+            </p>
+          </div>
+          <span class="score-badge">13 / 30</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
+    <div>
+      <span style="font-weight:600;">Fisio</span>
+      <span style="font-weight:600; color:#FCBF06;">Lógico</span>
+    </div>
+    <p class="muted" style="font-size:.75rem;">
+      © El FisioLógico · Categoría Estimulación cortical no invasiva
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
