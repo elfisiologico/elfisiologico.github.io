@@ -5,71 +5,121 @@
   <title>Fisioterapia invasiva · El FisioLógico</title>
 
   <!--
-    =========================================================
-    PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
-    Categoría: FISIOTERAPIA INVASIVA
-    Archivo: fisioterapia-invasiva.html
+  =====================================================================
+  PLANTILLA CANÓNICA DE CATEGORÍAS · EL FISIOLÓGICO
+  CATEGORÍA: FISIOTERAPIA INVASIVA
+  ARCHIVO: fisioterapia-invasiva.html
+  =====================================================================
 
-    INSTRUCCIONES PARA HUMANOS:
-    - NO modificar la estructura del documento
-    - NO tocar base.css
-    - NO alterar el script final
-    - Pegar TARJETAS ÚNICAMENTE dentro de:
-        <div id="articlesList"></div>
+  INSTRUCCIONES HUMANAS (NO NEGOCIABLES)
+  ------------------------------------
+  - NO modificar estructura, IDs ni script
+  - NO tocar base.css
+  - SOLO pegar tarjetas dentro de <div id="articlesList"></div>
+  - Cada tarjeta DEBE incluir:
+      class="article-link article-card"
+      data-year="YYYY"
+      data-score="0–30"
+      data-tier="solida | moderada | exploratoria"
+      data-category="fisioterapia-invasiva"
 
-    CRITERIO EDITORIAL:
-    - Incluir solo técnicas con penetración tisular real
-    - Evaluar seguridad, efecto clínico y coherencia causal
-    - Penalizar explicaciones mecanicistas no demostradas
-    =========================================================
+  COMPORTAMIENTO AUTOMÁTICO
+  -------------------------
+  - Orden automático por data-year (más recientes arriba)
+  - Filtros por año, score mínimo y nivel de evidencia
+  - Por defecto: visibles solo artículos con score ≥ 20 / 30
+
+  FILOSOFÍA
+  ---------
+  Repositorio científico centrado en fisioterapia invasiva basada en
+  razonamiento clínico, ecografía, neurofisiología y evidencia.
+  Se penaliza la técnica descontextualizada, el mecanicismo simple
+  y la extrapolación causal no justificada.
+  =====================================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Fisioterapia invasiva: análisis crítico de la evidencia científica sobre punción seca, electrólisis y técnicas percutáneas aplicadas a la fisioterapia clínica." />
+  <meta name="description" content="Categoría Fisioterapia invasiva: análisis crítico de la evidencia científica sobre punción seca, electrólisis, técnicas invasivas y su aplicación clínica en fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
+  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- CSS base (NO TOCAR) -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
+  <!-- Estilos locales (SOLO VISUAL) -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
     .article-card-header{
-      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:1rem;
     }
     .score-badge{
-      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
-      color:var(--accent); border:1px solid var(--accent);
-      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
+      font-family:var(--font-mono);
+      font-size:.85rem;
+      font-weight:600;
+      color:var(--accent);
+      border:1px solid var(--accent);
+      padding:.25rem .5rem;
+      border-radius:4px;
+      white-space:nowrap;
     }
     header h1{ color:var(--accent); }
-    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
+    .filters{
+      display:flex;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:.75rem;
+    }
     .filters label{
-      display:flex; flex-direction:column; gap:.35rem;
-      font-family:var(--font-mono); font-size:.75rem;
-      letter-spacing:.08em; text-transform:uppercase;
+      display:flex;
+      flex-direction:column;
+      gap:.35rem;
+      font-family:var(--font-mono);
+      font-size:.75rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
     }
     .filters select{
-      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
-      padding:.45rem .6rem; border-radius:4px;
-      font-family:'Inter', sans-serif; font-size:.85rem;
+      background:#0f0f0f;
+      color:#fff;
+      border:1px solid #2a2a2a;
+      padding:.45rem .6rem;
+      border-radius:4px;
+      font-family:'Inter', sans-serif;
+      font-size:.85rem;
     }
     .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
-      font-size:.75rem; color:var(--muted);
-      max-width:720px; line-height:1.4;
+      font-size:.75rem;
+      color:var(--muted);
+      max-width:720px;
+      line-height:1.4;
     }
     .recommended-tag{
-      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
-      letter-spacing:.08em; text-transform:uppercase;
-      color:#000; background:var(--accent);
-      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
+      display:inline-block;
+      font-size:.65rem;
+      font-family:var(--font-mono);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#000;
+      background:var(--accent);
+      padding:.15rem .35rem;
+      border-radius:3px;
+      margin-bottom:.35rem;
     }
     .no-results{
-      display:none; font-size:.9rem; color:var(--muted);
-      margin-top:1.5rem; max-width:720px; line-height:1.5;
+      display:none;
+      font-size:.9rem;
+      color:var(--muted);
+      margin-top:1.5rem;
+      max-width:720px;
+      line-height:1.5;
     }
   </style>
 </head>
@@ -98,14 +148,15 @@
     <h1>Fisioterapia invasiva</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Estudios que emplean técnicas con penetración tisular real como punción seca
-      o electrólisis percutánea. Se prioriza la evaluación de seguridad, efectos
-      clínicos y coherencia entre intervención y resultados.
+      Evidencia científica sobre técnicas de fisioterapia invasiva
+      (punción seca, electrólisis, técnicas ecoguiadas) desde una
+      perspectiva crítica, neurofisiológica y clínica. Se prioriza
+      la integración con ejercicio, educación y razonamiento global.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
       Estado de la evidencia: categoría en desarrollo
-      (n = <span id="articleCount">0</span> artículos).
+      (<span id="articleCount">n = 0</span> artículos).
     </p>
   </header>
 
@@ -134,8 +185,8 @@
     </div>
 
     <p class="filters-note">
-      El score penaliza estudios sin comparador adecuado,
-      sin outcomes clínicos directos o con interpretación causal no demostrada.
+      Por defecto se prioriza evidencia con coherencia fisiológica,
+      seguridad clínica y transferencia terapéutica real.
     </p>
   </section>
 
@@ -144,41 +195,58 @@
 
     <div id="articlesList">
 
-      <!--
-        EJEMPLO FICTICIO · SOLO GUÍA HUMANA
-        ESTE BLOQUE CUENTA PARA n Y FILTROS
-        ELIMINAR EN PRODUCCIÓN
-      -->
-      <article class="article-card"
-        data-year="2023"
-        data-score="18"
-        data-tier="moderada"
-        data-category="fisioterapia-invasiva">
+      <!-- ARTÍCULO FICTICIO 1 -->
+      <a href="../articulos/fisioterapia-invasiva/articulo-ficticio-2026.html"
+         class="article-link article-card"
+         data-year="2026"
+         data-score="24"
+         data-tier="moderada"
+         data-category="fisioterapia-invasiva">
 
-        <a class="article-link" href="#">
-          <div class="article-card-header">
-            <h3>Dry needling versus sham intervention for shoulder pain</h3>
-            <span class="score-badge">18 / 30</span>
+        <div class="article-card-header">
+          <div>
+            <span class="recommended-tag">Recomendado</span>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Artículo ficticio creado para validar el sistema de ordenación,
+              filtrado y priorización clínica en fisioterapia invasiva.
+            </p>
           </div>
-          <p>
-            Ensayo aleatorizado que compara punción seca frente a intervención simulada.
-            Efectos modestos sobre dolor a corto plazo, con transferencia clínica limitada.
-          </p>
-        </a>
-      </article>
+          <span class="score-badge">24 / 30</span>
+        </div>
+      </a>
+
+      <!-- ARTÍCULO FICTICIO 2 -->
+      <a href="../articulos/fisioterapia-invasiva/articulo-ficticio-2009.html"
+         class="article-link article-card"
+         data-year="2009"
+         data-score="13"
+         data-tier="exploratoria"
+         data-category="fisioterapia-invasiva">
+
+        <div class="article-card-header">
+          <div>
+            <h3>Artículo ficticio</h3>
+            <p class="muted">
+              Artículo ficticio de carácter exploratorio utilizado para
+              comprobar el correcto funcionamiento de los filtros editoriales.
+            </p>
+          </div>
+          <span class="score-badge">13 / 30</span>
+        </div>
+      </a>
 
     </div>
 
     <p class="no-results" id="noResults">
-      Solo se incorporan estudios con técnicas invasivas reales
-      y resultados clínicamente interpretables.
+      No hay artículos que cumplan los criterios seleccionados.
     </p>
   </section>
 
 </main>
 
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
-  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
     <div>
       <span style="font-weight:600;">Fisio</span>
       <span style="font-weight:600; color:#FCBF06;">Lógico</span>
@@ -189,46 +257,60 @@
   </div>
 </footer>
 
+<!-- SCRIPT CANÓNICO DE CATEGORÍAS (NO TOCAR) -->
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
+
   const cards = Array.from(document.querySelectorAll('.article-card'));
   const countEl = document.getElementById('articleCount');
-  if (countEl) countEl.textContent = cards.length;
-  if (!cards.length) return;
-
   const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  cards
-    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
-    .forEach(c=>container.appendChild(c));
+  if (countEl) countEl.textContent = `n = ${cards.length}`;
 
-  [...new Set(cards.map(c => c.dataset.year))]
-    .sort((a,b)=>b-a)
-    .forEach(y=>{
-      const o=document.createElement('option');
-      o.value=y; o.textContent=y; yearFilter.appendChild(o);
-    });
-
-  function applyFilters(){
-    let visible=0;
-    cards.forEach(c=>{
-      const ok =
-        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
-        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
-        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
-      c.style.display=ok?'block':'none';
-      if(ok) visible++;
-    });
-    noResults.style.display=visible? 'none':'block';
+  if (!cards.length) {
+    noResults.style.display = 'block';
+    return;
   }
 
-  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
+  cards
+    .sort((a, b) => +b.dataset.year - +a.dataset.year)
+    .forEach(card => container.appendChild(card));
+
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a, b) => b - a)
+    .forEach(year => {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearFilter.appendChild(option);
+    });
+
+  function applyFilters() {
+    let visible = 0;
+
+    cards.forEach(card => {
+      const show =
+        (yearFilter.value === 'all' || card.dataset.year === yearFilter.value) &&
+        (scoreFilter.value === 'all' || +card.dataset.score >= +scoreFilter.value) &&
+        (tierFilter.value === 'all' || card.dataset.tier === tierFilter.value);
+
+      card.style.display = show ? 'block' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.style.display = visible ? 'none' : 'block';
+  }
+
+  yearFilter.addEventListener('change', applyFilters);
+  scoreFilter.addEventListener('change', applyFilters);
+  tierFilter.addEventListener('change', applyFilters);
+
   applyFilters();
-})();
+});
 </script>
 
 </body>
