@@ -2,111 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Biomecánica Clínica · El FisioLógico</title>
+  <title>Biomecánica clínica · El FisioLógico</title>
 
   <!--
     =========================================================
     PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
     Categoría: BIOMECÁNICA CLÍNICA
     Archivo: biomecanica.html
+
+    INSTRUCCIONES PARA HUMANOS:
+    - NO modificar la estructura del documento
+    - NO tocar base.css
+    - NO alterar el script final
+    - Las TARJETAS DE ARTÍCULOS se pegan
+      ÚNICAMENTE dentro del div id="articlesList"
     =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Biomecánica Clínica: análisis crítico de la evidencia científica basada en variables mecánicas aplicadas a la fisioterapia." />
+  <meta name="description" content="Categoría Biomecánica clínica: análisis crítico de la evidencia científica basada en variables mecánicas instrumentales aplicadas a la fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Tipografías corporativas -->
+  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base del proyecto (NO MODIFICAR) -->
+  <!-- CSS base -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales de categoría -->
+  <!-- Estilos locales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1rem;
+      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
     }
-
     .score-badge{
-      font-family:var(--font-mono);
-      font-size:.85rem;
-      font-weight:600;
-      color:var(--accent);
-      border:1px solid var(--accent);
-      padding:.25rem .5rem;
-      border-radius:4px;
-      white-space:nowrap;
+      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
+      color:var(--accent); border:1px solid var(--accent);
+      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
-    .filters{
-      display:flex;
-      gap:1.5rem;
-      flex-wrap:wrap;
-      margin-bottom:.75rem;
-    }
-
+    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
     .filters label{
-      display:flex;
-      flex-direction:column;
-      gap:.35rem;
-      font-family:var(--font-mono);
-      font-size:.75rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+      display:flex; flex-direction:column; gap:.35rem;
+      font-family:var(--font-mono); font-size:.75rem;
+      letter-spacing:.08em; text-transform:uppercase;
     }
-
     .filters select{
-      background:#0f0f0f;
-      color:#fff;
-      border:1px solid #2a2a2a;
-      padding:.45rem .6rem;
-      border-radius:4px;
-      font-family:'Inter', sans-serif;
-      font-size:.85rem;
+      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
+      padding:.45rem .6rem; border-radius:4px;
+      font-family:'Inter', sans-serif; font-size:.85rem;
     }
-
-    .filters select:focus{
-      outline:none;
-      border-color:var(--accent);
-    }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
-      font-size:.75rem;
-      color:var(--muted);
-      max-width:720px;
-      line-height:1.4;
+      font-size:.75rem; color:var(--muted);
+      max-width:720px; line-height:1.4;
     }
-
     .recommended-tag{
-      display:inline-block;
-      font-size:.65rem;
-      font-family:var(--font-mono);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#000;
-      background:var(--accent);
-      padding:.15rem .35rem;
-      border-radius:3px;
-      margin-bottom:.35rem;
+      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
+      letter-spacing:.08em; text-transform:uppercase;
+      color:#000; background:var(--accent);
+      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
     }
-
     .no-results{
-      display:none;
-      font-size:.9rem;
-      color:var(--muted);
-      margin-top:1.5rem;
-      max-width:720px;
-      line-height:1.5;
+      display:none; font-size:.9rem; color:var(--muted);
+      margin-top:1.5rem; max-width:720px; line-height:1.5;
     }
   </style>
 </head>
@@ -120,7 +81,6 @@
       <span style="font-weight:700;">Fisio</span>
       <span style="font-weight:700; color:#FCBF06;">Lógico</span>
     </a>
-
     <span class="mono muted" style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">
       Categoría
     </span>
@@ -136,13 +96,13 @@
 
   <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
-    <h1>Biomecánica Clínica</h1>
+    <h1>Biomecánica clínica</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría incluye estudios que analizan variables mecánicas del movimiento
-      (cinemática, cinética, cargas, momentos, fuerzas y patrones instrumentales)
-      aplicadas al razonamiento clínico en fisioterapia.
-      La biomecánica debe ser el núcleo del estudio, no un complemento descriptivo.
+      Esta categoría reúne estudios que analizan variables mecánicas instrumentales
+      (cinemática, cinética, cargas, fuerzas, momentos) aplicadas al movimiento humano.
+      Se penalizan interpretaciones clínicas directas cuando las variables biomecánicas
+      no se acompañan de outcomes funcionales o de dolor.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -156,24 +116,17 @@
     <h2>Filtrar artículos</h2>
 
     <div class="filters">
-      <label>
-        Año
-        <select id="yearFilter">
-          <option value="all">Todos</option>
-        </select>
+      <label>Año
+        <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
-      <label>
-        Score mínimo
+      <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
           <option value="15">≥ 15 / 30</option>
           <option value="all">Todos</option>
         </select>
       </label>
-
-      <label>
-        Nivel de evidencia
+      <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
           <option value="solida">Sólida</option>
@@ -184,56 +137,46 @@
     </div>
 
     <p class="filters-note">
-      El score metodológico prioriza validez de las mediciones mecánicas,
-      coherencia del modelo biomecánico y transferencia clínica real.
-      Variables instrumentales sin impacto clínico directo penalizan la nota.
+      El score refleja la validez metodológica y la prudencia en la inferencia clínica,
+      no la sofisticación tecnológica del análisis biomecánico.
     </p>
   </section>
 
-  <!-- LISTADO DE ARTÍCULOS -->
+  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA PEGAR TARJETAS -->
+    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!--
-        EJEMPLO DE TARJETA FICTICIA · GUÍA DE PEGADO
-        Eliminar o sustituir por artículos reales
-      -->
+      <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
-        data-year="2023"
+        data-year="2025"
         data-score="19"
         data-tier="moderada"
         data-category="biomecanica">
 
-        <a class="article-link" href="../articulos/biomecanica/knee-joint-loading-gait-analysis-2023.html">
-
+        <a class="article-link" href="../articulos/biomecanica/ground-reaction-forces-running-injury-risk-2025.html">
+          <span class="recommended-tag">Recomendado</span>
           <div class="article-card-header">
-            <h3>
-              Knee joint loading patterns during gait in patients with anterior knee pain
-            </h3>
+            <h3>Ground reaction forces and running-related injury risk: a biomechanical analysis</h3>
             <span class="score-badge">19 / 30</span>
           </div>
-
           <p>
-            Estudio biomecánico con análisis cinético de la marcha.
-            Buen control instrumental, pero transferencia clínica limitada
-            al no relacionar las cargas con outcomes funcionales o de dolor.
+            Estudio biomecánico que analiza fuerzas de reacción del suelo durante la carrera.
+            Transferencia clínica limitada si no se acompaña de outcomes de dolor o función.
           </p>
-
         </a>
       </article>
+      <!-- FIN EJEMPLO -->
 
-      <!-- FIN DEL EJEMPLO -->
-
-      <!-- PEGAR AQUÍ NUEVAS TARJETAS REALES -->
+      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría se ampliará con estudios biomecánicos que aporten
-      comprensión clínica real, no solo sofisticación instrumental.
+      La categoría se desarrollará a medida que se incorporen estudios con integración
+      biomecánica-clínica y medidas funcionales relevantes.
     </p>
   </section>
 
@@ -241,14 +184,13 @@
 
 <!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
-  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
       <span style="font-weight:600;">Fisio</span>
       <span style="font-weight:600; color:#FCBF06;">Lógico</span>
     </div>
-
     <p class="muted" style="font-size:.75rem;">
-      © El FisioLógico · Categoría Biomecánica Clínica
+      © El FisioLógico · Categoría Biomecánica clínica
     </p>
   </div>
 </footer>
@@ -261,23 +203,16 @@
   if (countEl) countEl.textContent = `n = ${cards.length}`;
   if (!cards.length) return;
 
-  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  cards
-    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
-    .forEach(c=>container.appendChild(c));
-
-  [...new Set(cards.map(c=>c.dataset.year))]
+  [...new Set(cards.map(c => c.dataset.year))]
     .sort((a,b)=>b-a)
     .forEach(y=>{
       const o=document.createElement('option');
-      o.value=y;
-      o.textContent=y;
-      yearFilter.appendChild(o);
+      o.value=y; o.textContent=y; yearFilter.appendChild(o);
     });
 
   function applyFilters(){
@@ -290,7 +225,7 @@
       c.style.display=ok?'block':'none';
       if(ok) visible++;
     });
-    noResults.style.display=visible?'none':'block';
+    noResults.style.display=visible? 'none':'block';
   }
 
   yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
