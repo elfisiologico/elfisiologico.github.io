@@ -10,12 +10,19 @@
     Categoría: BIOMECÁNICA CLÍNICA
     Archivo: biomecanica.html
 
-    INSTRUCCIONES PARA HUMANOS:
+    INSTRUCCIONES PARA HUMANOS (LECTURA OBLIGATORIA):
     - NO modificar la estructura del documento
     - NO tocar base.css
     - NO alterar el script final
-    - Las TARJETAS DE ARTÍCULOS se pegan
-      ÚNICAMENTE dentro del div id="articlesList"
+    - Pegar TARJETAS DE ARTÍCULOS ÚNICAMENTE dentro de:
+        <div id="articlesList"></div>
+    - Cada tarjeta DEBE incluir:
+        · class="article-card"
+        · data-year
+        · data-score
+        · data-tier
+        · data-category
+    - Las tarjetas se ORDENAN automáticamente por SCORE (↓)
     =========================================================
   -->
 
@@ -23,51 +30,97 @@
   <meta name="description" content="Categoría Biomecánica clínica: análisis crítico de la evidencia científica basada en variables mecánicas instrumentales aplicadas a la fisioterapia." />
   <meta name="author" content="El FisioLógico" />
 
-  <!-- Tipografías -->
+  <!-- Tipografías corporativas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base -->
+  <!-- CSS base del proyecto (NO TOCAR) -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales -->
+  <!-- Estilos locales (SOLO VISUAL) -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
+
     .article-card-header{
-      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:1rem;
     }
+
     .score-badge{
-      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
-      color:var(--accent); border:1px solid var(--accent);
-      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
+      font-family:var(--font-mono);
+      font-size:.85rem;
+      font-weight:600;
+      color:var(--accent);
+      border:1px solid var(--accent);
+      padding:.25rem .5rem;
+      border-radius:4px;
+      white-space:nowrap;
     }
+
     header h1{ color:var(--accent); }
-    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
+
+    .filters{
+      display:flex;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:.75rem;
+    }
+
     .filters label{
-      display:flex; flex-direction:column; gap:.35rem;
-      font-family:var(--font-mono); font-size:.75rem;
-      letter-spacing:.08em; text-transform:uppercase;
+      display:flex;
+      flex-direction:column;
+      gap:.35rem;
+      font-family:var(--font-mono);
+      font-size:.75rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
     }
+
     .filters select{
-      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
-      padding:.45rem .6rem; border-radius:4px;
-      font-family:'Inter', sans-serif; font-size:.85rem;
+      background:#0f0f0f;
+      color:#fff;
+      border:1px solid #2a2a2a;
+      padding:.45rem .6rem;
+      border-radius:4px;
+      font-family:'Inter', sans-serif;
+      font-size:.85rem;
     }
-    .filters select:focus{ outline:none; border-color:var(--accent); }
+
+    .filters select:focus{
+      outline:none;
+      border-color:var(--accent);
+    }
+
     .filters-note{
-      font-size:.75rem; color:var(--muted);
-      max-width:720px; line-height:1.4;
+      font-size:.75rem;
+      color:var(--muted);
+      max-width:720px;
+      line-height:1.4;
     }
+
     .recommended-tag{
-      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
-      letter-spacing:.08em; text-transform:uppercase;
-      color:#000; background:var(--accent);
-      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
+      display:inline-block;
+      font-size:.65rem;
+      font-family:var(--font-mono);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#000;
+      background:var(--accent);
+      padding:.15rem .35rem;
+      border-radius:3px;
+      margin-bottom:.35rem;
     }
+
     .no-results{
-      display:none; font-size:.9rem; color:var(--muted);
-      margin-top:1.5rem; max-width:720px; line-height:1.5;
+      display:none;
+      font-size:.9rem;
+      color:var(--muted);
+      margin-top:1.5rem;
+      max-width:720px;
+      line-height:1.5;
     }
   </style>
 </head>
@@ -99,10 +152,10 @@
     <h1>Biomecánica clínica</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría reúne estudios que analizan variables mecánicas instrumentales
-      (cinemática, cinética, cargas, fuerzas, momentos) aplicadas al movimiento humano.
-      Se penalizan interpretaciones clínicas directas cuando las variables biomecánicas
-      no se acompañan de outcomes funcionales o de dolor.
+      Estudios que analizan variables mecánicas instrumentales (cinemática,
+      cinética, cargas, fuerzas, momentos) aplicadas al movimiento humano.
+      Se penaliza la inferencia clínica directa sin outcomes funcionales
+      o de dolor.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -117,8 +170,11 @@
 
     <div class="filters">
       <label>Año
-        <select id="yearFilter"><option value="all">Todos</option></select>
+        <select id="yearFilter">
+          <option value="all">Todos</option>
+        </select>
       </label>
+
       <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
@@ -126,6 +182,7 @@
           <option value="all">Todos</option>
         </select>
       </label>
+
       <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
@@ -137,8 +194,8 @@
     </div>
 
     <p class="filters-note">
-      El score refleja la validez metodológica y la prudencia en la inferencia clínica,
-      no la sofisticación tecnológica del análisis biomecánico.
+      El score refleja validez metodológica y prudencia clínica,
+      no complejidad técnica del análisis biomecánico.
     </p>
   </section>
 
@@ -146,10 +203,9 @@
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
+      <!-- EJEMPLO FICTICIO · SOLO GUÍA HUMANA -->
       <article class="article-card"
         data-year="2025"
         data-score="19"
@@ -158,13 +214,15 @@
 
         <a class="article-link" href="../articulos/biomecanica/ground-reaction-forces-running-injury-risk-2025.html">
           <span class="recommended-tag">Recomendado</span>
+
           <div class="article-card-header">
-            <h3>Ground reaction forces and running-related injury risk: a biomechanical analysis</h3>
+            <h3>Ground reaction forces and running-related injury risk</h3>
             <span class="score-badge">19 / 30</span>
           </div>
+
           <p>
-            Estudio biomecánico que analiza fuerzas de reacción del suelo durante la carrera.
-            Transferencia clínica limitada si no se acompaña de outcomes de dolor o función.
+            Análisis biomecánico de fuerzas de reacción del suelo en carrera.
+            Transferencia clínica limitada sin outcomes funcionales directos.
           </p>
         </a>
       </article>
@@ -175,8 +233,8 @@
     </div>
 
     <p class="no-results" id="noResults">
-      La categoría se desarrollará a medida que se incorporen estudios con integración
-      biomecánica-clínica y medidas funcionales relevantes.
+      La categoría crecerá con estudios que integren biomecánica
+      y resultados clínicos relevantes.
     </p>
   </section>
 
@@ -195,7 +253,7 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO -->
+<!-- SCRIPT CANÓNICO (NO TOCAR) -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
@@ -203,16 +261,25 @@
   if (countEl) countEl.textContent = `n = ${cards.length}`;
   if (!cards.length) return;
 
+  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  [...new Set(cards.map(c => c.dataset.year))]
+  // ORDEN CANÓNICO POR SCORE (DESCENDENTE)
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
+
+  // POBLAR FILTRO DE AÑOS
+  [...new Set(cards.map(c=>c.dataset.year))]
     .sort((a,b)=>b-a)
     .forEach(y=>{
       const o=document.createElement('option');
-      o.value=y; o.textContent=y; yearFilter.appendChild(o);
+      o.value=y;
+      o.textContent=y;
+      yearFilter.appendChild(o);
     });
 
   function applyFilters(){
@@ -222,10 +289,10 @@
         (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
         (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
         (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
-      c.style.display=ok?'block':'none';
+      c.style.display = ok ? 'block' : 'none';
       if(ok) visible++;
     });
-    noResults.style.display=visible? 'none':'block';
+    noResults.style.display = visible ? 'none' : 'block';
   }
 
   yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
