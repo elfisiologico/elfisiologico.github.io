@@ -5,19 +5,29 @@
   <title>Ecografía · El FisioLógico</title>
 
   <!--
+    =========================================================
     PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
+    Categoría: ECOGRAFÍA MUSCULOESQUELÉTICA
     Archivo: ecografia.html
 
     INSTRUCCIONES PARA HUMANOS:
-    - NO modificar la estructura
+    - NO modificar la estructura del documento
     - NO tocar base.css
-    - Editar solo textos editoriales
-    - Pegar nuevas tarjetas SOLO en la zona indicada
-    - Ecografía ≠ diagnóstico aislado: siempre integrar con clínica
+    - NO alterar el script final
+    - Las TARJETAS DE ARTÍCULOS se pegan
+      ÚNICAMENTE dentro del div id="articlesList"
+    - Esta categoría INCLUYE estudios donde la ecografía
+      es:
+        · variable principal
+        · outcome
+        · herramienta diagnóstica o de medida
+    - EXCLUIR estudios donde la ecografía sea solo
+      descriptiva o ilustrativa
+    =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Ecografía: análisis crítico de la evidencia científica sobre ecografía musculoesquelética aplicada a la fisioterapia clínica." />
+  <meta name="description" content="Categoría Ecografía: análisis crítico de la evidencia científica en ecografía musculoesquelética aplicada a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -25,92 +35,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base (NO MODIFICAR) -->
+  <!-- CSS base -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
   <!-- Estilos locales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1rem;
+      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
     }
-
     .score-badge{
-      font-family:var(--font-mono);
-      font-size:.85rem;
-      font-weight:600;
-      color:var(--accent);
-      border:1px solid var(--accent);
-      padding:.25rem .5rem;
-      border-radius:4px;
-      white-space:nowrap;
+      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
+      color:var(--accent); border:1px solid var(--accent);
+      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
-    .filters{
-      display:flex;
-      gap:1.5rem;
-      flex-wrap:wrap;
-      margin-bottom:.75rem;
-    }
-
+    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
     .filters label{
-      display:flex;
-      flex-direction:column;
-      gap:.35rem;
-      font-family:var(--font-mono);
-      font-size:.75rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+      display:flex; flex-direction:column; gap:.35rem;
+      font-family:var(--font-mono); font-size:.75rem;
+      letter-spacing:.08em; text-transform:uppercase;
     }
-
     .filters select{
-      background:#0f0f0f;
-      color:#fff;
-      border:1px solid #2a2a2a;
-      padding:.45rem .6rem;
-      border-radius:4px;
-      font-family:'Inter', sans-serif;
-      font-size:.85rem;
+      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
+      padding:.45rem .6rem; border-radius:4px;
+      font-family:'Inter', sans-serif; font-size:.85rem;
     }
-
-    .filters select:focus{
-      outline:none;
-      border-color:var(--accent);
-    }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
-      font-size:.75rem;
-      color:var(--muted);
-      max-width:720px;
-      line-height:1.4;
+      font-size:.75rem; color:var(--muted);
+      max-width:720px; line-height:1.4;
     }
-
     .recommended-tag{
-      display:inline-block;
-      font-size:.65rem;
-      font-family:var(--font-mono);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#000;
-      background:var(--accent);
-      padding:.15rem .35rem;
-      border-radius:3px;
-      margin-bottom:.35rem;
+      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
+      letter-spacing:.08em; text-transform:uppercase;
+      color:#000; background:var(--accent);
+      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
     }
-
     .no-results{
-      display:none;
-      font-size:.9rem;
-      color:var(--muted);
-      margin-top:1.5rem;
-      max-width:720px;
-      line-height:1.5;
+      display:none; font-size:.9rem; color:var(--muted);
+      margin-top:1.5rem; max-width:720px; line-height:1.5;
     }
   </style>
 </head>
@@ -132,22 +96,25 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
+  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
   <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
-    <h1>Ecografía musculoesquelética</h1>
+    <h1>Ecografía</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Análisis crítico de la evidencia científica sobre ecografía musculoesquelética
-      aplicada a la fisioterapia clínica, evaluando su fiabilidad, validez diagnóstica
-      y utilidad real para el razonamiento clínico y la toma de decisiones terapéuticas.
+      Esta categoría reúne estudios donde la ecografía musculoesquelética
+      se utiliza como herramienta de medición, diagnóstico o outcome,
+      evaluados desde su validez clínica, fiabilidad y transferencia real
+      a la práctica fisioterapéutica.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo
+      (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
@@ -156,24 +123,17 @@
     <h2>Filtrar artículos</h2>
 
     <div class="filters">
-      <label>
-        Año
-        <select id="yearFilter">
-          <option value="all">Todos</option>
-        </select>
+      <label>Año
+        <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
-      <label>
-        Score mínimo
+      <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
           <option value="15">≥ 15 / 30</option>
           <option value="all">Todos</option>
         </select>
       </label>
-
-      <label>
-        Nivel de evidencia
+      <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
           <option value="solida">Sólida</option>
@@ -184,61 +144,58 @@
     </div>
 
     <p class="filters-note">
-      Cambios estructurales observados por ecografía NO implican necesariamente dolor,
-      disfunción o necesidad de intervención si no existe correlato clínico.
+      El score penaliza el uso de medidas ecográficas sin fiabilidad reportada,
+      ausencia de correlación clínica o extrapolaciones diagnósticas no validadas.
     </p>
   </section>
 
-  <!-- LISTADO DE ARTÍCULOS -->
+  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
     <div id="articlesList">
 
-      <!--
-        ZONA ÚNICA PARA PEGAR TARJETAS DE ARTÍCULOS
-        ------------------------------------------
-        - Pegar aquí nuevas tarjetas <article>
-        - Una tarjeta por artículo
-        - NO pegar fuera de este div
-      -->
-
-      <!-- EJEMPLO FICTICIO (BORRAR CUANDO AÑADAS ARTÍCULOS REALES) -->
+      <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
         data-year="2025"
-        data-score="21"
+        data-score="20"
         data-tier="moderada"
         data-category="ecografia">
 
-        <a class="article-link" href="#">
-          <span class="recommended-tag">Ejemplo</span>
+        <a class="article-link" href="../articulos/ecografia/ultrasound-muscle-thickness-reliability-2025.html">
+
+          <span class="recommended-tag">Recomendado</span>
 
           <div class="article-card-header">
-            <h3>Reliability and clinical relevance of ultrasound measures in rotator cuff assessment</h3>
-            <span class="score-badge">21 / 30</span>
+            <h3>Reliability and clinical relevance of ultrasound-measured muscle thickness in patients with chronic low back pain</h3>
+            <span class="score-badge">20 / 30</span>
           </div>
 
           <p>
-            Estudio observacional que evalúa la fiabilidad intra e interevaluador
-            de medidas ecográficas del manguito rotador y su relación con función clínica.
+            Estudio observacional que analiza la fiabilidad interevaluador
+            y la relación entre grosor muscular ecográfico y variables clínicas.
+            Transferencia clínica moderada, con límites claros en la inferencia funcional.
           </p>
+
         </a>
       </article>
+      <!-- FIN EJEMPLO -->
 
-      <!-- FIN DEL EJEMPLO -->
+      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría incorporará estudios que aporten utilidad clínica real,
-      evitando la sobreinterpretación de hallazgos estructurales aislados.
+      Solo se incluyen estudios donde la ecografía aporta información
+      clínicamente interpretable y no meramente descriptiva.
     </p>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
-  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
       <span style="font-weight:600;">Fisio</span>
       <span style="font-weight:600; color:#FCBF06;">Lógico</span>
@@ -249,59 +206,40 @@
   </div>
 </footer>
 
+<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
-  const count = document.getElementById('articleCount');
+  const countEl = document.getElementById('articleCount');
+  if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
-  count.textContent = cards.length;
-
-  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  cards
-    .sort((a, b) => parseInt(b.dataset.score, 10) - parseInt(a.dataset.score, 10))
-    .forEach(card => container.appendChild(card));
-
-  const years = [...new Set(cards.map(c => c.dataset.year))].sort((a,b) => b-a);
-  years.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = y;
-    opt.textContent = y;
-    yearFilter.appendChild(opt);
-  });
-
-  function applyFilters(){
-    const year = yearFilter.value;
-    const score = scoreFilter.value;
-    const tier = tierFilter.value;
-    let visibleCount = 0;
-
-    cards.forEach(card => {
-      const cYear = card.dataset.year;
-      const cScore = parseInt(card.dataset.score, 10);
-      const cTier = card.dataset.tier;
-
-      let visible = true;
-      if (year !== 'all' && cYear !== year) visible = false;
-      if (score !== 'all' && cScore < parseInt(score, 10)) visible = false;
-      if (tier !== 'all' && cTier !== tier) visible = false;
-
-      card.style.display = visible ? 'block' : 'none';
-      if (visible) visibleCount++;
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y; o.textContent=y; yearFilter.appendChild(o);
     });
 
-    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  function applyFilters(){
+    let visible=0;
+    cards.forEach(c=>{
+      const ok =
+        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
+        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
+        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
+      c.style.display=ok?'block':'none';
+      if(ok) visible++;
+    });
+    noResults.style.display=visible? 'none':'block';
   }
 
-  yearFilter.addEventListener('change', applyFilters);
-  scoreFilter.addEventListener('change', applyFilters);
-  tierFilter.addEventListener('change', applyFilters);
-
+  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
   applyFilters();
 })();
 </script>
