@@ -5,18 +5,22 @@
   <title>Electroterapia · El FisioLógico</title>
 
   <!--
+    =========================================================
     PLANTILLA CANÓNICA DE CATEGORÍA · EL FISIOLÓGICO
+    Categoría: ELECTROTERAPIA
     Archivo: electroterapia.html
 
     INSTRUCCIONES PARA HUMANOS:
-    - NO modificar la estructura general
+    - NO modificar la estructura del documento
     - NO tocar base.css
-    - Editar solo textos editoriales
-    - Añadir tarjetas EXCLUSIVAMENTE en la zona indicada
+    - NO alterar el script final
+    - Las TARJETAS DE ARTÍCULOS se pegan
+      ÚNICAMENTE dentro del div id="articlesList"
+    =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Electroterapia: análisis crítico de la evidencia científica sobre modalidades de estimulación periférica en fisioterapia." />
+  <meta name="description" content="Categoría Electroterapia: análisis crítico de la evidencia científica sobre modalidades electrofísicas aplicadas a la fisioterapia clínica." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -24,92 +28,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS base del proyecto (NO MODIFICAR) -->
+  <!-- CSS base -->
   <link rel="stylesheet" href="../assets/css/base.css">
 
-  <!-- Estilos locales de categoría -->
+  <!-- Estilos locales -->
   <style>
     .article-link{ display:block; color:inherit; text-decoration:none; }
-
     .article-card-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1rem;
+      display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;
     }
-
     .score-badge{
-      font-family:var(--font-mono);
-      font-size:.85rem;
-      font-weight:600;
-      color:var(--accent);
-      border:1px solid var(--accent);
-      padding:.25rem .5rem;
-      border-radius:4px;
-      white-space:nowrap;
+      font-family:var(--font-mono); font-size:.85rem; font-weight:600;
+      color:var(--accent); border:1px solid var(--accent);
+      padding:.25rem .5rem; border-radius:4px; white-space:nowrap;
     }
-
     header h1{ color:var(--accent); }
-
-    .filters{
-      display:flex;
-      gap:1.5rem;
-      flex-wrap:wrap;
-      margin-bottom:.75rem;
-    }
-
+    .filters{ display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:.75rem; }
     .filters label{
-      display:flex;
-      flex-direction:column;
-      gap:.35rem;
-      font-family:var(--font-mono);
-      font-size:.75rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+      display:flex; flex-direction:column; gap:.35rem;
+      font-family:var(--font-mono); font-size:.75rem;
+      letter-spacing:.08em; text-transform:uppercase;
     }
-
     .filters select{
-      background:#0f0f0f;
-      color:#fff;
-      border:1px solid #2a2a2a;
-      padding:.45rem .6rem;
-      border-radius:4px;
-      font-family:'Inter', sans-serif;
-      font-size:.85rem;
+      background:#0f0f0f; color:#fff; border:1px solid #2a2a2a;
+      padding:.45rem .6rem; border-radius:4px;
+      font-family:'Inter', sans-serif; font-size:.85rem;
     }
-
-    .filters select:focus{
-      outline:none;
-      border-color:var(--accent);
-    }
-
+    .filters select:focus{ outline:none; border-color:var(--accent); }
     .filters-note{
-      font-size:.75rem;
-      color:var(--muted);
-      max-width:720px;
-      line-height:1.4;
+      font-size:.75rem; color:var(--muted);
+      max-width:720px; line-height:1.4;
     }
-
     .recommended-tag{
-      display:inline-block;
-      font-size:.65rem;
-      font-family:var(--font-mono);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#000;
-      background:var(--accent);
-      padding:.15rem .35rem;
-      border-radius:3px;
-      margin-bottom:.35rem;
+      display:inline-block; font-size:.65rem; font-family:var(--font-mono);
+      letter-spacing:.08em; text-transform:uppercase;
+      color:#000; background:var(--accent);
+      padding:.15rem .35rem; border-radius:3px; margin-bottom:.35rem;
     }
-
     .no-results{
-      display:none;
-      font-size:.9rem;
-      color:var(--muted);
-      margin-top:1.5rem;
-      max-width:720px;
-      line-height:1.5;
+      display:none; font-size:.9rem; color:var(--muted);
+      margin-top:1.5rem; max-width:720px; line-height:1.5;
     }
   </style>
 </head>
@@ -131,6 +89,7 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
+  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
@@ -140,13 +99,15 @@
     <h1>Electroterapia</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Análisis crítico de la evidencia científica sobre modalidades de electroterapia periférica
-      (TENS, NMES, IFC y afines) en fisioterapia, evaluando magnitud del efecto, calidad metodológica
-      y transferencia clínica real, sin asumir mecanismos no demostrados.
+      Esta categoría agrupa modalidades electrofísicas (TENS, NMES, FES, corrientes
+      interferenciales, estimulación periférica) evaluadas desde un enfoque clínico
+      y metodológico. Se penaliza el uso acrítico basado en tradición o parámetros
+      aislados sin outcomes clínicos relevantes.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo
+      (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
@@ -155,24 +116,17 @@
     <h2>Filtrar artículos</h2>
 
     <div class="filters">
-      <label>
-        Año
-        <select id="yearFilter">
-          <option value="all">Todos</option>
-        </select>
+      <label>Año
+        <select id="yearFilter"><option value="all">Todos</option></select>
       </label>
-
-      <label>
-        Score mínimo
+      <label>Score mínimo
         <select id="scoreFilter">
           <option value="20" selected>≥ 20 / 30 (recomendado)</option>
           <option value="15">≥ 15 / 30</option>
           <option value="all">Todos</option>
         </select>
       </label>
-
-      <label>
-        Nivel de evidencia
+      <label>Nivel de evidencia
         <select id="tierFilter">
           <option value="all">Todos</option>
           <option value="solida">Sólida</option>
@@ -183,61 +137,54 @@
     </div>
 
     <p class="filters-note">
-      El score metodológico prioriza calidad del diseño, control de sesgos y relevancia clínica,
-      no la popularidad histórica ni la sofisticación tecnológica del dispositivo.
+      El score metodológico refleja la validez del diseño y la aplicabilidad clínica,
+      no la sofisticación tecnológica del dispositivo ni el número de parámetros.
     </p>
   </section>
 
-  <!-- LISTADO DE ARTÍCULOS -->
+  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
+    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!--
-        ZONA ÚNICA PARA PEGAR TARJETAS DE ARTÍCULOS
-        ------------------------------------------
-        - Pegar aquí nuevas tarjetas <article>
-        - Una tarjeta por artículo
-        - NO pegar fuera de este div
-      -->
-
-      <!-- EJEMPLO FICTICIO (BORRAR CUANDO AÑADAS ARTÍCULOS REALES) -->
+      <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
-        data-year="2024"
-        data-score="17"
+        data-year="2022"
+        data-score="16"
         data-tier="exploratoria"
         data-category="electroterapia">
 
-        <a class="article-link" href="#">
-          <span class="recommended-tag">Ejemplo</span>
-
+        <a class="article-link" href="../articulos/electroterapia/tens-chronic-knee-osteoarthritis-2022.html">
           <div class="article-card-header">
-            <h3>Peripheral electrical stimulation for knee osteoarthritis: a randomized trial</h3>
-            <span class="score-badge">17 / 30</span>
+            <h3>TENS versus placebo for chronic knee osteoarthritis: pain and function outcomes</h3>
+            <span class="score-badge">16 / 30</span>
           </div>
-
           <p>
-            Ensayo clínico con estimulación eléctrica periférica en artrosis de rodilla,
-            con mejoras pequeñas en dolor y sin cambios funcionales clínicamente relevantes.
+            Ensayo con intervención simulada que evalúa TENS en artrosis de rodilla.
+            Efectos modestos sobre dolor, sin cambios funcionales clínicamente relevantes
+            y con alta heterogeneidad en parámetros.
           </p>
         </a>
       </article>
+      <!-- FIN EJEMPLO -->
 
-      <!-- FIN DEL EJEMPLO -->
+      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      Esta categoría se irá construyendo progresivamente a medida que se incorporen
-      análisis con rigor metodológico y transferencia clínica demostrable.
+      Se incorporarán estudios cuando aporten resultados clínicos interpretables
+      y análisis crítico que supere la descripción técnica del estímulo.
     </p>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
-  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between;">
+  <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
       <span style="font-weight:600;">Fisio</span>
       <span style="font-weight:600; color:#FCBF06;">Lógico</span>
@@ -248,59 +195,40 @@
   </div>
 </footer>
 
+<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
-  const count = document.getElementById('articleCount');
+  const countEl = document.getElementById('articleCount');
+  if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
-  count.textContent = cards.length;
-
-  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
 
-  cards
-    .sort((a, b) => parseInt(b.dataset.score, 10) - parseInt(a.dataset.score, 10))
-    .forEach(card => container.appendChild(card));
-
-  const years = [...new Set(cards.map(c => c.dataset.year))].sort((a,b) => b-a);
-  years.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = y;
-    opt.textContent = y;
-    yearFilter.appendChild(opt);
-  });
-
-  function applyFilters(){
-    const year = yearFilter.value;
-    const score = scoreFilter.value;
-    const tier = tierFilter.value;
-    let visibleCount = 0;
-
-    cards.forEach(card => {
-      const cYear = card.dataset.year;
-      const cScore = parseInt(card.dataset.score, 10);
-      const cTier = card.dataset.tier;
-
-      let visible = true;
-      if (year !== 'all' && cYear !== year) visible = false;
-      if (score !== 'all' && cScore < parseInt(score, 10)) visible = false;
-      if (tier !== 'all' && cTier !== tier) visible = false;
-
-      card.style.display = visible ? 'block' : 'none';
-      if (visible) visibleCount++;
+  [...new Set(cards.map(c => c.dataset.year))]
+    .sort((a,b)=>b-a)
+    .forEach(y=>{
+      const o=document.createElement('option');
+      o.value=y; o.textContent=y; yearFilter.appendChild(o);
     });
 
-    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  function applyFilters(){
+    let visible=0;
+    cards.forEach(c=>{
+      const ok =
+        (yearFilter.value==='all'||c.dataset.year===yearFilter.value) &&
+        (scoreFilter.value==='all'||+c.dataset.score>=+scoreFilter.value) &&
+        (tierFilter.value==='all'||c.dataset.tier===tierFilter.value);
+      c.style.display=ok?'block':'none';
+      if(ok) visible++;
+    });
+    noResults.style.display=visible? 'none':'block';
   }
 
-  yearFilter.addEventListener('change', applyFilters);
-  scoreFilter.addEventListener('change', applyFilters);
-  tierFilter.addEventListener('change', applyFilters);
-
+  yearFilter.onchange = scoreFilter.onchange = tierFilter.onchange = applyFilters;
   applyFilters();
 })();
 </script>
