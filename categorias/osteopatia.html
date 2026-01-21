@@ -14,8 +14,13 @@
     - NO modificar la estructura del documento
     - NO tocar base.css
     - NO alterar el script final
-    - Las TARJETAS DE ARTÍCULOS se pegan
-      ÚNICAMENTE dentro del div id="articlesList"
+    - Pegar TARJETAS ÚNICAMENTE dentro de:
+        <div id="articlesList"></div>
+
+    CRITERIO EDITORIAL:
+    - Incluir solo estudios donde la osteopatía sea el marco explícito
+    - Priorizar outcomes clínicos (dolor, función, discapacidad)
+    - Penalizar narrativas no operacionalizadas y variables surrogate
     =========================================================
   -->
 
@@ -74,7 +79,6 @@
 
 <body>
 
-<!-- HEADER GLOBAL -->
 <header style="border-bottom:1px solid #1f1f1f; margin-bottom:3rem;">
   <div style="max-width:1100px; margin:auto; padding:1.5rem 1.25rem; display:flex; justify-content:space-between; align-items:center;">
     <a href="../categorias/index.html" style="text-decoration:none;">
@@ -89,29 +93,24 @@
 
 <main style="max-width:1100px; margin:auto; padding:0 1.25rem;">
 
-  <!-- NAVEGACIÓN -->
   <nav style="margin-bottom:2.5rem;">
     <a href="../categorias/index.html" class="mono muted">← Volver al repositorio</a>
   </nav>
 
-  <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
     <h1>Osteopatía</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría incluye estudios que evalúan intervenciones osteopáticas
-      como marco clínico explícito. Se priorizan ensayos con outcomes clínicos
-      (dolor, función, discapacidad) y se penalizan enfoques narrativos,
-      modelos no operacionalizados o resultados basados en variables surrogate.
+      Estudios que evalúan intervenciones osteopáticas como marco clínico explícito.
+      Se priorizan resultados clínicos y se penalizan modelos narrativos, hipótesis
+      no contrastadas y variables surrogate sin transferencia funcional.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
-      Estado de la evidencia: categoría en desarrollo
-      (n = <span id="articleCount">0</span> artículos).
+      Estado de la evidencia: categoría en desarrollo (n = <span id="articleCount">0</span> artículos).
     </p>
   </header>
 
-  <!-- FILTROS -->
   <section class="card">
     <h2>Filtrar artículos</h2>
 
@@ -137,51 +136,49 @@
     </div>
 
     <p class="filters-note">
-      El score refleja la calidad metodológica y la transferencia clínica,
-      no la coherencia interna del discurso osteopático.
+      El score refleja calidad metodológica y transferencia clínica,
+      no coherencia interna del marco osteopático.
     </p>
   </section>
 
-  <!-- LISTADO -->
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
-      <!-- EJEMPLO FICTICIO (GUÍA) -->
+      <!--
+        EJEMPLO FICTICIO · SOLO GUÍA HUMANA
+        ESTE BLOQUE CUENTA PARA n Y FILTROS
+        ELIMINAR EN PRODUCCIÓN
+      -->
       <article class="article-card"
         data-year="2023"
         data-score="17"
         data-tier="exploratoria"
         data-category="osteopatia">
 
-        <a class="article-link" href="../articulos/osteopatia/osteopathic-manual-treatment-lbp-2023.html">
+        <a class="article-link" href="#">
           <div class="article-card-header">
-            <h3>Osteopathic manual treatment for chronic low back pain: an exploratory clinical trial</h3>
+            <h3>Osteopathic manual treatment for chronic low back pain</h3>
             <span class="score-badge">17 / 30</span>
           </div>
           <p>
-            Ensayo exploratorio sobre tratamiento manual osteopático en dolor lumbar crónico.
-            Transferencia clínica limitada por tamaño muestral y control de sesgos.
+            Ensayo exploratorio con control limitado de sesgos y relevancia clínica
+            condicionada por tamaño muestral y diseño.
           </p>
         </a>
       </article>
-      <!-- FIN EJEMPLO -->
-
-      <!-- PEGAR AQUÍ TARJETAS REALES -->
 
     </div>
 
     <p class="no-results" id="noResults">
-      La categoría crecerá conforme se incorporen estudios con diseños
-      controlados y outcomes clínicos comparables.
+      La categoría crecerá conforme se incorporen estudios con diseños controlados
+      y resultados clínicos comparables.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer style="margin-top:4rem; border-top:1px solid #1f1f1f;">
   <div style="max-width:1100px; margin:auto; padding:2rem 1.25rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
     <div>
@@ -194,7 +191,6 @@
   </div>
 </footer>
 
-<!-- SCRIPT CANÓNICO -->
 <script>
 (function () {
   const cards = Array.from(document.querySelectorAll('.article-card'));
@@ -202,10 +198,15 @@
   if (countEl) countEl.textContent = cards.length;
   if (!cards.length) return;
 
+  const container = document.getElementById('articlesList');
   const yearFilter = document.getElementById('yearFilter');
   const scoreFilter = document.getElementById('scoreFilter');
   const tierFilter = document.getElementById('tierFilter');
   const noResults = document.getElementById('noResults');
+
+  cards
+    .sort((a,b)=>parseInt(b.dataset.score,10)-parseInt(a.dataset.score,10))
+    .forEach(c=>container.appendChild(c));
 
   [...new Set(cards.map(c => c.dataset.year))]
     .sort((a,b)=>b-a)
