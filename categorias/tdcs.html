@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Neuromodulación cerebral · El FisioLógico</title>
+  <title>Neuromodulación cerebral (tDCS / TMS) · El FisioLógico</title>
 
   <!--
     =========================================================
@@ -14,16 +14,20 @@
     - NO modificar la estructura del documento
     - NO tocar base.css
     - NO alterar el script final
-    - Las TARJETAS DE ARTÍCULOS se pegan
-      ÚNICAMENTE dentro del div id="articlesList"
-    - Esta categoría INCLUYE:
-        tDCS, tACS, tRNS, TMS, rTMS, iTBS, cTBS
-    - NO mezclar con Neurociencia ni Electroterapia periférica
+    - Pegar TARJETAS ÚNICAMENTE dentro de:
+        <div id="articlesList"></div>
+    - INCLUIR solo estudios con estimulación cerebral no invasiva:
+        · tDCS, tACS, tRNS
+        · TMS, rTMS, iTBS, cTBS
+    - La INTENCIÓN de modular excitabilidad cortical define la categoría
+    - EXCLUIR:
+        · Electroterapia periférica (TENS, NMES)
+        · Neurociencia sin intervención
     =========================================================
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Categoría Neuromodulación cerebral: análisis crítico de la evidencia científica sobre tDCS, TMS y técnicas de estimulación cerebral no invasiva aplicadas a fisioterapia." />
+  <meta name="description" content="Categoría Neuromodulación cerebral: análisis crítico de la evidencia científica sobre tDCS y TMS aplicada a la fisioterapia y el control del dolor." />
   <meta name="author" content="El FisioLógico" />
 
   <!-- Tipografías -->
@@ -99,13 +103,12 @@
 
   <!-- HEADER EDITORIAL -->
   <header style="margin-bottom:3rem;">
-    <h1>Neuromodulación cerebral</h1>
+    <h1>Neuromodulación cerebral (tDCS / TMS)</h1>
 
     <p class="muted" style="max-width:720px; font-size:1.1rem;">
-      Esta categoría incluye estudios con estimulación cerebral no invasiva
-      (tDCS, TMS y derivados) cuyo objetivo explícito es modular la excitabilidad
-      cortical. La inclusión se define por la intención neuromoduladora central,
-      independientemente de la técnica o del outcome.
+      Estudios que aplican estimulación cerebral no invasiva con intención explícita
+      de modular la excitabilidad cortical. Se priorizan outcomes clínicos y se
+      penaliza la extrapolación de marcadores fisiológicos a función o dolor.
     </p>
 
     <p class="muted" style="font-size:.85rem; margin-top:.75rem;">
@@ -140,8 +143,8 @@
     </div>
 
     <p class="filters-note">
-      El score metodológico pondera diseño, control de sesgos y transferencia clínica.
-      Variables neurofisiológicas aisladas no implican beneficio funcional directo.
+      El score penaliza estudios con outcomes exclusivamente surrogate
+      (EEG, excitabilidad, activación) sin correlato clínico directo.
     </p>
   </section>
 
@@ -149,29 +152,26 @@
   <section class="card" id="articles">
     <h2>Artículos disponibles</h2>
 
-    <!-- ZONA ÚNICA PARA TARJETAS -->
     <div id="articlesList">
 
       <!-- EJEMPLO FICTICIO (GUÍA) -->
       <article class="article-card"
-        data-year="2023"
-        data-score="18"
+        data-year="2024"
+        data-score="19"
         data-tier="moderada"
         data-category="tdcs">
 
-        <a class="article-link" href="../articulos/tdcs/tdcs-motor-cortex-knee-pain-2023.html">
-
-          <span class="recommended-tag">Recomendado</span>
+        <a class="article-link" href="../articulos/tdcs/tdcs-vs-sham-chronic-pain-2024.html">
 
           <div class="article-card-header">
-            <h3>Effects of motor cortex tDCS combined with exercise on chronic knee pain</h3>
-            <span class="score-badge">18 / 30</span>
+            <h3>Transcranial direct current stimulation versus sham for chronic musculoskeletal pain: randomized controlled trial</h3>
+            <span class="score-badge">19 / 30</span>
           </div>
 
           <p>
-            Ensayo controlado que combina tDCS sobre M1 con ejercicio terapéutico.
-            Cambios modestos en dolor, sin efectos claros sobre función,
-            con incertidumbre en la contribución específica de la estimulación.
+            Ensayo aleatorizado que evalúa tDCS frente a estimulación simulada.
+            Efectos modestos sobre dolor, con transferencia clínica limitada
+            por tamaño del efecto y heterogeneidad de la muestra.
           </p>
 
         </a>
@@ -183,8 +183,8 @@
     </div>
 
     <p class="no-results" id="noResults">
-      Se incorporarán estudios cuando la neuromodulación muestre
-      impacto clínico interpretable más allá de cambios neurofisiológicos.
+      Solo se incluyen estudios con intervención cerebral explícita
+      y outcomes clínicamente interpretables.
     </p>
   </section>
 
