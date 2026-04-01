@@ -203,37 +203,60 @@
             margin-bottom: 3rem;
             line-height: 1.1;
         }
-        .diagnosis-text.poor { color: #f43f5e; } /* Rojo sutil para alerta, pero sobrio */
-        .diagnosis-text.good { color: #10b981; }
-        .components-grid {
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 3rem;
             text-align: left;
-            margin-top: 3rem;
-            border-top: 1px solid var(--border-dark);
-            padding-top: 1.5rem;
         }
-        .comp-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.75rem 0;
+        .results-table th {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-dark);
+        }
+        .results-table td {
+            padding: 1.2rem 0;
             border-bottom: 1px solid #18181b;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
-        .comp-row span { color: var(--text-muted); }
-        .comp-row strong { color: var(--brand-yellow); font-family: 'Montserrat'; }
-        .actions {
+        .results-table tr:last-child td { border-bottom: none; }
+        .results-table .score-cell {
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--brand-yellow);
+        }
+        .critical-header {
+            background: rgba(252, 191, 6, 0.1);
+            color: var(--brand-yellow);
+            padding: 0.75rem 1rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-left: 3px solid var(--brand-yellow);
+            margin-bottom: -1px;
+            display: none; /* Dinámico */
+            letter-spacing: 1px;
+        }
+        .disclaimer {
+            font-size: 0.7rem;
+            color: var(--text-muted);
             margin-top: 3rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            font-style: italic;
+            border-top: 1px solid var(--border-dark);
+            padding-top: 1rem;
         }
-        .btn-print { background: var(--text-white); color: black; }
         .print-footer {
             display: none;
             position: absolute;
-            bottom: 0;
+            bottom: 0px;
             width: 100%;
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
             border-top: 1px solid var(--border-dark);
             padding-top: 1rem;
@@ -241,7 +264,7 @@
         @media print {
             @page {
                 size: portrait;
-                margin: 1cm;
+                margin: 0.5cm;
             }
             
             body { 
@@ -265,7 +288,7 @@
             }
             
             .brand-header {
-                margin-bottom: 2rem !important;
+                margin-bottom: 1rem !important;
             }
             .logo-fisio { color: black !important; }
             .logo-logico { color: black !important; }
@@ -273,17 +296,28 @@
             .score-circle { 
                 border-color: black !important; 
                 color: black !important; 
-                margin-bottom: 1.5rem !important;
-                height: 120px !important;
-                min-width: 120px !important;
+                margin-bottom: 2rem !important;
+                height: 100px !important;
+                min-width: 180px !important;
             }
             
             .score-num { font-size: 2.2rem !important; }
             .diagnosis-text { font-size: 1.6rem !important; color: black !important; margin-bottom: 1.5rem !important; }
-            .components-grid { margin-top: 1.5rem !important; padding-top: 1rem !important; }
-            .comp-row { padding: 0.4rem 0 !important; border-bottom: 1px solid #eee !important; font-size: 0.85rem !important; }
-            .comp-row span, .comp-row strong { color: black !important; }
+            .results-table { margin-top: 2rem !important; }
+            .results-table th { color: black !important; border-bottom: 2px solid black !important; padding: 0.5rem 0 !important; }
+            .results-table td { color: black !important; border-bottom: 1px solid #eee !important; padding: 0.6rem 0 !important; font-size: 0.85rem !important; }
+            .results-table tr:last-child td { border-bottom: none !important; }
+            .results-table .score-cell { color: black !important; }
             
+            .critical-header {
+                background: #fdf2f2 !important;
+                color: black !important;
+                border-left: 4px solid black !important;
+                font-size: 0.75rem !important;
+                padding: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            .disclaimer { font-size: 0.65rem !important; margin-top: 2rem !important; color: #555 !important; }
             .print-footer {
                 display: block !important;
                 position: fixed;
@@ -472,14 +506,29 @@
             <div class="diagnosis-text" id="diagnosis">...</div>
             
             <p id="msgInterpretation" style="color: var(--text-muted); font-size: 0.9rem;"></p>
-            <div class="components-grid">
-                <div class="comp-row"><span>1. Calidad Subjetiva</span> <strong id="c1">0 / 3</strong></div>
-                <div class="comp-row"><span>2. Latencia</span> <strong id="c2">0 / 3</strong></div>
-                <div class="comp-row"><span>3. Duración</span> <strong id="c3">0 / 3</strong></div>
-                <div class="comp-row"><span>4. Eficiencia</span> <strong id="c4">0 / 3</strong></div>
-                <div class="comp-row"><span>5. Perturbaciones</span> <strong id="c5">0 / 3</strong></div>
-                <div class="comp-row"><span>6. Medicación</span> <strong id="c6">0 / 3</strong></div>
-                <div class="comp-row"><span>7. Disfunción Diurna</span> <strong id="c7">0 / 3</strong></div>
+            <div id="worstComponentBox" class="critical-header">
+                Área Crítica: <span id="worstLabel"></span>
+            </div>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Dimensión de Sueño</th>
+                        <th style="text-align: right;">Puntuación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1. Calidad Subjetiva</td><td class="score-cell" id="c1">0 / 3</td></tr>
+                    <tr><td>2. Latencia</td><td class="score-cell" id="c2">0 / 3</td></tr>
+                    <tr><td>3. Duración</td><td class="score-cell" id="c3">0 / 3</td></tr>
+                    <tr><td>4. Eficiencia</td><td class="score-cell" id="c4">0 / 3</td></tr>
+                    <tr><td>5. Perturbaciones</td><td class="score-cell" id="c5">0 / 3</td></tr>
+                    <tr><td>6. Medicación</td><td class="score-cell" id="c6">0 / 3</td></tr>
+                    <tr><td>7. Disfunción Diurna</td><td class="score-cell" id="c7">0 / 3</td></tr>
+                </tbody>
+            </table>
+            <div class="disclaimer">
+                <strong style="color: var(--brand-yellow); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">⚠️ Nota de Uso Clínico</strong>
+                Esta herramienta implementa el Índice de Cualidad de Sueño de Pittsburgh (PSQI). Los resultados son una aproximación basada en autoinforme y no deben considerarse un diagnóstico definitivo. Se recomienda la supervisión de este informe por un profesional de la salud titulado para la toma de decisiones clínicas.
             </div>
             <div class="actions">
                 <button class="btn-prev" onclick="location.reload()">Reiniciar</button>
@@ -561,6 +610,41 @@
             const sum7 = q8 + q9;
             const c7 = sum7 === 0 ? 0 : sum7 <= 2 ? 1 : sum7 <= 4 ? 2 : 3;
             const total = c1 + c2 + c3 + c4 + c5 + c6 + c7;
+            // Análisis de Severidad y Mensajes
+            let diagnosisStatus = '';
+            let interpretation = '';
+            let colorClass = '';
+            let recs = [];
+            if (total <= 5) {
+                diagnosisStatus = 'Sueño Saludable';
+                colorClass = 'good';
+                interpretation = 'Tu patrón de sueño está dentro de los parámetros de normalidad. No se detectan anomalías clínicas significativas.';
+            } else if (total <= 10) {
+                diagnosisStatus = 'Alteración Leve';
+                colorClass = 'mild';
+                interpretation = 'Existen problemas puntuales de sueño que podrían estar afectando tu descanso residual y niveles de energía.';
+            } else if (total <= 15) {
+                diagnosisStatus = 'Alteración Moderada';
+                colorClass = 'moderate';
+                interpretation = 'Se detecta un impacto negativo notable en la calidad del descanso que puede repercutir en tu salud física y cognitiva.';
+            } else {
+                diagnosisStatus = 'Alteración Grave';
+                colorClass = 'severe';
+                interpretation = 'Tu descanso se encuentra críticamente comprometido. Esto suele estar asociado a riesgos de otras patologías.';
+            }
+            // Identificar componente crítico (pueden ser varios si hay empate)
+            const comps = [
+                {val: c1, label: 'Calidad Subjetiva'},
+                {val: c2, label: 'Latencia'},
+                {val: c3, label: 'Duración'},
+                {val: c4, label: 'Eficiencia'},
+                {val: c5, label: 'Perturbaciones'},
+                {val: c6, label: 'Medicación'},
+                {val: c7, label: 'Disfunción Diurna'}
+            ];
+            
+            const maxVal = Math.max(...comps.map(c => c.val));
+            const criticalAreas = comps.filter(c => c.val === maxVal && c.val > 1).map(c => c.label);
             // Render
             form.style.display = 'none';
             document.querySelector('.progress-container').style.display = 'none';
@@ -576,19 +660,19 @@
             document.getElementById('c6').textContent = c6 + " / 3";
             document.getElementById('c7').textContent = c7 + " / 3";
             const dEx = document.getElementById('diagnosis');
-            const mEx = document.getElementById('msgInterpretation');
-            
-            if (total <= 5) {
-                dEx.textContent = 'BUENA CALIDAD';
-                dEx.className = 'diagnosis-text good';
-                mEx.textContent = 'Patrón de sueño sin alteraciones clínicas significativas.';
+            dEx.textContent = diagnosisStatus;
+            dEx.className = 'diagnosis-text ' + colorClass;
+            document.getElementById('msgInterpretation').textContent = interpretation;
+            // Highlight Worst Components
+            if (criticalAreas.length > 0) {
+                document.getElementById('worstComponentBox').style.display = 'block';
+                document.getElementById('worstLabel').textContent = criticalAreas.join(' + ');
             } else {
-                dEx.textContent = 'MALA CALIDAD';
-                dEx.className = 'diagnosis-text poor';
-                mEx.textContent = 'Presencia de dificultades severas que requieren atención clínica.';
+                document.getElementById('worstComponentBox').style.display = 'none';
             }
         }
         updateUI();
     </script>
 </body>
 </html>
+
