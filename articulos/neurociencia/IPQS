@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSQI - El FisioLógico</title>
+    <!-- Montserrat para títulos, Roboto para cuerpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-black: #000000;
+            --brand-yellow: #FCBF06;
+            --text-white: #FFFFFF;
+            --text-muted: #A1A1AA;
+            --border-dark: #27272A;
+            --radius: 0px; /* Estética geométrica/rectilínea */
+            --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+            line-height: 1.6;
+        }
+        /* LOGO EL FISIOLÓGICO (RECREACIÓN CSS) */
+        .brand-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        .logo-box {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        .logo-fisio {
+            color: var(--text-white);
+        }
+        .logo-logico {
+            color: var(--brand-yellow);
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-top: 2px solid var(--brand-yellow);
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+            max-width: 400px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid var(--border-dark);
+            background: #09090b;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+        .progress-container {
+            width: 100%;
+            height: 4px;
+            background: var(--border-dark);
+            margin-bottom: 3rem;
+        }
+        .progress-bar {
+            height: 100%;
+            background: var(--brand-yellow);
+            width: 0%;
+            transition: width var(--transition);
+        }
+        .step {
+            display: none;
+            animation: fadeIn 0.3s ease-out;
+        }
+        .step.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .question-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--brand-yellow);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--brand-yellow);
+            padding-left: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            color: var(--text-white);
+            font-size: 0.95rem;
+        }
+        .input-wrapper {
+            margin-bottom: 2rem;
+        }
+        input[type="time"],
+        input[type="number"],
+        select {
+            width: 100%;
+            background: #18181b;
+            border: 1px solid var(--border-dark);
+            color: white;
+            padding: 1rem;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color var(--transition);
+        }
+        input:focus, select:focus {
+            border-color: var(--brand-yellow);
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            gap: 1rem;
+        }
+        button {
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all var(--transition);
+            border: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        .btn-prev {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--border-dark);
+        }
+        .btn-prev:hover {
+            border-color: var(--text-muted);
+            color: white;
+        }
+        .btn-next {
+            background: var(--brand-yellow);
+            color: var(--bg-black);
+            flex-grow: 1;
+        }
+        .btn-next:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+        /* Results results Card */
+        .results-box {
+            text-align: center;
+        }
+        .score-circle {
+            font-family: 'Montserrat', sans-serif;
+            border: 8px solid var(--brand-yellow);
+            width: auto; /* Ajuste dinámico para evitar saltos de línea */
+            min-width: 160px;
+            height: 160px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 2.5rem;
+        }
+        .score-num {
+            font-size: 2.8rem; /* Reducido ligeramente para asegurar una sola línea */
+            font-weight: 900;
+            line-height: 1;
+            white-space: nowrap;
+        }
+        .diagnosis-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            line-height: 1.1;
+        }
+        .diagnosis-text.poor { color: #f43f5e; } /* Rojo sutil para alerta, pero sobrio */
+        .diagnosis-text.good { color: #10b981; }
+        .components-grid {
+            text-align: left;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-dark);
+            padding-top: 1.5rem;
+        }
+        .comp-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #18181b;
+            font-size: 0.9rem;
+        }
+        .comp-row span { color: var(--text-muted); }
+        .comp-row strong { color: var(--brand-yellow); font-family: 'Montserrat'; }
+        .actions {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .btn-print { background: var(--text-white); color: black; }
+        .print-footer {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-dark);
+            padding-top: 1rem;
+        }
+        @media print {
+            @page {
+                size: portrait;
+                margin: 1cm;
+            }
+            
+            body { 
+                background: white !important; 
+                color: black !important; 
+                padding: 0 !important;
+                display: block !important;
+            }
+            
+            .container { 
+                border: none !important; 
+                max-width: 100% !important; 
+                background: white !important; 
+                color: black !important; 
+                padding: 0 0.5cm !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+            }
+            .navigation, .progress-container, .btn-print, .btn-prev, .actions, .brand-header h1 { 
+                display: none !important; 
+            }
+            
+            .brand-header {
+                margin-bottom: 2rem !important;
+            }
+            .logo-fisio { color: black !important; }
+            .logo-logico { color: black !important; }
+            
+            .score-circle { 
+                border-color: black !important; 
+                color: black !important; 
+                margin-bottom: 1.5rem !important;
+                height: 120px !important;
+                min-width: 120px !important;
+            }
+            
+            .score-num { font-size: 2.2rem !important; }
+            .diagnosis-text { font-size: 1.6rem !important; color: black !important; margin-bottom: 1.5rem !important; }
+            .components-grid { margin-top: 1.5rem !important; padding-top: 1rem !important; }
+            .comp-row { padding: 0.4rem 0 !important; border-bottom: 1px solid #eee !important; font-size: 0.85rem !important; }
+            .comp-row span, .comp-row strong { color: black !important; }
+            
+            .print-footer {
+                display: block !important;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-top: 1px solid #eee !important;
+                color: #555 !important;
+            }
+        }
+        @media (max-width: 480px) {
+            .logo-top { font-size: 1.8rem; }
+            .logo-bottom { font-size: 2.4rem; }
+            h1 { font-size: 1.1rem; }
+            .container { padding: 1.5rem 1rem; }
+            .actions { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="brand-header">
+        <div class="logo-box">
+            <span class="logo-fisio">Fisio</span><span class="logo-logico">Lógico</span>
+        </div>
+        <h1>Índice de Calidad del Sueño</h1>
+    </div>
+    <div class="container" id="app">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <form id="psqiForm">
+            <!-- Step 1 -->
+            <div class="step active" data-step="1">
+                <h3 class="question-title">Horarios Habituales</h3>
+                <div class="input-wrapper">
+                    <label>Hora de acostarse:</label>
+                    <input type="time" id="q1" value="23:00" required>
+                </div>
+                <div class="input-wrapper">
+                    <label>Hora de despertarse:</label>
+                    <input type="time" id="q3" value="07:00" required>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="step" data-step="2">
+                <h3 class="question-title">Latencia y Sueño Real</h3>
+                <div class="input-wrapper">
+                    <label>Minutos para dormirse:</label>
+                    <input type="number" id="q2" min="0" placeholder="Ej: 20" required>
+                </div>
+                <div class="input-wrapper">
+                    <label>Horas reales dormidas:</label>
+                    <input type="number" id="q4" min="0" step="0.5" placeholder="Ej: 7" required>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="step" data-step="3">
+                <h3 class="question-title">Dificultades (Frecuencia)</h3>
+                <div class="input-wrapper">
+                    <label>No pudo dormirse en 30 min:</label>
+                    <select id="q5a">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Se despertó en la noche:</label>
+                    <select id="q5b">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="step" data-step="4">
+                <h3 class="question-title">Fisiología y Respiración</h3>
+                <div class="input-wrapper">
+                    <label>Ir al baño:</label>
+                    <select id="q5c">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Dificultad respiratoria:</label>
+                    <select id="q5d">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Tos o ronquidos:</label>
+                    <select id="q5e">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Step 5 -->
+            <div class="step" data-step="5">
+                <h3 class="question-title">Ambiente y Salud</h3>
+                <div class="input-wrapper">
+                    <label>Sensación de frío/calor:</label>
+                    <select id="q5f">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Pesadillas o dolores:</label>
+                    <select id="q5h">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Step 6 -->
+            <div class="step" data-step="6">
+                <h3 class="question-title">Calidad y Medicación</h3>
+                <div class="input-wrapper">
+                    <label>Calidad subjetiva del sueño:</label>
+                    <select id="q6">
+                        <option value="0">Muy Buena</option>
+                        <option value="1">Bastante Buena</option>
+                        <option value="2">Bastante Mala</option>
+                        <option value="3">Muy Mala</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Uso de medicación para dormir:</label>
+                    <select id="q7">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Step 7 -->
+            <div class="step" data-step="7">
+                <h3 class="question-title">Disfunción Diurna</h3>
+                <div class="input-wrapper">
+                    <label>Dificultad para estar despierto:</label>
+                    <select id="q8">
+                        <option value="0">Ni una vez al mes</option>
+                        <option value="1">< 1 vez / semana</option>
+                        <option value="2">1-2 veces / semana</option>
+                        <option value="3">3+ veces / semana</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Falta de ánimo para actividades:</label>
+                    <select id="q9">
+                        <option value="0">Sin dificultad</option>
+                        <option value="1">Un poco difícil</option>
+                        <option value="2">Moderadamente difícil</option>
+                        <option value="3">Muy difícil</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navigation">
+                <button type="button" class="btn-prev" id="btnPrev" style="visibility: hidden;">Atrás</button>
+                <button type="button" class="btn-next" id="btnNext">Siguiente</button>
+            </div>
+        </form>
+        <!-- Final -->
+        <div id="results" class="results-box" style="display: none;">
+            <div class="score-circle">
+                <span class="score-num"><span id="globalScore">0</span> / 21</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted)">PUNTUACIÓN GLOBAL</span>
+            </div>
+            <div class="diagnosis-text" id="diagnosis">...</div>
+            
+            <p id="msgInterpretation" style="color: var(--text-muted); font-size: 0.9rem;"></p>
+            <div class="components-grid">
+                <div class="comp-row"><span>1. Calidad Subjetiva</span> <strong id="c1">0 / 3</strong></div>
+                <div class="comp-row"><span>2. Latencia</span> <strong id="c2">0 / 3</strong></div>
+                <div class="comp-row"><span>3. Duración</span> <strong id="c3">0 / 3</strong></div>
+                <div class="comp-row"><span>4. Eficiencia</span> <strong id="c4">0 / 3</strong></div>
+                <div class="comp-row"><span>5. Perturbaciones</span> <strong id="c5">0 / 3</strong></div>
+                <div class="comp-row"><span>6. Medicación</span> <strong id="c6">0 / 3</strong></div>
+                <div class="comp-row"><span>7. Disfunción Diurna</span> <strong id="c7">0 / 3</strong></div>
+            </div>
+            <div class="actions">
+                <button class="btn-prev" onclick="location.reload()">Reiniciar</button>
+                <button class="btn-print" onclick="window.print()">Imprimir Informe</button>
+            </div>
+            <div class="print-footer">
+                www.elfisiologico.com | Ciencia · Clínica · Autoridad
+            </div>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('psqiForm');
+        const steps = document.querySelectorAll('.step');
+        const progressBar = document.getElementById('progressBar');
+        const btnNext = document.getElementById('btnNext');
+        const btnPrev = document.getElementById('btnPrev');
+        const results = document.getElementById('results');
+        
+        let currentStep = 1;
+        function updateUI() {
+            steps.forEach(step => {
+                step.classList.toggle('active', parseInt(step.dataset.step) === currentStep);
+            });
+            btnPrev.style.visibility = currentStep === 1 ? 'hidden' : 'visible';
+            btnNext.textContent = currentStep === steps.length ? 'Finalizar' : 'Siguiente';
+            
+            const progress = ((currentStep - 1) / (steps.length - 1)) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+        btnNext.addEventListener('click', () => {
+            if (currentStep < steps.length) {
+                currentStep++;
+                updateUI();
+                window.scrollTo(0, 0);
+            } else {
+                calculateResults();
+            }
+        });
+        btnPrev.addEventListener('click', () => {
+            if (currentStep > 1) {
+                currentStep--;
+                updateUI();
+                window.scrollTo(0, 0);
+            }
+        });
+        function calculateResults() {
+            const getVal = id => parseFloat(document.getElementById(id).value) || 0;
+            
+            const q1 = document.getElementById('q1').value;
+            const q2 = getVal('q2');
+            const q3 = document.getElementById('q3').value;
+            const q4 = getVal('q4');
+            const q5a = getVal('q5a');
+            const q5b = getVal('q5b');
+            const q5c = getVal('q5c');
+            const q5d = getVal('q5d');
+            const q5e = getVal('q5e');
+            const q5f = getVal('q5f');
+            const q5h = getVal('q5h');
+            const q6 = getVal('q6');
+            const q7 = getVal('q7');
+            const q8 = getVal('q8');
+            const q9 = getVal('q9');
+            // Logic
+            const c1 = q6;
+            
+            let q2S = q2 <= 15 ? 0 : q2 <= 30 ? 1 : q2 <= 60 ? 2 : 3;
+            const c2 = (q2S + q5a) === 0 ? 0 : (q2S + q5a) <= 2 ? 1 : (q2S + q5a) <= 4 ? 2 : 3;
+            
+            const c3 = q4 > 7 ? 0 : q4 >= 6 ? 1 : q4 >= 5 ? 2 : 3;
+            const parseT = t => { const [h, m] = t.split(':').map(Number); return h + m/60; };
+            let tib = parseT(q3) - parseT(q1);
+            if (tib <= 0) tib += 24;
+            const eff = (q4 / tib) * 100;
+            const c4 = eff > 85 ? 0 : eff >= 75 ? 1 : eff >= 65 ? 2 : 3;
+            const sum5 = q5b + q5c + q5d + q5e + q5f + q5h; // Simplified sum for demo
+            const c5 = sum5 === 0 ? 0 : sum5 <= 9 ? 1 : sum5 <= 18 ? 2 : 3;
+            const c6 = q7;
+            const sum7 = q8 + q9;
+            const c7 = sum7 === 0 ? 0 : sum7 <= 2 ? 1 : sum7 <= 4 ? 2 : 3;
+            const total = c1 + c2 + c3 + c4 + c5 + c6 + c7;
+            // Render
+            form.style.display = 'none';
+            document.querySelector('.progress-container').style.display = 'none';
+            document.querySelector('.brand-header h1').style.display = 'none';
+            results.style.display = 'block';
+            window.scrollTo(0, 0);
+            document.getElementById('globalScore').textContent = total;
+            document.getElementById('c1').textContent = c1 + " / 3";
+            document.getElementById('c2').textContent = c2 + " / 3";
+            document.getElementById('c3').textContent = c3 + " / 3";
+            document.getElementById('c4').textContent = c4 + " / 3";
+            document.getElementById('c5').textContent = c5 + " / 3";
+            document.getElementById('c6').textContent = c6 + " / 3";
+            document.getElementById('c7').textContent = c7 + " / 3";
+            const dEx = document.getElementById('diagnosis');
+            const mEx = document.getElementById('msgInterpretation');
+            
+            if (total <= 5) {
+                dEx.textContent = 'BUENA CALIDAD';
+                dEx.className = 'diagnosis-text good';
+                mEx.textContent = 'Patrón de sueño sin alteraciones clínicas significativas.';
+            } else {
+                dEx.textContent = 'MALA CALIDAD';
+                dEx.className = 'diagnosis-text poor';
+                mEx.textContent = 'Presencia de dificultades severas que requieren atención clínica.';
+            }
+        }
+        updateUI();
+    </script>
+</body>
+</html>
