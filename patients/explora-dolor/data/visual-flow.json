@@ -1,0 +1,2200 @@
+{
+  "version": "6.2.0",
+  "asset": "./assets/body-anatomy-v1.png?v=31",
+  "coordinate_space": [
+    1369,
+    1149
+  ],
+  "overview": {
+    "front": {
+      "cabeza": [
+        53.4,
+        15
+      ],
+      "atm-mandibula": [
+        53.4,
+        19.8
+      ],
+      "cuello": [
+        53.5,
+        26.1
+      ],
+      "hombro": [
+        63.2,
+        28.9
+      ],
+      "brazo": [
+        64.9,
+        35.7
+      ],
+      "codo": [
+        66.2,
+        42.2
+      ],
+      "antebrazo": [
+        67.6,
+        47.6
+      ],
+      "muneca": [
+        68.4,
+        53.6
+      ],
+      "mano": [
+        69,
+        58.6
+      ],
+      "torax-abdomen": [
+        53.3,
+        42.1
+      ],
+      "pelvis": [
+        53.5,
+        51.8
+      ],
+      "cadera": [
+        47,
+        53.9
+      ],
+      "muslo": [
+        48.2,
+        62.1
+      ],
+      "rodilla": [
+        47.9,
+        70.2
+      ],
+      "pierna": [
+        47.8,
+        77.4
+      ],
+      "tobillo": [
+        48.2,
+        87
+      ],
+      "pie": [
+        46.3,
+        91.8
+      ]
+    },
+    "back": {
+      "cabeza": [
+        45.5,
+        15.8
+      ],
+      "cuello": [
+        45.3,
+        23.1
+      ],
+      "hombro": [
+        36,
+        28.7
+      ],
+      "brazo": [
+        33.6,
+        35.8
+      ],
+      "codo": [
+        32.5,
+        42.6
+      ],
+      "antebrazo": [
+        30.9,
+        48.1
+      ],
+      "muneca": [
+        29.7,
+        54.5
+      ],
+      "mano": [
+        28,
+        59
+      ],
+      "dorsales": [
+        45.5,
+        31.7
+      ],
+      "lumbares": [
+        45.2,
+        43.6
+      ],
+      "pelvis": [
+        45.2,
+        50.8
+      ],
+      "cadera": [
+        54.4,
+        54
+      ],
+      "muslo": [
+        50.9,
+        61
+      ],
+      "rodilla": [
+        50.7,
+        71
+      ],
+      "pierna": [
+        50.2,
+        79.2
+      ],
+      "tobillo": [
+        49,
+        88
+      ],
+      "pie": [
+        52,
+        91.8
+      ]
+    }
+  },
+  "regions": [
+    {
+      "id": "cabeza",
+      "label": "Cabeza",
+      "views": [
+        "front",
+        "lateral",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          95,
+          275,
+          350,
+          455
+        ],
+        "lateral": [
+          535,
+          275,
+          350,
+          455
+        ],
+        "back": [
+          1005,
+          275,
+          350,
+          455
+        ]
+      },
+      "zones": [
+        {
+          "id": "cabeza-superior",
+          "catalog_number": 1,
+          "label": "Parte superior de la cabeza",
+          "view": "back",
+          "candidates": [
+            "esplenio-de-cabeza-y-cuello",
+            "musculos-cervicales-posteriores",
+            "esternocleidomastoideo-y-masetero"
+          ],
+          "ellipse": [
+            1179.8,
+            374.8,
+            63.3,
+            30.4
+          ]
+        },
+        {
+          "id": "region-frontal",
+          "catalog_number": 2,
+          "label": "Región frontal",
+          "view": "front",
+          "candidates": [
+            "occipitofrontal",
+            "temporal",
+            "musculos-cervicales-posteriores",
+            "suboccipitales",
+            "esplenio-de-cabeza-y-cuello",
+            "esternocleidomastoideo-y-masetero"
+          ],
+          "ellipse": [
+            266.3,
+            382.7,
+            70,
+            37.9
+          ]
+        },
+        {
+          "id": "region-temporal",
+          "catalog_number": 3,
+          "label": "Región temporal",
+          "view": "lateral",
+          "candidates": [
+            "occipitofrontal",
+            "temporal",
+            "musculos-cervicales-posteriores",
+            "suboccipitales",
+            "esplenio-de-cabeza-y-cuello",
+            "esternocleidomastoideo-y-masetero",
+            "musculos-faciales"
+          ],
+          "ellipse": [
+            721.5,
+            406.2,
+            63,
+            50.6
+          ]
+        },
+        {
+          "id": "region-ocular-ceja",
+          "catalog_number": 4,
+          "label": "Región ocular y de la ceja",
+          "view": "front",
+          "candidates": [
+            "temporal",
+            "esplenio-de-cabeza-y-cuello",
+            "suboccipitales",
+            "esternocleidomastoideo-y-masetero",
+            "musculos-faciales"
+          ],
+          "ellipse": [
+            306.6,
+            450.7,
+            29.7,
+            38.4
+          ]
+        },
+        {
+          "id": "region-occipital",
+          "catalog_number": 8,
+          "label": "Región posterior de la cabeza u occipital",
+          "view": "back",
+          "candidates": [
+            "suboccipitales",
+            "occipitofrontal",
+            "musculos-cervicales-posteriores",
+            "esplenio-de-cabeza-y-cuello",
+            "digastrico"
+          ],
+          "ellipse": [
+            1178.7,
+            469,
+            77,
+            62.9
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-head-neck.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-head-neck.png?v=1",
+        "lateral": "./assets/anatomy-head-neck.png?v=1",
+        "back": "./assets/anatomy-head-neck.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "atm-mandibula",
+      "label": "ATM y mandíbula",
+      "views": [
+        "front",
+        "lateral"
+      ],
+      "crops": {
+        "front": [
+          95,
+          275,
+          350,
+          455
+        ],
+        "lateral": [
+          535,
+          275,
+          350,
+          455
+        ]
+      },
+      "zones": [
+        {
+          "id": "region-auricular-atm",
+          "catalog_number": 5,
+          "label": "Región auricular y temporomandibular",
+          "view": "lateral",
+          "candidates": [
+            "esternocleidomastoideo-y-masetero",
+            "pterigoideo-lateral",
+            "pterigoideo-medial",
+            "temporal",
+            "digastrico",
+            "musculos-faciales"
+          ],
+          "ellipse": [
+            699,
+            509.4,
+            65.7,
+            44.1
+          ]
+        },
+        {
+          "id": "region-mejilla-mandibula",
+          "catalog_number": 6,
+          "label": "Región de la mejilla y mandíbula",
+          "view": "front",
+          "candidates": [
+            "esternocleidomastoideo-y-masetero",
+            "pterigoideo-lateral",
+            "pterigoideo-medial",
+            "musculos-faciales",
+            "temporal"
+          ],
+          "ellipse": [
+            327.7,
+            508.3,
+            35.8,
+            37.4
+          ]
+        },
+        {
+          "id": "region-dental",
+          "catalog_number": 7,
+          "label": "Región dental",
+          "view": "front",
+          "candidates": [
+            "esternocleidomastoideo-y-masetero",
+            "pterigoideo-lateral",
+            "pterigoideo-medial",
+            "musculos-faciales",
+            "temporal",
+            "digastrico"
+          ],
+          "ellipse": [
+            270,
+            561.6,
+            52.5,
+            31.9
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-head-neck.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-head-neck.png?v=1",
+        "lateral": "./assets/anatomy-head-neck.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "cuello",
+      "label": "Cuello",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          95,
+          275,
+          350,
+          455
+        ],
+        "lateral": [
+          535,
+          275,
+          350,
+          455
+        ],
+        "back": [
+          1005,
+          275,
+          350,
+          455
+        ]
+      },
+      "zones": [
+        {
+          "id": "garganta-cuello-anterior",
+          "catalog_number": 9,
+          "label": "Región anterior de la garganta y cuello",
+          "view": "front",
+          "candidates": [
+            "digastrico",
+            "pterigoideo-medial",
+            "esternocleidomastoideo-y-masetero",
+            "escalenos"
+          ],
+          "ellipse": [
+            265.2,
+            646.4,
+            66.9,
+            42.4
+          ]
+        },
+        {
+          "id": "cuello-posterior",
+          "catalog_number": 10,
+          "label": "Región posterior del cuello",
+          "view": "back",
+          "candidates": [
+            "musculos-cervicales-posteriores",
+            "esplenio-de-cabeza-y-cuello",
+            "suboccipitales",
+            "escalenos"
+          ],
+          "ellipse": [
+            1178.9,
+            586.2,
+            63.7,
+            85.3
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-head-neck.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-head-neck.png?v=1",
+        "lateral": "./assets/anatomy-head-neck.png?v=1",
+        "back": "./assets/anatomy-head-neck.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "hombro",
+      "label": "Hombro",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          95,
+          205,
+          350,
+          700
+        ],
+        "lateral": [
+          505,
+          205,
+          400,
+          700
+        ],
+        "back": [
+          965,
+          205,
+          390,
+          700
+        ]
+      },
+      "zones": [
+        {
+          "id": "hombro-anterior",
+          "catalog_number": 11,
+          "label": "Región anterior del hombro",
+          "view": "front",
+          "candidates": [
+            "infraespinoso",
+            "deltoides",
+            "biceps-braquial",
+            "coracobraquial",
+            "pectoral-menor",
+            "pectoral-mayor-y-subclavio",
+            "supraespinoso",
+            "redondo-menor"
+          ],
+          "ellipse": [
+            334.4,
+            432.5,
+            79.9,
+            69.4
+          ]
+        },
+        {
+          "id": "hombro-posterior",
+          "catalog_number": 12,
+          "label": "Región posterior del hombro",
+          "view": "back",
+          "candidates": [
+            "subescapular",
+            "redondo-menor",
+            "deltoides",
+            "dorsal-ancho-y-redondo-mayor",
+            "trapecio"
+          ],
+          "ellipse": [
+            1101,
+            432.5,
+            70.2,
+            67.4
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-shoulder-arm.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-shoulder-arm.png?v=1",
+        "lateral": "./assets/anatomy-shoulder-arm.png?v=1",
+        "back": "./assets/anatomy-shoulder-arm.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "brazo",
+      "label": "Brazo",
+      "views": [
+        "front",
+        "lateral",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          95,
+          205,
+          350,
+          700
+        ],
+        "lateral": [
+          505,
+          205,
+          400,
+          700
+        ],
+        "back": [
+          965,
+          205,
+          390,
+          700
+        ]
+      },
+      "zones": [
+        {
+          "id": "brazo-anterior",
+          "catalog_number": 25,
+          "label": "Región anterior del brazo",
+          "view": "front",
+          "candidates": [
+            "biceps-braquial",
+            "braquial",
+            "deltoides",
+            "pectoral-menor",
+            "pectoral-mayor-y-subclavio",
+            "supraespinoso"
+          ],
+          "ellipse": [
+            393.8,
+            594.8,
+            30.6,
+            142.4
+          ]
+        },
+        {
+          "id": "brazo-posterior",
+          "catalog_number": 26,
+          "label": "Región posterior del brazo",
+          "view": "back",
+          "candidates": [
+            "triceps-braquial-y-anconeo",
+            "coracobraquial",
+            "dorsal-ancho-y-redondo-mayor",
+            "subescapular",
+            "deltoides"
+          ],
+          "ellipse": [
+            1060.6,
+            600.9,
+            39.7,
+            156.4
+          ]
+        },
+        {
+          "id": "brazo-medial",
+          "catalog_number": "25A",
+          "label": "Región medial del brazo",
+          "view": "front",
+          "candidates": [
+            "biceps-braquial",
+            "braquial",
+            "deltoides",
+            "pectoral-menor",
+            "pectoral-mayor-y-subclavio",
+            "supraespinoso",
+            "triceps-braquial-y-anconeo",
+            "coracobraquial",
+            "dorsal-ancho-y-redondo-mayor",
+            "subescapular"
+          ],
+          "supplementary": true,
+          "ellipse": [
+            345.3,
+            603.7,
+            26.4,
+            145.1
+          ]
+        },
+        {
+          "id": "brazo-lateral",
+          "catalog_number": "25B",
+          "label": "Región lateral del brazo",
+          "view": "lateral",
+          "candidates": [
+            "biceps-braquial",
+            "braquial",
+            "deltoides",
+            "pectoral-menor",
+            "pectoral-mayor-y-subclavio",
+            "supraespinoso",
+            "triceps-braquial-y-anconeo",
+            "coracobraquial",
+            "dorsal-ancho-y-redondo-mayor",
+            "subescapular"
+          ],
+          "supplementary": true,
+          "ellipse": [
+            758,
+            588.4,
+            52,
+            158.6
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-shoulder-arm.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-shoulder-arm.png?v=1",
+        "lateral": "./assets/anatomy-shoulder-arm.png?v=1",
+        "back": "./assets/anatomy-shoulder-arm.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "codo",
+      "label": "Codo",
+      "views": [
+        "front",
+        "lateral",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          170,
+          185,
+          300,
+          390
+        ],
+        "lateral": [
+          560,
+          185,
+          330,
+          390
+        ],
+        "back": [
+          965,
+          185,
+          330,
+          390
+        ]
+      },
+      "zones": [
+        {
+          "id": "codo-antecubital",
+          "catalog_number": 27,
+          "label": "Región anterior del codo o antecubital",
+          "view": "front",
+          "candidates": [
+            "biceps-braquial",
+            "braquial",
+            "triceps-braquial-y-anconeo"
+          ],
+          "ellipse": [
+            320.5,
+            336.5,
+            40.6,
+            63
+          ]
+        },
+        {
+          "id": "codo-olecraniana",
+          "catalog_number": 28,
+          "label": "Región posterior del codo u olecraniana",
+          "view": "back",
+          "candidates": [
+            "triceps-braquial-y-anconeo",
+            "supraespinoso",
+            "serrato-posterior-superior-e-inferior"
+          ],
+          "ellipse": [
+            1128,
+            338.6,
+            39.3,
+            36.4
+          ]
+        },
+        {
+          "id": "epicondilo-medial",
+          "catalog_number": 29,
+          "label": "Región del epicóndilo medial",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "triceps-braquial-y-anconeo",
+            "pectoral-menor"
+          ],
+          "ellipse": [
+            265.3,
+            345.7,
+            21.1,
+            50.7
+          ]
+        },
+        {
+          "id": "epicondilo-lateral",
+          "catalog_number": 30,
+          "label": "Región del epicóndilo lateral",
+          "view": "lateral",
+          "candidates": [
+            "extensores-de-la-muneca-y-braquiorradial",
+            "supinador",
+            "supraespinoso",
+            "triceps-braquial-y-anconeo"
+          ],
+          "ellipse": [
+            739.3,
+            332.5,
+            43.8,
+            50.7
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "lateral": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "back": "./assets/anatomy-elbow-forearm-hand.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "antebrazo",
+      "label": "Antebrazo",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          170,
+          245,
+          300,
+          510
+        ],
+        "lateral": [
+          560,
+          245,
+          330,
+          510
+        ],
+        "back": [
+          965,
+          245,
+          330,
+          510
+        ]
+      },
+      "zones": [
+        {
+          "id": "antebrazo-volar",
+          "catalog_number": 31,
+          "label": "Región volar o anterior del antebrazo",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "supinador",
+            "pectoral-menor"
+          ],
+          "ellipse": [
+            331.7,
+            493.3,
+            37.7,
+            168.3
+          ]
+        },
+        {
+          "id": "antebrazo-dorsal",
+          "catalog_number": 32,
+          "label": "Región dorsal o posterior del antebrazo",
+          "view": "back",
+          "candidates": [
+            "extensores-de-la-muneca-y-braquiorradial",
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "supinador",
+            "coracobraquial"
+          ],
+          "ellipse": [
+            1106.6,
+            485.4,
+            44.2,
+            168.3
+          ]
+        },
+        {
+          "id": "antebrazo-radial",
+          "catalog_number": 33,
+          "label": "Región radial del antebrazo",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "supinador",
+            "pectoral-menor",
+            "extensores-de-la-muneca-y-braquiorradial",
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "coracobraquial"
+          ],
+          "ellipse": [
+            383.9,
+            509.8,
+            18.3,
+            167.8
+          ]
+        },
+        {
+          "id": "antebrazo-ulnar",
+          "catalog_number": 34,
+          "label": "Región cubital o ulnar del antebrazo",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "supinador",
+            "pectoral-menor",
+            "extensores-de-la-muneca-y-braquiorradial",
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "coracobraquial"
+          ],
+          "ellipse": [
+            279,
+            504.3,
+            17.7,
+            148.4
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "lateral": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "back": "./assets/anatomy-elbow-forearm-hand.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "muneca",
+      "label": "Muñeca",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          170,
+          545,
+          300,
+          300
+        ],
+        "lateral": [
+          560,
+          545,
+          330,
+          300
+        ],
+        "back": [
+          965,
+          545,
+          330,
+          300
+        ]
+      },
+      "zones": [
+        {
+          "id": "muneca-dorsal",
+          "catalog_number": 35,
+          "label": "Región dorsal de la muñeca",
+          "view": "back",
+          "candidates": [
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "extensores-de-la-muneca-y-braquiorradial",
+            "supinador",
+            "subescapular"
+          ],
+          "ellipse": [
+            1089.3,
+            684.6,
+            43.2,
+            42
+          ]
+        },
+        {
+          "id": "muneca-palmar",
+          "catalog_number": 37,
+          "label": "Región volar o palmar de la muñeca",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "palmar-largo",
+            "aductor-del-pulgar-y-oponente-del-pulgar"
+          ],
+          "ellipse": [
+            354.2,
+            689.4,
+            43.8,
+            42
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "lateral": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "back": "./assets/anatomy-elbow-forearm-hand.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "mano",
+      "label": "Mano",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          170,
+          630,
+          300,
+          350
+        ],
+        "lateral": [
+          560,
+          630,
+          330,
+          350
+        ],
+        "back": [
+          965,
+          630,
+          330,
+          350
+        ]
+      },
+      "zones": [
+        {
+          "id": "mano-dorsal",
+          "catalog_number": 36,
+          "label": "Región dorsal de la mano",
+          "view": "back",
+          "candidates": [
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "extensores-de-la-muneca-y-braquiorradial",
+            "braquial",
+            "interoseos-lumbricales-y-separador-del-menique-de-la-mano"
+          ],
+          "ellipse": [
+            1088.7,
+            750.4,
+            57.1,
+            70
+          ]
+        },
+        {
+          "id": "mano-palmar",
+          "catalog_number": 38,
+          "label": "Región palmar de la mano",
+          "view": "front",
+          "candidates": [
+            "palmar-largo",
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "interoseos-lumbricales-y-separador-del-menique-de-la-mano",
+            "aductor-del-pulgar-y-oponente-del-pulgar"
+          ],
+          "ellipse": [
+            349.5,
+            752.7,
+            49.9,
+            60.6
+          ]
+        },
+        {
+          "id": "base-pulgar-mano-radial",
+          "catalog_number": 39,
+          "label": "Base del pulgar y región radial de la mano",
+          "view": "front",
+          "candidates": [
+            "aductor-del-pulgar-y-oponente-del-pulgar",
+            "extensores-de-la-muneca-y-braquiorradial",
+            "braquial",
+            "supinador"
+          ],
+          "ellipse": [
+            419.2,
+            773.1,
+            24.8,
+            63
+          ]
+        },
+        {
+          "id": "dedos-dorsales",
+          "catalog_number": 40,
+          "label": "Región dorsal de los dedos",
+          "view": "back",
+          "candidates": [
+            "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+            "interoseos-lumbricales-y-separador-del-menique-de-la-mano"
+          ],
+          "ellipse": [
+            1085.4,
+            884.5,
+            72.6,
+            69.4
+          ]
+        },
+        {
+          "id": "dedos-palmares",
+          "catalog_number": 41,
+          "label": "Región volar o palmar de los dedos",
+          "view": "front",
+          "candidates": [
+            "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+            "interoseos-lumbricales-y-separador-del-menique-de-la-mano"
+          ],
+          "ellipse": [
+            354.6,
+            880.3,
+            66,
+            71
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "lateral": "./assets/anatomy-elbow-forearm-hand.png?v=1",
+        "back": "./assets/anatomy-elbow-forearm-hand.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "torax-abdomen",
+      "label": "Tórax y abdomen",
+      "views": [
+        "front",
+        "lateral"
+      ],
+      "crops": {
+        "front": [
+          35,
+          195,
+          430,
+          735
+        ],
+        "lateral": [
+          500,
+          195,
+          430,
+          735
+        ]
+      },
+      "zones": [
+        {
+          "id": "torax-pecho-anterior",
+          "catalog_number": 15,
+          "label": "Región anterior del tórax o pecho",
+          "view": "front",
+          "candidates": [
+            "pectoral-mayor-y-subclavio",
+            "pectoral-menor",
+            "serrato-anterior",
+            "escalenos",
+            "esternal",
+            "intercostales-y-diafragma"
+          ],
+          "ellipse": [
+            268.7,
+            395,
+            142.1,
+            86.9
+          ]
+        },
+        {
+          "id": "torax-lateral",
+          "catalog_number": 16,
+          "label": "Región lateral del tórax",
+          "view": "lateral",
+          "candidates": [
+            "intercostales-y-diafragma",
+            "serrato-anterior",
+            "dorsal-ancho-y-redondo-mayor"
+          ],
+          "ellipse": [
+            722.4,
+            478.5,
+            94.6,
+            147
+          ]
+        },
+        {
+          "id": "region-abdominal",
+          "catalog_number": 18,
+          "label": "Región abdominal",
+          "view": "front",
+          "candidates": [
+            "musculos-abdominales",
+            "intercostales-y-diafragma",
+            "psoas-mayor-psoas-menor-e-iliaco"
+          ],
+          "ellipse": [
+            268.5,
+            616.1,
+            107.5,
+            132.3
+          ]
+        },
+        {
+          "id": "region-abdominal-inferior",
+          "catalog_number": 19,
+          "label": "Región abdominal inferior",
+          "view": "front",
+          "candidates": [
+            "musculos-abdominales",
+            "intercostales-y-diafragma",
+            "psoas-mayor-psoas-menor-e-iliaco"
+          ],
+          "ellipse": [
+            268.9,
+            787.7,
+            125.2,
+            45.3
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-trunk-pelvis.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-trunk-pelvis.png?v=1",
+        "lateral": "./assets/anatomy-trunk-pelvis.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "dorsales",
+      "label": "Dorsales",
+      "views": [
+        "back"
+      ],
+      "crops": {
+        "back": [
+          945,
+          195,
+          455,
+          690
+        ]
+      },
+      "zones": [
+        {
+          "id": "toracica-superior-posterior",
+          "catalog_number": 13,
+          "label": "Región torácica superior posterior",
+          "view": "back",
+          "candidates": [
+            "paraespinales-toracolumbares",
+            "serrato-posterior-superior-e-inferior",
+            "trapecio",
+            "romboides",
+            "dorsal-ancho-y-redondo-mayor",
+            "elevador-de-la-escapula",
+            "serrato-anterior",
+            "infraespinoso"
+          ],
+          "ellipse": [
+            1177.3,
+            345.9,
+            127.4,
+            46.5
+          ]
+        },
+        {
+          "id": "toracica-media-posterior",
+          "catalog_number": 14,
+          "label": "Región torácica media posterior",
+          "view": "back",
+          "candidates": [
+            "paraespinales-toracolumbares",
+            "dorsal-ancho-y-redondo-mayor",
+            "serrato-posterior-superior-e-inferior"
+          ],
+          "ellipse": [
+            1174.7,
+            446.4,
+            122.9,
+            51.3
+          ]
+        },
+        {
+          "id": "toracica-posterior-general",
+          "catalog_number": 17,
+          "label": "Región torácica posterior general",
+          "view": "back",
+          "candidates": [
+            "paraespinales-toracolumbares",
+            "serrato-posterior-superior-e-inferior",
+            "trapecio",
+            "romboides",
+            "dorsal-ancho-y-redondo-mayor",
+            "elevador-de-la-escapula",
+            "serrato-anterior",
+            "infraespinoso"
+          ],
+          "ellipse": [
+            1176.9,
+            399.9,
+            170.8,
+            116.1
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-trunk-pelvis.png?v=1",
+      "assets": {
+        "back": "./assets/anatomy-trunk-pelvis.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "lumbares",
+      "label": "Lumbares",
+      "views": [
+        "back"
+      ],
+      "crops": {
+        "lateral": [
+          500,
+          365,
+          430,
+          555
+        ],
+        "back": [
+          945,
+          365,
+          455,
+          555
+        ]
+      },
+      "zones": [
+        {
+          "id": "region-lumbar",
+          "catalog_number": 20,
+          "label": "Región lumbar",
+          "view": "back",
+          "candidates": [
+            "cuadrado-lumbar",
+            "paraespinales-toracolumbares",
+            "psoas-mayor-psoas-menor-e-iliaco",
+            "gluteo-medio"
+          ],
+          "ellipse": [
+            1175.2,
+            642.1,
+            109.2,
+            111
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-trunk-pelvis.png?v=1",
+      "assets": {
+        "lateral": "./assets/anatomy-trunk-pelvis.png?v=1",
+        "back": "./assets/anatomy-trunk-pelvis.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "pelvis",
+      "label": "Pelvis",
+      "views": [
+        "front",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          35,
+          430,
+          430,
+          510
+        ],
+        "lateral": [
+          500,
+          430,
+          430,
+          510
+        ],
+        "back": [
+          945,
+          430,
+          455,
+          510
+        ]
+      },
+      "zones": [
+        {
+          "id": "region-iliolumbar-iliosacra",
+          "catalog_number": 21,
+          "label": "Región iliolumbar o iliosacra",
+          "view": "back",
+          "candidates": [
+            "cuadrado-lumbar",
+            "gluteo-mayor",
+            "gluteo-medio",
+            "psoas-mayor-psoas-menor-e-iliaco",
+            "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+            "suelo-pelvico",
+            "musculos-abdominales",
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil"
+          ],
+          "ellipse": [
+            1223.3,
+            732.8,
+            88,
+            45.8
+          ]
+        },
+        {
+          "id": "region-sacra",
+          "catalog_number": 22,
+          "label": "Región sacra",
+          "view": "back",
+          "candidates": [
+            "cuadrado-lumbar",
+            "gluteo-mayor",
+            "gluteo-medio",
+            "psoas-mayor-psoas-menor-e-iliaco",
+            "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+            "suelo-pelvico"
+          ],
+          "ellipse": [
+            1175.3,
+            802.2,
+            81.3,
+            60.2
+          ]
+        },
+        {
+          "id": "region-pelvica",
+          "catalog_number": 24,
+          "label": "Región pélvica",
+          "view": "front",
+          "candidates": [
+            "suelo-pelvico",
+            "musculos-abdominales",
+            "psoas-mayor-psoas-menor-e-iliaco",
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+            "cuadrado-lumbar",
+            "gluteo-mayor",
+            "gluteo-medio",
+            "piriforme-obturadores-gemelos-y-cuadrado-femoral"
+          ],
+          "ellipse": [
+            192.1,
+            798.4,
+            95.2,
+            91.8
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-trunk-pelvis.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-trunk-pelvis.png?v=1",
+        "lateral": "./assets/anatomy-trunk-pelvis.png?v=1",
+        "back": "./assets/anatomy-trunk-pelvis.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "cadera",
+      "label": "Cadera",
+      "views": [
+        "lateral",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          45,
+          150,
+          410,
+          585
+        ],
+        "lateral": [
+          515,
+          150,
+          365,
+          585
+        ],
+        "back": [
+          945,
+          150,
+          425,
+          585
+        ]
+      },
+      "zones": [
+        {
+          "id": "region-glutea-nalga",
+          "catalog_number": 23,
+          "label": "Región glútea o nalga",
+          "view": "back",
+          "candidates": [
+            "gluteo-mayor",
+            "gluteo-medio",
+            "gluteo-menor-y-tensor-de-la-fascia-lata",
+            "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+            "psoas-mayor-psoas-menor-e-iliaco"
+          ],
+          "ellipse": [
+            1091.6,
+            368.3,
+            91.4,
+            100
+          ]
+        },
+        {
+          "id": "region-lateral-cadera",
+          "catalog_number": 42,
+          "label": "Región lateral de la cadera",
+          "view": "lateral",
+          "candidates": [
+            "gluteo-medio",
+            "gluteo-menor-y-tensor-de-la-fascia-lata",
+            "cuadriceps-y-sartorio"
+          ],
+          "ellipse": [
+            733,
+            373.4,
+            81,
+            105.3
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-hip-thigh-knee.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "lateral": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "back": "./assets/anatomy-hip-thigh-knee.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "muslo",
+      "label": "Muslo",
+      "views": [
+        "front",
+        "lateral",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          45,
+          150,
+          410,
+          760
+        ],
+        "lateral": [
+          515,
+          150,
+          365,
+          760
+        ],
+        "back": [
+          945,
+          150,
+          425,
+          760
+        ]
+      },
+      "zones": [
+        {
+          "id": "muslo-lateral",
+          "catalog_number": 43,
+          "label": "Región lateral del muslo",
+          "view": "lateral",
+          "candidates": [
+            "gluteo-menor-y-tensor-de-la-fascia-lata",
+            "gluteo-medio",
+            "cuadriceps-y-sartorio"
+          ],
+          "ellipse": [
+            723.4,
+            507.1,
+            69.3,
+            179.9
+          ]
+        },
+        {
+          "id": "muslo-anterior",
+          "catalog_number": 44,
+          "label": "Región anterior del muslo",
+          "view": "front",
+          "candidates": [
+            "cuadriceps-y-sartorio",
+            "psoas-mayor-psoas-menor-e-iliaco",
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil"
+          ],
+          "ellipse": [
+            355.5,
+            536.3,
+            68.3,
+            199.9
+          ]
+        },
+        {
+          "id": "muslo-posterior",
+          "catalog_number": 45,
+          "label": "Región posterior del muslo",
+          "view": "back",
+          "candidates": [
+            "isquiotibiales",
+            "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+            "gluteo-menor-y-tensor-de-la-fascia-lata",
+            "gluteo-medio"
+          ],
+          "ellipse": [
+            1089.1,
+            605.9,
+            56.8,
+            165.9
+          ]
+        },
+        {
+          "id": "muslo-medial",
+          "catalog_number": 46,
+          "label": "Región medial del muslo",
+          "view": "front",
+          "candidates": [
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+            "cuadriceps-y-sartorio",
+            "psoas-mayor-psoas-menor-e-iliaco"
+          ],
+          "ellipse": [
+            231.5,
+            559.9,
+            21.4,
+            153.2
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-hip-thigh-knee.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "lateral": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "back": "./assets/anatomy-hip-thigh-knee.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "rodilla",
+      "label": "Rodilla",
+      "views": [
+        "front",
+        "lateral",
+        "medial",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          45,
+          480,
+          410,
+          455
+        ],
+        "lateral": [
+          515,
+          480,
+          365,
+          455
+        ],
+        "medial": [
+          420,
+          140,
+          560,
+          855
+        ],
+        "back": [
+          945,
+          480,
+          425,
+          455
+        ]
+      },
+      "zones": [
+        {
+          "id": "rodilla-anterior",
+          "catalog_number": 47,
+          "label": "Región anterior de la rodilla",
+          "view": "front",
+          "candidates": [
+            "cuadriceps-y-sartorio",
+            "gemelos"
+          ],
+          "ellipse": [
+            312.8,
+            727.8,
+            20.4,
+            77.4
+          ]
+        },
+        {
+          "id": "rodilla-anteromedial",
+          "catalog_number": 48,
+          "label": "Región anteromedial de la rodilla",
+          "view": "front",
+          "candidates": [
+            "cuadriceps-y-sartorio",
+            "gemelos",
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+            "isquiotibiales",
+            "popliteo"
+          ],
+          "ellipse": [
+            181.9,
+            728.2,
+            49.6,
+            56.3
+          ]
+        },
+        {
+          "id": "rodilla-medial",
+          "catalog_number": 49,
+          "label": "Región medial de la rodilla",
+          "view": "medial",
+          "candidates": [
+            "cuadriceps-y-sartorio",
+            "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+            "isquiotibiales",
+            "popliteo"
+          ],
+          "ellipse": [
+            766,
+            341.8,
+            69.2,
+            145.4
+          ]
+        },
+        {
+          "id": "rodilla-lateral",
+          "catalog_number": 50,
+          "label": "Región lateral de la rodilla",
+          "view": "lateral",
+          "candidates": [
+            "cuadriceps-y-sartorio",
+            "gluteo-menor-y-tensor-de-la-fascia-lata"
+          ],
+          "ellipse": [
+            731.1,
+            686.7,
+            50.6,
+            100.2
+          ]
+        },
+        {
+          "id": "rodilla-posterior",
+          "catalog_number": 51,
+          "label": "Región posterior de la rodilla",
+          "view": "back",
+          "candidates": [
+            "popliteo",
+            "isquiotibiales",
+            "gemelos",
+            "cuadriceps-y-sartorio"
+          ],
+          "ellipse": [
+            1254.1,
+            712,
+            48.5,
+            84.2
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-hip-thigh-knee.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "lateral": "./assets/anatomy-hip-thigh-knee.png?v=1",
+        "medial": "./assets/anatomy-leg-medial.png?v=1",
+        "back": "./assets/anatomy-hip-thigh-knee.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "pierna",
+      "label": "Pierna",
+      "views": [
+        "front",
+        "lateral",
+        "medial",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          45,
+          225,
+          410,
+          665
+        ],
+        "lateral": [
+          480,
+          225,
+          455,
+          665
+        ],
+        "medial": [
+          420,
+          140,
+          560,
+          855
+        ],
+        "back": [
+          945,
+          225,
+          430,
+          665
+        ]
+      },
+      "zones": [
+        {
+          "id": "pierna-anterior",
+          "catalog_number": 52,
+          "label": "Región anterior de la pierna",
+          "view": "front",
+          "candidates": [
+            "tibial-anterior",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            202.3,
+            560.5,
+            36.6,
+            136.2
+          ]
+        },
+        {
+          "id": "pierna-posterior",
+          "catalog_number": 53,
+          "label": "Región posterior de la pierna",
+          "view": "back",
+          "candidates": [
+            "gemelos",
+            "soleo-y-plantar",
+            "tibial-posterior"
+          ],
+          "ellipse": [
+            1237.7,
+            549.7,
+            56.4,
+            185.1
+          ]
+        },
+        {
+          "id": "pierna-lateral",
+          "catalog_number": 54,
+          "label": "Región lateral de la pierna",
+          "view": "lateral",
+          "candidates": [
+            "fibulares-largo-corto-y-tercero",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            757,
+            564.9,
+            42.4,
+            206.2
+          ]
+        },
+        {
+          "id": "pierna-medial",
+          "catalog_number": "52A",
+          "label": "Región medial de la pierna",
+          "view": "medial",
+          "candidates": [
+            "tibial-anterior",
+            "extensores-largos-del-pie",
+            "fibulares-largo-corto-y-tercero",
+            "gemelos",
+            "soleo-y-plantar",
+            "tibial-posterior"
+          ],
+          "supplementary": true,
+          "ellipse": [
+            790.6,
+            583.7,
+            58.7,
+            241.5
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-leg-ankle-foot.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-leg-ankle-foot.png?v=1",
+        "lateral": "./assets/anatomy-leg-ankle-foot.png?v=1",
+        "medial": "./assets/anatomy-leg-medial.png?v=1",
+        "back": "./assets/anatomy-leg-ankle-foot.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "tobillo",
+      "label": "Tobillo",
+      "views": [
+        "front",
+        "lateral",
+        "medial",
+        "back"
+      ],
+      "crops": {
+        "front": [
+          45,
+          500,
+          410,
+          420
+        ],
+        "lateral": [
+          480,
+          500,
+          455,
+          420
+        ],
+        "medial": [
+          420,
+          500,
+          560,
+          495
+        ],
+        "back": [
+          945,
+          500,
+          430,
+          420
+        ]
+      },
+      "zones": [
+        {
+          "id": "tobillo-anterior",
+          "catalog_number": 55,
+          "label": "Región anterior del tobillo",
+          "view": "front",
+          "candidates": [
+            "tibial-anterior",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            338.9,
+            732.2,
+            36.2,
+            27.5
+          ]
+        },
+        {
+          "id": "tobillo-posterior",
+          "catalog_number": 56,
+          "label": "Región posterior del tobillo",
+          "view": "back",
+          "candidates": [
+            "soleo-y-plantar",
+            "tibial-posterior",
+            "gemelos"
+          ],
+          "ellipse": [
+            1223,
+            769.9,
+            28,
+            67.7
+          ]
+        },
+        {
+          "id": "tobillo-medial",
+          "catalog_number": 57,
+          "label": "Región medial del tobillo",
+          "view": "medial",
+          "candidates": [
+            "tibial-posterior",
+            "flexores-largos-del-pie",
+            "tibial-anterior"
+          ],
+          "ellipse": [
+            786.6,
+            831,
+            55.5,
+            85.6
+          ]
+        },
+        {
+          "id": "tobillo-lateral",
+          "catalog_number": 58,
+          "label": "Región lateral del tobillo",
+          "view": "lateral",
+          "candidates": [
+            "fibulares-largo-corto-y-tercero",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            751.5,
+            769.2,
+            43.9,
+            59.3
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-leg-ankle-foot.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-leg-ankle-foot.png?v=1",
+        "lateral": "./assets/anatomy-leg-ankle-foot.png?v=1",
+        "medial": "./assets/anatomy-leg-medial.png?v=1",
+        "back": "./assets/anatomy-leg-ankle-foot.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "pie",
+      "label": "Pie",
+      "views": [
+        "front",
+        "plantar"
+      ],
+      "crops": {
+        "front": [
+          45,
+          610,
+          410,
+          330
+        ],
+        "lateral": [
+          480,
+          610,
+          455,
+          330
+        ],
+        "medial": [
+          420,
+          630,
+          560,
+          365
+        ],
+        "back": [
+          945,
+          610,
+          430,
+          330
+        ],
+        "plantar": [
+          500,
+          150,
+          480,
+          850
+        ]
+      },
+      "zones": [
+        {
+          "id": "talon",
+          "catalog_number": 59,
+          "label": "Región del talón",
+          "view": "plantar",
+          "candidates": [
+            "gemelos",
+            "soleo-y-plantar",
+            "tibial-posterior",
+            "musculatura-intrinseca-del-pie"
+          ],
+          "ellipse": [
+            710,
+            885,
+            84.2,
+            80
+          ]
+        },
+        {
+          "id": "plantar-mediopie",
+          "catalog_number": 60,
+          "label": "Región plantar del mediopié",
+          "view": "plantar",
+          "candidates": [
+            "musculatura-intrinseca-del-pie",
+            "flexores-largos-del-pie",
+            "tibial-posterior",
+            "soleo-y-plantar"
+          ],
+          "ellipse": [
+            723,
+            642.4,
+            99.4,
+            182.3
+          ]
+        },
+        {
+          "id": "plantar-cabezas-metatarsales",
+          "catalog_number": 61,
+          "label": "Región plantar de las cabezas metatarsales",
+          "view": "plantar",
+          "candidates": [
+            "musculatura-intrinseca-del-pie",
+            "flexores-largos-del-pie",
+            "tibial-posterior",
+            "soleo-y-plantar",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            725,
+            405,
+            145,
+            81.8
+          ]
+        },
+        {
+          "id": "dorsal-antepie",
+          "catalog_number": 62,
+          "label": "Región dorsal del antepié",
+          "view": "front",
+          "candidates": [
+            "extensores-largos-del-pie",
+            "tibial-anterior",
+            "fibulares-largo-corto-y-tercero"
+          ],
+          "ellipse": [
+            341.2,
+            771.6,
+            35.3,
+            37.4
+          ]
+        },
+        {
+          "id": "plantar-dedo-gordo",
+          "catalog_number": 63,
+          "label": "Región plantar del dedo gordo",
+          "view": "plantar",
+          "candidates": [
+            "musculatura-intrinseca-del-pie",
+            "flexores-largos-del-pie",
+            "tibial-posterior",
+            "soleo-y-plantar",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            645.7,
+            246,
+            48.5,
+            66.5
+          ]
+        },
+        {
+          "id": "dorsal-dedo-gordo",
+          "catalog_number": 64,
+          "label": "Región dorsal del dedo gordo",
+          "view": "front",
+          "candidates": [
+            "extensores-largos-del-pie",
+            "tibial-anterior",
+            "fibulares-largo-corto-y-tercero",
+            "flexores-largos-del-pie",
+            "musculatura-intrinseca-del-pie"
+          ],
+          "ellipse": [
+            337.9,
+            828.4,
+            21.1,
+            26
+          ]
+        },
+        {
+          "id": "plantar-dedos-menores",
+          "catalog_number": 65,
+          "label": "Región plantar de los dedos menores",
+          "view": "plantar",
+          "candidates": [
+            "musculatura-intrinseca-del-pie",
+            "flexores-largos-del-pie",
+            "tibial-posterior",
+            "soleo-y-plantar",
+            "extensores-largos-del-pie"
+          ],
+          "ellipse": [
+            790,
+            280,
+            100,
+            70
+          ]
+        },
+        {
+          "id": "dorsal-dedos-menores",
+          "catalog_number": 66,
+          "label": "Región dorsal de los dedos menores",
+          "view": "front",
+          "candidates": [
+            "extensores-largos-del-pie",
+            "tibial-anterior",
+            "fibulares-largo-corto-y-tercero",
+            "flexores-largos-del-pie",
+            "musculatura-intrinseca-del-pie"
+          ],
+          "ellipse": [
+            384.6,
+            827.5,
+            27.2,
+            21.2
+          ]
+        }
+      ],
+      "asset": "./assets/anatomy-leg-ankle-foot.png?v=1",
+      "assets": {
+        "front": "./assets/anatomy-leg-ankle-foot.png?v=1",
+        "plantar": "./assets/anatomy-foot-plantar.png?v=1"
+      },
+      "coordinate_space": [
+        1448,
+        1086
+      ]
+    }
+  ],
+  "calibration_schema": "regional-anatomy-v2",
+  "zone_catalog": {
+    "version": "1.0.0",
+    "base_count": 66,
+    "supplementary_count": 3,
+    "note": "Las zonas complementarias añaden las caras medial y lateral del brazo y la cara medial de la pierna."
+  }
+}

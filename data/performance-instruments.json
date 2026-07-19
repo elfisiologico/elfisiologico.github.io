@@ -1,0 +1,318 @@
+{
+  "updated_at": "2026-07-14",
+  "instruments": [
+    {
+      "slug": "chair-stand-30-segundos",
+      "name": "Prueba de levantarse de la silla en 30 segundos",
+      "acronym": "30s-CST",
+      "construct": "Fuerza funcional y resistencia de miembros inferiores",
+      "summary": "Cuenta cuántas veces completa la persona el ciclo de levantarse y sentarse en 30 segundos bajo un protocolo estable.",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "population": "Principalmente personas mayores; propiedades disponibles también en poblaciones musculoesqueléticas",
+      "time": "2–3 minutos incluyendo preparación",
+      "equipment": "Silla sin reposabrazos de altura documentada y cronómetro",
+      "protocol": "Registrar altura de silla, posición de brazos, apoyo de pies, instrucciones, ayuda y repeticiones completas en 30 segundos",
+      "outcome": "Número de repeticiones completas",
+      "score_range": "0 o más repeticiones",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = más repeticiones completadas",
+      "safety": "Colocarse cerca, comprobar capacidad para ponerse de pie y detener ante inestabilidad, dolor preocupante o síntomas",
+      "standardization": "No comparar resultados si cambia la silla, el uso de brazos, la ayuda o la definición de repetición",
+      "useful_for": "Seguir una tarea funcional repetida que exige fuerza y resistencia de miembros inferiores",
+      "not_for": "Diagnosticar sarcopenia o predecir caídas mediante un único punto de corte",
+      "evidence_label": "Protocolo clínico accesible; referencias normativas ligadas a edad y población",
+      "evidence_search_date": "2026-07-14",
+      "permission_label": "Protocolo CDC de dominio público",
+      "permission_url": "https://stacks.cdc.gov/view/cdc/157303",
+      "sources": [
+        {
+          "label": "CDC STEADI: protocolo 30-Second Chair Stand.",
+          "url": "https://www.cdc.gov/steadi/media/pdfs/STEADI-Assessment-30Sec-508.pdf"
+        },
+        {
+          "label": "CDC Stacks: ficha en dominio público y cita oficial.",
+          "url": "https://stacks.cdc.gov/view/cdc/157303"
+        },
+        {
+          "label": "Propiedades en artrosis inicial de rodilla.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9539496/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "MDC individual",
+            "value": "≈ 2,5 repeticiones",
+            "population": "93 personas con artrosis radiológica inicial de rodilla",
+            "method": "Tres intentos intrasesión; se observó efecto de práctica entre el primero y el segundo",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/35592902/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "repetitions",
+            "label": "Repeticiones completas",
+            "min": 0,
+            "decimals": 0,
+            "integer": true,
+            "direction": "higher_favorable",
+            "unit": "repeticiones",
+            "note": "Repite exactamente el mismo protocolo de silla, brazos e instrucciones."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      },
+      "printable_protocol": true
+    },
+    {
+      "slug": "timed-up-and-go",
+      "name": "Timed Up and Go",
+      "acronym": "TUG",
+      "construct": "Movilidad funcional integrada",
+      "summary": "Cronometra levantarse, caminar tres metros, girar, regresar y sentarse con condiciones estandarizadas.",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "population": "Desarrollada en personas mayores frágiles; usada en múltiples poblaciones con propiedades específicas",
+      "time": "2–3 minutos",
+      "equipment": "Silla, recorrido de 3 metros, marca de giro y cronómetro",
+      "protocol": "Documentar silla, calzado, dispositivo de ayuda, instrucciones, práctica, asistencia y momento exacto de inicio y parada",
+      "outcome": "Tiempo total en segundos",
+      "score_range": "Segundos",
+      "score_direction": "lower_better",
+      "direction_label": "Más bajo = menor tiempo de ejecución",
+      "safety": "Supervisar de cerca y permitir el dispositivo habitual; no forzar si la marcha no es segura",
+      "standardization": "No intercambiar protocolos de distancia, velocidad, silla, giro o ayuda",
+      "useful_for": "Seguir una secuencia breve de transferencias, marcha y giro",
+      "not_for": "Diagnosticar riesgo de caída o atribuir el tiempo a un único sistema corporal",
+      "evidence_label": "Fiabilidad y validez iniciales respaldadas; interpretación dependiente de población",
+      "evidence_search_date": "2026-07-14",
+      "permission_label": "Descripción del protocolo con cita original",
+      "permission_url": "https://pubmed.ncbi.nlm.nih.gov/1991946/",
+      "sources": [
+        {
+          "label": "Podsiadlo y Richardson. Estudio original del TUG, 1991.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1991946/"
+        },
+        {
+          "label": "CDC STEADI: recursos de valoración de movilidad y caídas.",
+          "url": "https://www.cdc.gov/steadi/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "MDC95, ejemplo específico",
+            "value": "0,9 / 1,3 / 2,7 segundos",
+            "population": "80 personas con Parkinson, estadios Hoehn y Yahr II / III / IV",
+            "method": "Dos ensayos en estado ON; el MDC varió con la gravedad en esa muestra",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/41558572/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "seconds",
+            "label": "Tiempo TUG (segundos)",
+            "exclusive_min": 0,
+            "decimals": 2,
+            "direction": "lower_favorable",
+            "unit": "segundos",
+            "note": "Mantén silla, distancia, ayuda técnica, calzado e instrucciones."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      },
+      "printable_protocol": true
+    },
+    {
+      "slug": "test-marcha-10-metros",
+      "name": "Prueba de marcha de 10 metros",
+      "acronym": "10MWT",
+      "construct": "Velocidad de marcha",
+      "summary": "Calcula la velocidad de marcha sobre un tramo estandarizado, separando cuando proceda aceleración y desaceleración.",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "population": "Especialmente respaldada en rehabilitación neurológica; aplicable con protocolos específicos en otras poblaciones",
+      "time": "3–5 minutos",
+      "equipment": "Pasillo medido, marcas, cronómetro y dispositivo habitual si procede",
+      "protocol": "Definir longitud cronometrada, zonas de aceleración y desaceleración, velocidad cómoda o máxima, ensayos y cálculo en m/s",
+      "outcome": "Velocidad en metros por segundo",
+      "score_range": "m/s",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mayor velocidad",
+      "safety": "Asegurar espacio libre, supervisión y uso constante del dispositivo de marcha",
+      "standardization": "La distancia total y el tramo cronometrado varían entre protocolos; deben declararse siempre",
+      "useful_for": "Cuantificar velocidad de marcha de forma breve y repetible",
+      "not_for": "Equiparar velocidad con participación, resistencia o seguridad comunitaria",
+      "evidence_label": "Recomendada en un core set neurológico; transferencia según población y protocolo",
+      "evidence_search_date": "2026-07-14",
+      "permission_label": "Protocolo clínico no propietario; citar y estandarizar",
+      "permission_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6023606/",
+      "sources": [
+        {
+          "label": "Guía clínica de medidas esenciales en rehabilitación neurológica adulta.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6023606/"
+        },
+        {
+          "label": "Academy of Neurologic Physical Therapy: recursos de medidas esenciales.",
+          "url": "https://www.apta.org/for-educators/curriculum-resources/neurology"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "SEM / MDC",
+            "value": "0,04–0,07 / 0,10–0,19 m/s",
+            "population": "62 personas con ictus crónico",
+            "method": "Velocidad cómoda y máxima; el resultado varió según cronómetro o sensor y tramo analizado",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/37757594/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "speed",
+            "label": "Velocidad de marcha (m/s)",
+            "exclusive_min": 0,
+            "decimals": 2,
+            "direction": "higher_favorable",
+            "unit": "m/s",
+            "note": "Compara la misma velocidad solicitada y el mismo tramo cronometrado."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      },
+      "printable_protocol": true
+    },
+    {
+      "slug": "test-marcha-seis-minutos",
+      "name": "Prueba de marcha de seis minutos",
+      "acronym": "6MWT",
+      "construct": "Capacidad funcional de marcha submáxima",
+      "summary": "Registra la distancia recorrida en seis minutos con recorrido, instrucciones, estímulo y monitorización estandarizados.",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "population": "Desarrollada y estandarizada especialmente para enfermedad cardiopulmonar; usada en otras poblaciones con cautela",
+      "time": "15–20 minutos incluyendo preparación y recuperación",
+      "equipment": "Pasillo plano, marcas, cronómetro, silla y monitorización indicada por el contexto",
+      "protocol": "Registrar longitud del recorrido, giros, ayudas, oxígeno, instrucciones, estímulo, descansos, distancia y síntomas",
+      "outcome": "Distancia total en metros y respuesta clínica asociada",
+      "score_range": "Metros recorridos en 6 minutos",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mayor distancia en condiciones equivalentes",
+      "safety": "Aplicar cribado, contraindicaciones, criterios de parada y monitorización acordes al contexto clínico",
+      "standardization": "Longitud del pasillo, estímulo, oxígeno, dispositivo y descansos alteran el resultado",
+      "useful_for": "Seguir capacidad de marcha submáxima y respuesta sintomática bajo protocolo",
+      "not_for": "Sustituir una prueba cardiopulmonar máxima o interpretar distancia sin contexto",
+      "evidence_label": "Guía ATS y estándar técnico disponibles; alta exigencia de estandarización",
+      "evidence_search_date": "2026-07-14",
+      "permission_label": "Protocolo descrito en guía profesional",
+      "permission_url": "https://pubmed.ncbi.nlm.nih.gov/12091180/",
+      "sources": [
+        {
+          "label": "American Thoracic Society. Guía del 6MWT, 2002.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12091180/"
+        },
+        {
+          "label": "ATS: documento técnico completo del 6MWT.",
+          "url": "https://www.thoracic.org/statements/resources/pfet/sixminute.pdf"
+        },
+        {
+          "label": "Revisión de papel clínico, técnica y estandarización.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7609960/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "MID de revisión",
+            "value": "25 m respiratorio; 23 m cardiaco; 37 m neurológico/musculoesquelético",
+            "population": "Adultos con enfermedades de larga duración; estimaciones agrupadas por grupo clínico",
+            "method": "Revisión sistemática y metanálisis de estudios con anclaje; no intercambiar entre condiciones",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/40436612/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "distance",
+            "label": "Distancia en 6 minutos (m)",
+            "min": 0,
+            "decimals": 1,
+            "direction": "higher_favorable",
+            "unit": "metros",
+            "note": "Mantén recorrido, ayudas, oxígeno, estímulos y condiciones clínicas documentadas."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      },
+      "printable_protocol": true
+    }
+  ]
+}

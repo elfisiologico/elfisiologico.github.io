@@ -1,0 +1,2878 @@
+{
+  "version": "1.7.0",
+  "updated_at": "2026-07-18",
+  "purpose": "Mapas visuales orientativos para comparar distribuciones de dolor; no identifican por sí solos la estructura responsable.",
+  "author": "FisioLógico",
+  "reviewer": "Francisco José Extremera García · Fisioterapeuta colegiado ICPFA 4288",
+  "count": 109,
+  "items": [
+    {
+      "id": "MM-001",
+      "canonical_id": "MM-001",
+      "name": "Occipitofrontal · vientre frontal",
+      "chapter_id": "occipitofrontal",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-001-occipitofrontal-vientre-frontal--anterior.png?v=87eff51fc8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre frontal, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "87eff51fc864b584a25f75ef37fb297b281aa17acd7fb4bd13cf0ae2bdbdce23",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-001-occipitofrontal-vientre-frontal--anterior.png?v=87eff51fc8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre frontal, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "87eff51fc864b584a25f75ef37fb297b281aa17acd7fb4bd13cf0ae2bdbdce23"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-001-occipitofrontal-vientre-frontal--lateral.png?v=27986ef0ed",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre frontal, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "27986ef0edcf4ae957e22f2f48d9f42114ada9334597f166c6e09125d87a6fef"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-001-occipitofrontal-vientre-frontal--posterior.png?v=3618767a9b",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre frontal, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "3618767a9b3f782cd383af88fa5867d435c10aba487c1f732631f1155e66d197"
+        }
+      ]
+    },
+    {
+      "id": "MM-002",
+      "canonical_id": "MM-002",
+      "name": "Occipitofrontal · vientre occipital",
+      "chapter_id": "occipitofrontal",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-002-occipitofrontal-vientre-occipital--anterior.png?v=ad2bd1d585",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre occipital, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "ad2bd1d585b7ad6a98364cd57c1bc703fd1d385b6782f7cf633042c207f0f7b4",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-002-occipitofrontal-vientre-occipital--anterior.png?v=ad2bd1d585",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre occipital, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "ad2bd1d585b7ad6a98364cd57c1bc703fd1d385b6782f7cf633042c207f0f7b4"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-002-occipitofrontal-vientre-occipital--lateral.png?v=3b1cc444a4",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre occipital, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "3b1cc444a471ab0aa40a47bb0cc2964815dc37b87184b2ae4e327358b5d02325"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-002-occipitofrontal-vientre-occipital--posterior.png?v=3427ab299f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a occipitofrontal · vientre occipital, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "3427ab299f4b3c1c5e801752f3e1d762162c313eae9608516ef82c8c2674a0d4"
+        }
+      ]
+    },
+    {
+      "id": "MM-003",
+      "canonical_id": "MM-003",
+      "name": "Orbicular de los ojos",
+      "chapter_id": "musculos-faciales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-003-orbicular-de-los-ojos--anterior.png?v=a007574116",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a orbicular de los ojos, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "a007574116ee062a31ec3d2d79bbfe5b385545dfc65abcc8efe22d9a28f104ac",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-003-orbicular-de-los-ojos--anterior.png?v=a007574116",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a orbicular de los ojos, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "a007574116ee062a31ec3d2d79bbfe5b385545dfc65abcc8efe22d9a28f104ac"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-003-orbicular-de-los-ojos--lateral.png?v=c8f0cf4580",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a orbicular de los ojos, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "c8f0cf45809f0420725799644c220281e0187579533a72bb14f5c82e9030746f"
+        }
+      ]
+    },
+    {
+      "id": "MM-004",
+      "canonical_id": "MM-004",
+      "name": "Cigomáticos",
+      "chapter_id": "musculos-faciales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-004-cigomaticos--anterior.png?v=6bcac9878a",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a cigomáticos, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "6bcac9878a849aca409230867e08f62c4b1f128d99860ec8427897732ccbee2c",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-004-cigomaticos--anterior.png?v=6bcac9878a",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cigomáticos, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "6bcac9878a849aca409230867e08f62c4b1f128d99860ec8427897732ccbee2c"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-004-cigomaticos--lateral.png?v=495bbf55d9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cigomáticos, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "495bbf55d9fa4fae6ef27b9f81221703b43c58cd2ad12544befab0ef1e51ed54"
+        }
+      ]
+    },
+    {
+      "id": "MM-005",
+      "canonical_id": "MM-005",
+      "name": "Buccinador",
+      "chapter_id": "musculos-faciales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-005-buccinador--anterior.png?v=3a14369ad7",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a buccinador, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "3a14369ad772600a8fb14c174e47e66307ac756d84c342806dc8256e3f827256",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-005-buccinador--anterior.png?v=3a14369ad7",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a buccinador, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "3a14369ad772600a8fb14c174e47e66307ac756d84c342806dc8256e3f827256"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-005-buccinador--lateral.png?v=ffd94741b9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a buccinador, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "ffd94741b9d2d253edf911234305e4c1ef971753d8652eecf64b632af1af9646"
+        }
+      ]
+    },
+    {
+      "id": "MM-006",
+      "canonical_id": "MM-006",
+      "name": "Platisma",
+      "chapter_id": "musculos-faciales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-006-platisma--anterior.png?v=fd8394b8e8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a platisma, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "fd8394b8e8fc4077e6187463e6f421311e6dcc289e38ea434857fc6e8e213f46",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-006-platisma--anterior.png?v=fd8394b8e8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a platisma, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "fd8394b8e8fc4077e6187463e6f421311e6dcc289e38ea434857fc6e8e213f46"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-006-platisma--lateral.png?v=a9babdaf94",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a platisma, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "a9babdaf94112b3f587db6cf28d57f323f2bdbc648bc48be26282f29dfc37b9f"
+        }
+      ]
+    },
+    {
+      "id": "MM-007",
+      "canonical_id": "MM-007",
+      "name": "Temporal",
+      "chapter_id": "temporal",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-007-temporal--anterior.png?v=cccbb7468e",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a temporal, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "cccbb7468e3f78ae963772bfa498a6ecf993863a800bef08e229aef238db6832",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-007-temporal--anterior.png?v=cccbb7468e",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a temporal, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "cccbb7468e3f78ae963772bfa498a6ecf993863a800bef08e229aef238db6832"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-007-temporal--lateral.png?v=9dd0f5e203",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a temporal, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "9dd0f5e2038ebfa84d419b5742b3dfe1c85143b619e8078996578df156552c6d"
+        }
+      ]
+    },
+    {
+      "id": "MM-008",
+      "canonical_id": "MM-008",
+      "name": "Masetero",
+      "chapter_id": "esternocleidomastoideo-y-masetero",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-008-masetero--lateral.png?v=f025d91218",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a masetero, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "f025d912185048c3081bfba29edddb4faa3ca45e8bcf7ad50b1dde4d33f55ee4",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-008-masetero--lateral.png?v=f025d91218",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a masetero, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "f025d912185048c3081bfba29edddb4faa3ca45e8bcf7ad50b1dde4d33f55ee4"
+        }
+      ]
+    },
+    {
+      "id": "MM-009",
+      "canonical_id": "MM-009",
+      "name": "Pterigoideo lateral",
+      "chapter_id": "pterigoideo-lateral",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-009-pterigoideo-lateral--lateral.png?v=96165be345",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pterigoideo lateral, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "96165be345a0a0a44e1123330792531d49b03b526f048ece053e42965e320b65",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-009-pterigoideo-lateral--lateral.png?v=96165be345",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pterigoideo lateral, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "96165be345a0a0a44e1123330792531d49b03b526f048ece053e42965e320b65"
+        }
+      ]
+    },
+    {
+      "id": "MM-010",
+      "canonical_id": "MM-010",
+      "name": "Pterigoideo medial",
+      "chapter_id": "pterigoideo-medial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-010-pterigoideo-medial--lateral.png?v=ceae4f5e76",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pterigoideo medial, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "ceae4f5e768c11bccd3e61091030969be1a501f3a053a44550a50204bc36a22e",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-010-pterigoideo-medial--lateral.png?v=ceae4f5e76",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pterigoideo medial, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "ceae4f5e768c11bccd3e61091030969be1a501f3a053a44550a50204bc36a22e"
+        }
+      ]
+    },
+    {
+      "id": "MM-011",
+      "canonical_id": "MM-011",
+      "name": "Digástrico",
+      "chapter_id": "digastrico",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-011-digastrico--lateral.png?v=6dd436e221",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a digástrico, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "6dd436e221a714ce8e525e97b0de38ab91ff0a4c8594d61db2b9d37c28785692",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-011-digastrico--lateral.png?v=6dd436e221",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a digástrico, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "6dd436e221a714ce8e525e97b0de38ab91ff0a4c8594d61db2b9d37c28785692"
+        }
+      ]
+    },
+    {
+      "id": "MM-012",
+      "canonical_id": "MM-012",
+      "name": "Esternocleidomastoideo · división esternal",
+      "chapter_id": "esternocleidomastoideo-y-masetero",
+      "variant": "division-esternal",
+      "image": "./assets/pain-patterns/mm-012-esternocleidomastoideo-division-esternal--anterior.png?v=10ba4cfb48",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a esternocleidomastoideo · división esternal, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "10ba4cfb48e4411ae81f5a1fc9e8bfbbe9289274849cf42590d006fcb9027915",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-012-esternocleidomastoideo-division-esternal--anterior.png?v=10ba4cfb48",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esternocleidomastoideo · división esternal, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "10ba4cfb48e4411ae81f5a1fc9e8bfbbe9289274849cf42590d006fcb9027915"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-012-esternocleidomastoideo-division-esternal--lateral.png?v=6df0654f97",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esternocleidomastoideo · división esternal, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "6df0654f97354de64f2c5adeed0ce96ceaf2ff95a983c50d792b52fa7d1d0cb6"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-012-esternocleidomastoideo-division-esternal--posterior.png?v=728be00fa6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esternocleidomastoideo · división esternal, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "728be00fa68e1f9ffe66b295b6ef87964f13fd54ee55580ee1bd97aab7b548da"
+        }
+      ]
+    },
+    {
+      "id": "MM-013",
+      "canonical_id": "MM-013",
+      "name": "Esplenio de la cabeza",
+      "chapter_id": "esplenio-de-cabeza-y-cuello",
+      "variant": "vertex",
+      "image": "./assets/pain-patterns/mm-013-esplenio-de-la-cabeza--anterior.png?v=da84b6e96b",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio de la cabeza, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "da84b6e96b1855653d0c3571af8c858b51afbbd21432272941762e82aa2215af",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-013-esplenio-de-la-cabeza--anterior.png?v=da84b6e96b",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio de la cabeza, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "da84b6e96b1855653d0c3571af8c858b51afbbd21432272941762e82aa2215af"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-013-esplenio-de-la-cabeza--lateral.png?v=7003cebeb0",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio de la cabeza, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "7003cebeb0aebc56684c7c5c15e661c4d9e55f9082395c5344e35156f1da8935"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-013-esplenio-de-la-cabeza--posterior.png?v=3891660e9d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio de la cabeza, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "3891660e9da37b67bab7a53da9f55570832a6c9b2630122c63e82365251a7233"
+        }
+      ]
+    },
+    {
+      "id": "MM-014",
+      "canonical_id": "MM-014",
+      "name": "Esplenio del cuello",
+      "chapter_id": "esplenio-de-cabeza-y-cuello",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-014-esplenio-del-cuello--lateral.png?v=f1032f3fe3",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio del cuello, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "f1032f3fe343e60dda7516393610076e6e6367123005dac7000241fb7768c92c",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-014-esplenio-del-cuello--lateral.png?v=f1032f3fe3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio del cuello, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "f1032f3fe343e60dda7516393610076e6e6367123005dac7000241fb7768c92c"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-014-esplenio-del-cuello--posterior.png?v=1d0a41167f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esplenio del cuello, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "1d0a41167f02f4e356da0cb5b389960ff19a3c9bfc5cff581b162f0f3fcbbed2"
+        }
+      ]
+    },
+    {
+      "id": "MM-015",
+      "canonical_id": "MM-015",
+      "name": "Semiespinoso de la cabeza",
+      "chapter_id": "musculos-cervicales-posteriores",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-015-semiespinoso-de-la-cabeza--lateral.png?v=28ff4450c6",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a semiespinoso de la cabeza, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "28ff4450c6da0a8beb698d7b00e9c5470a679f047d2f496d3e98268cf3b86ef9",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-015-semiespinoso-de-la-cabeza--lateral.png?v=28ff4450c6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a semiespinoso de la cabeza, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "28ff4450c6da0a8beb698d7b00e9c5470a679f047d2f496d3e98268cf3b86ef9"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-015-semiespinoso-de-la-cabeza--posterior.png?v=2c4ae31ac9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a semiespinoso de la cabeza, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "2c4ae31ac9335eac300de0392c8c5988e1aed52b031730f8491fcdb611cf95fb"
+        }
+      ]
+    },
+    {
+      "id": "MM-016",
+      "canonical_id": "MM-016",
+      "name": "Suboccipitales",
+      "chapter_id": "suboccipitales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-016-suboccipitales--lateral.png?v=40e6255592",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a suboccipitales, vista lateral.",
+      "width": 350,
+      "height": 455,
+      "sha256": "40e62555920062b1fc2cd5abe9e22d6a700678bbaa30fc63166f79599c3c82aa",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-016-suboccipitales--lateral.png?v=40e6255592",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a suboccipitales, vista lateral.",
+          "width": 350,
+          "height": 455,
+          "sha256": "40e62555920062b1fc2cd5abe9e22d6a700678bbaa30fc63166f79599c3c82aa"
+        }
+      ]
+    },
+    {
+      "id": "MM-017",
+      "canonical_id": "MM-017",
+      "name": "Escalenos",
+      "chapter_id": "escalenos",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-017-escalenos--anterior.png?v=8192279921",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a escalenos, vista anterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "8192279921f228ab11ef19e0b1648f97349f0645d6fb9f508bb029612f522be6",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-017-escalenos--anterior.png?v=8192279921",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a escalenos, vista anterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "8192279921f228ab11ef19e0b1648f97349f0645d6fb9f508bb029612f522be6"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-017-escalenos--posterior.png?v=9d28682e21",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a escalenos, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "9d28682e21913bdca0c46d3d5713216d2e7f32da752ebb535f2879a94bc09250"
+        }
+      ]
+    },
+    {
+      "id": "MM-018",
+      "canonical_id": "MM-018",
+      "name": "Multífidos cervicales",
+      "chapter_id": "musculos-cervicales-posteriores",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-018-multifidos-cervicales--posterior.png?v=14d0fb7759",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a multífidos cervicales, vista posterior.",
+      "width": 350,
+      "height": 455,
+      "sha256": "14d0fb7759633e78602b4247c228136a4003046c74d99ed67ca4fe159718d445",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-018-multifidos-cervicales--posterior.png?v=14d0fb7759",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a multífidos cervicales, vista posterior.",
+          "width": 350,
+          "height": 455,
+          "sha256": "14d0fb7759633e78602b4247c228136a4003046c74d99ed67ca4fe159718d445"
+        }
+      ]
+    },
+    {
+      "id": "MM-019",
+      "canonical_id": "MM-019",
+      "name": "Trapecio",
+      "chapter_id": "trapecio",
+      "variant": "mapa-completo",
+      "image": "./assets/pain-patterns/mm-019-trapecio--lateral.png?v=27dd24b0fc",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a trapecio, vista lateral.",
+      "width": 430,
+      "height": 570,
+      "sha256": "27dd24b0fc33c21c46f0a806d9d2bc14be6f22195aa5d22216c9e5cdc24f1569",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-019-trapecio--lateral.png?v=27dd24b0fc",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a trapecio, vista lateral.",
+          "width": 430,
+          "height": 570,
+          "sha256": "27dd24b0fc33c21c46f0a806d9d2bc14be6f22195aa5d22216c9e5cdc24f1569"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-019-trapecio--posterior.png?v=9e3b52b2e2",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a trapecio, vista posterior.",
+          "width": 430,
+          "height": 820,
+          "sha256": "9e3b52b2e241378ced6c00a926eebf1d66fadff80596132083be8dfbce9333d1"
+        }
+      ]
+    },
+    {
+      "id": "MM-020",
+      "canonical_id": "MM-020",
+      "name": "Elevador de la escápula",
+      "chapter_id": "elevador-de-la-escapula",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-020-elevador-de-la-escapula--posterior.png?v=de3064bd79",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a elevador de la escápula, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "de3064bd79979a46331bfcace47ac2d41eb322045d2a9a02ff843518b97f7f4c",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-020-elevador-de-la-escapula--posterior.png?v=de3064bd79",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a elevador de la escápula, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "de3064bd79979a46331bfcace47ac2d41eb322045d2a9a02ff843518b97f7f4c"
+        }
+      ]
+    },
+    {
+      "id": "MM-021",
+      "canonical_id": "MM-021",
+      "name": "Romboides",
+      "chapter_id": "romboides",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-021-romboides--posterior.png?v=948af8e8d9",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a romboides, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "948af8e8d9076cca3924c58bb520d0c083c1913889dd54c50052819c6d93449c",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-021-romboides--posterior.png?v=948af8e8d9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a romboides, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "948af8e8d9076cca3924c58bb520d0c083c1913889dd54c50052819c6d93449c"
+        }
+      ]
+    },
+    {
+      "id": "MM-022",
+      "canonical_id": "MM-022",
+      "name": "Pectoral mayor",
+      "chapter_id": "pectoral-mayor-y-subclavio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-022-pectoral-mayor--anterior.png?v=7d865b95c1",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pectoral mayor, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "7d865b95c1e751c889bb88a454ab4f703934c5e54d357e2f6d6103919c298817",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-022-pectoral-mayor--anterior.png?v=7d865b95c1",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pectoral mayor, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "7d865b95c1e751c889bb88a454ab4f703934c5e54d357e2f6d6103919c298817"
+        }
+      ]
+    },
+    {
+      "id": "MM-023",
+      "canonical_id": "MM-023",
+      "name": "Pectoral menor",
+      "chapter_id": "pectoral-menor",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-023-pectoral-menor--anterior.png?v=cecc1bb975",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pectoral menor, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "cecc1bb97550878ac3057317f2b0c692539e886374fe85a02c731958ae51a4b1",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-023-pectoral-menor--anterior.png?v=cecc1bb975",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pectoral menor, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "cecc1bb97550878ac3057317f2b0c692539e886374fe85a02c731958ae51a4b1"
+        }
+      ]
+    },
+    {
+      "id": "MM-024",
+      "canonical_id": "MM-024",
+      "name": "Subclavio",
+      "chapter_id": "pectoral-mayor-y-subclavio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-024-subclavio--anterior.png?v=10597f5250",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a subclavio, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "10597f52508421a826c80d4d40191e36aa972004cfeda6992069a1fca0a11df0",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-024-subclavio--anterior.png?v=10597f5250",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a subclavio, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "10597f52508421a826c80d4d40191e36aa972004cfeda6992069a1fca0a11df0"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-024-subclavio--posterior.png?v=448cbe0d2d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a subclavio, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "448cbe0d2d5018b4b6ebfcf985c5bad373912a271c36e6c8caa52efa00fcc243"
+        }
+      ]
+    },
+    {
+      "id": "MM-025",
+      "canonical_id": "MM-025",
+      "name": "Esternal",
+      "chapter_id": "esternal",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-025-esternal--anterior.png?v=48d371e96f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a esternal, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "48d371e96f99a632c80c09a94d1bfada43ec5ce42c1f33e274905f5fee6464bd",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-025-esternal--anterior.png?v=48d371e96f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esternal, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "48d371e96f99a632c80c09a94d1bfada43ec5ce42c1f33e274905f5fee6464bd"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-025-esternal--posterior.png?v=4c8c2ff5e3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a esternal, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "4c8c2ff5e30ec63e4a8b80390bbbe7bfe28b11ba23b5b9b2eb38fa2a2eb1ec47"
+        }
+      ]
+    },
+    {
+      "id": "MM-026",
+      "canonical_id": "MM-026",
+      "name": "Intercostales",
+      "chapter_id": "intercostales-y-diafragma",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-026-intercostales--anterior.png?v=3f55926a82",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a intercostales, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "3f55926a828d723df0ec9f617a698d3e64cd8fabddc73c9f6d7f7f58fa39418e",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-026-intercostales--anterior.png?v=3f55926a82",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a intercostales, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "3f55926a828d723df0ec9f617a698d3e64cd8fabddc73c9f6d7f7f58fa39418e"
+        }
+      ]
+    },
+    {
+      "id": "MM-027",
+      "canonical_id": "MM-027",
+      "name": "Serrato anterior",
+      "chapter_id": "serrato-anterior",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-027-serrato-anterior--anterior.png?v=c9efba4d88",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato anterior, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "c9efba4d880f53df35a2746156d6e61f78a3cf5f8f0e64667b88e8f475255cfa",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-027-serrato-anterior--anterior.png?v=c9efba4d88",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato anterior, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "c9efba4d880f53df35a2746156d6e61f78a3cf5f8f0e64667b88e8f475255cfa"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-027-serrato-anterior--posterior.png?v=9f7a0ee2a2",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato anterior, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "9f7a0ee2a20f38bf241d8958a96dde414c0c834a6c50d555eea2cb6494cb85ea"
+        }
+      ]
+    },
+    {
+      "id": "MM-028",
+      "canonical_id": "MM-028",
+      "name": "Serrato posterior superior",
+      "chapter_id": "serrato-posterior-superior-e-inferior",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-028-serrato-posterior-superior--anterior.png?v=7856e91410",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato posterior superior, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "7856e91410119422d167d2a445a3a8976632bc59270aa4ca3d364277ef2b386e",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-028-serrato-posterior-superior--anterior.png?v=7856e91410",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato posterior superior, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "7856e91410119422d167d2a445a3a8976632bc59270aa4ca3d364277ef2b386e"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-028-serrato-posterior-superior--posterior.png?v=dea7050e90",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato posterior superior, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "dea7050e90762e5f488bee2282272f46552b0fdebbc824bd45a84854ffe459a7"
+        }
+      ]
+    },
+    {
+      "id": "MM-029",
+      "canonical_id": "MM-029",
+      "name": "Serrato posterior inferior",
+      "chapter_id": "serrato-posterior-superior-e-inferior",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-029-serrato-posterior-inferior--posterior.png?v=912493253a",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato posterior inferior, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "912493253ab3a3c1469646304d196a4a4ff5c7187cae1228759b8992d63f550a",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-029-serrato-posterior-inferior--posterior.png?v=912493253a",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a serrato posterior inferior, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "912493253ab3a3c1469646304d196a4a4ff5c7187cae1228759b8992d63f550a"
+        }
+      ]
+    },
+    {
+      "id": "MM-030",
+      "canonical_id": "MM-030",
+      "name": "Dorsal ancho",
+      "chapter_id": "dorsal-ancho-y-redondo-mayor",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-030-dorsal-ancho--anterior.png?v=ac55bf839c",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a dorsal ancho, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "ac55bf839ccd2d411c5c05655fdf66279cfc3358e4c87f23f83b45531cf40b7b",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-030-dorsal-ancho--anterior.png?v=ac55bf839c",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a dorsal ancho, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "ac55bf839ccd2d411c5c05655fdf66279cfc3358e4c87f23f83b45531cf40b7b"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-030-dorsal-ancho--posterior.png?v=3976417b89",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a dorsal ancho, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "3976417b89d17e71fc8c9c204b33cacf990eb8c58479590a58f10dd71ee8e07a"
+        }
+      ]
+    },
+    {
+      "id": "MM-031",
+      "canonical_id": "MM-031",
+      "name": "Iliocostal torácico",
+      "chapter_id": "paraespinales-toracolumbares",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-031-iliocostal-toracico--anterior.png?v=ee823e94f8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a iliocostal torácico, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "ee823e94f85018542ebcafa68ad43db35dbffc44550eb67900f79806863bd1de",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-031-iliocostal-toracico--anterior.png?v=ee823e94f8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a iliocostal torácico, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "ee823e94f85018542ebcafa68ad43db35dbffc44550eb67900f79806863bd1de"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-031-iliocostal-toracico--posterior.png?v=5c3eb49757",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a iliocostal torácico, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "5c3eb49757966cdc7cbf71ddbf8f192499eb827c2dce5c8295425f582cd8cefb"
+        }
+      ]
+    },
+    {
+      "id": "MM-032",
+      "canonical_id": "MM-032",
+      "name": "Iliocostal lumbar",
+      "chapter_id": "paraespinales-toracolumbares",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-032-iliocostal-lumbar--posterior.png?v=99faad9926",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a iliocostal lumbar, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "99faad992684ad1aeb7dd0732c11b79b43ff3caf7d5af70e5e186e91258f22a4",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-032-iliocostal-lumbar--posterior.png?v=99faad9926",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a iliocostal lumbar, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "99faad992684ad1aeb7dd0732c11b79b43ff3caf7d5af70e5e186e91258f22a4"
+        }
+      ]
+    },
+    {
+      "id": "MM-033",
+      "canonical_id": "MM-033",
+      "name": "Longísimo torácico",
+      "chapter_id": "paraespinales-toracolumbares",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-033-longisimo-toracico--posterior.png?v=6787aef66d",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a longísimo torácico, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "6787aef66d19df1503abe88aa45e905f032f74b506c892d7e5c1c82c636e6e07",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-033-longisimo-toracico--posterior.png?v=6787aef66d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a longísimo torácico, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "6787aef66d19df1503abe88aa45e905f032f74b506c892d7e5c1c82c636e6e07"
+        }
+      ]
+    },
+    {
+      "id": "MM-034",
+      "canonical_id": "MM-034",
+      "name": "Multífidos toracolumbares",
+      "chapter_id": "paraespinales-toracolumbares",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-034-multifidos-toracolumbares--anterior.png?v=dcbed2e5d8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a multífidos toracolumbares, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "dcbed2e5d8a1bc13b51c177bd6803870f6c42340d158469a07d184a775baa828",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-034-multifidos-toracolumbares--anterior.png?v=dcbed2e5d8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a multífidos toracolumbares, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "dcbed2e5d8a1bc13b51c177bd6803870f6c42340d158469a07d184a775baa828"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-034-multifidos-toracolumbares--posterior.png?v=8de070cf95",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a multífidos toracolumbares, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "8de070cf9564e186727a31f4f240a396f5937f976562f914e77c5bf47fd29f87"
+        }
+      ]
+    },
+    {
+      "id": "MM-035",
+      "canonical_id": "MM-035",
+      "name": "Recto abdominal",
+      "chapter_id": "musculos-abdominales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-035-recto-abdominal--anterior.png?v=074107321d",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a recto abdominal, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "074107321db4d00026b004657f305198f93c5fa82d07f2d054143ed9ca105667",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-035-recto-abdominal--anterior.png?v=074107321d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a recto abdominal, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "074107321db4d00026b004657f305198f93c5fa82d07f2d054143ed9ca105667"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-035-recto-abdominal--posterior.png?v=86b9b98df8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a recto abdominal, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "86b9b98df8bcec8e0b3208600c0e3254e0d46279af34087d08ec919120fc081f"
+        }
+      ]
+    },
+    {
+      "id": "MM-036",
+      "canonical_id": "MM-036",
+      "name": "Oblicuo externo del abdomen",
+      "chapter_id": "musculos-abdominales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-036-oblicuo-externo-del-abdomen--anterior.png?v=71a2ee1b44",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a oblicuo externo del abdomen, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "71a2ee1b440a6c5ccc450129f46376fccbf0a0ee817de280a9edc59c45322c2f",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-036-oblicuo-externo-del-abdomen--anterior.png?v=71a2ee1b44",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a oblicuo externo del abdomen, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "71a2ee1b440a6c5ccc450129f46376fccbf0a0ee817de280a9edc59c45322c2f"
+        }
+      ]
+    },
+    {
+      "id": "MM-037",
+      "canonical_id": "MM-037",
+      "name": "Oblicuo interno del abdomen",
+      "chapter_id": "musculos-abdominales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-037-oblicuo-interno-del-abdomen--anterior.png?v=71a2ee1b44",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a oblicuo interno del abdomen, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "71a2ee1b440a6c5ccc450129f46376fccbf0a0ee817de280a9edc59c45322c2f",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-037-oblicuo-interno-del-abdomen--anterior.png?v=71a2ee1b44",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a oblicuo interno del abdomen, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "71a2ee1b440a6c5ccc450129f46376fccbf0a0ee817de280a9edc59c45322c2f"
+        }
+      ]
+    },
+    {
+      "id": "MM-038",
+      "canonical_id": "MM-038",
+      "name": "Piramidal del abdomen",
+      "chapter_id": "musculos-abdominales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-038-piramidal-del-abdomen--anterior.png?v=5c958549c8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a piramidal del abdomen, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "5c958549c86be10aafe9adace64f867dd4cb77af014cfa1b652cc4a12ea013c3",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-038-piramidal-del-abdomen--anterior.png?v=5c958549c8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a piramidal del abdomen, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "5c958549c86be10aafe9adace64f867dd4cb77af014cfa1b652cc4a12ea013c3"
+        }
+      ]
+    },
+    {
+      "id": "MM-039",
+      "canonical_id": "MM-039",
+      "name": "Cuadrado lumbar",
+      "chapter_id": "cuadrado-lumbar",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-039-cuadrado-lumbar--anterior.png?v=4854d0ee0a",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado lumbar, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "4854d0ee0a4de4f196de188f120b70dbac9048dc1bf31ffee2ff9d8431b64f38",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-039-cuadrado-lumbar--anterior.png?v=4854d0ee0a",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado lumbar, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "4854d0ee0a4de4f196de188f120b70dbac9048dc1bf31ffee2ff9d8431b64f38"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-039-cuadrado-lumbar--lateral.png?v=813f99b2bc",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado lumbar, vista lateral.",
+          "width": 430,
+          "height": 735,
+          "sha256": "813f99b2bc87267762504e2f17d058189ddf53085a4d40fb12fcbd8a83f75e9d"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-039-cuadrado-lumbar--posterior.png?v=ba0285f58f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado lumbar, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "ba0285f58f2089a7ab5e0cf0e58f7f0830115e4c2719fbee968e5ef23dffe608"
+        }
+      ]
+    },
+    {
+      "id": "MM-040",
+      "canonical_id": "MM-040",
+      "name": "Iliopsoas",
+      "chapter_id": "psoas-mayor-psoas-menor-e-iliaco",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-040-iliopsoas--anterior.png?v=cb3ce77d51",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a iliopsoas, vista anterior.",
+      "width": 430,
+      "height": 735,
+      "sha256": "cb3ce77d51bdea278f363b3e6ee104f55d15d1f6ba18b9f4af92e9cb15f7184e",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-040-iliopsoas--anterior.png?v=cb3ce77d51",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a iliopsoas, vista anterior.",
+          "width": 430,
+          "height": 735,
+          "sha256": "cb3ce77d51bdea278f363b3e6ee104f55d15d1f6ba18b9f4af92e9cb15f7184e"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-040-iliopsoas--posterior.png?v=ca627d8c98",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a iliopsoas, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "ca627d8c9835dfaa05948d88053810ad227f5766ca70748985dd6744f610c1a1"
+        }
+      ]
+    },
+    {
+      "id": "MM-041",
+      "canonical_id": "MM-041",
+      "name": "Glúteo mayor",
+      "chapter_id": "gluteo-mayor",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-041-gluteo-mayor--posterior.png?v=5e04eab870",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo mayor, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "5e04eab870bc6fabbcecd9fa1f59c25a866b90e95b164c5fc6547ce96a973df4",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-041-gluteo-mayor--posterior.png?v=5e04eab870",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo mayor, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "5e04eab870bc6fabbcecd9fa1f59c25a866b90e95b164c5fc6547ce96a973df4"
+        }
+      ]
+    },
+    {
+      "id": "MM-042",
+      "canonical_id": "MM-042",
+      "name": "Glúteo medio",
+      "chapter_id": "gluteo-medio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-042-gluteo-medio--posterior.png?v=c3a2b73834",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo medio, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "c3a2b738347b77879bcf28028f9491c03f73a34beb0e61f2de57daebd16b9b2d",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-042-gluteo-medio--posterior.png?v=c3a2b73834",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo medio, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "c3a2b738347b77879bcf28028f9491c03f73a34beb0e61f2de57daebd16b9b2d"
+        }
+      ]
+    },
+    {
+      "id": "MM-043",
+      "canonical_id": "MM-043",
+      "name": "Glúteo menor",
+      "chapter_id": "gluteo-menor-y-tensor-de-la-fascia-lata",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-043-gluteo-menor--posterior.png?v=927e627ea8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo menor, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "927e627ea8515375ba0255b2dd82bc51cc9d5c242ae844444f484624740dd6c3",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-043-gluteo-menor--posterior.png?v=927e627ea8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a glúteo menor, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "927e627ea8515375ba0255b2dd82bc51cc9d5c242ae844444f484624740dd6c3"
+        }
+      ]
+    },
+    {
+      "id": "MM-044",
+      "canonical_id": "MM-044",
+      "name": "Piriforme",
+      "chapter_id": "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-044-piriforme--posterior.png?v=a7f2b7531f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a piriforme, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "a7f2b7531fa02bcbe0d587defc094c4724e6426a9fc723353c8cb143f47eb466",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-044-piriforme--posterior.png?v=a7f2b7531f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a piriforme, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "a7f2b7531fa02bcbe0d587defc094c4724e6426a9fc723353c8cb143f47eb466"
+        }
+      ]
+    },
+    {
+      "id": "MM-045",
+      "canonical_id": "MM-045",
+      "name": "Obturador interno",
+      "chapter_id": "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-045-obturador-interno--posterior.png?v=67564e477f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a obturador interno, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "67564e477f8e6da23d18a8f31bd149c27a2e3198e396afc47cb4f73160792a2c",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-045-obturador-interno--posterior.png?v=67564e477f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a obturador interno, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "67564e477f8e6da23d18a8f31bd149c27a2e3198e396afc47cb4f73160792a2c"
+        }
+      ]
+    },
+    {
+      "id": "MM-046",
+      "canonical_id": "MM-046",
+      "name": "Suelo pélvico",
+      "chapter_id": "suelo-pelvico",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-046-suelo-pelvico--posterior.png?v=67564e477f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a suelo pélvico, vista posterior.",
+      "width": 455,
+      "height": 735,
+      "sha256": "67564e477f8e6da23d18a8f31bd149c27a2e3198e396afc47cb4f73160792a2c",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-046-suelo-pelvico--posterior.png?v=67564e477f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a suelo pélvico, vista posterior.",
+          "width": 455,
+          "height": 735,
+          "sha256": "67564e477f8e6da23d18a8f31bd149c27a2e3198e396afc47cb4f73160792a2c"
+        }
+      ]
+    },
+    {
+      "id": "MM-047",
+      "canonical_id": "MM-047",
+      "name": "Deltoides",
+      "chapter_id": "deltoides",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-047-deltoides--anterior.png?v=d84df7a694",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a deltoides, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "d84df7a6949ae6fb769b2f2cb4b4978b6ad6036b9446c58cee99dd08ddeff722",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-047-deltoides--anterior.png?v=d84df7a694",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a deltoides, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "d84df7a6949ae6fb769b2f2cb4b4978b6ad6036b9446c58cee99dd08ddeff722"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-047-deltoides--lateral.png?v=12e99169e5",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a deltoides, vista lateral.",
+          "width": 400,
+          "height": 760,
+          "sha256": "12e99169e5d5263f0667d47367c452d7e111368be363bfe2aba35ce5576ee4b7"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-047-deltoides--posterior.png?v=325814fa88",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a deltoides, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "325814fa888a96c2dedc58771b4a463b1bbe896e15d9cadecef9cea73ad5d373"
+        }
+      ]
+    },
+    {
+      "id": "MM-048",
+      "canonical_id": "MM-048",
+      "name": "Supraespinoso",
+      "chapter_id": "supraespinoso",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-048-supraespinoso--anterior.png?v=f5fb5a4fdb",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a supraespinoso, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "f5fb5a4fdb57c23097841c16898acecd36ad3730ab64642dcd85ee369d07da9a",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-048-supraespinoso--anterior.png?v=f5fb5a4fdb",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a supraespinoso, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "f5fb5a4fdb57c23097841c16898acecd36ad3730ab64642dcd85ee369d07da9a"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-048-supraespinoso--posterior.png?v=4fb16d0b32",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a supraespinoso, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "4fb16d0b3274dba78ae23a39402c76d4403d7bb4fe33705698d4fd16e0dac15d"
+        }
+      ]
+    },
+    {
+      "id": "MM-049",
+      "canonical_id": "MM-049",
+      "name": "Infraespinoso",
+      "chapter_id": "infraespinoso",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-049-infraespinoso--anterior.png?v=ae0725cb7f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a infraespinoso, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "ae0725cb7fb937cf80e98f715c645061b8c719dadaaeb700af4825aed8e12d63",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-049-infraespinoso--anterior.png?v=ae0725cb7f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a infraespinoso, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "ae0725cb7fb937cf80e98f715c645061b8c719dadaaeb700af4825aed8e12d63"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-049-infraespinoso--posterior.png?v=3602c7c1c5",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a infraespinoso, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "3602c7c1c57a27c91b34d06696e4b5450c822d0be3f5a8eb20f5172f3087b459"
+        }
+      ]
+    },
+    {
+      "id": "MM-050",
+      "canonical_id": "MM-050",
+      "name": "Subescapular",
+      "chapter_id": "subescapular",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-050-subescapular--anterior.png?v=7670b97de2",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a subescapular, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "7670b97de242d9f0989664875a147bc72e69707bc3c7e023269b698653290161",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-050-subescapular--anterior.png?v=7670b97de2",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a subescapular, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "7670b97de242d9f0989664875a147bc72e69707bc3c7e023269b698653290161"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-050-subescapular--posterior.png?v=96dfa74a05",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a subescapular, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "96dfa74a058dac73e84942bb65344065813fa5cc330082126ba7349863f90c6e"
+        }
+      ]
+    },
+    {
+      "id": "MM-051",
+      "canonical_id": "MM-051",
+      "name": "Redondo menor",
+      "chapter_id": "redondo-menor",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-051-redondo-menor--posterior.png?v=0f19a844fd",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a redondo menor, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "0f19a844fde4b4817c38463860e6b19e8b964bb301d22fa507467de3c638fc99",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-051-redondo-menor--posterior.png?v=0f19a844fd",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a redondo menor, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "0f19a844fde4b4817c38463860e6b19e8b964bb301d22fa507467de3c638fc99"
+        }
+      ]
+    },
+    {
+      "id": "MM-052",
+      "canonical_id": "MM-052",
+      "name": "Redondo mayor",
+      "chapter_id": "dorsal-ancho-y-redondo-mayor",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-052-redondo-mayor--posterior.png?v=6f4ae9197c",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a redondo mayor, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "6f4ae9197c5c3887a814367de09d6adb5de3a4f53587b923a7dbed648201c00a",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-052-redondo-mayor--posterior.png?v=6f4ae9197c",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a redondo mayor, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "6f4ae9197c5c3887a814367de09d6adb5de3a4f53587b923a7dbed648201c00a"
+        }
+      ]
+    },
+    {
+      "id": "MM-053",
+      "canonical_id": "MM-053",
+      "name": "Bíceps braquial",
+      "chapter_id": "biceps-braquial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-053-biceps-braquial--anterior.png?v=f254b047e7",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a bíceps braquial, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "f254b047e71bb985aaa754daff7334a0e7d91da5389b400e75bd03405ba4486a",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-053-biceps-braquial--anterior.png?v=f254b047e7",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a bíceps braquial, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "f254b047e71bb985aaa754daff7334a0e7d91da5389b400e75bd03405ba4486a"
+        }
+      ]
+    },
+    {
+      "id": "MM-054",
+      "canonical_id": "MM-054",
+      "name": "Braquial",
+      "chapter_id": "braquial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-054-braquial--anterior.png?v=3059a02868",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a braquial, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "3059a0286837761c56ee55ffd6cc9ee9d2402dceb1694738a7987d97e4da5e04",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-054-braquial--anterior.png?v=3059a02868",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a braquial, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "3059a0286837761c56ee55ffd6cc9ee9d2402dceb1694738a7987d97e4da5e04"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-054-braquial--posterior.png?v=448cbe0d2d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a braquial, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "448cbe0d2d5018b4b6ebfcf985c5bad373912a271c36e6c8caa52efa00fcc243"
+        }
+      ]
+    },
+    {
+      "id": "MM-055",
+      "canonical_id": "MM-055",
+      "name": "Coracobraquial",
+      "chapter_id": "coracobraquial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-055-coracobraquial--anterior.png?v=aa493d6f06",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a coracobraquial, vista anterior.",
+      "width": 350,
+      "height": 760,
+      "sha256": "aa493d6f065fbe4bc2b98c5e3af69883318af8848914ceac34c715e77cb151e0",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-055-coracobraquial--anterior.png?v=aa493d6f06",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a coracobraquial, vista anterior.",
+          "width": 350,
+          "height": 760,
+          "sha256": "aa493d6f065fbe4bc2b98c5e3af69883318af8848914ceac34c715e77cb151e0"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-055-coracobraquial--posterior.png?v=c9d300e33e",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a coracobraquial, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "c9d300e33e094044780a4935f449a7b3763a76984a4771c1b201ad1dbbf9f5ae"
+        }
+      ]
+    },
+    {
+      "id": "MM-056",
+      "canonical_id": "MM-056",
+      "name": "Tríceps braquial",
+      "chapter_id": "triceps-braquial-y-anconeo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-056-triceps-braquial--posterior.png?v=baf70c54d9",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a tríceps braquial, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "baf70c54d9b9cab2c8a88dfa2d32f4394f244d74daad784b1c5de2d29a8eda15",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-056-triceps-braquial--posterior.png?v=baf70c54d9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a tríceps braquial, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "baf70c54d9b9cab2c8a88dfa2d32f4394f244d74daad784b1c5de2d29a8eda15"
+        }
+      ]
+    },
+    {
+      "id": "MM-057",
+      "canonical_id": "MM-057",
+      "name": "Ancóneo",
+      "chapter_id": "triceps-braquial-y-anconeo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-057-anconeo--posterior.png?v=58e9147ee7",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a ancóneo, vista posterior.",
+      "width": 390,
+      "height": 760,
+      "sha256": "58e9147ee7d9e442b4ec6dfa929dc2e6dfcffe382ea6ab1b3daef25df13ab646",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-057-anconeo--posterior.png?v=58e9147ee7",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a ancóneo, vista posterior.",
+          "width": 390,
+          "height": 760,
+          "sha256": "58e9147ee7d9e442b4ec6dfa929dc2e6dfcffe382ea6ab1b3daef25df13ab646"
+        }
+      ]
+    },
+    {
+      "id": "MM-058",
+      "canonical_id": "MM-058",
+      "name": "Braquiorradial",
+      "chapter_id": "extensores-de-la-muneca-y-braquiorradial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-058-braquiorradial--lateral.png?v=33728d558b",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a braquiorradial, vista lateral.",
+      "width": 330,
+      "height": 735,
+      "sha256": "33728d558b724b2754f776129c146ff1a00760d37f6d34099d317013c3c96328",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-058-braquiorradial--lateral.png?v=33728d558b",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a braquiorradial, vista lateral.",
+          "width": 330,
+          "height": 735,
+          "sha256": "33728d558b724b2754f776129c146ff1a00760d37f6d34099d317013c3c96328"
+        }
+      ]
+    },
+    {
+      "id": "MM-059",
+      "canonical_id": "MM-059",
+      "name": "Supinador",
+      "chapter_id": "supinador",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-059-supinador--anterior.png?v=16e6d35b3a",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a supinador, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "16e6d35b3a55e3b56b00661795f80354be3ffe57280f99628cc79212f1a2a8aa",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-059-supinador--anterior.png?v=16e6d35b3a",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a supinador, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "16e6d35b3a55e3b56b00661795f80354be3ffe57280f99628cc79212f1a2a8aa"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-059-supinador--lateral.png?v=0fcd14c165",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a supinador, vista lateral.",
+          "width": 330,
+          "height": 735,
+          "sha256": "0fcd14c1652e37f9853992ffc071bedd6e1c61845c38966d4734f5c7faaec90d"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-059-supinador--posterior.png?v=9955adb433",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a supinador, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "9955adb433bdcb61d971d7d7818ae32064669c911537e9a1d9a2874aff9924a6"
+        }
+      ]
+    },
+    {
+      "id": "MM-060",
+      "canonical_id": "MM-060",
+      "name": "Pronador redondo",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-060-pronador-redondo--anterior.png?v=2dee374dbb",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pronador redondo, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "2dee374dbba8ef1b1831a8ae9a640176605af6312e6770cf540886114e5e6f13",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-060-pronador-redondo--anterior.png?v=2dee374dbb",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pronador redondo, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "2dee374dbba8ef1b1831a8ae9a640176605af6312e6770cf540886114e5e6f13"
+        }
+      ]
+    },
+    {
+      "id": "MM-061",
+      "canonical_id": "MM-061",
+      "name": "Extensor radial largo del carpo",
+      "chapter_id": "extensores-de-la-muneca-y-braquiorradial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-061-extensor-radial-largo-del-carpo--lateral.png?v=55afa65689",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor radial largo del carpo, vista lateral.",
+      "width": 330,
+      "height": 735,
+      "sha256": "55afa656892d17d09d9c5adc8f6b2c3b39272f6ecbf5f250d98b4aec367bdbf9",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-061-extensor-radial-largo-del-carpo--lateral.png?v=55afa65689",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor radial largo del carpo, vista lateral.",
+          "width": 330,
+          "height": 735,
+          "sha256": "55afa656892d17d09d9c5adc8f6b2c3b39272f6ecbf5f250d98b4aec367bdbf9"
+        }
+      ]
+    },
+    {
+      "id": "MM-062",
+      "canonical_id": "MM-062",
+      "name": "Extensor radial corto del carpo",
+      "chapter_id": "extensores-de-la-muneca-y-braquiorradial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-062-extensor-radial-corto-del-carpo--posterior.png?v=51db2c3aea",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor radial corto del carpo, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "51db2c3aeac5bcc1324fb558e4534f5c8b753dc07fd09371bc51f4c5fa995662",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-062-extensor-radial-corto-del-carpo--posterior.png?v=51db2c3aea",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor radial corto del carpo, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "51db2c3aeac5bcc1324fb558e4534f5c8b753dc07fd09371bc51f4c5fa995662"
+        }
+      ]
+    },
+    {
+      "id": "MM-063",
+      "canonical_id": "MM-063",
+      "name": "Extensor cubital del carpo",
+      "chapter_id": "extensores-de-la-muneca-y-braquiorradial",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-063-extensor-cubital-del-carpo--posterior.png?v=7d974c576d",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor cubital del carpo, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "7d974c576d37cdc33e4d0ac60f41339cbaf74c02e9cc87b5b888bb092781590c",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-063-extensor-cubital-del-carpo--posterior.png?v=7d974c576d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor cubital del carpo, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "7d974c576d37cdc33e4d0ac60f41339cbaf74c02e9cc87b5b888bb092781590c"
+        }
+      ]
+    },
+    {
+      "id": "MM-064",
+      "canonical_id": "MM-064",
+      "name": "Extensor de los dedos",
+      "chapter_id": "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-064-extensor-de-los-dedos--posterior.png?v=0b0e0bd47c",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor de los dedos, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "0b0e0bd47c01a109f5eace6d1789b2c9adba9a7e6feb59ededf7124d8124c50e",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-064-extensor-de-los-dedos--posterior.png?v=0b0e0bd47c",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor de los dedos, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "0b0e0bd47c01a109f5eace6d1789b2c9adba9a7e6feb59ededf7124d8124c50e"
+        }
+      ]
+    },
+    {
+      "id": "MM-065",
+      "canonical_id": "MM-065",
+      "name": "Extensor del índice",
+      "chapter_id": "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-065-extensor-del-indice--posterior.png?v=1eafca38c1",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor del índice, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "1eafca38c1ea666443b7a9ed1efb820ec483c2755504f0af869c3f7160afe38f",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-065-extensor-del-indice--posterior.png?v=1eafca38c1",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor del índice, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "1eafca38c1ea666443b7a9ed1efb820ec483c2755504f0af869c3f7160afe38f"
+        }
+      ]
+    },
+    {
+      "id": "MM-066",
+      "canonical_id": "MM-066",
+      "name": "Palmar largo",
+      "chapter_id": "palmar-largo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-066-palmar-largo--anterior.png?v=b15145de38",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a palmar largo, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "b15145de38e8a0b84f815ea8ecf5a258ca4af97ef92bc516e6e19938dbd17bbc",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-066-palmar-largo--anterior.png?v=b15145de38",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a palmar largo, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "b15145de38e8a0b84f815ea8ecf5a258ca4af97ef92bc516e6e19938dbd17bbc"
+        }
+      ]
+    },
+    {
+      "id": "MM-067",
+      "canonical_id": "MM-067",
+      "name": "Flexor radial del carpo",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-067-flexor-radial-del-carpo--anterior.png?v=c30ea059ed",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor radial del carpo, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "c30ea059ed1157f07fdff830de59d2a2190569cc1829b02345c141183ddf2b08",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-067-flexor-radial-del-carpo--anterior.png?v=c30ea059ed",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor radial del carpo, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "c30ea059ed1157f07fdff830de59d2a2190569cc1829b02345c141183ddf2b08"
+        }
+      ]
+    },
+    {
+      "id": "MM-068",
+      "canonical_id": "MM-068",
+      "name": "Flexor cubital del carpo",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-068-flexor-cubital-del-carpo--anterior.png?v=e21287df68",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor cubital del carpo, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "e21287df68dffa3e7a285f6fe878e7224874180981c15de5de72a240094edb30",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-068-flexor-cubital-del-carpo--anterior.png?v=e21287df68",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor cubital del carpo, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "e21287df68dffa3e7a285f6fe878e7224874180981c15de5de72a240094edb30"
+        }
+      ]
+    },
+    {
+      "id": "MM-069",
+      "canonical_id": "MM-069",
+      "name": "Flexor superficial de los dedos",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-069-flexor-superficial-de-los-dedos--anterior.png?v=2350e4f92c",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor superficial de los dedos, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "2350e4f92c6e65813d2fac38c764a5b51a0bef5920a5c7de2c69a72f87ca9634",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-069-flexor-superficial-de-los-dedos--anterior.png?v=2350e4f92c",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor superficial de los dedos, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "2350e4f92c6e65813d2fac38c764a5b51a0bef5920a5c7de2c69a72f87ca9634"
+        }
+      ]
+    },
+    {
+      "id": "MM-070",
+      "canonical_id": "MM-070",
+      "name": "Flexor profundo de los dedos",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-070-flexor-profundo-de-los-dedos--anterior.png?v=2350e4f92c",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor profundo de los dedos, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "2350e4f92c6e65813d2fac38c764a5b51a0bef5920a5c7de2c69a72f87ca9634",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-070-flexor-profundo-de-los-dedos--anterior.png?v=2350e4f92c",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor profundo de los dedos, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "2350e4f92c6e65813d2fac38c764a5b51a0bef5920a5c7de2c69a72f87ca9634"
+        }
+      ]
+    },
+    {
+      "id": "MM-071",
+      "canonical_id": "MM-071",
+      "name": "Flexor largo del pulgar",
+      "chapter_id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-071-flexor-largo-del-pulgar--anterior.png?v=b37e0a4d5b",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo del pulgar, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "b37e0a4d5beac866f1d8724a3251b73b050635e6386f1ec63b2e6c10a5a7fb45",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-071-flexor-largo-del-pulgar--anterior.png?v=b37e0a4d5b",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo del pulgar, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "b37e0a4d5beac866f1d8724a3251b73b050635e6386f1ec63b2e6c10a5a7fb45"
+        }
+      ]
+    },
+    {
+      "id": "MM-072",
+      "canonical_id": "MM-072",
+      "name": "Oponente del pulgar",
+      "chapter_id": "aductor-del-pulgar-y-oponente-del-pulgar",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-072-oponente-del-pulgar--anterior.png?v=be942c9ada",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a oponente del pulgar, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "be942c9ada7830a5ab7001de9a18861fd2a8e5e191821e06e35a4709e29b70fa",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-072-oponente-del-pulgar--anterior.png?v=be942c9ada",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a oponente del pulgar, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "be942c9ada7830a5ab7001de9a18861fd2a8e5e191821e06e35a4709e29b70fa"
+        }
+      ]
+    },
+    {
+      "id": "MM-073",
+      "canonical_id": "MM-073",
+      "name": "Aductor del pulgar",
+      "chapter_id": "aductor-del-pulgar-y-oponente-del-pulgar",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-073-aductor-del-pulgar--anterior.png?v=db4b563f08",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor del pulgar, vista anterior.",
+      "width": 300,
+      "height": 735,
+      "sha256": "db4b563f0845c9f7c337ea93482c9637110107cc917c4ff249375403c2606e8a",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-073-aductor-del-pulgar--anterior.png?v=db4b563f08",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor del pulgar, vista anterior.",
+          "width": 300,
+          "height": 735,
+          "sha256": "db4b563f0845c9f7c337ea93482c9637110107cc917c4ff249375403c2606e8a"
+        },
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-073-aductor-del-pulgar--lateral.png?v=d25c0daa9b",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor del pulgar, vista lateral.",
+          "width": 330,
+          "height": 735,
+          "sha256": "d25c0daa9b8ed6aa9c03f06b1daddbb649dc1e94a2aa5aa660dd0810529587e2"
+        }
+      ]
+    },
+    {
+      "id": "MM-074",
+      "canonical_id": "MM-074",
+      "name": "Primer interóseo dorsal de la mano",
+      "chapter_id": "interoseos-lumbricales-y-separador-del-menique-de-la-mano",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-074-primer-interoseo-dorsal-de-la-mano--posterior.png?v=8d6750b024",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a primer interóseo dorsal de la mano, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "8d6750b024b2d6d2819708e53904bda02813b35a9e4a6ff4bf4a647fdf1b0492",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-074-primer-interoseo-dorsal-de-la-mano--posterior.png?v=8d6750b024",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a primer interóseo dorsal de la mano, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "8d6750b024b2d6d2819708e53904bda02813b35a9e4a6ff4bf4a647fdf1b0492"
+        }
+      ]
+    },
+    {
+      "id": "MM-075",
+      "canonical_id": "MM-075",
+      "name": "Abductor del meñique de la mano",
+      "chapter_id": "interoseos-lumbricales-y-separador-del-menique-de-la-mano",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-075-abductor-del-menique-de-la-mano--posterior.png?v=b4a2e634b1",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del meñique de la mano, vista posterior.",
+      "width": 330,
+      "height": 735,
+      "sha256": "b4a2e634b1028b742bc244de2c8471e74dd87360679809446d5f0bfdf50fd065",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-075-abductor-del-menique-de-la-mano--posterior.png?v=b4a2e634b1",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del meñique de la mano, vista posterior.",
+          "width": 330,
+          "height": 735,
+          "sha256": "b4a2e634b1028b742bc244de2c8471e74dd87360679809446d5f0bfdf50fd065"
+        }
+      ]
+    },
+    {
+      "id": "MM-076",
+      "canonical_id": "MM-076",
+      "name": "Tensor de la fascia lata",
+      "chapter_id": "gluteo-menor-y-tensor-de-la-fascia-lata",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-076-tensor-de-la-fascia-lata--lateral.png?v=38f4c64304",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a tensor de la fascia lata, vista lateral.",
+      "width": 365,
+      "height": 800,
+      "sha256": "38f4c64304be0ed650d69bc6da5f864d8ca5acd076cbfe1c74c90d1efaee26a1",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-076-tensor-de-la-fascia-lata--lateral.png?v=38f4c64304",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a tensor de la fascia lata, vista lateral.",
+          "width": 365,
+          "height": 800,
+          "sha256": "38f4c64304be0ed650d69bc6da5f864d8ca5acd076cbfe1c74c90d1efaee26a1"
+        }
+      ]
+    },
+    {
+      "id": "MM-077",
+      "canonical_id": "MM-077",
+      "name": "Recto femoral",
+      "chapter_id": "cuadriceps-y-sartorio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-077-recto-femoral--anterior.png?v=f0d008395f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a recto femoral, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "f0d008395ff159e5ec9749158e9fab591c1e724a92f4d4076d174a58445a4a91",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-077-recto-femoral--anterior.png?v=f0d008395f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a recto femoral, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "f0d008395ff159e5ec9749158e9fab591c1e724a92f4d4076d174a58445a4a91"
+        }
+      ]
+    },
+    {
+      "id": "MM-078",
+      "canonical_id": "MM-078",
+      "name": "Vasto lateral",
+      "chapter_id": "cuadriceps-y-sartorio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-078-vasto-lateral--lateral.png?v=cd4d8a7b79",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto lateral, vista lateral.",
+      "width": 365,
+      "height": 800,
+      "sha256": "cd4d8a7b79af0c8a1e2bdc00a9c9a92b7befa357dd193a1b18042e6c8e80f7b8",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-078-vasto-lateral--lateral.png?v=cd4d8a7b79",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto lateral, vista lateral.",
+          "width": 365,
+          "height": 800,
+          "sha256": "cd4d8a7b79af0c8a1e2bdc00a9c9a92b7befa357dd193a1b18042e6c8e80f7b8"
+        }
+      ]
+    },
+    {
+      "id": "MM-079",
+      "canonical_id": "MM-079",
+      "name": "Vasto medial",
+      "chapter_id": "cuadriceps-y-sartorio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-079-vasto-medial--anterior.png?v=b1403278c1",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto medial, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "b1403278c17b6622e01779aef0c72ff55be5b1d15a975ac9131427265759d911",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-079-vasto-medial--anterior.png?v=b1403278c1",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto medial, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "b1403278c17b6622e01779aef0c72ff55be5b1d15a975ac9131427265759d911"
+        }
+      ]
+    },
+    {
+      "id": "MM-080",
+      "canonical_id": "MM-080",
+      "name": "Vasto intermedio",
+      "chapter_id": "cuadriceps-y-sartorio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-080-vasto-intermedio--anterior.png?v=9b64c99701",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto intermedio, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "9b64c99701a00f138b5e0e86163888430818b25f06e5b716f8ef0d738163e151",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-080-vasto-intermedio--anterior.png?v=9b64c99701",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a vasto intermedio, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "9b64c99701a00f138b5e0e86163888430818b25f06e5b716f8ef0d738163e151"
+        }
+      ]
+    },
+    {
+      "id": "MM-081",
+      "canonical_id": "MM-081",
+      "name": "Sartorio",
+      "chapter_id": "cuadriceps-y-sartorio",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-081-sartorio--anterior.png?v=be99e8143f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a sartorio, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "be99e8143fb68ef82bebf4f40e896cd9d9fa5ad39c0ee7ae4e018a4f555f7edf",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-081-sartorio--anterior.png?v=be99e8143f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a sartorio, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "be99e8143fb68ef82bebf4f40e896cd9d9fa5ad39c0ee7ae4e018a4f555f7edf"
+        }
+      ]
+    },
+    {
+      "id": "MM-082",
+      "canonical_id": "MM-082",
+      "name": "Aductor largo",
+      "chapter_id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-082-aductor-largo--anterior.png?v=7177c5e028",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor largo, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "7177c5e028a1eca73ddfc3195c504b3b91d8f67c92f046ac3406e86b34e89aa3",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-082-aductor-largo--anterior.png?v=7177c5e028",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor largo, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "7177c5e028a1eca73ddfc3195c504b3b91d8f67c92f046ac3406e86b34e89aa3"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-082-aductor-largo--posterior.png?v=14f9bbea92",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor largo, vista posterior.",
+          "width": 425,
+          "height": 800,
+          "sha256": "14f9bbea92b8422acc8ff5165902548c6d7684c8e62c8075e9cfcbd609cde0f7"
+        }
+      ]
+    },
+    {
+      "id": "MM-083",
+      "canonical_id": "MM-083",
+      "name": "Aductor corto",
+      "chapter_id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-083-aductor-corto--anterior.png?v=7177c5e028",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor corto, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "7177c5e028a1eca73ddfc3195c504b3b91d8f67c92f046ac3406e86b34e89aa3",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-083-aductor-corto--anterior.png?v=7177c5e028",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor corto, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "7177c5e028a1eca73ddfc3195c504b3b91d8f67c92f046ac3406e86b34e89aa3"
+        },
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-083-aductor-corto--posterior.png?v=14f9bbea92",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor corto, vista posterior.",
+          "width": 425,
+          "height": 800,
+          "sha256": "14f9bbea92b8422acc8ff5165902548c6d7684c8e62c8075e9cfcbd609cde0f7"
+        }
+      ]
+    },
+    {
+      "id": "MM-084",
+      "canonical_id": "MM-084",
+      "name": "Aductor mayor",
+      "chapter_id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-084-aductor-mayor--anterior.png?v=488042842e",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor mayor, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "488042842ef4a9ada3d555d1ba497194a0f47b1c04009d9e5bf2a1c8440082fd",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-084-aductor-mayor--anterior.png?v=488042842e",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a aductor mayor, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "488042842ef4a9ada3d555d1ba497194a0f47b1c04009d9e5bf2a1c8440082fd"
+        }
+      ]
+    },
+    {
+      "id": "MM-085",
+      "canonical_id": "MM-085",
+      "name": "Pectíneo",
+      "chapter_id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-085-pectineo--anterior.png?v=b27cb53475",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a pectíneo, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "b27cb53475a4605d0e80a6b2c275b03f0af6c71f8bb29a2ae97c539e9b7d899b",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-085-pectineo--anterior.png?v=b27cb53475",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a pectíneo, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "b27cb53475a4605d0e80a6b2c275b03f0af6c71f8bb29a2ae97c539e9b7d899b"
+        }
+      ]
+    },
+    {
+      "id": "MM-086",
+      "canonical_id": "MM-086",
+      "name": "Grácil",
+      "chapter_id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-086-gracil--anterior.png?v=67601275eb",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a grácil, vista anterior.",
+      "width": 410,
+      "height": 800,
+      "sha256": "67601275eb643cd318dd9cb82c79508f177a276ee2fa72dbc250083f5db5f758",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-086-gracil--anterior.png?v=67601275eb",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a grácil, vista anterior.",
+          "width": 410,
+          "height": 800,
+          "sha256": "67601275eb643cd318dd9cb82c79508f177a276ee2fa72dbc250083f5db5f758"
+        }
+      ]
+    },
+    {
+      "id": "MM-087",
+      "canonical_id": "MM-087",
+      "name": "Bíceps femoral",
+      "chapter_id": "isquiotibiales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-087-biceps-femoral--posterior.png?v=d6551d24d3",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a bíceps femoral, vista posterior.",
+      "width": 425,
+      "height": 800,
+      "sha256": "d6551d24d3147910fdbab935e94a998d187e23b4640b9f753f5a3e8deb5e9d67",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-087-biceps-femoral--posterior.png?v=d6551d24d3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a bíceps femoral, vista posterior.",
+          "width": 425,
+          "height": 800,
+          "sha256": "d6551d24d3147910fdbab935e94a998d187e23b4640b9f753f5a3e8deb5e9d67"
+        }
+      ]
+    },
+    {
+      "id": "MM-088",
+      "canonical_id": "MM-088",
+      "name": "Semitendinoso",
+      "chapter_id": "isquiotibiales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-088-semitendinoso--posterior.png?v=5e9bc305b6",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a semitendinoso, vista posterior.",
+      "width": 425,
+      "height": 800,
+      "sha256": "5e9bc305b61b2dc8cbcea6639f17d8487024f04f7790997940fe5653ecaa505e",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-088-semitendinoso--posterior.png?v=5e9bc305b6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a semitendinoso, vista posterior.",
+          "width": 425,
+          "height": 800,
+          "sha256": "5e9bc305b61b2dc8cbcea6639f17d8487024f04f7790997940fe5653ecaa505e"
+        }
+      ]
+    },
+    {
+      "id": "MM-089",
+      "canonical_id": "MM-089",
+      "name": "Semimembranoso",
+      "chapter_id": "isquiotibiales",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-089-semimembranoso--posterior.png?v=5e9bc305b6",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a semimembranoso, vista posterior.",
+      "width": 425,
+      "height": 800,
+      "sha256": "5e9bc305b61b2dc8cbcea6639f17d8487024f04f7790997940fe5653ecaa505e",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-089-semimembranoso--posterior.png?v=5e9bc305b6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a semimembranoso, vista posterior.",
+          "width": 425,
+          "height": 800,
+          "sha256": "5e9bc305b61b2dc8cbcea6639f17d8487024f04f7790997940fe5653ecaa505e"
+        }
+      ]
+    },
+    {
+      "id": "MM-090",
+      "canonical_id": "MM-090",
+      "name": "Gastrocnemio",
+      "chapter_id": "gemelos",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-090-gastrocnemio--posterior.png?v=1aef380cd6",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a gastrocnemio, vista posterior.",
+      "width": 430,
+      "height": 665,
+      "sha256": "1aef380cd6d2f8e5cced5fbe593c31e6bf5e43cdf4f0809b2e384ac76d655f49",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-090-gastrocnemio--posterior.png?v=1aef380cd6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a gastrocnemio, vista posterior.",
+          "width": 430,
+          "height": 665,
+          "sha256": "1aef380cd6d2f8e5cced5fbe593c31e6bf5e43cdf4f0809b2e384ac76d655f49"
+        }
+      ]
+    },
+    {
+      "id": "MM-091",
+      "canonical_id": "MM-091",
+      "name": "Sóleo",
+      "chapter_id": "soleo-y-plantar",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-091-soleo--posterior.png?v=eec004bd9d",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a sóleo, vista posterior.",
+      "width": 430,
+      "height": 665,
+      "sha256": "eec004bd9d9a9a60721fa25090bcec44164fc3a5a52238e5b9c5e6f2afed5c7b",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-091-soleo--posterior.png?v=eec004bd9d",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a sóleo, vista posterior.",
+          "width": 430,
+          "height": 665,
+          "sha256": "eec004bd9d9a9a60721fa25090bcec44164fc3a5a52238e5b9c5e6f2afed5c7b"
+        }
+      ]
+    },
+    {
+      "id": "MM-092",
+      "canonical_id": "MM-092",
+      "name": "Plantar",
+      "chapter_id": "soleo-y-plantar",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-092-plantar--posterior.png?v=4436e519cd",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a plantar, vista posterior.",
+      "width": 430,
+      "height": 665,
+      "sha256": "4436e519cd24cd3a2add93acce0483a0e2cf84c393a3434c82a02b21c6d94691",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-092-plantar--posterior.png?v=4436e519cd",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a plantar, vista posterior.",
+          "width": 430,
+          "height": 665,
+          "sha256": "4436e519cd24cd3a2add93acce0483a0e2cf84c393a3434c82a02b21c6d94691"
+        }
+      ]
+    },
+    {
+      "id": "MM-093",
+      "canonical_id": "MM-093",
+      "name": "Poplíteo",
+      "chapter_id": "popliteo",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-093-popliteo--posterior.png?v=5d555227ac",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a poplíteo, vista posterior.",
+      "width": 430,
+      "height": 665,
+      "sha256": "5d555227ac2c7ce6aadfb7bf4a90b3a27677d108d94dbb4bb76a6b3f646dd930",
+      "views": [
+        {
+          "id": "posterior",
+          "label": "Vista posterior",
+          "image": "./assets/pain-patterns/mm-093-popliteo--posterior.png?v=5d555227ac",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a poplíteo, vista posterior.",
+          "width": 430,
+          "height": 665,
+          "sha256": "5d555227ac2c7ce6aadfb7bf4a90b3a27677d108d94dbb4bb76a6b3f646dd930"
+        }
+      ]
+    },
+    {
+      "id": "MM-094",
+      "canonical_id": "MM-094",
+      "name": "Tibial anterior",
+      "chapter_id": "tibial-anterior",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-094-tibial-anterior--anterior.png?v=ff3b8da5a3",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a tibial anterior, vista anterior.",
+      "width": 410,
+      "height": 665,
+      "sha256": "ff3b8da5a35e699d58e5010bd20949db66929d832e29dcc10c7af750c88c6fdb",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-094-tibial-anterior--anterior.png?v=ff3b8da5a3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a tibial anterior, vista anterior.",
+          "width": 410,
+          "height": 665,
+          "sha256": "ff3b8da5a35e699d58e5010bd20949db66929d832e29dcc10c7af750c88c6fdb"
+        }
+      ]
+    },
+    {
+      "id": "MM-095",
+      "canonical_id": "MM-095",
+      "name": "Tibial posterior",
+      "chapter_id": "tibial-posterior",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-095-tibial-posterior--medial.png?v=851d7f11da",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a tibial posterior, vista medial.",
+      "width": 560,
+      "height": 855,
+      "sha256": "851d7f11dabd83c1340faa46bb2d71e93068abbccfdb85c1b355706ae9d23fa1",
+      "views": [
+        {
+          "id": "medial",
+          "label": "Vista medial",
+          "image": "./assets/pain-patterns/mm-095-tibial-posterior--medial.png?v=851d7f11da",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a tibial posterior, vista medial.",
+          "width": 560,
+          "height": 855,
+          "sha256": "851d7f11dabd83c1340faa46bb2d71e93068abbccfdb85c1b355706ae9d23fa1"
+        }
+      ]
+    },
+    {
+      "id": "MM-096",
+      "canonical_id": "MM-096",
+      "name": "Fibular largo",
+      "chapter_id": "fibulares-largo-corto-y-tercero",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-096-fibular-largo--lateral.png?v=ca24187aaf",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular largo, vista lateral.",
+      "width": 455,
+      "height": 665,
+      "sha256": "ca24187aafac43bf26eb4a15435519bc44ea4cd8a9e58a125d47b51c3baa549c",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-096-fibular-largo--lateral.png?v=ca24187aaf",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular largo, vista lateral.",
+          "width": 455,
+          "height": 665,
+          "sha256": "ca24187aafac43bf26eb4a15435519bc44ea4cd8a9e58a125d47b51c3baa549c"
+        }
+      ]
+    },
+    {
+      "id": "MM-097",
+      "canonical_id": "MM-097",
+      "name": "Fibular corto",
+      "chapter_id": "fibulares-largo-corto-y-tercero",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-097-fibular-corto--lateral.png?v=58db2feff1",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular corto, vista lateral.",
+      "width": 455,
+      "height": 665,
+      "sha256": "58db2feff124649cb3fadfd781212ea43bd20d487996b70e165f383a1720e6d8",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-097-fibular-corto--lateral.png?v=58db2feff1",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular corto, vista lateral.",
+          "width": 455,
+          "height": 665,
+          "sha256": "58db2feff124649cb3fadfd781212ea43bd20d487996b70e165f383a1720e6d8"
+        }
+      ]
+    },
+    {
+      "id": "MM-098",
+      "canonical_id": "MM-098",
+      "name": "Fibular tercero",
+      "chapter_id": "fibulares-largo-corto-y-tercero",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-098-fibular-tercero--lateral.png?v=d115499ea8",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular tercero, vista lateral.",
+      "width": 455,
+      "height": 665,
+      "sha256": "d115499ea80a855145f3b887792df98a6db4e458a26aea68e2dded421c7ea966",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-098-fibular-tercero--lateral.png?v=d115499ea8",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a fibular tercero, vista lateral.",
+          "width": 455,
+          "height": 665,
+          "sha256": "d115499ea80a855145f3b887792df98a6db4e458a26aea68e2dded421c7ea966"
+        }
+      ]
+    },
+    {
+      "id": "MM-099",
+      "canonical_id": "MM-099",
+      "name": "Extensor largo de los dedos del pie",
+      "chapter_id": "extensores-largos-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-099-extensor-largo-de-los-dedos-del-pie--anterior.png?v=57d2ed4ea9",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor largo de los dedos del pie, vista anterior.",
+      "width": 410,
+      "height": 665,
+      "sha256": "57d2ed4ea93cf788982d17193041ae46b61bc702b9f97e3b5408b869d9340ade",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-099-extensor-largo-de-los-dedos-del-pie--anterior.png?v=57d2ed4ea9",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor largo de los dedos del pie, vista anterior.",
+          "width": 410,
+          "height": 665,
+          "sha256": "57d2ed4ea93cf788982d17193041ae46b61bc702b9f97e3b5408b869d9340ade"
+        }
+      ]
+    },
+    {
+      "id": "MM-100",
+      "canonical_id": "MM-100",
+      "name": "Extensor largo del dedo gordo",
+      "chapter_id": "extensores-largos-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-100-extensor-largo-del-dedo-gordo--anterior.png?v=283f6dd0d6",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor largo del dedo gordo, vista anterior.",
+      "width": 410,
+      "height": 665,
+      "sha256": "283f6dd0d604111248144021ecdee1a65f99fbb375612faff5adbacb6393c633",
+      "views": [
+        {
+          "id": "anterior",
+          "label": "Vista anterior",
+          "image": "./assets/pain-patterns/mm-100-extensor-largo-del-dedo-gordo--anterior.png?v=283f6dd0d6",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor largo del dedo gordo, vista anterior.",
+          "width": 410,
+          "height": 665,
+          "sha256": "283f6dd0d604111248144021ecdee1a65f99fbb375612faff5adbacb6393c633"
+        }
+      ]
+    },
+    {
+      "id": "MM-101",
+      "canonical_id": "MM-101",
+      "name": "Flexor largo de los dedos del pie",
+      "chapter_id": "flexores-largos-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-101-flexor-largo-de-los-dedos-del-pie--plantar.png?v=d3a03383f3",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo de los dedos del pie, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "d3a03383f34639ab0019fbb05d92bb977a79172a86478954adee1c1ee70427ac",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-101-flexor-largo-de-los-dedos-del-pie--plantar.png?v=d3a03383f3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo de los dedos del pie, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "d3a03383f34639ab0019fbb05d92bb977a79172a86478954adee1c1ee70427ac"
+        }
+      ]
+    },
+    {
+      "id": "MM-102",
+      "canonical_id": "MM-102",
+      "name": "Flexor largo del dedo gordo",
+      "chapter_id": "flexores-largos-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-102-flexor-largo-del-dedo-gordo--plantar.png?v=7ebc699207",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo del dedo gordo, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "7ebc6992079f18d655af88acc6bbb3e190ca72d30f16d973260a4237c0680b5e",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-102-flexor-largo-del-dedo-gordo--plantar.png?v=7ebc699207",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor largo del dedo gordo, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "7ebc6992079f18d655af88acc6bbb3e190ca72d30f16d973260a4237c0680b5e"
+        }
+      ]
+    },
+    {
+      "id": "MM-103",
+      "canonical_id": "MM-103",
+      "name": "Extensor corto de los dedos del pie",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-103-extensor-corto-de-los-dedos-del-pie--lateral.png?v=4cf5e3c37f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor corto de los dedos del pie, vista lateral.",
+      "width": 455,
+      "height": 665,
+      "sha256": "4cf5e3c37f31210c79beaed2bdcc0fbc9ffdcfc0242d9915ac95b15741b1f290",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-103-extensor-corto-de-los-dedos-del-pie--lateral.png?v=4cf5e3c37f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor corto de los dedos del pie, vista lateral.",
+          "width": 455,
+          "height": 665,
+          "sha256": "4cf5e3c37f31210c79beaed2bdcc0fbc9ffdcfc0242d9915ac95b15741b1f290"
+        }
+      ]
+    },
+    {
+      "id": "MM-104",
+      "canonical_id": "MM-104",
+      "name": "Extensor corto del dedo gordo",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-104-extensor-corto-del-dedo-gordo--lateral.png?v=4cf5e3c37f",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor corto del dedo gordo, vista lateral.",
+      "width": 455,
+      "height": 665,
+      "sha256": "4cf5e3c37f31210c79beaed2bdcc0fbc9ffdcfc0242d9915ac95b15741b1f290",
+      "views": [
+        {
+          "id": "lateral",
+          "label": "Vista lateral",
+          "image": "./assets/pain-patterns/mm-104-extensor-corto-del-dedo-gordo--lateral.png?v=4cf5e3c37f",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a extensor corto del dedo gordo, vista lateral.",
+          "width": 455,
+          "height": 665,
+          "sha256": "4cf5e3c37f31210c79beaed2bdcc0fbc9ffdcfc0242d9915ac95b15741b1f290"
+        }
+      ]
+    },
+    {
+      "id": "MM-105",
+      "canonical_id": "MM-105",
+      "name": "Flexor corto del dedo gordo",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-105-flexor-corto-del-dedo-gordo--plantar.png?v=95b7cc04ae",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor corto del dedo gordo, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "95b7cc04aeb42b1829398d98c5d82f49f4ea3c2e987f230ceafcf6728b243776",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-105-flexor-corto-del-dedo-gordo--plantar.png?v=95b7cc04ae",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a flexor corto del dedo gordo, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "95b7cc04aeb42b1829398d98c5d82f49f4ea3c2e987f230ceafcf6728b243776"
+        }
+      ]
+    },
+    {
+      "id": "MM-106",
+      "canonical_id": "MM-106",
+      "name": "Abductor del dedo gordo",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-106-abductor-del-dedo-gordo--plantar.png?v=fd2ecf9a61",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del dedo gordo, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "fd2ecf9a61eee2524687f74916c3cba2111a473c73cf01d8dc464efeed40deb6",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-106-abductor-del-dedo-gordo--plantar.png?v=fd2ecf9a61",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del dedo gordo, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "fd2ecf9a61eee2524687f74916c3cba2111a473c73cf01d8dc464efeed40deb6"
+        }
+      ]
+    },
+    {
+      "id": "MM-107",
+      "canonical_id": "MM-107",
+      "name": "Cuadrado plantar",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-107-cuadrado-plantar--plantar.png?v=e67120e4c3",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado plantar, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "e67120e4c3fbf3ddc8aaa35c823e4a048fe963dde78e1d55171b625f800d37ea",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-107-cuadrado-plantar--plantar.png?v=e67120e4c3",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a cuadrado plantar, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "e67120e4c3fbf3ddc8aaa35c823e4a048fe963dde78e1d55171b625f800d37ea"
+        }
+      ]
+    },
+    {
+      "id": "MM-108",
+      "canonical_id": "MM-108",
+      "name": "Abductor del meñique del pie",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-108-abductor-del-menique-del-pie--plantar.png?v=fd3403c799",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del meñique del pie, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "fd3403c7997cfe4a9863fd3628f080bb3bf02b693948ac2b765cd27a517e85f2",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-108-abductor-del-menique-del-pie--plantar.png?v=fd3403c799",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a abductor del meñique del pie, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "fd3403c7997cfe4a9863fd3628f080bb3bf02b693948ac2b765cd27a517e85f2"
+        }
+      ]
+    },
+    {
+      "id": "MM-109",
+      "canonical_id": "MM-109",
+      "name": "Interóseos del pie",
+      "chapter_id": "musculatura-intrinseca-del-pie",
+      "variant": "mapa-01",
+      "image": "./assets/pain-patterns/mm-109-interoseos-del-pie--plantar.png?v=129a6dea62",
+      "alt": "Mapa orientativo del patrón de dolor referido asociado a interóseos del pie, vista plantar.",
+      "width": 480,
+      "height": 850,
+      "sha256": "129a6dea621646e0e145bb9ab3296ead41554c2125d3c6c2cc621ba5ca2bae05",
+      "views": [
+        {
+          "id": "plantar",
+          "label": "Vista plantar",
+          "image": "./assets/pain-patterns/mm-109-interoseos-del-pie--plantar.png?v=129a6dea62",
+          "alt": "Mapa orientativo del patrón de dolor referido asociado a interóseos del pie, vista plantar.",
+          "width": 480,
+          "height": 850,
+          "sha256": "129a6dea621646e0e145bb9ab3296ead41554c2125d3c6c2cc621ba5ca2bae05"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}

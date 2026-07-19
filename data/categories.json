@@ -1,0 +1,17 @@
+[
+  {"slug":"dolor","name":"Dolor","description":"Dolor musculoesquelético, persistente y mecanismos relacionados."},
+  {"slug":"atm","name":"ATM y dolor orofacial","description":"Trastornos temporomandibulares y dolor orofacial."},
+  {"slug":"fisioterapia-invasiva","name":"Fisioterapia invasiva","description":"Punción seca, electrólisis y técnicas invasivas evaluadas críticamente."},
+  {"slug":"ecografia","name":"Ecografía","description":"Ecografía musculoesquelética aplicada a valoración e intervención."},
+  {"slug":"ejercicio","name":"Ejercicio terapéutico","description":"Dosificación, progresión y transferencia funcional del ejercicio."},
+  {"slug":"neurociencia","name":"Neurociencia","description":"Sistema nervioso, dolor, plasticidad y comportamiento."},
+  {"slug":"control-motor","name":"Control motor","description":"Organización, coordinación y aprendizaje del movimiento."},
+  {"slug":"biomecanica","name":"Biomecánica clínica","description":"Variables mecánicas con significado clínico."},
+  {"slug":"fascia","name":"Fascia","description":"Estructura, mecanobiología, nocicepción y tejido conectivo."},
+  {"slug":"osteopatia","name":"Osteopatía","description":"Intervenciones osteopáticas sometidas a análisis crítico."},
+  {"slug":"terapia-manual","name":"Terapia manual","description":"Intervenciones manuales pasivas y su aplicabilidad clínica."},
+  {"slug":"electroterapia","name":"Electroterapia","description":"Estimulación periférica y modalidades electrofísicas."},
+  {"slug":"tdcs","name":"Neuromodulación cerebral","description":"tDCS, TMS y otras formas de estimulación cerebral no invasiva."},
+  {"slug":"bfr","name":"BFR","description":"Entrenamiento con restricción del flujo sanguíneo."},
+  {"slug":"anatomia","name":"Anatomía clínica","description":"Anatomía funcional aplicada al razonamiento clínico."}
+]

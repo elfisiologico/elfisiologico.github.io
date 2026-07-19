@@ -1,0 +1,33 @@
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /.codex/
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /docs/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /.codex/
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /docs/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /.codex/
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /docs/
+
+User-agent: *
+Allow: /
+Disallow: /.codex/
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /docs/
+
+Sitemap: https://www.elfisiologico.com/sitemap.xml

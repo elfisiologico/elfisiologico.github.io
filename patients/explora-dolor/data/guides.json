@@ -1,0 +1,2534 @@
+{
+  "version": "3.0.0-patient",
+  "source_label": "Guías educativas de FisioLógico",
+  "generated_on": "2026-07-18",
+  "status": "patient_plain_language",
+  "chapter_count": 66,
+  "chapters": [
+    {
+      "id": "aductor-del-pulgar-y-oponente-del-pulgar",
+      "title": "Músculos aductor del pulgar y oponente del pulgar",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos aductor del pulgar y oponente del pulgar con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte de la palma junto a la muñeca.",
+          "Puede sentirse en la palma de la mano.",
+          "Puede sentirse en la base del pulgar."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "aductor-mayor-aductor-largo-aductor-corto-pectineo-y-gracil",
+      "title": "Músculos aductor largo, aductor corto, aductor mayor, pectíneo y grácil",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos aductor largo, aductor corto, aductor mayor, pectíneo y grácil con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la pelvis.",
+          "Puede sentirse en la parte delantera del muslo.",
+          "Puede sentirse en la parte interna del muslo.",
+          "Puede sentirse en la parte delantera e interna de la rodilla.",
+          "Puede sentirse en la parte interna de la rodilla."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "biceps-braquial",
+      "title": "Músculo bíceps braquial",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo bíceps braquial con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte delantera del codo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "braquial",
+      "title": "Músculo braquial",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo braquial con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte delantera del codo.",
+          "Puede sentirse en la parte de atrás de la mano.",
+          "Puede sentirse en la base del pulgar."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-calzado",
+      "title": "Consideraciones clínicas del calzado",
+      "chapter_type": "consideracion_clinica",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas del calzado con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-de-cabeza-y-cuello",
+      "title": "Consideraciones clínicas del dolor de cabeza y cuello",
+      "chapter_type": "consideracion_clinica",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas del dolor de cabeza y cuello con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-de-cadera-muslo-y-rodilla",
+      "title": "Consideraciones clínicas del dolor de cadera, muslo y rodilla",
+      "chapter_type": "consideracion_clinica",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas del dolor de cadera, muslo y rodilla con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-de-codo-muneca-y-mano",
+      "title": "Consideraciones clínicas de dolor de codo, muñeca y mano",
+      "chapter_type": "consideracion_clinica",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas de dolor de codo, muñeca y mano con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-de-espalda-superior-hombro-y-brazo",
+      "title": "Consideraciones clínicas de dolor de espalda superior, hombro y brazo",
+      "chapter_type": "consideracion_clinica",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas de dolor de espalda superior, hombro y brazo con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-de-pierna-tobillo-y-pie",
+      "title": "Consideraciones clínicas de dolor de pierna, tobillo y pie",
+      "chapter_type": "consideracion_clinica",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas de dolor de pierna, tobillo y pie con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-de-dolor-del-tronco-y-suelo-pelvico",
+      "title": "Consideraciones clínicas de dolor del tronco y suelo pélvico",
+      "chapter_type": "consideracion_clinica",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas de dolor del tronco y suelo pélvico con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "consideraciones-clinicas-posturales",
+      "title": "Consideraciones clínicas posturales",
+      "chapter_type": "consideracion_clinica",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de consideraciones clínicas posturales con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse cerca del músculo o extenderse hacia una zona próxima."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "coracobraquial",
+      "title": "Coracobraquial",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de coracobraquial con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte posterior del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la zona dorsal o posterior del antebrazo.",
+          "Puede sentirse en el lado del pulgar del antebrazo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "cuadrado-lumbar",
+      "title": "Cuadrado lumbar",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de cuadrado lumbar con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte baja de la espalda.",
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la pelvis."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "cuadriceps-y-sartorio",
+      "title": "Cuádriceps y sartorio",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de cuádriceps y sartorio con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte externa de la cadera.",
+          "Puede sentirse en la parte externa del muslo.",
+          "Puede sentirse en la parte delantera del muslo.",
+          "Puede sentirse en la parte interna del muslo.",
+          "Puede sentirse en la parte delantera de la rodilla.",
+          "Puede sentirse en la parte delantera e interna de la rodilla."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "deltoides",
+      "title": "Deltoides",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de deltoides con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte posterior del hombro.",
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte posterior del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "digastrico",
+      "title": "Digástrico y musculatura anterior del cuello",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de digástrico y musculatura anterior del cuello con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en los dientes o la mandíbula.",
+          "Puede sentirse en la parte posterior de la cabeza.",
+          "Puede sentirse en la parte delantera de la garganta o el cuello."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "dorsal-ancho-y-redondo-mayor",
+      "title": "Dorsal ancho y redondo mayor",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de dorsal ancho y redondo mayor con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior del hombro.",
+          "Puede sentirse en la parte posterior del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la parte media de la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "elevador-de-la-escapula",
+      "title": "Elevador de la escápula",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de elevador de la escápula con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "escalenos",
+      "title": "Escalenos",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de escalenos con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera de la garganta o el cuello.",
+          "Puede sentirse en la parte posterior del cuello.",
+          "Puede sentirse en la parte delantera del pecho."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "esplenio-de-cabeza-y-cuello",
+      "title": "Esplenio de la cabeza y esplenio del cuello",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de esplenio de la cabeza y esplenio del cuello con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte superior de la cabeza.",
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en alrededor del ojo o la ceja.",
+          "Puede sentirse en la parte posterior de la cabeza.",
+          "Puede sentirse en la parte posterior del cuello."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "esternal",
+      "title": "Esternal",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de esternal con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del pecho."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "esternocleidomastoideo-y-masetero",
+      "title": "Esternocleidomastoideo y masetero",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de esternocleidomastoideo y masetero con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte superior de la cabeza.",
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en alrededor del ojo o la ceja.",
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en la mejilla o la mandíbula."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "extensor-de-los-dedos-de-la-mano-y-extensor-del-indice",
+      "title": "Extensor de los dedos de la mano y extensor del índice",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de extensor de los dedos de la mano y extensor del índice con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la zona dorsal o posterior del antebrazo.",
+          "Puede sentirse en el lado del pulgar del antebrazo.",
+          "Puede sentirse en el lado del meñique del antebrazo.",
+          "Puede sentirse en la parte de atrás de la muñeca.",
+          "Puede sentirse en la parte de atrás de la mano.",
+          "Puede sentirse en la parte de atrás de los dedos."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "extensores-de-la-muneca-y-braquiorradial",
+      "title": "Extensores de la muñeca y braquiorradial",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de extensores de la muñeca y braquiorradial con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte externa del codo.",
+          "Puede sentirse en la zona dorsal o posterior del antebrazo.",
+          "Puede sentirse en el lado del pulgar del antebrazo.",
+          "Puede sentirse en el lado del meñique del antebrazo.",
+          "Puede sentirse en la parte de atrás de la muñeca.",
+          "Puede sentirse en la parte de atrás de la mano."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "extensores-largos-del-pie",
+      "title": "Extensor largo de los dedos y extensor largo del hallux",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de extensor largo de los dedos y extensor largo del hallux con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera de la pierna.",
+          "Puede sentirse en la parte externa de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte delantera del tobillo.",
+          "Puede sentirse en la parte externa del tobillo.",
+          "Puede sentirse en la almohadilla de la planta, detrás de los dedos."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "fibulares-largo-corto-y-tercero",
+      "title": "Fibulares (peroneos) largo, corto y tercero",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de fibulares (peroneos) largo, corto y tercero con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte externa de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte externa del tobillo.",
+          "Puede sentirse en la parte superior del pie.",
+          "Puede sentirse en la parte de arriba del dedo gordo.",
+          "Puede sentirse en la parte de arriba de los dedos menores."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "flexores-de-la-muneca-y-de-los-dedos-en-el-antebrazo",
+      "title": "Flexores de la muñeca y de los dedos en el antebrazo",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de flexores de la muñeca y de los dedos en el antebrazo con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte interna del codo.",
+          "Puede sentirse en la parte delantera del antebrazo.",
+          "Puede sentirse en el lado del pulgar del antebrazo.",
+          "Puede sentirse en el lado del meñique del antebrazo.",
+          "Puede sentirse en la parte de la palma junto a la muñeca.",
+          "Puede sentirse en la palma de la mano."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "flexores-largos-del-pie",
+      "title": "Flexor largo de los dedos y flexor largo del hallux",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de flexor largo de los dedos y flexor largo del hallux con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte interna del tobillo.",
+          "Puede sentirse en la parte media de la planta del pie.",
+          "Puede sentirse en la almohadilla de la planta, detrás de los dedos.",
+          "Puede sentirse en la parte de abajo del dedo gordo.",
+          "Puede sentirse en la parte de arriba del dedo gordo.",
+          "Puede sentirse en la parte de abajo de los dedos menores."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "gemelos",
+      "title": "Gastrocnemio",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de gastrocnemio con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera de la rodilla.",
+          "Puede sentirse en la parte delantera e interna de la rodilla.",
+          "Puede sentirse en la parte posterior de la rodilla.",
+          "Puede sentirse en la parte posterior de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte posterior del tobillo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "gluteo-mayor",
+      "title": "Glúteo mayor",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de glúteo mayor con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la nalga.",
+          "Puede sentirse en la pelvis."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "gluteo-medio",
+      "title": "Glúteo medio",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de glúteo medio con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte baja de la espalda.",
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la nalga.",
+          "Puede sentirse en la pelvis.",
+          "Puede sentirse en la parte externa de la cadera."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "gluteo-menor-y-tensor-de-la-fascia-lata",
+      "title": "Glúteo menor y tensor de la fascia lata",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de glúteo menor y tensor de la fascia lata con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la nalga.",
+          "Puede sentirse en la parte externa de la cadera.",
+          "Puede sentirse en la parte externa del muslo.",
+          "Puede sentirse en la parte posterior del muslo.",
+          "Puede sentirse en la parte externa de la rodilla."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "infraespinoso",
+      "title": "Infraespinoso",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de infraespinoso con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "intercostales-y-diafragma",
+      "title": "Intercostales y diafragma",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de intercostales y diafragma con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del pecho.",
+          "Puede sentirse en el lateral del pecho.",
+          "Puede sentirse en el abdomen.",
+          "Puede sentirse en la parte baja del abdomen."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "interoseos-lumbricales-y-separador-del-menique-de-la-mano",
+      "title": "Interóseos, lumbricales y separador del meñique de la mano",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de interóseos, lumbricales y separador del meñique de la mano con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte de atrás de la mano.",
+          "Puede sentirse en la palma de la mano.",
+          "Puede sentirse en la parte de atrás de los dedos.",
+          "Puede sentirse en la parte de la palma de los dedos."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "isquiotibiales",
+      "title": "Isquiotibiales",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de isquiotibiales con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior del muslo.",
+          "Puede sentirse en la parte delantera e interna de la rodilla.",
+          "Puede sentirse en la parte interna de la rodilla.",
+          "Puede sentirse en la parte posterior de la rodilla."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "musculatura-intrinseca-del-pie",
+      "title": "Musculatura intrínseca del pie",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de musculatura intrínseca del pie con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en el talón.",
+          "Puede sentirse en la parte media de la planta del pie.",
+          "Puede sentirse en la almohadilla de la planta, detrás de los dedos.",
+          "Puede sentirse en la parte de abajo del dedo gordo.",
+          "Puede sentirse en la parte de arriba del dedo gordo.",
+          "Puede sentirse en la parte de abajo de los dedos menores."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "musculos-abdominales",
+      "title": "Músculos abdominales",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos abdominales con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en el abdomen.",
+          "Puede sentirse en la parte baja del abdomen.",
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la pelvis."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "musculos-cervicales-posteriores",
+      "title": "Músculos cervicales posteriores: semiespinoso de la cabeza, longísimo de la cabeza, semiespinoso del cuello, multífido y rotadores",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos cervicales posteriores: semiespinoso de la cabeza, longísimo de la cabeza, semiespinoso del cuello, multífido y rotadores con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte superior de la cabeza.",
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en la parte posterior de la cabeza.",
+          "Puede sentirse en la parte posterior del cuello."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "musculos-faciales",
+      "title": "Músculos faciales: orbicular de los ojos, cigomático mayor, platisma, buccinador, corrugador superciliar y prócer",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos faciales: orbicular de los ojos, cigomático mayor, platisma, buccinador, corrugador superciliar y prócer con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la sien.",
+          "Puede sentirse en alrededor del ojo o la ceja.",
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en la mejilla o la mandíbula.",
+          "Puede sentirse en los dientes o la mandíbula."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "occipitofrontal",
+      "title": "Occipitofrontal: frontal y occipital",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de occipitofrontal: frontal y occipital con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en la parte posterior de la cabeza."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "palmar-largo",
+      "title": "Palmar largo",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de palmar largo con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte de la palma junto a la muñeca.",
+          "Puede sentirse en la palma de la mano."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "paraespinales-toracolumbares",
+      "title": "Paraespinales toracolumbares",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de paraespinales toracolumbares con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la parte media de la espalda.",
+          "Puede sentirse en la espalda.",
+          "Puede sentirse en la parte baja de la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "pectoral-mayor-y-subclavio",
+      "title": "Pectoral mayor y subclavio",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de pectoral mayor y subclavio con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte delantera del pecho."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "pectoral-menor",
+      "title": "Pectoral menor",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de pectoral menor con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte delantera del pecho.",
+          "Puede sentirse en la parte interna del codo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "piriforme-obturadores-gemelos-y-cuadrado-femoral",
+      "title": "Piriforme, obturadores, gemelos y cuadrado femoral",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de piriforme, obturadores, gemelos y cuadrado femoral con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la nalga.",
+          "Puede sentirse en la pelvis.",
+          "Puede sentirse en la parte posterior del muslo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "popliteo",
+      "title": "Poplíteo",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de poplíteo con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera e interna de la rodilla.",
+          "Puede sentirse en la parte interna de la rodilla.",
+          "Puede sentirse en la parte posterior de la rodilla."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "psoas-mayor-psoas-menor-e-iliaco",
+      "title": "Psoas mayor, psoas menor e ilíaco",
+      "chapter_type": "ficha_muscular",
+      "region": "cadera-muslo-rodilla",
+      "patient_content": {
+        "intro": "Compara los mapas de psoas mayor, psoas menor e ilíaco con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en el abdomen.",
+          "Puede sentirse en la parte baja del abdomen.",
+          "Puede sentirse en la parte baja de la espalda.",
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la nalga."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, subir escaleras, levantarte, sentarte o apoyar sobre un lado.",
+          "El dolor puede sentirse en la cadera, la ingle, la nalga, el muslo o la rodilla."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe la distancia, el peso o la intensidad de la actividad.",
+          "Permanecer mucho tiempo sentado o de pie sin cambiar de posición.",
+          "Repetir el gesto que aumenta el dolor sin descanso suficiente."
+        ],
+        "corrective_actions": [
+          "Ajusta temporalmente la carga y alterna posiciones.",
+          "Conserva un movimiento cómodo sin intentar superar el dolor.",
+          "Vuelve a aumentar la actividad de forma gradual."
+        ],
+        "first_steps": "Ajusta temporalmente la carga, alterna posiciones y conserva movimiento cómodo sin intentar superar el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, aparece una deformidad, la pierna pierde fuerza o sensibilidad de repente, o se hincha y cambia de color rápidamente."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "pterigoideo-lateral",
+      "title": "Pterigoideo lateral",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de pterigoideo lateral con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en la mejilla o la mandíbula.",
+          "Puede sentirse en los dientes o la mandíbula."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "pterigoideo-medial",
+      "title": "Pterigoideo medial",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de pterigoideo medial con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en la mejilla o la mandíbula.",
+          "Puede sentirse en los dientes o la mandíbula.",
+          "Puede sentirse en la parte delantera de la garganta o el cuello."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "redondo-menor",
+      "title": "Redondo menor",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de redondo menor con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte posterior del hombro."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "romboides",
+      "title": "Romboides menor y mayor",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de romboides menor y mayor con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "serrato-anterior",
+      "title": "Serrato anterior",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de serrato anterior con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la parte delantera del pecho.",
+          "Puede sentirse en el lateral del pecho.",
+          "Puede sentirse en la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "serrato-posterior-superior-e-inferior",
+      "title": "Serrato posterior superior e inferior",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de serrato posterior superior e inferior con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la parte media de la espalda.",
+          "Puede sentirse en la espalda.",
+          "Puede sentirse en la parte posterior del codo."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "subescapular",
+      "title": "Subescapular",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de subescapular con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior del hombro.",
+          "Puede sentirse en la parte posterior del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte de atrás de la muñeca."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "suboccipitales",
+      "title": "Músculos suboccipitales",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos suboccipitales con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en alrededor del ojo o la ceja.",
+          "Puede sentirse en la parte posterior de la cabeza.",
+          "Puede sentirse en la parte posterior del cuello."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "suelo-pelvico",
+      "title": "Músculos del suelo pélvico",
+      "chapter_type": "ficha_muscular",
+      "region": "tronco-suelo-pelvico",
+      "patient_content": {
+        "intro": "Compara los mapas de músculos del suelo pélvico con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en un lado de la parte baja de la espalda, junto a la pelvis.",
+          "Puede sentirse en la zona central entre la parte baja de la espalda y las nalgas.",
+          "Puede sentirse en la pelvis."
+        ],
+        "what_you_may_notice": [
+          "Puede cambiar al respirar, girar, incorporarte, cargar peso o mantener una postura.",
+          "La molestia puede sentirse en el pecho, el abdomen, la espalda, la pelvis o la nalga."
+        ],
+        "what_may_influence_it": [
+          "Permanecer mucho tiempo sentado, de pie o en la misma posición.",
+          "Aumentar de golpe las cargas, los giros o el esfuerzo físico.",
+          "Evitar todo movimiento por miedo al dolor durante varios días."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia.",
+          "Mantén una actividad suave si la toleras.",
+          "Evita forzar los movimientos que reproducen claramente el dolor."
+        ],
+        "first_steps": "Cambia de postura con frecuencia, mantén actividad suave si la toleras y evita forzar movimientos que reproduzcan claramente el dolor. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece dolor fuerte en el pecho, dificultad para respirar, debilidad repentina en las piernas o cambios recientes al controlar la orina o las heces."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "supinador",
+      "title": "Músculo supinador",
+      "chapter_type": "ficha_muscular",
+      "region": "codo-muneca-mano",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo supinador con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte externa del codo.",
+          "Puede sentirse en la parte delantera del antebrazo.",
+          "Puede sentirse en la zona dorsal o posterior del antebrazo.",
+          "Puede sentirse en el lado del pulgar del antebrazo.",
+          "Puede sentirse en el lado del meñique del antebrazo.",
+          "Puede sentirse en la parte de atrás de la muñeca."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al agarrar, girar, escribir, usar herramientas o repetir muchas veces el mismo gesto.",
+          "El dolor puede sentirse en el codo, el antebrazo, la muñeca, la mano o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Repetir durante mucho tiempo movimientos de agarre, giro o teclado.",
+          "Usar más fuerza de la necesaria o trabajar sin pausas.",
+          "Mantener la muñeca o el codo en una posición incómoda."
+        ],
+        "corrective_actions": [
+          "Alterna las tareas repetitivas con pausas breves.",
+          "Reduce la fuerza de agarre siempre que sea posible.",
+          "Mantén movimientos cómodos de codo, muñeca y mano."
+        ],
+        "first_steps": "Alterna las tareas repetitivas con pausas breves y mantén movimientos cómodos de codo, muñeca y mano. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si pierdes fuerza o sensibilidad de forma repentina, la mano cambia claramente de color o temperatura, o existe una deformidad tras un golpe."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "supraespinoso",
+      "title": "Músculo supraespinoso",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo supraespinoso con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera del hombro.",
+          "Puede sentirse en la parte delantera del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte posterior del codo.",
+          "Puede sentirse en la parte externa del codo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "soleo-y-plantar",
+      "title": "Sóleo y plantar",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de sóleo y plantar con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte posterior del tobillo.",
+          "Puede sentirse en el talón.",
+          "Puede sentirse en la parte media de la planta del pie.",
+          "Puede sentirse en la almohadilla de la planta, detrás de los dedos."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "temporal",
+      "title": "Músculo temporal",
+      "chapter_type": "ficha_muscular",
+      "region": "cabeza-cuello",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo temporal con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la frente.",
+          "Puede sentirse en la sien.",
+          "Puede sentirse en alrededor del ojo o la ceja.",
+          "Puede sentirse en alrededor del oído o la articulación de la mandíbula.",
+          "Puede sentirse en la mejilla o la mandíbula.",
+          "Puede sentirse en los dientes o la mandíbula."
+        ],
+        "what_you_may_notice": [
+          "La molestia puede sentirse como presión, tirantez o dolor y puede cambiar al mover el cuello o la mandíbula.",
+          "El lugar donde duele no siempre coincide con el lugar donde está el músculo."
+        ],
+        "what_may_influence_it": [
+          "Mantener la cabeza en la misma posición durante mucho tiempo.",
+          "Apretar los dientes o hacer un esfuerzo repetido con la mandíbula.",
+          "Dormir poco, acumular tensión o aumentar la actividad de forma brusca."
+        ],
+        "corrective_actions": [
+          "Cambia de postura con frecuencia y haz pausas breves.",
+          "Prueba movimientos suaves de cuello y mandíbula sin forzar.",
+          "Evita apretar los dientes de forma consciente cuando no estés comiendo."
+        ],
+        "first_steps": "Evita mantener mucho tiempo la misma postura y prueba movimientos suaves de cuello y mandíbula dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente ante un dolor de cabeza repentino y muy intenso, dificultad para hablar, ver o mover una parte del cuerpo, desmayo o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "tibial-anterior",
+      "title": "Músculo tibial anterior",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo tibial anterior con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte delantera de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte delantera del tobillo.",
+          "Puede sentirse en la parte interna del tobillo.",
+          "Puede sentirse en la parte superior del pie.",
+          "Puede sentirse en la parte de arriba del dedo gordo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "tibial-posterior",
+      "title": "Músculo tibial posterior",
+      "chapter_type": "ficha_muscular",
+      "region": "pierna-tobillo-pie",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo tibial posterior con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior de la pierna.",
+          "Puede sentirse en la parte interna de la pierna.",
+          "Puede sentirse en la parte posterior del tobillo.",
+          "Puede sentirse en la parte interna del tobillo.",
+          "Puede sentirse en el talón.",
+          "Puede sentirse en la parte media de la planta del pie."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al caminar, correr, apoyar el pie, ponerte de puntillas o usar cierto calzado.",
+          "El dolor puede sentirse en la pierna, el tobillo, el talón, la planta o los dedos."
+        ],
+        "what_may_influence_it": [
+          "Aumentar de golpe el tiempo de pie, la distancia o la intensidad del ejercicio.",
+          "Usar un calzado que comprime o no se adapta bien al pie.",
+          "Repetir la actividad que aumenta el dolor sin recuperación suficiente."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente la actividad que aumenta los síntomas.",
+          "Revisa el calzado y evita que comprima la zona dolorida.",
+          "Mantén movimiento cómodo si puedes apoyar con seguridad."
+        ],
+        "first_steps": "Reduce temporalmente la actividad que aumenta los síntomas, revisa el calzado y conserva movimiento cómodo si puedes apoyar con seguridad. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si no puedes apoyar tras un golpe, el pie cambia claramente de color o temperatura, o aparece hinchazón rápida con dolor intenso."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "trapecio",
+      "title": "Músculo trapecio",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de músculo trapecio con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior del hombro.",
+          "Puede sentirse en la parte alta de la espalda.",
+          "Puede sentirse en la espalda."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    },
+    {
+      "id": "triceps-braquial-y-anconeo",
+      "title": "Tríceps braquial y ancóneo",
+      "chapter_type": "ficha_muscular",
+      "region": "hombro-brazo",
+      "patient_content": {
+        "intro": "Compara los mapas de tríceps braquial y ancóneo con lo que sientes. Las zonas coloreadas muestran dónde puede aparecer la molestia, aunque el músculo esté en otro lugar.",
+        "where_it_may_be_felt": [
+          "Puede sentirse en la parte posterior del brazo.",
+          "Puede sentirse en la parte interna del brazo.",
+          "Puede sentirse en la parte externa del brazo.",
+          "Puede sentirse en la parte delantera del codo.",
+          "Puede sentirse en la parte posterior del codo.",
+          "Puede sentirse en la parte interna del codo."
+        ],
+        "what_you_may_notice": [
+          "Puede molestar al elevar el brazo, alcanzar un objeto, cargar peso o permanecer mucho tiempo en la misma postura.",
+          "El dolor puede aparecer en el hombro o sentirse también en el brazo, el pecho o la espalda."
+        ],
+        "what_may_influence_it": [
+          "Repetir gestos con el brazo elevado o lejos del cuerpo.",
+          "Aumentar de golpe el peso, el entrenamiento o el trabajo manual.",
+          "Mantener durante mucho tiempo una postura que aumenta la molestia."
+        ],
+        "corrective_actions": [
+          "Reduce temporalmente los gestos que aumentan claramente el dolor.",
+          "Mantén movimientos suaves del hombro dentro de una zona cómoda.",
+          "Acerca las cargas al cuerpo y reparte las tareas con pausas."
+        ],
+        "first_steps": "Reduce durante unos días los gestos que aumentan claramente la molestia y conserva movimientos suaves del hombro dentro de un rango cómodo. Si no mejora, empeora o limita tus actividades, solicita una valoración individual.",
+        "other_explanations": [
+          "El dolor de una misma zona puede tener distintos orígenes. Una coincidencia con el dibujo no demuestra cuál es la causa."
+        ],
+        "when_to_consult": [
+          "Pide una valoración si el dolor aumenta, no mejora o te impide hacer tus actividades habituales.",
+          "Busca atención urgente si aparece presión fuerte en el pecho, dificultad para respirar, una pérdida repentina de fuerza o sensibilidad, o un golpe importante."
+        ]
+      },
+      "editorial_status": "Lenguaje adaptado para pacientes; contenido educativo y no diagnóstico."
+    }
+  ]
+}

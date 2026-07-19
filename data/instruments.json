@@ -1,0 +1,1051 @@
+{
+  "updated_at": "2026-07-14",
+  "instruments": [
+    {
+      "slug": "patient-specific-functional-scale",
+      "name": "Patient-Specific Functional Scale",
+      "acronym": "PSFS",
+      "construct": "Función individual",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento",
+        "objetivos"
+      ],
+      "items": "3–5 actividades elegidas por la persona",
+      "time": "3–5 min",
+      "administration": "Entrevista breve guiada por el profesional",
+      "recall_period": "Capacidad actual para cada actividad elegida",
+      "version": "Versión original de 1995; adaptación argentina localizada",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "funcion",
+      "region_key": "transversal",
+      "summary": "La persona elige actividades relevantes y puntúa su capacidad para realizarlas.",
+      "score_range": "0–10 por actividad",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mayor capacidad",
+      "spanish_label": "Adaptación argentina",
+      "validation_key": "partial",
+      "validated_population": "Musculoesquelético; España no confirmada",
+      "permission_key": "license",
+      "permission_label": "Protegida; consultar acceso",
+      "permission_action": "Consultar condiciones",
+      "permission_url": "https://eprovide.mapi-trust.org/instruments/patient-specific-functional-scale",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "ePROVIDE identifica © P. Stratford, 1995, con todos los derechos reservados",
+      "evidence_label": "Cambio respaldado; constructo discutido",
+      "evidence_grade": "limited",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Síntesis basada en el estudio original y una revisión sistemática COSMIN",
+      "choice_note": "Elígela cuando importan objetivos individuales; añade una medida regional si necesitas comparación estandarizada.",
+      "useful_for": "Definir objetivos funcionales individualizados y seguir actividades relevantes para la persona",
+      "not_for": "Comparar la función global entre personas o diagnosticar una lesión",
+      "validation_state": "Parcial",
+      "interpretation_state": "Dependiente del contexto",
+      "spanish_status": "Adaptación argentina localizada; validación para España no confirmada",
+      "permission_state": "Por verificar",
+      "permission_status": "Condiciones de reproducción por verificar",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "mean",
+            "label": "Media PSFS (0–10)",
+            "min": 0,
+            "max": 10,
+            "decimals": 2,
+            "direction": "higher_favorable",
+            "unit": "puntos",
+            "note": "Usa la media de las mismas actividades individualizadas en ambos momentos."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "oswestry-disability-index",
+      "name": "Oswestry Disability Index",
+      "acronym": "ODI",
+      "construct": "Discapacidad relacionada con dolor lumbar",
+      "region": "Columna lumbar",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "10 secciones",
+      "time": "5 min",
+      "administration": "Autoadministrado en papel o formato autorizado",
+      "recall_period": "Según la versión oficial; no modificar",
+      "version": "ODI 2.1a",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "discapacidad",
+      "region_key": "lumbar",
+      "summary": "Cuantifica el impacto percibido del dolor lumbar en actividades cotidianas.",
+      "score_range": "0–100 %",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor impacto",
+      "spanish_label": "Validada en España",
+      "validation_key": "validated",
+      "validated_population": "Dolor lumbar; propiedades ligadas a poblaciones concretas",
+      "permission_key": "license",
+      "permission_label": "Licencia requerida",
+      "permission_action": "Consultar licencia",
+      "permission_url": "https://eprovide.mapi-trust.org/instruments/oswestry-disability-index",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "Mapi Research Trust exige licencia previa para copiar, traducir o digitalizar",
+      "evidence_label": "Propiedades respaldadas con cautela",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Fuentes del distribuidor y estudios psicométricos de versiones españolas",
+      "choice_note": "Elígela para discapacidad lumbar estandarizada; usa PSFS si la prioridad son actividades personales.",
+      "useful_for": "Cuantificar y seguir el impacto percibido del dolor lumbar en la vida diaria",
+      "not_for": "Identificar la estructura causante del dolor o establecer un diagnóstico",
+      "validation_state": "Confirmada en poblaciones concretas",
+      "interpretation_state": "Respaldada con cautela",
+      "spanish_status": "Adaptación española y estudios psicométricos localizados",
+      "permission_state": "Requiere permiso",
+      "permission_status": "Licencia previa mediante Mapi Research Trust",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "percent",
+            "label": "ODI porcentual (0–100 %)",
+            "min": 0,
+            "max": 100,
+            "decimals": 1,
+            "direction": "lower_favorable",
+            "unit": "puntos porcentuales",
+            "note": "Compara porcentajes calculados con la misma versión y el mismo tratamiento de apartados omitidos."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "pain-catastrophizing-scale",
+      "name": "Pain Catastrophizing Scale",
+      "acronym": "PCS",
+      "construct": "Pensamientos y sentimientos relacionados con el dolor",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "13 ítems",
+      "time": "5 min",
+      "administration": "Autoadministrado; conservar instrucciones y opciones oficiales",
+      "recall_period": "Experiencias dolorosas; usar el periodo de la versión autorizada",
+      "version": "PCS de 13 ítems",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "dolor",
+      "region_key": "transversal",
+      "summary": "Contextualiza pensamientos y sentimientos vinculados a experiencias dolorosas.",
+      "score_range": "0–52",
+      "score_direction": "higher_more",
+      "direction_label": "Más alto = mayor presencia",
+      "spanish_label": "Validada en población concreta",
+      "validation_key": "limited",
+      "validated_population": "Fibromialgia en España; no universal",
+      "permission_key": "license",
+      "permission_label": "Licencia requerida",
+      "permission_action": "Consultar licencia",
+      "permission_url": "https://eprovide.mapi-trust.org/instruments/pain-catastrophizing-scale",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "Distribución y licencia gestionadas mediante Mapi Research Trust",
+      "evidence_label": "Interpretación dependiente de población",
+      "evidence_grade": "limited",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Validación española y documentación del distribuidor",
+      "choice_note": "Úsala para aportar contexto al dolor, nunca como diagnóstico psicológico ni explicación causal.",
+      "useful_for": "Contextualizar pensamientos y sentimientos vinculados a la experiencia dolorosa",
+      "not_for": "Diagnosticar un trastorno psicológico o explicar por sí sola el dolor",
+      "validation_state": "Confirmada en fibromialgia",
+      "interpretation_state": "Dependiente de la población",
+      "spanish_status": "Validada en España en fibromialgia y estudiada en deportistas",
+      "permission_state": "Requiere permiso",
+      "permission_status": "Licencia mediante Mapi Research Trust",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "total",
+            "label": "Puntuación total PCS (0–52)",
+            "min": 0,
+            "max": 52,
+            "decimals": 0,
+            "integer": true,
+            "direction": "lower_favorable",
+            "unit": "puntos",
+            "note": "Una puntuación menor refleja menos catastrofismo; no equivale por sí sola a mejoría clínica."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "neck-disability-index",
+      "name": "Neck Disability Index",
+      "acronym": "NDI",
+      "construct": "Discapacidad relacionada con dolor cervical",
+      "region": "Columna cervical",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "10 secciones",
+      "time": "Aproximadamente 4 minutos",
+      "administration": "Autoadministrado; no reescribir ni digitalizar sin autorización",
+      "recall_period": "Según la versión oficial autorizada",
+      "version": "NDI original y traducción española identificada",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "discapacidad",
+      "region_key": "cervical",
+      "summary": "Cuantifica el impacto percibido del dolor cervical en actividades cotidianas.",
+      "score_range": "0–50; también 0–100 %",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor impacto",
+      "spanish_label": "Validada en España",
+      "validation_key": "validated",
+      "validated_population": "Dolor cervical inespecífico y postraumático",
+      "permission_key": "license",
+      "permission_label": "Permiso previo obligatorio",
+      "permission_action": "Consultar licencia",
+      "permission_url": "https://eprovide.mapi-trust.org/instruments/neck-disability-index",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "ePROVIDE prohíbe modificar, copiar, traducir o duplicar sin permiso escrito previo",
+      "evidence_label": "Fiabilidad, validez y cambio respaldados",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Estudio original y dos estudios españoles de propiedades de medición",
+      "choice_note": "Elígela para discapacidad cervical; QuickDASH añade una visión del miembro superior cuando sea relevante.",
+      "useful_for": "Cuantificar y seguir el impacto percibido del dolor cervical",
+      "not_for": "Diagnosticar la causa del dolor o identificar una estructura",
+      "validation_state": "Confirmada en España",
+      "interpretation_state": "Respaldada con cautela",
+      "spanish_status": "Dos estudios de adaptación y validación realizados en España",
+      "permission_state": "Requiere verificación",
+      "permission_status": "Instrumento protegido; verificar autorización con el titular antes de reproducir",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "raw",
+            "label": "NDI bruto (0–50)",
+            "min": 0,
+            "max": 50,
+            "decimals": 0,
+            "integer": true,
+            "direction": "lower_favorable",
+            "unit": "puntos",
+            "note": "Usa puntuaciones brutas obtenidas con la misma versión y el mismo número de secciones válidas."
+          },
+          {
+            "id": "percent",
+            "label": "NDI porcentual (0–100 %)",
+            "min": 0,
+            "max": 100,
+            "decimals": 1,
+            "direction": "lower_favorable",
+            "unit": "puntos porcentuales",
+            "note": "No mezcles esta métrica con la puntuación bruta de 0 a 50."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "quickdash",
+      "name": "QuickDASH",
+      "acronym": "QuickDASH",
+      "construct": "Síntomas y función del miembro superior",
+      "region": "Miembro superior",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "11 ítems y 2 módulos opcionales",
+      "time": "Aproximadamente 5 minutos",
+      "administration": "Autoadministrado; papel o digital conforme a condiciones del IWH",
+      "recall_period": "Semana anterior",
+      "version": "QuickDASH oficial para España, 2018",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "funcion_sintomas",
+      "region_key": "superior",
+      "summary": "Resume síntomas y dificultad funcional del brazo, hombro y mano.",
+      "score_range": "0–100",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor discapacidad",
+      "spanish_label": "Versión oficial para España",
+      "validation_key": "official",
+      "validated_population": "Propiedades recientes en síndrome del túnel carpiano",
+      "permission_key": "conditional",
+      "permission_label": "Uso condicionado",
+      "permission_action": "Consultar condiciones",
+      "permission_url": "https://www.dash.iwh.on.ca/download",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "El IWH permite determinados usos clínicos y no comerciales bajo condiciones",
+      "evidence_label": "Buen respaldo; transferencia según población",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Documentación oficial, revisión sistemática y validación española en población concreta",
+      "choice_note": "Elígela para una visión transversal del miembro superior; una escala regional puede precisar el dominio.",
+      "useful_for": "Seguir síntomas y dificultad funcional del conjunto del miembro superior",
+      "not_for": "Localizar una lesión o atribuir el resultado a una articulación concreta",
+      "validation_state": "Confirmada en población concreta",
+      "interpretation_state": "Dependiente de la población",
+      "spanish_status": "Versión oficial para España; propiedades estudiadas en síndrome del túnel carpiano",
+      "permission_state": "Uso condicionado",
+      "permission_status": "Uso no comercial permitido bajo condiciones del Institute for Work & Health; otros usos requieren licencia",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "main",
+            "label": "QuickDASH principal (0–100)",
+            "min": 0,
+            "max": 100,
+            "decimals": 2,
+            "direction": "lower_favorable",
+            "unit": "puntos",
+            "note": "Compara la sección principal con la misma versión; los módulos opcionales se puntúan por separado."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "lower-extremity-functional-scale",
+      "name": "Lower Extremity Functional Scale",
+      "acronym": "LEFS",
+      "construct": "Función del miembro inferior",
+      "region": "Miembro inferior",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "20 actividades",
+      "time": "Aproximadamente 5 minutos",
+      "administration": "Autoadministrado",
+      "recall_period": "Dificultad actual para las actividades descritas",
+      "version": "LEFS original; adaptación española de 2014",
+      "type": "prom",
+      "type_label": "Autoinforme (PROM)",
+      "construct_key": "funcion",
+      "region_key": "inferior",
+      "summary": "Explora dificultad funcional en actividades del miembro inferior.",
+      "score_range": "0–80",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mejor función",
+      "spanish_label": "Validada en España",
+      "validation_key": "validated",
+      "validated_population": "Trastornos musculoesqueléticos del miembro inferior",
+      "permission_key": "unresolved",
+      "permission_label": "Titular por verificar",
+      "permission_action": "No reproducir",
+      "permission_url": "",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "Búsqueda en artículo original, McMaster y fuentes institucionales sin autorización inequívoca para alojar la versión española",
+      "evidence_label": "Fiabilidad, validez y cambio respaldados",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Estudio original y adaptación multicéntrica española",
+      "choice_note": "Elígela para función general del miembro inferior; PSFS aporta objetivos individuales.",
+      "useful_for": "Seguir limitaciones funcionales del miembro inferior en trastornos musculoesqueléticos",
+      "not_for": "Diagnosticar una estructura o sustituir medidas específicas cuando sean necesarias",
+      "validation_state": "Confirmada en España",
+      "interpretation_state": "Dependiente del contexto",
+      "spanish_status": "Adaptación y validación en cinco centros de fisioterapia españoles",
+      "permission_state": "Por verificar",
+      "permission_status": "No se reproduce hasta confirmar formalmente las condiciones con el titular",
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "SEM / MDC",
+            "value": "0,88 / 2,18 puntos",
+            "population": "132 personas con trastornos musculoesqueléticos del miembro inferior atendidas en cinco centros de fisioterapia en España",
+            "method": "Adaptación y validación española; estimaciones dependientes de esa muestra y método",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/24593163/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "total",
+            "label": "LEFS total (0–80)",
+            "min": 0,
+            "max": 80,
+            "decimals": 0,
+            "integer": true,
+            "direction": "higher_favorable",
+            "unit": "puntos",
+            "note": "Una puntuación mayor representa mayor función percibida."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "escala-numerica-dolor",
+      "name": "Escala numérica del dolor",
+      "acronym": "END",
+      "construct": "Intensidad del dolor percibida",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "1 valoración numérica",
+      "time": "Menos de 1 minuto",
+      "administration": "Autoinforme oral, escrito o digital con anclajes constantes",
+      "recall_period": "Debe definirse: ahora, promedio o peor dolor en un periodo concreto",
+      "version": "Escala numérica de 11 puntos (0–10)",
+      "type": "prom",
+      "type_label": "Autoinforme unidimensional",
+      "construct_key": "intensidad_dolor",
+      "region_key": "transversal",
+      "summary": "Cuantifica la intensidad del dolor percibida en un momento o periodo previamente definido.",
+      "score_range": "0–10",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor intensidad",
+      "spanish_label": "Aplicación directa en español",
+      "validation_key": "generic",
+      "validated_population": "Amplio uso en dolor; rendimiento dependiente de población y periodo",
+      "permission_key": "open",
+      "permission_label": "Estructura de uso general",
+      "permission_action": "Consultar fundamento",
+      "permission_url": "https://pubmed.ncbi.nlm.nih.gov/30615172/",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "Escala numérica genérica; FisioLógico no atribuye ni reproduce un cuestionario propietario",
+      "evidence_label": "Útil y viable; no describe el impacto del dolor",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Recomendaciones de resultados esenciales y estudios de interpretación del cambio",
+      "choice_note": "Elígela para intensidad; combínala con función y contexto cuando esas dimensiones importen.",
+      "useful_for": "Registrar intensidad con el mismo anclaje y periodo en mediciones repetidas",
+      "not_for": "Explicar la causa, el impacto funcional o la complejidad de la experiencia dolorosa",
+      "validation_state": "Uso transversal",
+      "interpretation_state": "Dependiente del anclaje y periodo",
+      "spanish_status": "No requiere traducción de un cuestionario, pero sí anclajes comprensibles y constantes",
+      "permission_state": "Uso general",
+      "permission_status": "No se reproduce una redacción propietaria; se describe la escala numérica genérica",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "Kroenke et al. Recomendaciones esenciales para dolor musculoesquelético crónico, 2019.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30615172/"
+        },
+        {
+          "label": "Farrar et al. Interpretación del cambio en una escala numérica de 11 puntos, 2001.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11690728/"
+        },
+        {
+          "label": "Sabet et al. Dominios esenciales musculoesqueléticos, 2025.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39864671/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [
+          {
+            "metric": "Cambio importante orientativo",
+            "value": "Reducción aproximada del 30 %",
+            "population": "Ensayos de dolor crónico con escala numérica de 0 a 10",
+            "method": "Anclaje con impresión global; no equivale a MDC ni a regla individual universal",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/11690728/"
+          }
+        ],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "nrs",
+            "label": "END / NRS (0–10)",
+            "min": 0,
+            "max": 10,
+            "decimals": 1,
+            "direction": "lower_favorable",
+            "unit": "puntos",
+            "note": "Mantén el mismo periodo de recuerdo y el mismo anclaje verbal en ambas mediciones."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "impresion-global-cambio-paciente",
+      "name": "Impresión Global de Cambio del Paciente",
+      "acronym": "PGIC",
+      "construct": "Cambio global percibido",
+      "region": "Transversal",
+      "purpose": [
+        "seguimiento",
+        "cambio_global"
+      ],
+      "items": "1 valoración global",
+      "time": "Menos de 1 minuto",
+      "administration": "Autoinforme en seguimiento, comparando con una referencia definida",
+      "recall_period": "Desde el inicio o desde una fecha explícita",
+      "version": "Formato habitual de 7 categorías; la codificación debe documentarse",
+      "type": "prom",
+      "type_label": "Autoinforme global de cambio",
+      "construct_key": "cambio_global",
+      "region_key": "transversal",
+      "summary": "Recoge la percepción global de mejoría, estabilidad o empeoramiento desde una referencia definida.",
+      "score_range": "7 categorías ordenadas",
+      "score_direction": "variable",
+      "direction_label": "La dirección depende de la codificación",
+      "spanish_label": "Versión española canónica no confirmada",
+      "validation_key": "unresolved",
+      "validated_population": "Estudiada como ancla en dolor crónico y fibromialgia",
+      "permission_key": "unresolved",
+      "permission_label": "Redacción concreta por verificar",
+      "permission_action": "No reproducir",
+      "permission_url": "",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "No se localizó una fuente oficial inequívoca para alojar una redacción española concreta",
+      "evidence_label": "Útil como perspectiva global; susceptible a sesgo de recuerdo",
+      "evidence_grade": "limited",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Recomendaciones de core outcomes y estudios de PGIC en dolor crónico",
+      "choice_note": "Elígela al seguimiento para añadir la perspectiva global de la persona; no sustituye medidas específicas.",
+      "useful_for": "Contextualizar si la persona percibe mejoría, estabilidad o empeoramiento global",
+      "not_for": "Atribuir el cambio a una intervención o medir por sí sola una dimensión clínica específica",
+      "validation_state": "Respaldada como ancla, no como patrón oro",
+      "interpretation_state": "Dependiente del recuerdo y del estado actual",
+      "spanish_status": "Concepto aplicable en español; traducción y opciones exactas por documentar",
+      "permission_state": "Por verificar",
+      "permission_status": "La ficha describe el método sin reproducir la formulación del ítem",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "Kroenke et al. PGIC como dominio secundario recomendado, 2019.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30615172/"
+        },
+        {
+          "label": "Farrar et al. PGIC como ancla para interpretar cambios de intensidad, 2001.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11690728/"
+        },
+        {
+          "label": "Rampakakis et al. Validez del PGIC en fibromialgia, 2015.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26535150/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": false,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [],
+        "disabled_reason": "PGIC contiene categorías ordinales: su resta no representa una distancia clínica válida."
+      }
+    },
+    {
+      "slug": "eq-5d-5l",
+      "name": "EQ-5D-5L",
+      "acronym": "EQ-5D-5L",
+      "construct": "Calidad de vida relacionada con la salud",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "5 dimensiones y escala visual EQ VAS",
+      "time": "2–3 minutos",
+      "administration": "Autoadministrado con la versión oficial obtenida mediante EuroQol",
+      "recall_period": "Estado de salud hoy",
+      "version": "EQ-5D-5L para España, español",
+      "type": "prom",
+      "type_label": "Autoinforme genérico de salud",
+      "construct_key": "calidad_vida",
+      "region_key": "transversal",
+      "summary": "Describe el estado de salud y permite obtener un perfil, un índice y una valoración global de salud.",
+      "score_range": "Perfil de 5 dígitos, índice y EQ VAS 0–100",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mejor salud en índice y EQ VAS",
+      "spanish_label": "Versión oficial para España",
+      "validation_key": "official",
+      "validated_population": "Medida genérica; usar el conjunto de valores adecuado para España",
+      "permission_key": "license",
+      "permission_label": "Registro y licencia EuroQol",
+      "permission_action": "Solicitar versión oficial",
+      "permission_url": "https://euroqol.org/register/obtain-eq-5d/",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "EuroQol exige registrar el uso y entregar la versión oficial conforme a su política",
+      "evidence_label": "Amplio respaldo como medida genérica; interpretación dependiente del value set",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Documentación oficial de EuroQol, versión española y política de licencia",
+      "choice_note": "Elígelo cuando necesites una perspectiva genérica de salud comparable entre problemas distintos.",
+      "useful_for": "Medir calidad de vida relacionada con la salud y complementar medidas específicas",
+      "not_for": "Sustituir una medida funcional específica o interpretar un índice sin declarar el conjunto de valores",
+      "validation_state": "Versión oficial disponible",
+      "interpretation_state": "Dependiente del conjunto de valores y población",
+      "spanish_status": "EuroQol lista una versión oficial de EQ-5D-5L en español para España",
+      "permission_state": "Licencia previa",
+      "permission_status": "FisioLógico describe la medida y enlaza el registro; no reproduce el formulario",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "EuroQol: descripción oficial del EQ-5D-5L.",
+          "url": "https://euroqol.org/information-and-support/euroqol-instruments/eq-5d-5l/"
+        },
+        {
+          "label": "EuroQol: versiones disponibles, incluida España.",
+          "url": "https://euroqol.org/register/obtain-eq-5d/available-versions/"
+        },
+        {
+          "label": "EuroQol: política de licencia de usuario.",
+          "url": "https://euroqol.org/wp-content/uploads/2025/01/EQ-5D-User-License-Policy-10SEP2024.pdf"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "vas",
+            "label": "EQ VAS (0–100)",
+            "min": 0,
+            "max": 100,
+            "decimals": 0,
+            "direction": "higher_favorable",
+            "unit": "puntos",
+            "note": "Compara únicamente EQ VAS con EQ VAS."
+          },
+          {
+            "id": "index",
+            "label": "Índice EQ-5D-5L ya calculado",
+            "max": 1,
+            "decimals": 3,
+            "direction": "higher_favorable",
+            "unit": "puntos de índice",
+            "note": "Solo si ambos índices se obtuvieron con el mismo value set. El perfil de cinco dígitos no se resta."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "whodas-2-participacion",
+      "name": "WHO Disability Assessment Schedule 2.0",
+      "acronym": "WHODAS 2.0",
+      "construct": "Funcionamiento y participación",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "36 ítems para perfil por dominios",
+      "time": "Aproximadamente 20 minutos",
+      "administration": "Autoadministrado, entrevista o informante; registrar el modo",
+      "recall_period": "30 días anteriores",
+      "version": "WHODAS 2.0 de 36 ítems para obtener dominio de participación",
+      "type": "prom",
+      "type_label": "Autoinforme genérico de funcionamiento",
+      "construct_key": "participacion",
+      "region_key": "transversal",
+      "summary": "Perfila funcionamiento según la CIF e incluye una puntuación específica de participación social.",
+      "score_range": "0–100",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor discapacidad",
+      "spanish_label": "Traducción española disponible por OMS",
+      "validation_key": "official",
+      "validated_population": "Adultos, aplicación transversal y estudio internacional multicéntrico",
+      "permission_key": "license",
+      "permission_label": "Licencia OMS para reproducir o digitalizar",
+      "permission_action": "Consultar licencia OMS",
+      "permission_url": "https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "La OMS deriva a Licensing WHO Classifications para reproducir o integrar WHODAS 2.0",
+      "evidence_label": "Desarrollo transcultural robusto; carga mayor en la versión de 36 ítems",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Manual y documentación oficial de la OMS sobre desarrollo, dominios y puntuación",
+      "choice_note": "Elige 36 ítems si necesitas participación como dominio; la versión de 12 ítems solo da puntuación global.",
+      "useful_for": "Medir funcionamiento general y participación desde un marco CIF",
+      "not_for": "Aislar una estructura corporal o interpretar el total como diagnóstico",
+      "validation_state": "Desarrollo internacional multicéntrico",
+      "interpretation_state": "Dependiente de versión y método de puntuación",
+      "spanish_status": "La OMS ofrece traducción española, cuya procedencia debe documentarse",
+      "permission_state": "Licencia para reproducción",
+      "permission_status": "No se reproducen ítems; se remite a la OMS para versión y licencia",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "OMS: descripción oficial, versiones y dominios WHODAS 2.0.",
+          "url": "https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule"
+        },
+        {
+          "label": "OMS: manual Measuring Health and Disability.",
+          "url": "https://www.who.int/publications/i/item/measuring-health-and-disability-manual-for-who-disability-assessment-schedule-%28-whodas-2.0%29/"
+        },
+        {
+          "label": "OMS: manual técnico completo WHODAS 2.0.",
+          "url": "https://iris.who.int/bitstream/handle/10665/43974/9789241547598_eng.pdf"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "normalized",
+            "label": "WHODAS 2.0 normalizado (0–100)",
+            "min": 0,
+            "max": 100,
+            "decimals": 1,
+            "direction": "lower_favorable",
+            "unit": "puntos",
+            "note": "Usa la misma versión, dominio y método de puntuación; no mezcles puntuación simple e IRT."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "promis-alteracion-sueno-8a",
+      "name": "PROMIS Sleep Disturbance Short Form 8a",
+      "acronym": "PROMIS-SD 8a",
+      "construct": "Alteración percibida del sueño",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "8 ítems",
+      "time": "2–3 minutos",
+      "administration": "Autoadministrado con versión oficial y conversión a T-score",
+      "recall_period": "7 días anteriores",
+      "version": "PROMIS Short Form v1.0 Sleep Disturbance 8a, español",
+      "type": "prom",
+      "type_label": "Autoinforme genérico de sueño",
+      "construct_key": "sueno",
+      "region_key": "transversal",
+      "summary": "Cuantifica dificultades y percepciones relacionadas con el sueño mediante una métrica T-score.",
+      "score_range": "Puntuación bruta 8–40, convertida a T-score",
+      "score_direction": "higher_worse",
+      "direction_label": "Más alto = mayor alteración del sueño",
+      "spanish_label": "Versión española disponible en HealthMeasures",
+      "validation_key": "official",
+      "validated_population": "Medida genérica adulta; interpretar con la referencia PROMIS correspondiente",
+      "permission_key": "conditional",
+      "permission_label": "Uso individual condicionado",
+      "permission_action": "Consultar HealthMeasures",
+      "permission_url": "https://www.healthmeasures.net/explore-measurement-systems/promis/obtain-administer-measures",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "HealthMeasures permite uso clínico individual sin royalties, pero restringe reproducción y distribución",
+      "evidence_label": "Métrica estandarizada y breve; no identifica la causa del problema de sueño",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Manual de puntuación y términos oficiales de HealthMeasures",
+      "choice_note": "Elígelo si el sueño puede modificar objetivos o seguimiento; no lo administres de rutina sin plan de actuación.",
+      "useful_for": "Seguir alteración percibida del sueño con una métrica transversal estandarizada",
+      "not_for": "Diagnosticar insomnio, apnea u otro trastorno del sueño",
+      "validation_state": "Sistema PROMIS respaldado",
+      "interpretation_state": "Requiere conversión y referencia T-score",
+      "spanish_status": "HealthMeasures ofrece versiones PROMIS en español; confirmar forma y versión exactas",
+      "permission_state": "Uso condicionado",
+      "permission_status": "No se reproducen ítems; se enlaza la biblioteca y los términos oficiales",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "HealthMeasures: PROMIS Sleep Disturbance 8a.",
+          "url": "https://www.healthmeasures.net/index.php?Itemid=9%25&id=183&option=com_instruments&view=measure"
+        },
+        {
+          "label": "HealthMeasures: manual de puntuación de alteración del sueño.",
+          "url": "https://www.healthmeasures.net/images/PROMIS/manuals/PROMIS_Sleep_Disturbance_Scoring_Manual.pdf"
+        },
+        {
+          "label": "HealthMeasures: términos de uso de PROMIS.",
+          "url": "https://www.healthmeasures.net/images/PROMIS/Terms_of_Use_HM_approved_1-12-17_-_Updated_Copyright_Notices.pdf"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "raw",
+            "label": "Puntuación bruta 8a (8–40)",
+            "min": 8,
+            "max": 40,
+            "decimals": 0,
+            "integer": true,
+            "direction": "lower_favorable",
+            "unit": "puntos brutos",
+            "note": "Válida solo para la forma adulta Sleep Disturbance 8a completa."
+          },
+          {
+            "id": "tscore",
+            "label": "T-score 8a (30,5–77,5)",
+            "min": 30.5,
+            "max": 77.5,
+            "decimals": 1,
+            "direction": "lower_favorable",
+            "unit": "puntos T",
+            "note": "Usa T-scores obtenidos con el mismo manual o servicio de puntuación."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    },
+    {
+      "slug": "pain-self-efficacy-questionnaire",
+      "name": "Pain Self-Efficacy Questionnaire",
+      "acronym": "PSEQ-10",
+      "construct": "Autoeficacia ante el dolor",
+      "region": "Transversal",
+      "purpose": [
+        "valoración",
+        "seguimiento"
+      ],
+      "items": "10 ítems",
+      "time": "Aproximadamente 5 minutos",
+      "administration": "Autoadministrado con versión española autorizada",
+      "recall_period": "Confianza actual para actuar pese al dolor",
+      "version": "PSEQ-10; español para España disponible mediante ePROVIDE",
+      "type": "prom",
+      "type_label": "Autoinforme de autoeficacia",
+      "construct_key": "autoeficacia",
+      "region_key": "transversal",
+      "summary": "Mide la confianza para realizar actividades y participar pese a la presencia de dolor.",
+      "score_range": "0–60",
+      "score_direction": "higher_better",
+      "direction_label": "Más alto = mayor autoeficacia",
+      "spanish_label": "Versión oficial para España",
+      "validation_key": "official",
+      "validated_population": "Propiedades españolas estudiadas inicialmente en lesión del manguito rotador",
+      "permission_key": "license",
+      "permission_label": "Acceso y licencia mediante ePROVIDE",
+      "permission_action": "Solicitar versión",
+      "permission_url": "https://eprovide.mapi-trust.org/instruments/pain-self-efficacy-questionnaire",
+      "permission_checked_at": "2026-07-14",
+      "permission_basis": "PSEQ está protegido por M. K. Nicholas y se distribuye mediante Mapi Research Trust",
+      "evidence_label": "Buen respaldo general; transferencia española aún ligada a poblaciones concretas",
+      "evidence_grade": "supported",
+      "evidence_search_date": "2026-07-14",
+      "evidence_method": "Distribuidor oficial, revisión sistemática y estudio de adaptación española",
+      "choice_note": "Elígelo cuando la confianza para actuar pese al dolor pueda cambiar la intervención compartida.",
+      "useful_for": "Contextualizar y seguir confianza funcional en personas con dolor persistente",
+      "not_for": "Etiquetar motivación, culpabilizar o explicar por sí solo discapacidad y dolor",
+      "validation_state": "Validación española inicial",
+      "interpretation_state": "Dependiente de población y propósito",
+      "spanish_status": "ePROVIDE lista español para España; estudio psicométrico publicado en lesión del manguito rotador",
+      "permission_state": "Licencia gestionada",
+      "permission_status": "No se reproducen ítems; el acceso se solicita al distribuidor",
+      "generated_detail": true,
+      "sources": [
+        {
+          "label": "ePROVIDE: PSEQ, versiones y condiciones de uso.",
+          "url": "https://eprovide.mapi-trust.org/instruments/pain-self-efficacy-questionnaire"
+        },
+        {
+          "label": "Nicholas. Fundamento y propiedades del PSEQ, 2007.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16446108/"
+        },
+        {
+          "label": "Adaptación y propiedades de la versión española, 2023.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10350563/"
+        },
+        {
+          "label": "Revisión sistemática de propiedades en trastornos musculoesqueléticos, 2022.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701870/"
+        }
+      ],
+      "updated_at": "2026-07-14",
+      "maintenance": {
+        "status": "vigente",
+        "next_review_at": "2027-07-14",
+        "review_cycle": "12 meses o antes si cambia la versión, licencia o evidencia relevante"
+      },
+      "change_interpretation": {
+        "sem": "No establecido de forma universal",
+        "mdc": "No establecido de forma universal",
+        "mic": "No establecido de forma universal",
+        "examples": [],
+        "note": "Los valores pertenecen a una versión, población, protocolo y método concretos; ausencia de ejemplo no significa ausencia de fiabilidad."
+      },
+      "calculator": {
+        "enabled": true,
+        "mode": "difference_only",
+        "notice": "Calcula una diferencia a partir de resultados ya obtenidos; no administra ni reproduce el instrumento.",
+        "metrics": [
+          {
+            "id": "total",
+            "label": "PSEQ-10 total (0–60)",
+            "min": 0,
+            "max": 60,
+            "decimals": 0,
+            "integer": true,
+            "direction": "higher_favorable",
+            "unit": "puntos",
+            "note": "Una puntuación mayor representa mayor autoeficacia frente al dolor."
+          }
+        ],
+        "disabled_reason": "No hay un cálculo reproducible y suficientemente definido para esta ficha."
+      }
+    }
+  ]
+}

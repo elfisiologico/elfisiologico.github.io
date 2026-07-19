@@ -1,0 +1,381 @@
+/* =========================================================
+   EL FISIOLÓGICO · BASE CSS (DEFINITIVO)
+   Contrato visual único del repositorio
+   Versión: v1.1 · 2026-01-17
+   ========================================================= */
+
+/* -----------------------------
+   1) TOKENS
+----------------------------- */
+:root{
+  --bg:#000000;
+  --surface:#0F0F0F;
+  --card:#111111;
+  --border:#272727;
+
+  --text:#FFFFFF;
+  --muted:#A1A1A1;
+
+  --accent:#FCBF06;
+  --accent-soft: rgba(252,191,6,.08);
+
+  --success:#00E676;
+  --danger:#FF4B4B;
+
+  --font-main:'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --radius:12px;
+  --radius-sm:10px;
+
+  --shadow:0 12px 34px rgba(0,0,0,.48);
+
+  --container: 1100px;
+  --space-1:.5rem;
+  --space-2:.75rem;
+  --space-3:1rem;
+  --space-4:1.5rem;
+  --space-5:2rem;
+  --space-6:3rem;
+
+  --focus: 0 0 0 3px rgba(252,191,6,.35);
+}
+
+/* -----------------------------
+   2) RESET
+----------------------------- */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+img{ max-width:100%; height:auto; display:block; }
+table{ border-collapse:collapse; }
+
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; animation:none !important; }
+}
+
+/* -----------------------------
+   3) BASE
+----------------------------- */
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-main);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding: var(--space-5) var(--space-4) var(--space-6);
+}
+
+/* -----------------------------
+   4) LINKS + FOCUS
+----------------------------- */
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+a:focus-visible,
+button:focus-visible{
+  outline:none;
+  box-shadow: var(--focus);
+  border-radius: 10px;
+}
+
+/* -----------------------------
+   5) TYPOGRAPHY
+----------------------------- */
+h1,h2,h3{
+  letter-spacing:-0.02em;
+  margin:0 0 var(--space-3);
+}
+
+h1{
+  font-size: clamp(1.85rem, 2.3vw, 2.35rem);
+  line-height:1.2;
+}
+
+h2{
+  font-size: clamp(1.35rem, 1.6vw, 1.65rem);
+  display:inline-block;
+  padding-bottom:.35rem;
+  border-bottom:2px solid var(--accent);
+  margin-top: var(--space-5);
+}
+
+h3{
+  font-size:1.12rem;
+}
+
+p{ margin:0 0 var(--space-3); }
+
+.muted{ color:var(--muted); }
+.mono{ font-family:var(--font-mono); }
+
+/* -----------------------------
+   6) BACK NAV
+----------------------------- */
+.back-nav{
+  max-width:var(--container);
+  margin:0 auto;
+  padding: var(--space-4) var(--space-4) 0;
+}
+
+.back-nav a{
+  display:inline-flex;
+  align-items:center;
+  font-family:var(--font-mono);
+  font-size:.85rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  padding:.6rem .9rem;
+  border-radius:999px;
+
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.back-nav a:hover{
+  border-color: var(--accent);
+  background: rgba(252,191,6,.08);
+  transform: translateY(-1px);
+}
+
+/* -----------------------------
+   7) CARDS
+----------------------------- */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+/* -----------------------------
+   8) ARTICLE CARD (CATEGORÍAS)
+----------------------------- */
+.article-card{
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 26px rgba(0,0,0,.38);
+
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+  min-height: 120px;
+
+  display:grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: .35rem var(--space-4);
+
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.article-card:hover{
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.article-card-title a{
+  color: var(--accent);
+  position:relative;
+  z-index: 2;
+}
+
+.stretched-link::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+}
+
+.article-card-desc{
+  color:var(--muted);
+  font-size:.96rem;
+}
+
+.article-card-score{
+  display:flex;
+  align-items:center;
+  gap:.25rem;
+
+  font-family: var(--font-mono);
+  color: var(--accent);
+
+  border:1px solid rgba(252,191,6,.45);
+  background: rgba(252,191,6,.06);
+
+  padding:.5rem .65rem;
+  border-radius: 10px;
+  white-space:nowrap;
+}
+
+.score-value{ font-weight:900; font-size:1.05rem; }
+.score-max{ font-weight:800; font-size:1rem; }
+
+/* -----------------------------
+   9) GLOBAL SCORE (/30)
+----------------------------- */
+.global-score{
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: rgba(255,255,255,.03);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+
+  display:grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-4);
+}
+
+.score-box{
+  font-family: var(--font-mono);
+  color: var(--accent);
+  border:1px solid rgba(252,191,6,.6);
+  background: rgba(252,191,6,.07);
+  border-radius: 12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.35rem;
+
+  padding: .9rem 1.1rem;
+  white-space: nowrap;
+}
+
+.score-number{ font-size:1.65rem; font-weight:900; line-height:1; }
+.score-total{ font-size:1.1rem; font-weight:800; line-height:1; }
+
+/* -----------------------------
+   10) TABLES
+----------------------------- */
+.table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.methodology-table{
+  width:100%;
+  font-size:.95rem;
+}
+
+.methodology-table th,
+.methodology-table td{
+  padding:.8rem .9rem;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+}
+
+.methodology-table th{
+  font-family: var(--font-mono);
+  color:var(--accent);
+  font-weight:800;
+}
+
+.methodology-table th:nth-child(2),
+.methodology-table td:nth-child(2){
+  white-space: nowrap;
+  min-width: 110px;
+  text-align: center;
+}
+
+/* -----------------------------
+   11) HIGHLIGHT
+----------------------------- */
+.highlight{
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border-left:4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 10px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* -----------------------------
+   12) QUIZ
+----------------------------- */
+.quiz-wrap{
+  display:grid;
+  gap: var(--space-4);
+}
+
+.q{
+  padding: var(--space-4);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.03);
+}
+
+.opts{
+  display:grid;
+  gap:.65rem;
+}
+
+.opts button{
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--muted);
+  padding:.75rem .9rem;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.opts button:hover{
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.quiz-wrap .fb{
+  display:none;
+  margin-top: var(--space-3);
+}
+
+.quiz-wrap .q.is-done .fb{
+  display:block;
+}
+
+.quiz-wrap .q.is-done .opts button{
+  pointer-events:none;
+  opacity:.85;
+}
+
+/* -----------------------------
+   13) FOOTER
+----------------------------- */
+.footer{
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top:1px solid var(--border);
+  font-size:.85rem;
+  color: var(--muted);
+}
+
+/* -----------------------------
+   14) RESPONSIVE
+----------------------------- */
+@media (max-width: 720px){
+  .article-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .article-card-score{
+    justify-self:start;
+  }
+  .global-score{
+    grid-template-columns: 1fr;
+  }
+}

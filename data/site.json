@@ -1,0 +1,30 @@
+{
+  "brand": "FisioLógico",
+  "domain": "https://www.elfisiologico.com",
+  "email": "hola@elfisiologico.com",
+  "author": {
+    "name": "Francisco José Extremera García",
+    "credential": "Fisioterapeuta colegiado ICPFA 4288",
+    "role": "Fisioterapeuta y osteópata D.O",
+    "academic_role": "Colaborador honorario del Departamento de Fisioterapia de la Universidad de Málaga (curso 2026/2027)"
+  },
+  "editorial": {
+    "label": "Responsabilidad editorial",
+    "credential_line": "Fisioterapeuta colegiado ICPFA 4288 · Osteópata D.O.",
+    "role": "Creador y responsable editorial de FisioLógico",
+    "conflicts": "Ninguno declarado."
+  },
+  "clinic": {
+    "name": "Nexus Fisioterapia y Salud",
+    "street": "Avenida de Plutarco, 85",
+    "postal_code": "29010",
+    "locality": "Málaga",
+    "area": "Teatinos-Universidad",
+    "phone": "+34601006140"
+  },
+  "profiles": {
+    "linkedin": "https://es.linkedin.com/in/fisiol%C3%B3gico",
+    "substack": "https://substack.com/@fisiologico",
+    "instagram": "https://www.instagram.com/el_fisiologico/"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "updated_at": "2026-07-14",
+  "next_review_at": "2027-07-14",
+  "status": "vigente",
+  "builder": {
+    "goal_options": [
+      ["funcion_personal", "Actividad importante para la persona"],
+      ["funcion_regional", "Función o discapacidad regional"],
+      ["dolor", "Intensidad o experiencia de dolor"],
+      ["participacion", "Participación"],
+      ["sueno", "Sueño"],
+      ["calidad_vida", "Calidad de vida"],
+      ["autoeficacia", "Autoeficacia ante el dolor"]
+    ],
+    "context_options": [
+      ["transversal", "Sin región prioritaria"],
+      ["lumbar", "Columna lumbar"],
+      ["cervical", "Columna cervical"],
+      ["superior", "Miembro superior"],
+      ["inferior", "Miembro inferior"],
+      ["mayor", "Movilidad en persona mayor"],
+      ["marcha", "Marcha o rehabilitación neurológica"],
+      ["resistencia", "Capacidad de marcha sostenida"]
+    ],
+    "phase_options": [
+      ["inicial", "Valoración inicial"],
+      ["seguimiento", "Seguimiento"]
+    ],
+    "time_options": [
+      ["5", "Hasta 5 minutos"],
+      ["10", "Hasta 10 minutos"],
+      ["20", "Hasta 20 minutos"]
+    ]
+  },
+  "cases": [
+    {
+      "label": "Dolor lumbar persistente",
+      "question": "¿Cambia la actividad elegida, la discapacidad lumbar y la capacidad para levantarse?",
+      "battery": ["PSFS", "ODI", "30s-CST"],
+      "schedule": "Inicio y revisión acordada; conservar actividades, versión y silla.",
+      "avoid": "No atribuir la evolución a una estructura ni al tratamiento a partir de las puntuaciones."
+    },
+    {
+      "label": "Persona mayor con limitación funcional",
+      "question": "¿Coinciden la dificultad percibida y la ejecución de una tarea de movilidad?",
+      "battery": ["PSFS", "TUG", "30s-CST"],
+      "schedule": "Repetir con el mismo dispositivo, silla, instrucciones y supervisión.",
+      "avoid": "No convertir un tiempo de TUG o un número de repeticiones en diagnóstico de caída."
+    },
+    {
+      "label": "Rehabilitación de miembro inferior",
+      "question": "¿Mejoran la función percibida, un objetivo personal y el rendimiento relevante?",
+      "battery": ["LEFS", "PSFS", "10MWT o 30s-CST"],
+      "schedule": "Elegir una sola prueba de rendimiento según la tarea clínica y mantener el protocolo.",
+      "avoid": "No sumar escalas redundantes ni trasladar umbrales entre poblaciones."
+    }
+  ],
+  "discordance": {
+    "both_improve": "Percepción y rendimiento mejoran. Comprueba que el cambio supera el error de medida aplicable y que el protocolo fue estable.",
+    "self_report_only": "La persona informa mejoría sin cambio equivalente en la tarea. Revisa objetivos, contexto, sensibilidad de la prueba y posible efecto techo; no invalida su experiencia.",
+    "performance_only": "La tarea mejora sin cambio percibido equivalente. Explora relevancia de la tarea, expectativas, participación y otros dominios; no concluyas que la persona está recuperada.",
+    "both_worsen": "Ambas vías empeoran. Revisa seguridad, evolución, carga, contexto y necesidad de una valoración más amplia.",
+    "mixed": "Las direcciones son discordantes. Verifica puntuación, protocolo, periodo de referencia y qué constructo representa cada medida.",
+    "stable": "No aparece una dirección clara de cambio. Contrasta error de medida, sensibilidad, tiempo transcurrido y relevancia clínica."
+  },
+  "changelog": [
+    {
+      "date": "2026-07-14",
+      "change": "Incorporación de calidad de vida, participación, sueño y autoeficacia; creación de la batería paralela de rendimiento."
+    },
+    {
+      "date": "2026-07-14",
+      "change": "Añadidos selector de batería, matrices de cambio, herramientas de seguimiento, casos clínicos y protocolos imprimibles."
+    }
+  ]
+}

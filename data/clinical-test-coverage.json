@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-07-14",
+  "completion_rule": "La sección alcanza cobertura esencial cuando cada región tiene al menos una sospecha publicada, todas las sospechas de prioridad crítica están publicadas y el 80% de las prioritarias están publicadas o en revisión clínica.",
+  "regions": [
+    {"name": "Columna cervical", "targets": [{"slug": "radiculopatia-cervical", "priority": "critical"}, {"slug": "mielopatia-cervical", "priority": "critical"}, {"slug": "cefalea-cervicogenica", "priority": "high"}]},
+    {"name": "Columna lumbar", "targets": [{"slug": "radiculopatia-lumbar", "priority": "critical"}, {"slug": "estenosis-canal-lumbar", "priority": "high"}, {"slug": "fractura-vertebral", "priority": "critical"}]},
+    {"name": "Hombro", "targets": [{"slug": "rotura-manguito-rotador", "priority": "critical"}, {"slug": "inestabilidad-anterior-hombro", "priority": "high"}, {"slug": "capsulitis-adhesiva", "priority": "high"}]},
+    {"name": "Codo", "targets": [{"slug": "tendinopatia-lateral-codo", "priority": "high"}, {"slug": "inestabilidad-ligamentosa-codo", "priority": "medium"}]},
+    {"name": "Muñeca y mano", "targets": [{"slug": "sindrome-tunel-carpiano", "priority": "critical"}, {"slug": "lesion-escafoides", "priority": "critical"}, {"slug": "lesion-complejo-fibrocartilago-triangular", "priority": "medium"}]},
+    {"name": "Cadera", "targets": [{"slug": "fractura-cadera", "priority": "critical"}, {"slug": "dolor-intraarticular-cadera", "priority": "high"}, {"slug": "tendinopatia-glutea", "priority": "high"}]},
+    {"name": "Rodilla", "targets": [{"slug": "lesion-ligamento-cruzado-anterior", "priority": "critical"}, {"slug": "lesion-ligamento-cruzado-posterior", "priority": "high"}, {"slug": "lesion-meniscal", "priority": "high"}, {"slug": "dolor-femoropatelar", "priority": "high"}, {"slug": "lesion-ligamentos-colaterales-rodilla", "priority": "high"}]},
+    {"name": "Tobillo y pie", "targets": [{"slug": "lesion-ligamentosa-lateral-tobillo", "priority": "critical"}, {"slug": "lesion-sindesmosis-tobillo", "priority": "high"}, {"slug": "fractura-tobillo-pie", "priority": "critical"}, {"slug": "rotura-tendon-aquiles", "priority": "critical"}, {"slug": "dolor-plantar-talon", "priority": "medium"}]},
+    {"name": "Sistema nervioso periférico", "targets": [{"slug": "neuropatia-cubital", "priority": "high"}, {"slug": "neuropatia-radial", "priority": "medium"}, {"slug": "neuropatia-peroneal", "priority": "medium"}]},
+    {"name": "Cribado vascular", "targets": [{"slug": "trombosis-venosa-profunda", "priority": "critical"}, {"slug": "compromiso-vascular-miembro", "priority": "critical"}]}
+  ]
+}

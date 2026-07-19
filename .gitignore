@@ -1,0 +1,93 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local environment and temporary files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+.playwright-cli/
+/.playwright-mcp/
+output/playwright/
+/tmp/
+/_site/
+/output/
+
+# Estado local de Supabase: puede contener referencias de proyecto y URLs de conexión
+/supabase/.temp/
+/supabase/.branches/
+/supabase/functions/.env
+
+# Prototipos, documentación y material de trabajo que no deben llegar al repositorio público
+/docs/
+/demo-reserva/
+/patients/explora-dolor/calibrador*.html
+/patients/explora-dolor/*calibrator*.css
+/patients/explora-dolor/*calibrator*.js
+/patients/explora-dolor/data/*calibration*
+/patients/explora-dolor/data/*.md
+/patients/explora-dolor/assets/anatomy-head-upper-body.png
+/patients/explora-dolor/assets/anatomy-head-upper-body.svg
+
+# Capturas y duplicados generados durante calibración visual
+/*-desktop.png
+/*-mobile.png
+/*-tablet.png
+patients/explora-dolor/assets/pain-patterns/* 2.png
+
+# Duplicate local skill drafts
+.codex/skills/**/SKILL 2.md
+
+# Propiedad editorial interna: se conserva en local, no se publica
+.codex/
+content/
+scripts/*
+!scripts/build_site.py
+!scripts/build_instruments.py
+!scripts/build_clinical_tests.py
+!scripts/build_patient_guides.js
+!scripts/build_professional_pain_map.js
+!scripts/build_pain_map_drawing_pack.js
+!scripts/crop_pain_pattern_views.js
+!scripts/ingest_pain_pattern_maps.js
+!scripts/sync_navigation.py
+!scripts/seo_audit.py
+!scripts/ai_search_audit.py
+!scripts/ui_contract_audit.py
+!scripts/validate_content.py
+!scripts/validate_clinical_tests.py
+!scripts/validate_pain_explorer.py
+!scripts/clinical_test_coverage.py
+!scripts/release_audit.py
+!scripts/security_audit.py
+!scripts/build_public_site.py
+!scripts/test_instrument_calculators.js
+!scripts/rgp/
+!scripts/rgp/build_biotypical_inventory.py
+data/pubmed-matches.json
+data/pubmed-metadata.json
+data/repository-curation.json
+
+# Archivo local de fuentes científicas: permanece en iCloud y fuera de la web
+/fuentes-pdf-repositorio/pdfs-originales/*
+!/fuentes-pdf-repositorio/pdfs-originales/README.md
+/fuentes-pdf-repositorio/texto-completo-pmc/*
+/fuentes-pdf-repositorio/material-suplementario/*
+!/fuentes-pdf-repositorio/material-suplementario/README.md
+
+# Plantillas históricas internas
+/articulo base.html
+/categoria base.html
+/categoria base v.7.html

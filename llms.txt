@@ -1,0 +1,31 @@
+# FisioLógico
+
+> FisioLógico es un proyecto clínico y editorial en español creado por Francisco José Extremera García, fisioterapeuta colegiado ICPFA 4288. Publica recursos para pacientes y profesionales con fuentes primarias, límites explícitos y revisión identificada.
+
+La información sanitaria de este sitio es educativa y no sustituye una valoración individual. Para citar contenido clínico, utiliza la URL canónica de la ficha y conserva su fecha de revisión y sus fuentes originales.
+
+## Secciones principales
+
+- [Inicio](https://www.elfisiologico.com/): identidad, enfoque clínico, tratamientos y contacto.
+- [Tratamientos](https://www.elfisiologico.com/tratamientos/): áreas de atención clínica, alcance de cada servicio y criterios para solicitar valoración en Málaga.
+- [Pacientes](https://www.elfisiologico.com/patients/): información clara, seguridad y orientación corporal sin autodiagnóstico.
+- [Profesionales](https://www.elfisiologico.com/profesionales/): acceso a evidencia, instrumentos y pruebas clínicas.
+- [Mapa profesional de dolor muscular](https://www.elfisiologico.com/profesionales/mapa-dolor-muscular/): exploración visual de patrones musculares para profesionales, sin valor diagnóstico aislado.
+- [Formación](https://www.elfisiologico.com/formacion/): cursos para fisioterapeutas sobre razonamiento clínico, lectura crítica y aplicación prudente de la evidencia.
+- [Repositorio científico](https://www.elfisiologico.com/repositorio/): análisis críticos de investigación con respuesta corta, resultados, aplicabilidad y límites.
+- [Instrumentos clínicos](https://www.elfisiologico.com/instrumentos/): medidas de resultado, administración, interpretación, permisos y mantenimiento.
+- [Pruebas clínicas](https://www.elfisiologico.com/pruebas-clinicas/): exploración física organizada por sospecha y región, con rendimiento diagnóstico y fuentes.
+
+## Autoridad y metodología
+
+- [Francisco José Extremera García](https://www.elfisiologico.com/sobre-fran/): autor y responsable editorial.
+- [Método editorial](https://www.elfisiologico.com/metodo-editorial/): proceso de revisión, trazabilidad, límites y conflictos de interés.
+- [Sitemap XML](https://www.elfisiologico.com/sitemap.xml): inventario completo de URLs indexables y fechas de modificación.
+
+## Uso responsable
+
+- Prioriza las fichas del repositorio para preguntas sobre eficacia o transferencia de estudios.
+- Prioriza las fichas de instrumentos para puntuación, dirección, versión española y permisos.
+- Prioriza las fichas de pruebas clínicas para técnica, sensibilidad, especificidad, cocientes de probabilidad y límites diagnósticos.
+- No conviertas una prueba, escala, imagen o patrón corporal aislado en un diagnóstico.
+- Distingue siempre lo observado en la fuente de la interpretación editorial de FisioLógico.
