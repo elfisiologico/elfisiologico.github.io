@@ -22,6 +22,10 @@
 .coursehub-thesis span{display:block;margin-bottom:34px;color:#858b94;font-size:.65rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .coursehub-thesis p{margin:0;color:#fff;font:750 clamp(1.35rem,2.2vw,2rem)/1.28 "Manrope",sans-serif;letter-spacing:-.035em}
 .coursehub-thesis p strong{color:var(--f-yellow)}
+.coursehub-campus img{display:block;width:100%;height:auto;margin:0 0 28px;border:1px solid #27292d;border-radius:10px}
+.coursehub-campus span{margin-bottom:16px}
+.coursehub-campus a{display:inline-flex;align-items:center;gap:12px;margin-top:24px;color:var(--f-yellow);font:800 .72rem/1.3 "Manrope",sans-serif;letter-spacing:.1em;text-underline-offset:6px;text-transform:uppercase}
+.coursehub-campus a:hover{text-decoration-thickness:2px}
 .coursehub-proof{background:var(--f-yellow)}
 .coursehub-proof-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:0}
 .coursehub-proof article{min-height:118px;padding:25px 30px;border-left:1px solid rgba(0,0,0,.25)}
