@@ -64,6 +64,22 @@ def public_score(article):
     return article["score"]
 
 
+def public_tier(article):
+    """Normaliza la banda v2 para los recorridos sin exigir una rúbrica histórica."""
+    if article.get("tier"):
+        return article["tier"]
+    current = article.get("rubric_v2", {})
+    if current.get("status") == "complete":
+        return {
+            "insufficient": "exploratoria",
+            "exploratory": "exploratoria",
+            "informative_with_caution": "moderada",
+            "consistent": "solida",
+            "exceptional": "solida",
+        }[current["band"]]
+    return article.get("tier", "exploratoria")
+
+
 def design_group(article):
     design = article["study_design"].lower()
     if "meta" in design or "systematic" in design or "sistemática" in design:
@@ -72,6 +88,8 @@ def design_group(article):
         return "observational", "Estudio no aleatorizado"
     if "random" in design or "aleator" in design:
         return "randomized", "Ensayo aleatorizado"
+    if "medición" in design or "localización" in design:
+        return "observational", "Estudio de medición"
     if "observ" in design or "transversal" in design or "cohort" in design or "casos y controles" in design or "registro" in design:
         return "observational", "Estudio observacional"
     if "narrativ" in design or "review" in design or "revisión" in design or "scoping" in design:
@@ -105,9 +123,10 @@ def editorial_responsibility(site, updated_at, conflicts, depth="../../"):
     return f'''<section class="editorial-responsibility" aria-labelledby="responsabilidad-editorial"><p class="responsibility-label">{esc(editorial["label"])}</p><div class="responsibility-grid"><div><h2 id="responsabilidad-editorial"><a href="{depth}sobre-fran/">{esc(site["author"]["name"])}</a></h2><p class="responsibility-credentials">{esc(editorial["credential_line"])}</p><p>{esc(editorial["role"])}</p></div><dl><div><dt>Última revisión</dt><dd><time datetime="{esc(updated_at)}">{esc(date_es(updated_at))}</time></dd></div><div><dt>Conflictos de interés</dt><dd>{esc(conflict_text)}</dd></div></dl></div><a class="responsibility-method" href="{depth}metodo-editorial/">Cómo revisamos el contenido →</a></section>'''
 
 
-def layout(title, description, canonical_path, body, depth="../", structured_data=None, page_type="website", robots="index,follow,max-image-preview:large"):
+def layout(title, description, canonical_path, body, depth="../", structured_data=None, page_type="website", robots="index,follow,max-image-preview:large", og_image=None):
     site = load(ROOT / "data/site.json")
     canonical = f"{site['domain']}{canonical_path}"
+    social_image = og_image or f"{site['domain']}{OG_IMAGE}"
     title = meta_title(title)
     description = meta_description(description)
     structured = ""
@@ -118,7 +137,7 @@ def layout(title, description, canonical_path, body, depth="../", structured_dat
 <title>{esc(title)} · FisioLógico</title><meta name="description" content="{esc(description)}"><meta name="robots" content="{esc(robots)}">
 <link rel="canonical" href="{esc(canonical)}"><link rel="icon" href="{depth}assets/logo-fisiologico-cuadrado.png"><link rel="stylesheet" href="{depth}styles.css?v={STYLE_VERSION}">
 <meta name="theme-color" content="#070707"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="FisioLógico"><meta property="og:title" content="{esc(title)} · FisioLógico">
-<meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="{esc(page_type)}"><meta property="og:image" content="{esc(site['domain'] + OG_IMAGE)}"><meta property="og:image:alt" content="Identidad visual de FisioLógico"><meta name="twitter:card" content="summary_large_image">{structured}</head>
+<meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="{esc(page_type)}"><meta property="og:image" content="{esc(social_image)}"><meta property="og:image:alt" content="{esc(title)}"><meta name="twitter:card" content="summary_large_image">{structured}</head>
 <body class="editorial-page"><a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="editorial-header"><div class="shell editorial-nav"><a class="editorial-brand" href="{depth}index.html" aria-label="FisioLógico, inicio">Fisio<span>Lógico</span></a><nav aria-label="Principal"><a href="{depth}patients/">Pacientes</a><a href="{depth}profesionales/">Profesionales</a><a href="{depth}con-logica/">Con lógica</a></nav></div></header>
 <main id="contenido">{body}</main><footer class="site-footer"><div class="shell editorial-footer"><p>FisioLógico · evidencia, criterio y transferencia clínica.</p><div><a href="{depth}sobre-fran/">Autor</a><a href="{depth}metodo-editorial/">Criterio editorial</a><a href="mailto:{esc(site['email'])}">Contacto</a></div></div></footer></body></html>'''
@@ -215,6 +234,65 @@ def measurement_battery(a):
     return '<a href="#mediciones">Escalas y pruebas</a>', section
 
 
+def technical_protocol(a):
+    protocol = a.get("technical_protocol")
+    if not protocol:
+        return "", ""
+    facts = "".join(
+        f'<div><dt>{esc(item["label"])}</dt><dd>{esc(item["value"])}</dd></div>'
+        for item in protocol["facts"]
+    )
+    steps = "".join(
+        f'''<li><span class="technical-step-number">{index:02d}</span><div><h3>{esc(item["title"])}</h3>'''
+        f'''<p>{esc(item["procedure"])}</p><dl><div><dt>Referencias</dt><dd>{esc(item["landmarks"])}</dd></div>'''
+        f'''<div><dt>Lectura</dt><dd>{esc(item["interpretation"])}</dd></div></dl></div></li>'''
+        for index, item in enumerate(protocol["steps"], 1)
+    )
+    cautions = "".join(f"<li>{esc(item)}</li>" for item in protocol["cautions"])
+    section = (
+        f'''<section class="technical-protocol" id="protocolo-tecnico"><p class="section-label">Procedimiento del artículo</p>'''
+        f'''<h2>{esc(protocol["title"])}</h2><p class="technical-summary">{esc(protocol["summary"])}</p>'''
+        f'''<dl class="technical-facts">{facts}</dl><ol class="technical-steps">{steps}</ol>'''
+        f'''<aside class="technical-cautions"><h3>Antes de trasladarlo a la práctica</h3><ul>{cautions}</ul></aside>'''
+        f'''<p class="technical-source-note">{esc(protocol["source_note"])}</p></section>'''
+    )
+    return '<a href="#protocolo-tecnico">Procedimiento</a>', section
+
+
+def scientific_visuals(a):
+    assets = a.get("visual_assets") or []
+    if not assets:
+        return "", ""
+    figures = []
+    for item in assets:
+        changes = (
+            f'<span class="visual-modifications">Cambios: {esc(item["modifications"])}</span>'
+            if item.get("modified") else ""
+        )
+        license_link = (
+            f'<a href="{esc(item["license_url"])}" target="_blank" rel="license noopener noreferrer">'
+            f'{esc(item["rights_basis"].replace("_", " ").upper())}</a>'
+        )
+        figures.append(
+            f'''<figure class="scientific-visual" id="visual-{esc(item["id"])}"><div class="scientific-visual-frame">'''
+            f'''<img src="../../{esc(item["file"])}" width="{item["width"]}" height="{item["height"]}" '''
+            f'''alt="{esc(item["alt"])}" loading="lazy" decoding="async"></div><figcaption>'''
+            f'''<p class="visual-caption">{esc(item["caption"])}</p>'''
+            f'''<p class="visual-limit"><strong>Cómo leerla</strong>{esc(item["clinical_limit"])}</p>'''
+            f'''<p class="visual-attribution">{esc(item["attribution"])} · <a href="{esc(item["source_url"])}" '''
+            f'''target="_blank" rel="noopener noreferrer">Fuente</a> · Licencia {license_link}.{changes}</p>'''
+            f'''</figcaption></figure>'''
+        )
+    section = (
+        f'''<section class="scientific-visuals" id="figuras"><p class="section-label">Atlas del artículo</p>'''
+        f'''<h2>Imágenes para entender el procedimiento</h2><p class="visuals-intro">'''
+        f'''Estas figuras proceden del artículo original y se reproducen con licencia abierta verificada. '''
+        f'''Se muestran por su utilidad anatómica o técnica, no como prueba aislada de diagnóstico o eficacia.</p>'''
+        f'''<div class="scientific-visual-list">{"".join(figures)}</div></section>'''
+    )
+    return '<a href="#figuras">Imágenes</a>', section
+
+
 def build_article(a, site, articles):
     score = public_score(a)
     _, design_label = design_group(a)
@@ -225,8 +303,10 @@ def build_article(a, site, articles):
     related = [item for item in articles if item["category"] == a["category"] and item["slug"] != a["slug"]][:3]
     related_html = "".join(f'<li><a href="{esc(item["slug"])}.html">{esc(item["title_es"])}</a><span>{public_score(item)}/30</span></li>' for item in related)
     related_section = f'<section class="related-articles"><p class="section-label">Sigue explorando</p><h2>Otros análisis sobre {esc(a["category_name"])}</h2><ul>{related_html}</ul><a href="../categorias/{esc(a["category"])}.html">Explorar evidencia sobre {esc(a["category_name"])} →</a></section>' if related else ""
+    article_images = [f"{site['domain']}/{item['file']}" for item in a.get("visual_assets", [])]
+    primary_image = article_images[0] if article_images else f"{site['domain']}{OG_IMAGE}"
     article_json = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Article", "@id": f"{site['domain']}{canonical_path}#article", "headline": a["title_es"], "alternateName": a["title"], "description": meta_description(a.get("seo",{}).get("description", a["clinical_takeaway"])), "datePublished": a["review"]["published_at"], "dateModified": a["review"]["updated_at"], "inLanguage": "es", "isAccessibleForFree": True, "educationalLevel": "Profesional sanitario", "about": [{"@type":"Thing","name":a["category_name"]},{"@type":"Thing","name":a["study_design"]},{"@type":"Thing","name":outcome}], "keywords": [a["category_name"], a["study_design"], outcome, "fisioterapia", "lectura crítica"], "author": {"@type": "Person", "@id": f"{author_url}#person", "name": site["author"]["name"], "url": author_url}, "reviewedBy": {"@type":"Person","@id":f"{author_url}#person"}, "publisher": {"@type": "Organization", "@id": f"{site['domain']}/#organization", "name": site["brand"], "url": f"{site['domain']}/", "logo": {"@type": "ImageObject", "url": f"{site['domain']}{OG_IMAGE}"}}, "image": f"{site['domain']}{OG_IMAGE}", "citation": a["citation"], "isBasedOn": a["source"]["original_url"], "sameAs": [a["source"]["pubmed_url"], a["source"]["original_url"]], "mainEntityOfPage": f"{site['domain']}{canonical_path}"},
+        {"@type": "Article", "@id": f"{site['domain']}{canonical_path}#article", "headline": a["title_es"], "alternateName": a["title"], "description": meta_description(a.get("seo",{}).get("description", a["clinical_takeaway"])), "datePublished": a["review"]["published_at"], "dateModified": a["review"]["updated_at"], "inLanguage": "es", "isAccessibleForFree": True, "educationalLevel": "Profesional sanitario", "about": [{"@type":"Thing","name":a["category_name"]},{"@type":"Thing","name":a["study_design"]},{"@type":"Thing","name":outcome}], "keywords": [a["category_name"], a["study_design"], outcome, "fisioterapia", "lectura crítica"], "author": {"@type": "Person", "@id": f"{author_url}#person", "name": site["author"]["name"], "url": author_url}, "reviewedBy": {"@type":"Person","@id":f"{author_url}#person"}, "publisher": {"@type": "Organization", "@id": f"{site['domain']}/#organization", "name": site["brand"], "url": f"{site['domain']}/", "logo": {"@type": "ImageObject", "url": f"{site['domain']}{OG_IMAGE}"}}, "image": article_images or [f"{site['domain']}{OG_IMAGE}"], "citation": a["citation"], "isBasedOn": a["source"]["original_url"], "sameAs": [a["source"]["pubmed_url"], a["source"]["original_url"]], "mainEntityOfPage": f"{site['domain']}{canonical_path}"},
         {"@type": "BreadcrumbList", "itemListElement": [{"@type":"ListItem","position":1,"name":"Repositorio científico","item":f"{site['domain']}/repositorio/"},{"@type":"ListItem","position":2,"name":a["category_name"],"item":f"{site['domain']}/repositorio/categorias/{a['category']}.html"},{"@type":"ListItem","position":3,"name":a["title_es"],"item":f"{site['domain']}{canonical_path}"}]}
     ]}
     card_data = a.get("card") or {}
@@ -236,15 +316,17 @@ def build_article(a, site, articles):
     answer_context = f'<p class="answer-context">{esc(a["clinical_takeaway"])}</p>' if answer_lead != a["clinical_takeaway"] else ""
     protocol_nav, protocol_section = intervention_protocol(a)
     measurement_nav, measurement_section = measurement_battery(a)
+    technical_nav, technical_section = technical_protocol(a)
+    visuals_nav, visuals_section = scientific_visuals(a)
     body = f'''<article class="article-page"><header class="article-hero"><div class="shell article-header"><nav class="breadcrumbs" aria-label="Migas de pan"><a href="../">Repositorio</a><span>›</span><a href="../categorias/{esc(a['category'])}.html">{esc(a['category_name'])}</a></nav><p class="section-label light">Análisis crítico · {esc(a['category_name'])}</p><h1>{esc(a['title_es'])}</h1><p class="original-study-title"><span>Título original</span><span lang="en">{esc(a['title'])}</span></p><dl class="article-facts"><div><dt>Diseño</dt><dd>{esc(design_label)}</dd></div><div><dt>Población</dt><dd>{esc(a['population'])}</dd></div><div><dt>Año</dt><dd>{a['year']}</dd></div><div class="fact-score"><dt>Índice editorial</dt><dd><strong>{score}</strong> / 30</dd></div></dl><div class="article-source-actions">{source_links}</div><p class="article-citation">{esc(a['citation'])}</p></div></header>
 <div class="reading-signature" aria-label="Estructura de lectura crítica"><div class="shell"><p><span>Observado</span><strong>{esc(outcome)}</strong></p><p><span>Límite</span><strong>{esc(a['limitations'][0])}</strong></p><p><span>Aplicabilidad</span><strong>Interpretación clínica, no receta terapéutica</strong></p></div></div>
-<div class="shell article-layout"><aside class="evidence-rail"><p class="section-label">En esta ficha</p><nav aria-label="Contenido del análisis"><a href="#respuesta">Respuesta corta</a><a href="#resultados">Resultados e interpretación</a>{measurement_nav}{protocol_nav}<a href="#transferencia">Aplicabilidad clínica</a><a href="#limites">Límites</a><a href="#poblacion">Población</a><a href="#fuente">Fuente original</a></nav><div class="rail-source"><span>Fuente verificada</span><strong>PubMed · PMID {esc(a['source']['pmid'])}</strong><small>Revisión: {esc(a['review']['updated_at'])}</small></div></aside>
-<div class="article-body"><section class="clinical-answer" id="respuesta"><p class="section-label">Respuesta clínica corta</p><h2>{esc(answer_heading)}</h2><p class="answer-lead">{esc(answer_lead)}</p>{key_data}{answer_context}</section><section id="resultados"><p class="section-label">Observado</p><h2>Qué encontró y cómo interpretarlo</h2>{paragraphs(a['critical_analysis'])}</section>{measurement_section}{protocol_section}<section class="application" id="transferencia"><p class="section-label">Aplicabilidad</p><h2>Qué significa clínicamente</h2>{paragraphs(a['clinical_application'])}</section><section class="limits" id="limites"><p class="section-label">Límite</p><h2>Qué no permite afirmar</h2>{paragraphs(a['limitations'])}</section><section class="population-context" id="poblacion"><p class="section-label">Contexto</p><h2>¿Se parece a tu paciente?</h2><dl><div><dt>Población estudiada</dt><dd>{esc(a['population'])}</dd></div><div><dt>Diseño</dt><dd>{esc(a['study_design'])}</dd></div><div><dt>Resultado evaluado</dt><dd>{esc(outcome)}</dd></div></dl></section><section class="source-panel" id="fuente"><p class="section-label">Fuente primaria</p><h2>Lee el estudio, no solo nuestro análisis</h2><p>{esc(a['citation'])}</p><div>{source_links}</div></section>{editorial_responsibility(site, a['review']['updated_at'], a['review']['conflicts'])}{related_section}</div></div></article>'''
+<div class="shell article-layout"><aside class="evidence-rail"><p class="section-label">En esta ficha</p><nav aria-label="Contenido del análisis"><a href="#respuesta">Respuesta corta</a><a href="#resultados">Resultados e interpretación</a>{visuals_nav}{technical_nav}{measurement_nav}{protocol_nav}<a href="#transferencia">Aplicabilidad clínica</a><a href="#limites">Límites</a><a href="#poblacion">Población</a><a href="#fuente">Fuente original</a></nav><div class="rail-source"><span>Fuente verificada</span><strong>PubMed · PMID {esc(a['source']['pmid'])}</strong><small>Revisión: {esc(a['review']['updated_at'])}</small></div></aside>
+<div class="article-body"><section class="clinical-answer" id="respuesta"><p class="section-label">Respuesta clínica corta</p><h2>{esc(answer_heading)}</h2><p class="answer-lead">{esc(answer_lead)}</p>{key_data}{answer_context}</section><section id="resultados"><p class="section-label">Observado</p><h2>Qué encontró y cómo interpretarlo</h2>{paragraphs(a['critical_analysis'])}</section>{visuals_section}{technical_section}{measurement_section}{protocol_section}<section class="application" id="transferencia"><p class="section-label">Aplicabilidad</p><h2>Qué significa clínicamente</h2>{paragraphs(a['clinical_application'])}</section><section class="limits" id="limites"><p class="section-label">Límite</p><h2>Qué no permite afirmar</h2>{paragraphs(a['limitations'])}</section><section class="population-context" id="poblacion"><p class="section-label">Contexto</p><h2>¿Se parece a tu paciente?</h2><dl><div><dt>Población estudiada</dt><dd>{esc(a['population'])}</dd></div><div><dt>Diseño</dt><dd>{esc(a['study_design'])}</dd></div><div><dt>Resultado evaluado</dt><dd>{esc(outcome)}</dd></div></dl></section><section class="source-panel" id="fuente"><p class="section-label">Fuente primaria</p><h2>Lee el estudio, no solo nuestro análisis</h2><p>{esc(a['citation'])}</p><div>{source_links}</div></section>{editorial_responsibility(site, a['review']['updated_at'], a['review']['conflicts'])}{related_section}</div></div></article>'''
     target = OUTPUT / "articulos" / f"{a['slug']}.html"
     description = a.get("seo",{}).get("description", a["clinical_takeaway"])
     if description.startswith("Juicio integrador y crítico"):
         description = f"Análisis crítico de {a['title_es']}: diseño, sesgos, resultados, límites y transferencia clínica en fisioterapia."
-    target.write_text(layout(a.get("seo",{}).get("title", a["title_es"]), description, canonical_path, body, "../../", article_json, "article"), encoding="utf-8")
+    target.write_text(layout(a.get("seo",{}).get("title", a["title_es"]), description, canonical_path, body, "../../", article_json, "article", og_image=primary_image), encoding="utf-8")
 
 
 def build_categories(articles, categories, site):
@@ -268,7 +350,7 @@ def journey_articles(journey, articles):
     matches = []
     for article in articles:
         haystack = f"{article['title']} {article['clinical_takeaway']} {article['category_name']}".lower()
-        if (categories and article["category"] in categories) or (tiers and article["tier"] in tiers) or any(word in haystack for word in keywords):
+        if (categories and article["category"] in categories) or (tiers and public_tier(article) in tiers) or any(word in haystack for word in keywords):
             matches.append(article)
     return sorted(matches, key=lambda x: (-x["year"], x["title"]))
 

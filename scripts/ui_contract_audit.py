@@ -52,6 +52,9 @@ def main() -> None:
         ".protocol-group li{display:block}",
         ".measurement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))",
         "@media(max-width:700px){.measurement-group-heading,.measurement-grid{grid-template-columns:1fr}",
+        ".scientific-visual img{display:block;width:auto;max-width:100%",
+        ".technical-steps>li{display:grid;grid-template-columns:64px minmax(0,1fr)",
+        "@media(max-width:700px){.technical-facts,.technical-steps dl{grid-template-columns:1fr}",
     )
     for rule in css_contract:
         if rule not in css: errors.append(f"styles.css no conserva el contrato: {rule}")
@@ -70,6 +73,20 @@ def main() -> None:
         and article.get("rubric_v2", {}).get("status") == "complete"
     }
     rendered_measurements: set[str] = set()
+    visual_counts = {
+        article["slug"]: len(article["visual_assets"])
+        for path in ARTICLES.glob("*.json")
+        if (article := json.loads(path.read_text(encoding="utf-8"))).get("visual_assets")
+        and article.get("rubric_v2", {}).get("status") == "complete"
+    }
+    rendered_visuals: set[str] = set()
+    technical_slugs = {
+        article["slug"]
+        for path in ARTICLES.glob("*.json")
+        if (article := json.loads(path.read_text(encoding="utf-8"))).get("technical_protocol")
+        and article.get("rubric_v2", {}).get("status") == "complete"
+    }
+    rendered_technical: set[str] = set()
     html_files = sorted(
         path for path in ROOT.rglob("*.html")
         if not any(part in IGNORED_HTML_ROOTS for part in path.relative_to(ROOT).parts)
@@ -156,6 +173,24 @@ def main() -> None:
                 for index,card in enumerate(cards,1):
                     if not all(label in card for label in ("Qué mide","En qué consiste","Cómo se interpreta","Lectura prudente")):
                         errors.append(f"{slug}: instrumento {index} no conserva los cuatro niveles de lectura")
+        if 'class="scientific-visuals"' in html:
+            slug = path.stem
+            rendered_visuals.add(slug)
+            if html.count('id="figuras"') != 1:
+                errors.append(f"{slug}: el atlas científico debe tener un único id")
+            figures = re.findall(r'<figure class="scientific-visual".*?</figure>', html, re.S)
+            if len(figures) != visual_counts.get(slug, 0):
+                errors.append(f"{slug}: esperaba {visual_counts.get(slug, 0)} figuras y renderizó {len(figures)}")
+            for index, figure in enumerate(figures, 1):
+                if not all(label in figure for label in ("Cómo leerla", "visual-attribution", 'loading="lazy"')):
+                    errors.append(f"{slug}: figura {index} no conserva lectura, atribución y carga diferida")
+        if 'class="technical-protocol"' in html:
+            slug = path.stem
+            rendered_technical.add(slug)
+            if html.count('id="protocolo-tecnico"') != 1:
+                errors.append(f"{slug}: el procedimiento técnico debe tener un único id")
+            if not re.search(r'<ol class="technical-steps">.*?</ol>', html, re.S):
+                errors.append(f"{slug}: el procedimiento técnico no contiene pasos estructurados")
 
     missing = protocol_slugs - rendered_protocols
     unexpected = rendered_protocols - protocol_slugs
@@ -165,6 +200,14 @@ def main() -> None:
     unexpected_measurements=rendered_measurements-set(measurement_counts)
     if missing_measurements: errors.append(f"faltan baterías de medición renderizadas: {', '.join(sorted(missing_measurements))}")
     if unexpected_measurements: errors.append(f"hay baterías de medición sin fuente canónica: {', '.join(sorted(unexpected_measurements))}")
+    missing_visuals=set(visual_counts)-rendered_visuals
+    unexpected_visuals=rendered_visuals-set(visual_counts)
+    if missing_visuals: errors.append(f"faltan atlas científicos renderizados: {', '.join(sorted(missing_visuals))}")
+    if unexpected_visuals: errors.append(f"hay atlas científicos sin fuente canónica: {', '.join(sorted(unexpected_visuals))}")
+    missing_technical=technical_slugs-rendered_technical
+    unexpected_technical=rendered_technical-technical_slugs
+    if missing_technical: errors.append(f"faltan procedimientos técnicos renderizados: {', '.join(sorted(missing_technical))}")
+    if unexpected_technical: errors.append(f"hay procedimientos técnicos sin fuente canónica: {', '.join(sorted(unexpected_technical))}")
 
     if errors:
         print("ERROR contrato visual")
@@ -172,7 +215,8 @@ def main() -> None:
         sys.exit(1)
     print(
         f"Contrato visual OK: {len(html_files)} páginas, "
-        f"{len(rendered_protocols)} protocolos, {len(rendered_measurements)} baterías de medición "
+        f"{len(rendered_protocols)} protocolos, {len(rendered_measurements)} baterías de medición, "
+        f"{len(rendered_technical)} procedimientos y {len(rendered_visuals)} atlas científicos "
         f"y styles.css?v={version}."
     )
 

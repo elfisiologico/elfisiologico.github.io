@@ -11,6 +11,13 @@ RUBRIC={"diseño","muestra","sesgos","variables","transferencia","coherencia"}
 RUBRIC_V2={"question_design","internal_validity","sample_precision","outcomes_measurement","magnitude_balance","directness_transfer"}
 V2_BANDS={(0,11):"insufficient",(12,17):"exploratory",(18,23):"informative_with_caution",(24,27):"consistent",(28,30):"exceptional"}
 GATES={"critical_risk_of_bias","non_causal_design","acute_to_chronic","unvalidated_surrogate","nonhuman_or_model","low_transfer","no_adequate_comparator","imprecise_decision","harm_compatible","selective_reporting_concern","unverifiable_source","insufficient_core_data","conclusion_overreach"}
+VISUAL_RIGHTS={"fisiologico_original","cc0","cc_by","cc_by_sa","written_permission"}
+VISUAL_KINDS={"ultrasound","scientific_figure","diagram","clinical_photo","chart"}
+VISUAL_ROLES={"anatomy","acquisition","measurement","comparison","result","limitation"}
+VISUAL_SOURCE_TYPES={"fisiologico_original","article_figure","permissioned_third_party"}
+VISUAL_REVIEW_START=date(2026,7,26)
+VISUAL_REVIEW_STATUSES={"approved_and_used","checked_no_usable_rights","checked_not_useful","not_applicable"}
+VISUAL_EVIDENCE_TYPES={"publisher_license","article_license_statement","figure_caption","pmc_license","written_permission"}
 
 def expected_v2_band(total):
     return next(label for (low,high),label in V2_BANDS.items() if low <= total <= high)
@@ -97,6 +104,151 @@ def validate_measurement_battery(a, errors):
                 errors.append(f"{location}.internal_url debe ser una ruta interna relativa y canónica")
     if len(short_names)!=len(set(short_names)): errors.append("measurement_battery no puede repetir abreviaturas")
 
+def validate_technical_protocol(a, errors):
+    protocol=a.get("technical_protocol")
+    if protocol is None:return
+    if not isinstance(protocol,dict): errors.append("technical_protocol debe ser un objeto"); return
+    required={"title","summary","facts","steps","cautions","source_note"}
+    missing=required-set(protocol)
+    if missing: errors.append(f"technical_protocol: faltan {', '.join(sorted(missing))}"); return
+    for field in ("title","summary","source_note"):
+        validate_public_text(protocol.get(field),f"technical_protocol.{field}",errors)
+    facts=protocol.get("facts")
+    if not isinstance(facts,list) or len(facts)<2: errors.append("technical_protocol.facts requiere al menos dos datos")
+    else:
+        for index,item in enumerate(facts,1):
+            if not isinstance(item,dict): errors.append(f"technical_protocol.facts[{index}] debe ser un objeto"); continue
+            validate_public_text(item.get("label"),f"technical_protocol.facts[{index}].label",errors)
+            validate_public_text(item.get("value"),f"technical_protocol.facts[{index}].value",errors)
+            if len(item.get("label",""))>48: errors.append(f"technical_protocol.facts[{index}].label supera 48 caracteres")
+    steps=protocol.get("steps")
+    if not isinstance(steps,list) or len(steps)<2: errors.append("technical_protocol.steps requiere al menos dos pasos")
+    else:
+        for index,item in enumerate(steps,1):
+            if not isinstance(item,dict): errors.append(f"technical_protocol.steps[{index}] debe ser un objeto"); continue
+            for field in ("title","procedure","landmarks","interpretation"):
+                validate_public_text(item.get(field),f"technical_protocol.steps[{index}].{field}",errors)
+    cautions=protocol.get("cautions")
+    if not isinstance(cautions,list) or not cautions: errors.append("technical_protocol.cautions requiere al menos una cautela")
+    else:
+        for index,item in enumerate(cautions,1):
+            validate_public_text(item,f"technical_protocol.cautions[{index}]",errors)
+
+def validate_visual_assets(a, errors):
+    assets=a.get("visual_assets")
+    if assets is None:return
+    if not isinstance(assets,list): errors.append("visual_assets debe ser una lista"); return
+    ids=[]
+    required={"id","kind","role","file","width","height","source_type","source_url","creator","rights_basis","attribution","modified","alt","caption","clinical_limit","contains_identifiable_person","consent_status","license_reviewed_at"}
+    for index,item in enumerate(assets,1):
+        location=f"visual_assets[{index}]"
+        if not isinstance(item,dict): errors.append(f"{location} debe ser un objeto"); continue
+        missing=required-set(item)
+        if missing: errors.append(f"{location}: faltan {', '.join(sorted(missing))}"); continue
+        asset_id=item.get("id","")
+        ids.append(asset_id.casefold())
+        if not re.fullmatch(r"[a-z0-9-]+",asset_id): errors.append(f"{location}.id debe ser canónico")
+        if item.get("kind") not in VISUAL_KINDS: errors.append(f"{location}.kind no permitido")
+        if item.get("role") not in VISUAL_ROLES: errors.append(f"{location}.role no permitido")
+        if item.get("source_type") not in VISUAL_SOURCE_TYPES: errors.append(f"{location}.source_type no permitido")
+        rights=item.get("rights_basis")
+        if rights not in VISUAL_RIGHTS: errors.append(f"{location}.rights_basis bloqueado o desconocido")
+        file_path=item.get("file","")
+        expected_prefix=f"assets/articles/{a.get('slug','')}/"
+        if not file_path.startswith(expected_prefix) or not re.fullmatch(r"assets/articles/[a-z0-9-]+/[a-z0-9._-]+",file_path):
+            errors.append(f"{location}.file debe estar dentro de {expected_prefix}")
+        elif not (ROOT/file_path).is_file(): errors.append(f"{location}.file no existe")
+        for dimension in ("width","height"):
+            if not isinstance(item.get(dimension),int) or item[dimension] <= 0: errors.append(f"{location}.{dimension} debe ser un entero positivo")
+        for field in ("creator","attribution","alt","caption","clinical_limit"):
+            validate_public_text(item.get(field),f"{location}.{field}",errors)
+        if not 20 <= len(item.get("alt","")) <= 240: errors.append(f"{location}.alt debe tener 20–240 caracteres")
+        if not re.fullmatch(r"https?://[^\s]+",item.get("source_url","")): errors.append(f"{location}.source_url debe ser una URL verificable")
+        license_url=item.get("license_url","")
+        license_patterns={
+            "cc0":r"https://creativecommons\.org/publicdomain/zero/[0-9.]+/?",
+            "cc_by":r"https://creativecommons\.org/licenses/by/[0-9.]+/?",
+            "cc_by_sa":r"https://creativecommons\.org/licenses/by-sa/[0-9.]+/?",
+        }
+        if rights in license_patterns and not re.fullmatch(license_patterns[rights],license_url):
+            errors.append(f"{location}.license_url no coincide con rights_basis {rights}")
+        if rights == "written_permission" and not item.get("permission_reference"):
+            errors.append(f"{location} requiere permission_reference interno")
+        if item.get("source_type") == "article_figure" and not item.get("figure_reference"):
+            errors.append(f"{location} requiere figure_reference")
+        if item.get("source_type") == "fisiologico_original" and rights != "fisiologico_original":
+            errors.append(f"{location}: una creación propia debe usar rights_basis fisiologico_original")
+        if item.get("modified") is True:
+            validate_public_text(item.get("modifications"),f"{location}.modifications",errors)
+            if rights == "cc_by_sa" and item.get("adaptation_license_url") != license_url:
+                errors.append(f"{location}: una adaptación CC BY-SA debe conservar la misma licencia")
+        elif item.get("modifications"):
+            errors.append(f"{location}.modifications solo procede si modified es true")
+        if item.get("contains_identifiable_person") is True:
+            if item.get("consent_status") != "documented" or not item.get("consent_reference"):
+                errors.append(f"{location}: contenido identificable exige consentimiento documentado y referencia interna")
+        elif item.get("consent_status") != "not_applicable":
+            errors.append(f"{location}.consent_status debe ser not_applicable cuando no hay una persona identificable")
+        try: date.fromisoformat(item.get("license_reviewed_at",""))
+        except ValueError: errors.append(f"{location}.license_reviewed_at debe usar YYYY-MM-DD")
+    if len(ids)!=len(set(ids)): errors.append("visual_assets no puede repetir identificadores")
+
+def validate_visual_review(a, errors):
+    review=a.get("review",{})
+    try: requires_review=date.fromisoformat(review.get("updated_at","")) >= VISUAL_REVIEW_START
+    except ValueError: requires_review=False
+    visual_review=a.get("visual_review")
+    if visual_review is None:
+        if requires_review: errors.append("visual_review es obligatorio en artículos nuevos o actualizados desde 2026-07-26")
+        return
+    if not isinstance(visual_review,dict): errors.append("visual_review debe ser un objeto"); return
+    required={"status","checked_at","decision_reason","official_sources","candidates"}
+    missing=required-set(visual_review)
+    if missing: errors.append(f"visual_review: faltan {', '.join(sorted(missing))}"); return
+    status=visual_review.get("status")
+    if status not in VISUAL_REVIEW_STATUSES: errors.append("visual_review.status no permitido")
+    reason=visual_review.get("decision_reason","")
+    if not isinstance(reason,str) or len(reason.strip())<20: errors.append("visual_review.decision_reason requiere una decisión explícita")
+    try:
+        checked_at=date.fromisoformat(visual_review.get("checked_at",""))
+        updated_at=date.fromisoformat(review.get("updated_at",""))
+        if checked_at > updated_at: errors.append("visual_review.checked_at no puede ser posterior a review.updated_at")
+    except ValueError: errors.append("visual_review.checked_at debe usar YYYY-MM-DD")
+    sources=visual_review.get("official_sources")
+    if not isinstance(sources,list): errors.append("visual_review.official_sources debe ser una lista"); sources=[]
+    if status != "not_applicable" and not sources: errors.append("visual_review requiere al menos una fuente oficial")
+    for index,source in enumerate(sources,1):
+        location=f"visual_review.official_sources[{index}]"
+        if not isinstance(source,dict): errors.append(f"{location} debe ser un objeto"); continue
+        if source.get("type") not in VISUAL_EVIDENCE_TYPES: errors.append(f"{location}.type no permitido")
+        if not re.fullmatch(r"https?://[^\s]+",source.get("url","")): errors.append(f"{location}.url debe ser verificable")
+        if len(source.get("evidence","").strip())<10: errors.append(f"{location}.evidence requiere evidencia concreta")
+    candidates=visual_review.get("candidates")
+    if not isinstance(candidates,list): errors.append("visual_review.candidates debe ser una lista"); candidates=[]
+    used=[]
+    for index,candidate in enumerate(candidates,1):
+        location=f"visual_review.candidates[{index}]"
+        if not isinstance(candidate,dict): errors.append(f"{location} debe ser un objeto"); continue
+        for field in ("figure_reference","utility","rationale"):
+            if not isinstance(candidate.get(field),str) or not candidate[field].strip(): errors.append(f"{location}.{field} es obligatorio")
+        rights_status=candidate.get("rights_status")
+        decision=candidate.get("decision")
+        if rights_status not in {"approved","rejected","uncertain"}: errors.append(f"{location}.rights_status no permitido")
+        if decision not in {"use","omit"}: errors.append(f"{location}.decision no permitido")
+        if decision == "use":
+            used.append(candidate.get("figure_reference"))
+            if rights_status != "approved": errors.append(f"{location}: solo una figura approved puede utilizarse")
+    assets=a.get("visual_assets",[])
+    asset_refs={item.get("figure_reference") for item in assets if isinstance(item,dict)}
+    if status == "approved_and_used":
+        if not assets or not used: errors.append("visual_review approved_and_used exige figuras aprobadas en visual_assets")
+        for reference in used:
+            if reference not in asset_refs: errors.append(f"visual_review: la figura usada {reference!r} no está registrada en visual_assets")
+    elif assets:
+        errors.append(f"visual_review.status {status} no permite visual_assets")
+    if status in {"checked_no_usable_rights","checked_not_useful"} and not candidates:
+        errors.append(f"visual_review.status {status} requiere registrar figuras candidatas")
+
 def validate_v2(a, errors, is_migrated):
     history=a.get("rubric_history",{})
     if not isinstance(history,dict): errors.append("rubric_history debe ser un objeto")
@@ -155,6 +307,9 @@ def validate(path):
             if not low <= len(card.get(field,"")) <= high: errors.append(f"card.{field} debe tener {low}–{high} caracteres")
     validate_intervention_protocol(a,errors)
     validate_measurement_battery(a,errors)
+    validate_technical_protocol(a,errors)
+    validate_visual_assets(a,errors)
+    validate_visual_review(a,errors)
     is_migrated=a.get("review",{}).get("status","").startswith("migrado_")
     validate_v2(a,errors,is_migrated)
     placeholder="No informado de forma separada en el análisis histórico."
