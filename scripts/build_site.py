@@ -293,6 +293,21 @@ def scientific_visuals(a):
     return '<a href="#figuras">Imágenes</a>', section
 
 
+def related_sources(a):
+    sources = a.get("related_sources") or []
+    if not sources:
+        return ""
+    links = "".join(
+        f'<li><a href="{esc(item["url"])}" target="_blank" rel="noopener noreferrer">{esc(item["label"])}</a></li>'
+        for item in sources
+    )
+    return (
+        '<section class="related-sources" aria-labelledby="fuentes-relacionadas">'
+        '<p class="section-label">Fuente del dato</p><h2 id="fuentes-relacionadas">Estudios citados en esta ficha</h2>'
+        f'<ul>{links}</ul></section>'
+    )
+
+
 def build_article(a, site, articles):
     score = public_score(a)
     _, design_label = design_group(a)
@@ -318,10 +333,11 @@ def build_article(a, site, articles):
     measurement_nav, measurement_section = measurement_battery(a)
     technical_nav, technical_section = technical_protocol(a)
     visuals_nav, visuals_section = scientific_visuals(a)
+    related_sources_section = related_sources(a)
     body = f'''<article class="article-page"><header class="article-hero"><div class="shell article-header"><nav class="breadcrumbs" aria-label="Migas de pan"><a href="../">Repositorio</a><span>›</span><a href="../categorias/{esc(a['category'])}.html">{esc(a['category_name'])}</a></nav><p class="section-label light">Análisis crítico · {esc(a['category_name'])}</p><h1>{esc(a['title_es'])}</h1><p class="original-study-title"><span>Título original</span><span lang="en">{esc(a['title'])}</span></p><dl class="article-facts"><div><dt>Diseño</dt><dd>{esc(design_label)}</dd></div><div><dt>Población</dt><dd>{esc(a['population'])}</dd></div><div><dt>Año</dt><dd>{a['year']}</dd></div><div class="fact-score"><dt>Índice editorial</dt><dd><strong>{score}</strong> / 30</dd></div></dl><div class="article-source-actions">{source_links}</div><p class="article-citation">{esc(a['citation'])}</p></div></header>
 <div class="reading-signature" aria-label="Estructura de lectura crítica"><div class="shell"><p><span>Observado</span><strong>{esc(outcome)}</strong></p><p><span>Límite</span><strong>{esc(a['limitations'][0])}</strong></p><p><span>Aplicabilidad</span><strong>Interpretación clínica, no receta terapéutica</strong></p></div></div>
 <div class="shell article-layout"><aside class="evidence-rail"><p class="section-label">En esta ficha</p><nav aria-label="Contenido del análisis"><a href="#respuesta">Respuesta corta</a><a href="#resultados">Resultados e interpretación</a>{visuals_nav}{technical_nav}{measurement_nav}{protocol_nav}<a href="#transferencia">Aplicabilidad clínica</a><a href="#limites">Límites</a><a href="#poblacion">Población</a><a href="#fuente">Fuente original</a></nav><div class="rail-source"><span>Fuente verificada</span><strong>PubMed · PMID {esc(a['source']['pmid'])}</strong><small>Revisión: {esc(a['review']['updated_at'])}</small></div></aside>
-<div class="article-body"><section class="clinical-answer" id="respuesta"><p class="section-label">Respuesta clínica corta</p><h2>{esc(answer_heading)}</h2><p class="answer-lead">{esc(answer_lead)}</p>{key_data}{answer_context}</section><section id="resultados"><p class="section-label">Observado</p><h2>Qué encontró y cómo interpretarlo</h2>{paragraphs(a['critical_analysis'])}</section>{visuals_section}{technical_section}{measurement_section}{protocol_section}<section class="application" id="transferencia"><p class="section-label">Aplicabilidad</p><h2>Qué significa clínicamente</h2>{paragraphs(a['clinical_application'])}</section><section class="limits" id="limites"><p class="section-label">Límite</p><h2>Qué no permite afirmar</h2>{paragraphs(a['limitations'])}</section><section class="population-context" id="poblacion"><p class="section-label">Contexto</p><h2>¿Se parece a tu paciente?</h2><dl><div><dt>Población estudiada</dt><dd>{esc(a['population'])}</dd></div><div><dt>Diseño</dt><dd>{esc(a['study_design'])}</dd></div><div><dt>Resultado evaluado</dt><dd>{esc(outcome)}</dd></div></dl></section><section class="source-panel" id="fuente"><p class="section-label">Fuente primaria</p><h2>Lee el estudio, no solo nuestro análisis</h2><p>{esc(a['citation'])}</p><div>{source_links}</div></section>{editorial_responsibility(site, a['review']['updated_at'], a['review']['conflicts'])}{related_section}</div></div></article>'''
+<div class="article-body"><section class="clinical-answer" id="respuesta"><p class="section-label">Respuesta clínica corta</p><h2>{esc(answer_heading)}</h2><p class="answer-lead">{esc(answer_lead)}</p>{key_data}{answer_context}</section><section id="resultados"><p class="section-label">Observado</p><h2>Qué encontró y cómo interpretarlo</h2>{paragraphs(a['critical_analysis'])}</section>{visuals_section}{technical_section}{measurement_section}{protocol_section}<section class="application" id="transferencia"><p class="section-label">Aplicabilidad</p><h2>Qué significa clínicamente</h2>{paragraphs(a['clinical_application'])}</section><section class="limits" id="limites"><p class="section-label">Límite</p><h2>Qué no permite afirmar</h2>{paragraphs(a['limitations'])}</section><section class="population-context" id="poblacion"><p class="section-label">Contexto</p><h2>¿Se parece a tu paciente?</h2><dl><div><dt>Población estudiada</dt><dd>{esc(a['population'])}</dd></div><div><dt>Diseño</dt><dd>{esc(a['study_design'])}</dd></div><div><dt>Resultado evaluado</dt><dd>{esc(outcome)}</dd></div></dl></section>{related_sources_section}<section class="source-panel" id="fuente"><p class="section-label">Fuente primaria</p><h2>Lee el estudio, no solo nuestro análisis</h2><p>{esc(a['citation'])}</p><div>{source_links}</div></section>{editorial_responsibility(site, a['review']['updated_at'], a['review']['conflicts'])}{related_section}</div></div></article>'''
     target = OUTPUT / "articulos" / f"{a['slug']}.html"
     description = a.get("seo",{}).get("description", a["clinical_takeaway"])
     if description.startswith("Juicio integrador y crítico"):
