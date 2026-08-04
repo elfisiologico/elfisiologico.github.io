@@ -315,9 +315,25 @@ def build_article(a, site, articles):
     source_links = f'<a class="source-button primary" href="{esc(a["source"]["original_url"])}" target="_blank" rel="noopener noreferrer">Abrir artículo original</a><a class="source-button" href="{esc(a["source"]["pubmed_url"])}" target="_blank" rel="noopener noreferrer">Ver en PubMed · PMID {esc(a["source"]["pmid"])}</a>'
     canonical_path = f"/repositorio/articulos/{a['slug']}.html"
     author_url = f"{site['domain']}/sobre-fran/"
-    related = [item for item in articles if item["category"] == a["category"] and item["slug"] != a["slug"]][:3]
-    related_html = "".join(f'<li><a href="{esc(item["slug"])}.html">{esc(item["title_es"])}</a><span>{public_score(item)}/30</span></li>' for item in related)
-    related_section = f'<section class="related-articles"><p class="section-label">Sigue explorando</p><h2>Otros análisis sobre {esc(a["category_name"])}</h2><ul>{related_html}</ul><a href="../categorias/{esc(a["category"])}.html">Explorar evidencia sobre {esc(a["category_name"])} →</a></section>' if related else ""
+    article_by_slug = {item["slug"]: item for item in articles}
+    explicit_related = a.get("related_articles") or []
+    related = [
+        (article_by_slug[link["slug"]], link["reason"])
+        for link in explicit_related
+        if link["slug"] in article_by_slug and link["slug"] != a["slug"]
+    ]
+    if not related:
+        related = [
+            (item, f'Más evidencia sobre {a["category_name"]}.')
+            for item in articles
+            if item["category"] == a["category"] and item["slug"] != a["slug"]
+        ][:3]
+    related_html = "".join(
+        f'<li><div><a href="{esc(item["slug"])}.html">{esc(item["title_es"])}</a>'
+        f'<small>{esc(reason)}</small></div><span>{public_score(item)}/30</span></li>'
+        for item, reason in related
+    )
+    related_section = f'<section class="related-articles"><p class="section-label">Sigue explorando</p><h2>Artículos relacionados</h2><ul>{related_html}</ul><a href="../categorias/{esc(a["category"])}.html">Explorar evidencia sobre {esc(a["category_name"])} →</a></section>' if related else ""
     article_images = [f"{site['domain']}/{item['file']}" for item in a.get("visual_assets", [])]
     primary_image = article_images[0] if article_images else f"{site['domain']}{OG_IMAGE}"
     article_json = {"@context": "https://schema.org", "@graph": [

@@ -310,6 +310,31 @@ def validate(path):
     validate_technical_protocol(a,errors)
     validate_visual_assets(a,errors)
     validate_visual_review(a,errors)
+    related_articles=a.get("related_articles",[])
+    if not isinstance(related_articles,list):
+        errors.append("related_articles debe ser una lista")
+    elif len(related_articles)>6:
+        errors.append("related_articles admite un máximo de seis enlaces")
+    else:
+        related_slugs=[]
+        for index,item in enumerate(related_articles,1):
+            location=f"related_articles[{index}]"
+            if not isinstance(item,dict):
+                errors.append(f"{location} debe ser un objeto"); continue
+            slug=item.get("slug","")
+            reason=item.get("reason","")
+            if not re.fullmatch(r"[a-z0-9-]+",slug): errors.append(f"{location}.slug no es canónico")
+            if slug==a["slug"]: errors.append(f"{location} no puede enlazar la propia ficha")
+            if not 20<=len(reason)<=140: errors.append(f"{location}.reason debe tener 20–140 caracteres")
+            target=ROOT/"content/articles"/f"{slug}.json"
+            if slug and not target.exists():
+                errors.append(f"{location} apunta a una ficha inexistente: {slug}")
+            elif slug:
+                target_data=json.loads(target.read_text(encoding="utf-8"))
+                backlinks={link.get("slug") for link in target_data.get("related_articles",[]) if isinstance(link,dict)}
+                if a["slug"] not in backlinks: errors.append(f"{location} requiere enlace recíproco desde {slug}")
+            related_slugs.append(slug)
+        if len(related_slugs)!=len(set(related_slugs)): errors.append("related_articles contiene enlaces repetidos")
     is_migrated=a.get("review",{}).get("status","").startswith("migrado_")
     validate_v2(a,errors,is_migrated)
     placeholder="No informado de forma separada en el análisis histórico."
