@@ -146,7 +146,7 @@
 .thinking-brand{font:800 1.35rem "Manrope",sans-serif;text-decoration:none}.thinking-brand span{color:var(--yellow)}
 .thinking-nav nav{display:flex;align-items:center;gap:28px}.thinking-nav nav a{color:#c4c6cb;text-decoration:none;font-size:.9rem}.thinking-nav nav a[aria-current="page"]{color:var(--yellow)}
 .thinking-hero{position:relative;overflow:hidden;padding:110px 0 100px;background:#000;color:#fff}
-.thinking-hero:after{content:"";position:absolute;left:0;right:0;top:51%;height:8px;background:var(--yellow);transform:rotate(-1.2deg);transform-origin:center}
+.thinking-hero:after{content:"";position:absolute;left:0;right:0;top:51%;height:8px;background:var(--yellow)}
 .thinking-hero-inner{position:relative;z-index:1}
 .thinking-kicker{color:#b8bbc1;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:700}
 .thinking-hero h1{display:inline-block;position:relative;margin:18px 0 28px;padding-right:.12em;background:#000;font-size:clamp(4.6rem,12vw,10.5rem);line-height:.82}
