@@ -23,3 +23,7 @@ python3 scripts/submit_indexnow.py --all --dry-run
 La navegación pública se organiza por audiencias: `patients/` para pacientes y `profesionales/` como entrada a evidencia, instrumentos y pruebas clínicas.
 
 La auditoría AEO/GEO comprueba rastreadores de búsqueda con IA, disponibilidad de snippets, contenido citable, entidades, fechas, fuentes y consistencia de JSON-LD. La opción `--live` valida además que producción no redirige fuera del dominio canónico y entrega los archivos y schemas esperados a los bots. Tras publicar cambios relevantes, `submit_indexnow.py --all` notifica el sitemap a los motores compatibles; el modo `--dry-run` valida la carga sin enviarla.
+
+## Reservas online
+
+La web incluye una agenda para consultas por Google Meet en `cita-online/` y un backend de Supabase Edge Functions en `supabase/`. Se entrega desactivada hasta configurar calendario, horarios, credenciales y privacidad. Consulta [la guía de activación](docs/reservas-online.md).

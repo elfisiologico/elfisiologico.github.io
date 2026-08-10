@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">FisioLógico Campus</title>
+  <desc id="desc">Logo oficial de FisioLógico acompañado por el descriptor Campus.</desc>
+  <defs>
+    <clipPath id="wordmarkCrop">
+      <rect x="62" y="48" width="500" height="264"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="32" fill="#000000"/>
+
+  <!-- El wordmark original se conserva intacto; solo se recorta su margen negro. -->
+  <g clip-path="url(#wordmarkCrop)">
+    <image href="logo-fisiologico-horizontal.png"
+           x="-1328" y="-33" width="2090" height="418"
+           preserveAspectRatio="none"/>
+  </g>
+
+  <rect x="610" y="72" width="3" height="216" rx="1.5" fill="#FFC400"/>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="674" y="202" fill="#FFFFFF" font-size="92" font-weight="700" letter-spacing="8">CAMPUS</text>
+    <text x="681" y="254" fill="#FFC400" font-size="23" font-weight="600" letter-spacing="10">FORMACIÓN ONLINE</text>
+  </g>
+</svg>

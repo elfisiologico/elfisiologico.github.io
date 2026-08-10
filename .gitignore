@@ -24,6 +24,7 @@ output/playwright/
 /tmp/
 /_site/
 /output/
+/outputs/
 
 # Estado local de Supabase: puede contener referencias de proyecto y URLs de conexión
 /supabase/.temp/

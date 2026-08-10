@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">FisioLógico Campus</title>
+  <desc id="desc">Aplicación cuadrada del logo oficial de FisioLógico para el Campus.</desc>
+  <rect width="512" height="512" rx="64" fill="#000000"/>
+
+  <!-- Marca original, sin reinterpretaciones gráficas. -->
+  <image href="logo-fisiologico-cuadrado.png"
+         x="34" y="12" width="444" height="444"/>
+
+  <rect x="95" y="412" width="322" height="2" fill="#FFC400"/>
+  <text x="256" y="462" text-anchor="middle"
+        fill="#FFFFFF" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="600" letter-spacing="12">CAMPUS</text>
+</svg>

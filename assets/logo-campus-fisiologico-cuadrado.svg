@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Campus FisioLógico</title>
+  <desc id="desc">Versión cuadrada del logo del Campus de FisioLógico.</desc>
+  <rect width="512" height="512" rx="72" fill="#050505"/>
+
+  <!-- Libro abierto -->
+  <g transform="translate(106 70)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 35c46-17 89-10 138 21v168c-49-31-92-38-138-21z" stroke="#FFFFFF" stroke-width="15"/>
+    <path d="M288 35c-46-17-89-10-138 21v168c49-31 92-38 138-21z" stroke="#FFC400" stroke-width="15"/>
+    <path d="M150 56v168" stroke="#FFC400" stroke-width="15"/>
+    <path d="M48 92c27-4 51 1 73 13M48 133c27-4 51 1 73 13" stroke="#FFFFFF" stroke-width="10" opacity=".72"/>
+    <path d="M252 92c-27-4-51 1-73 13M252 133c-27-4-51 1-73 13" stroke="#FFC400" stroke-width="10" opacity=".82"/>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="256" y="365" fill="#FFFFFF" font-size="62" font-weight="700" letter-spacing="-2">Fisio<tspan fill="#FFC400">Lógico</tspan></text>
+    <text x="256" y="421" fill="#FFFFFF" font-size="25" font-weight="600" letter-spacing="8">CAMPUS</text>
+    <rect x="125" y="445" width="262" height="7" rx="3.5" fill="#FFC400"/>
+  </g>
+</svg>

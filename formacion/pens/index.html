@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presentación docente sobre PENS en fisioterapia: fundamentos, evidencia, seguridad, dosificación y transferencia clínica.">
+  <title>PENS en fisioterapia · FisioLógico</title>
+  <link rel="icon" href="../../assets/logo-fisiologico-cuadrado.png">
+  <style>
+    :root { --black:#070707; --panel:#131416; --paper:#f4f6f7; --white:#fff; --ink:#17191d; --muted:#68717a; --line:#d5dbe0; --yellow:#f6c744; --yellow-soft:#fff4c9; --teal:#2d6f63; --teal-soft:#e4f2ef; --blue:#48657b; --blue-soft:#e9f0f5; --red:#b33a37; --radius:18px; --ease:cubic-bezier(.22,1,.36,1); }
+    * { box-sizing:border-box; }
+    html { min-height:100%; background:var(--black); }
+    body { display:grid; min-height:100dvh; margin:0; place-items:center; overflow:hidden; background:var(--black); color:var(--white); font-family:"DM Sans","Avenir Next",Avenir,Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    button { font:inherit; }
+    .deck { position:relative; width:min(100vw,177.7778dvh); height:min(100dvh,56.25vw); min-height:0; aspect-ratio:16 / 9; overflow:hidden; box-shadow:0 22px 70px rgba(0,0,0,.45); }
+    .slide { position:absolute; inset:0; display:grid; grid-template-rows:auto 1fr auto; padding:clamp(30px,4.2vw,62px) clamp(52px,6vw,104px) clamp(24px,3vw,42px); background:var(--paper); color:var(--ink); opacity:0; visibility:hidden; transform:translateX(3%); transition:opacity .48s var(--ease),transform .58s var(--ease),visibility .58s; }
+    .slide.dark { background:var(--black); color:var(--white); }
+    .slide.yellow { background:var(--yellow); color:#0a0a0a; }
+    .slide.teal { background:var(--teal-soft); }
+    .slide.active { opacity:1; visibility:visible; transform:none; }
+    .slide-inner { width:min(1320px,100%); margin:auto; min-height:0; }
+    .topline { display:flex; align-items:center; justify-content:space-between; gap:20px; font-size:clamp(10px,.9vw,13px); font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    .topline .brand { display:block; width:clamp(104px,8vw,138px); height:clamp(58px,4.2vw,72px); overflow:visible; flex:0 0 auto; }
+    .brand-logo { display:block; width:100%; height:100%; object-fit:contain; object-position:left center; }
+    .brand-mark { display:none; }
+    .slide.dark .topline { color:#aeb3ba; }
+    .kicker { margin:0; color:var(--teal); font-size:clamp(11px,1vw,14px); font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+    .dark .kicker { color:var(--yellow); }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2,h3 { font-family:"Manrope","Avenir Next",Arial,sans-serif; letter-spacing:-.055em; line-height:.94; }
+    h1 { max-width:1050px; margin:clamp(20px,3vw,42px) 0 0; font-size:clamp(54px,8.7vw,148px); }
+    h1 em,h2 em { color:var(--yellow); font-style:normal; }
+    .yellow h1 em { color:var(--ink); }
+    h2 { max-width:1080px; margin:0; font-size:clamp(40px,5.7vw,96px); }
+    h3 { margin:0; font-size:clamp(20px,2vw,33px); }
+    .lead { max-width:820px; margin:clamp(22px,3vw,40px) 0 0; color:#c3c8ce; font-size:clamp(18px,1.65vw,28px); line-height:1.5; }
+    .light-lead { color:var(--muted); }
+    .grid { display:grid; gap:clamp(18px,2.5vw,42px); }
+    .two { grid-template-columns:1.15fr .85fr; align-items:end; }
+    .three { grid-template-columns:repeat(3,1fr); }
+    .four { grid-template-columns:repeat(4,1fr); }
+    .center { align-self:center; }
+    .hero { position:relative; overflow:hidden; }
+    .hero:before { content:""; position:absolute; z-index:1; top:22%; left:-42%; width:58%; height:2px; background:linear-gradient(90deg,transparent,var(--yellow),transparent); opacity:0; transform:rotate(-16deg); }
+    .hero:after { content:""; position:absolute; right:-12vw; bottom:-35vw; width:62vw; height:62vw; border:1px solid #303236; border-radius:50%; box-shadow:0 0 0 8vw var(--black),0 0 0 calc(8vw + 1px) #303236; pointer-events:none; }
+    .hero .slide-inner { position:relative; z-index:1; }
+    .hero-aside { align-self:end; padding:30px 0 0 30px; border-top:5px solid var(--yellow); }
+    .hero-aside span,.label { display:block; margin-bottom:16px; color:#9198a1; font-size:clamp(10px,.85vw,13px); font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+    .hero-aside strong { display:block; max-width:430px; font:700 clamp(24px,2.3vw,38px)/1.18 "Manrope",Arial,sans-serif; letter-spacing:-.045em; }
+    .footer { display:flex; align-items:center; justify-content:space-between; gap:18px; padding-right:160px; color:var(--muted); font-size:clamp(11px,.9vw,14px); }
+    .dark .footer { color:#858b94; }
+    .footer strong { color:inherit; }
+    .progress { width:min(280px,26vw); height:3px; overflow:hidden; background:currentColor; opacity:.22; }
+    .progress span { display:block; width:var(--progress); height:100%; background:var(--yellow); opacity:1; transition:width .45s var(--ease); }
+    .slide-number { font-variant-numeric:tabular-nums; }
+    .statement { align-self:center; max-width:1120px; }
+    .statement h2 { font-size:clamp(46px,6.4vw,108px); }
+    .statement p { max-width:760px; margin:30px 0 0; color:var(--muted); font-size:clamp(18px,1.65vw,27px); line-height:1.55; }
+    .statement .rule { width:86px; height:5px; margin-bottom:28px; background:var(--yellow); }
+    .card { min-height:100%; padding:clamp(20px,2.1vw,34px); border:1px solid var(--line); background:var(--white); }
+    .dark .card { border-color:#36383d; background:#121315; }
+    .card p { margin:13px 0 0; color:var(--muted); font-size:clamp(14px,1.1vw,18px); line-height:1.5; }
+    .dark .card p { color:#b8bdc4; }
+    .card .index { display:block; margin-bottom:clamp(36px,5vh,74px); color:var(--teal); font-size:13px; font-weight:800; letter-spacing:.12em; }
+    .dark .card .index { color:var(--yellow); }
+    .bad { border-top:5px solid var(--red); }
+    .good { border-top:5px solid var(--teal); }
+    .warn { border-top:5px solid var(--yellow); }
+    .definition h2 { max-width:1200px; font-size:clamp(44px,5vw,86px); }
+    .comparison { align-self:center; grid-template-columns:.82fr 1.02fr 1.04fr 1.48fr 1.02fr 1.14fr; border-top:1px solid #36383d; border-left:1px solid #36383d; }
+    .comparison article { display:flex; min-width:0; min-height:clamp(275px,29vh,330px); flex-direction:column; padding:clamp(20px,1.65vw,30px); border-right:1px solid #36383d; border-bottom:1px solid #36383d; }
+    .comparison h3 { margin:clamp(20px,2.8vh,34px) 0 0; font-size:clamp(18px,1.55vw,27px); word-spacing:.08em; }
+    .comparison p { margin:14px 0 0; color:#b8bdc4; font-size:clamp(13px,.95vw,16px); line-height:1.48; }
+    .comparison .tag { color:var(--yellow); font-size:11px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    .diagram { position:relative; align-self:center; min-height:400px; display:grid; place-items:center; }
+    .orbit { position:absolute; border:1px solid var(--line); border-radius:50%; }
+    .orbit.one { width:min(54vw,640px); aspect-ratio:1; }
+    .orbit.two { width:min(39vw,465px); aspect-ratio:1; }
+    .orbit.three { width:min(24vw,290px); aspect-ratio:1; }
+    .node { position:relative; z-index:1; display:grid; place-items:center; width:170px; aspect-ratio:1; border-radius:50%; background:var(--black); color:var(--white); text-align:center; font:800 22px/1.08 "Manrope",Arial,sans-serif; letter-spacing:-.04em; }
+    .mechanism-list { display:grid; gap:0; align-self:center; }
+    .mechanism-list div { display:grid; grid-template-columns:70px 1fr 1.05fr; gap:20px; padding:17px 0; border-top:1px solid var(--line); }
+    .mechanism-list div:last-child { border-bottom:1px solid var(--line); }
+    .mechanism-list span { color:var(--teal); font-size:12px; font-weight:800; letter-spacing:.12em; }
+    .mechanism-list strong { font:700 clamp(18px,1.55vw,25px)/1.15 "Manrope",Arial,sans-serif; letter-spacing:-.035em; }
+    .mechanism-list p { margin:0; color:var(--muted); font-size:clamp(13px,1.05vw,17px); line-height:1.45; }
+    .inference-ladder { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1px; align-self:center; margin-top:clamp(22px,3vh,34px); background:var(--line); border:1px solid var(--line); }
+    .inference-ladder article { display:flex; min-height:clamp(205px,25vh,270px); flex-direction:column; padding:clamp(17px,1.8vw,27px); background:var(--white); }
+    .inference-ladder span { color:var(--teal); font-size:12px; font-weight:800; letter-spacing:.12em; }
+    .inference-ladder h3 { margin:clamp(34px,5vh,58px) 0 0; font-size:clamp(19px,1.65vw,28px); }
+    .inference-ladder p { margin:auto 0 0; color:var(--muted); font-size:clamp(12px,.92vw,15px); line-height:1.42; }
+    .formula { align-self:center; display:grid; grid-template-columns:1fr auto 1fr auto 1fr; align-items:end; gap:clamp(18px,2.4vw,42px); max-width:780px; margin:clamp(22px,4vh,48px) auto 0; text-align:center; }
+    .formula > div { min-width:0; }
+    .formula > div > b { display:block; font:800 clamp(72px,7.3vw,122px)/.8 "Manrope",Arial,sans-serif; letter-spacing:-.08em; }
+    .formula .operator { padding-bottom:clamp(22px,2.4vw,36px); color:var(--yellow); font:800 clamp(46px,4.4vw,74px)/1 "Manrope",Arial,sans-serif; }
+    .formula .explain { margin-top:24px; color:#b8bdc4; font-size:clamp(14px,1.15vw,18px); line-height:1.25; white-space:nowrap; }
+    .dose-callout { max-width:1100px; margin:clamp(28px,4vh,48px) auto 0; padding:clamp(28px,3vw,48px) clamp(32px,4vw,64px); border-left:7px solid var(--yellow); background:#111214; }
+    .dose-callout p { max-width:900px; margin:0; font:700 clamp(36px,4.3vw,70px)/1.02 "Manrope",Arial,sans-serif; letter-spacing:-.055em; }
+    .dose-callout em { color:var(--yellow); font-style:normal; }
+    .dose-callout small { display:block; max-width:880px; margin-top:18px; color:#b8bdc4; font-size:clamp(14px,1.15vw,18px); line-height:1.45; }
+    .callout { align-self:center; padding:clamp(30px,4vw,68px); border-left:8px solid var(--yellow); background:#111214; }
+    .callout p { max-width:1050px; margin:0; font:700 clamp(32px,4.8vw,82px)/1.06 "Manrope",Arial,sans-serif; letter-spacing:-.05em; }
+    .callout small { display:block; margin-top:24px; color:#b8bdc4; font-size:clamp(14px,1.2vw,19px); line-height:1.5; }
+    .evidence { align-self:center; grid-template-columns:.82fr 1.18fr; }
+    .evidence-score { padding:clamp(25px,3vw,54px); background:var(--yellow); color:#111; }
+    .evidence-score .big { display:block; font:800 clamp(96px,13vw,220px)/.75 "Manrope",Arial,sans-serif; letter-spacing:-.1em; }
+    .evidence-score p { max-width:360px; margin:24px 0 0; font-size:clamp(16px,1.3vw,22px); line-height:1.35; }
+    .evidence-table { display:grid; gap:0; border-top:1px solid #36383d; }
+    .evidence-table div { display:grid; grid-template-columns:1.05fr .65fr 1.3fr; gap:18px; padding:16px 0; border-bottom:1px solid #36383d; }
+    .evidence-table span { color:#9299a2; font-size:12px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
+    .evidence-table strong { font:700 clamp(17px,1.4vw,23px)/1.2 "Manrope",Arial,sans-serif; letter-spacing:-.035em; }
+    .evidence-table p { margin:0; color:#c0c5cc; font-size:clamp(13px,1vw,16px); line-height:1.45; }
+    .matrix { align-self:center; grid-template-columns:repeat(3,1fr); }
+    .matrix .card { min-height:232px; }
+    .matrix .card:nth-child(1) { border-top:6px solid var(--yellow); }
+    .matrix .card:nth-child(2) { border-top:6px solid var(--teal); }
+    .matrix .card:nth-child(3) { border-top:6px solid #9ac7dc; }
+    .matrix .card:nth-child(4) { border-top:6px solid var(--red); }
+    .matrix .card:nth-child(5) { border-top:6px solid #8f76a9; }
+    .matrix .card:nth-child(6) { border-top:6px solid #777; }
+    .chain { align-self:center; display:grid; grid-template-columns:repeat(6,1fr); gap:0; border-left:1px solid var(--line); border-top:1px solid var(--line); }
+    .chain article { position:relative; min-height:300px; padding:25px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--white); }
+    .chain article:after { content:"→"; position:absolute; right:-14px; top:50%; z-index:2; display:grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--yellow); color:#111; transform:translateY(-50%); font-weight:800; }
+    .chain article:last-child:after { display:none; }
+    .chain span { display:block; margin-bottom:clamp(42px,6vh,82px); color:var(--teal); font-size:12px; font-weight:800; letter-spacing:.12em; }
+    .chain h3 { font-size:clamp(18px,1.65vw,28px); }
+    .chain p { margin:12px 0 0; color:var(--muted); font-size:clamp(13px,1vw,16px); line-height:1.45; }
+    .dose-grid { align-self:center; grid-template-columns:repeat(4,1fr); }
+    .dose-grid article { min-height:270px; padding:27px; border-top:5px solid var(--yellow); background:#121315; }
+    .dose-grid span { color:var(--yellow); font-size:12px; font-weight:800; letter-spacing:.12em; }
+    .dose-grid p { margin:15px 0 0; color:#bdc3ca; font-size:clamp(14px,1.1vw,17px); line-height:1.5; }
+    .safety { align-self:center; grid-template-columns:.9fr 1.1fr; }
+    .safety-panel { padding:clamp(28px,4vw,60px); background:#fff4c9; color:var(--ink); }
+    .safety-panel .stop { margin:0; color:var(--red); font:800 clamp(56px,7vw,116px)/.88 "Manrope",Arial,sans-serif; letter-spacing:-.08em; }
+    .safety-panel p { margin:20px 0 0; font-size:clamp(16px,1.3vw,22px); line-height:1.45; }
+    .safety-list { display:grid; gap:0; border-top:1px solid #36383d; }
+    .safety-list div { display:grid; grid-template-columns:190px 1fr; gap:20px; padding:17px 0; border-bottom:1px solid #36383d; }
+    .safety-list strong { color:var(--yellow); font-size:13px; letter-spacing:.11em; text-transform:uppercase; }
+    .safety-list p { margin:0; color:#c1c6cc; font-size:clamp(14px,1.1vw,18px); line-height:1.45; }
+    .checklist { align-self:center; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:#bfc7cd; border:1px solid #bfc7cd; }
+    .checklist article { min-height:255px; padding:30px; background:var(--paper); }
+    .checklist span { display:grid; place-items:center; width:42px; height:42px; margin-bottom:50px; border:2px solid var(--teal); border-radius:50%; color:var(--teal); font-weight:800; }
+    .checklist h3 { font-size:clamp(19px,1.7vw,27px); }
+    .checklist p { margin:12px 0 0; color:var(--muted); font-size:clamp(13px,1vw,16px); line-height:1.45; }
+    .case { align-self:center; grid-template-columns:1.15fr .85fr; }
+    .case-question { padding:clamp(28px,4vw,58px); background:var(--black); color:var(--white); }
+    .case-question h2 { font-size:clamp(38px,4.6vw,76px); }
+    .case-question p { max-width:700px; margin:26px 0 0; color:#c4c9d0; font-size:clamp(16px,1.35vw,21px); line-height:1.55; }
+    .case-options { display:grid; gap:1px; background:#bfc7cd; border:1px solid #bfc7cd; }
+    .case-options div { padding:20px 24px; background:var(--white); }
+    .case-options span { display:block; color:var(--teal); font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .case-options strong { display:block; margin-top:7px; font:700 clamp(17px,1.3vw,22px)/1.15 "Manrope",Arial,sans-serif; letter-spacing:-.035em; }
+    .summary { align-self:center; display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(25px,4vw,74px); }
+    .summary h2 { font-size:clamp(48px,6.1vw,102px); }
+    .summary-list { display:grid; gap:0; border-top:1px solid rgba(0,0,0,.35); }
+    .summary-list div { display:grid; grid-template-columns:46px 1fr; gap:18px; padding:18px 0; border-bottom:1px solid rgba(0,0,0,.35); }
+    .summary-list span { color:#5c4600; font-size:12px; font-weight:800; letter-spacing:.12em; }
+    .summary-list strong { font:700 clamp(18px,1.5vw,26px)/1.15 "Manrope",Arial,sans-serif; letter-spacing:-.04em; }
+    .sources { align-self:center; display:grid; grid-template-columns:1fr 1fr; gap:50px; }
+    .sources h2 { font-size:clamp(44px,5vw,84px); }
+    .sources ul { margin:0; padding:0; list-style:none; border-top:1px solid #36383d; }
+    .sources li { padding:13px 0; border-bottom:1px solid #36383d; color:#c2c7cd; font-size:clamp(13px,1vw,16px); line-height:1.4; }
+    .sources strong { color:var(--yellow); }
+    .controls { position:fixed; right:clamp(16px,2.4vw,40px); bottom:clamp(16px,2.4vw,34px); z-index:20; display:flex; gap:8px; }
+    .controls button { display:grid; place-items:center; width:46px; height:46px; border:1px solid rgba(255,255,255,.22); border-radius:50%; background:rgba(8,8,8,.88); color:#fff; cursor:pointer; transition:transform .2s var(--ease),background .2s; }
+    .controls button:hover { background:var(--yellow); color:#111; transform:translateY(-2px); }
+    .controls button:focus-visible,.slide:focus-visible { outline:3px solid var(--yellow); outline-offset:-5px; }
+    .hint { display:none; }
+    .notes { position:fixed; z-index:30; right:18px; bottom:76px; width:min(440px,calc(100vw - 36px)); max-height:55vh; overflow:auto; padding:24px; border:1px solid #3b3d42; background:#101114; color:#e6e8eb; box-shadow:0 20px 60px rgba(0,0,0,.45); font-size:14px; line-height:1.5; transform:translateY(16px); visibility:hidden; opacity:0; transition:.25s var(--ease); }
+    .notes.open { transform:none; visibility:visible; opacity:1; }
+    .notes h3 { margin-bottom:10px; color:var(--yellow); font-size:20px; }
+    .notes p { margin:0; }
+    @keyframes rise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+    @keyframes reveal-scale { from { opacity:0; transform:scale(.96); } to { opacity:1; transform:scale(1); } }
+    @keyframes signal-run { 0% { left:-42%; opacity:0; } 20% { opacity:1; } 100% { left:108%; opacity:0; } }
+    @keyframes orbit-breathe { from { transform:scale(.96) rotate(0deg); opacity:.55; } to { transform:scale(1.04) rotate(8deg); opacity:1; } }
+    @keyframes arrow-pulse { 0%,100% { transform:translateY(-50%) scale(1); } 50% { transform:translateY(-50%) scale(1.14); } }
+    .slide.active .topline { animation:rise .45s .04s both var(--ease); }
+    .slide.active .kicker { animation:rise .48s .13s both var(--ease); }
+    .slide.active h1,.slide.active h2 { animation:rise .62s .22s both var(--ease); }
+    .slide.active .lead,.slide.active .statement p,.slide.active .hero-aside { animation:rise .6s .39s both var(--ease); }
+    .slide.active .card,.slide.active .comparison article,.slide.active .inference-ladder article,.slide.active .chain article,.slide.active .checklist article,.slide.active .dose-grid article,.slide.active .evidence-score,.slide.active .evidence-table,.slide.active .safety-panel,.slide.active .safety-list,.slide.active .case-question,.slide.active .case-options,.slide.active .summary-list { animation:reveal-scale .55s both var(--ease); }
+    .slide.active .card:nth-child(2),.slide.active .comparison article:nth-child(2),.slide.active .inference-ladder article:nth-child(2),.slide.active .chain article:nth-child(2),.slide.active .checklist article:nth-child(2),.slide.active .dose-grid article:nth-child(2) { animation-delay:.1s; }
+    .slide.active .card:nth-child(3),.slide.active .comparison article:nth-child(3),.slide.active .inference-ladder article:nth-child(3),.slide.active .chain article:nth-child(3),.slide.active .checklist article:nth-child(3),.slide.active .dose-grid article:nth-child(3) { animation-delay:.2s; }
+    .slide.active .card:nth-child(4),.slide.active .comparison article:nth-child(4),.slide.active .inference-ladder article:nth-child(4),.slide.active .chain article:nth-child(4),.slide.active .checklist article:nth-child(4),.slide.active .dose-grid article:nth-child(4) { animation-delay:.3s; }
+    .slide.active .card:nth-child(5),.slide.active .comparison article:nth-child(5),.slide.active .inference-ladder article:nth-child(5),.slide.active .chain article:nth-child(5),.slide.active .checklist article:nth-child(5) { animation-delay:.4s; }
+    .slide.active .card:nth-child(6),.slide.active .comparison article:nth-child(6),.slide.active .chain article:nth-child(6),.slide.active .checklist article:nth-child(6) { animation-delay:.5s; }
+    .slide.active.hero:before { animation:signal-run 1.6s .52s both var(--ease); }
+    .slide.active .orbit { animation:orbit-breathe 7s ease-in-out infinite alternate; }
+    .slide.active .chain article:after { animation:arrow-pulse 1.65s 1s ease-in-out infinite; }
+    @media (max-width:900px) { .slide { padding:28px 30px 24px; } .two,.evidence,.safety,.case,.summary,.sources { grid-template-columns:1fr; } .comparison { grid-template-columns:repeat(3,1fr); } .four,.dose-grid,.checklist { grid-template-columns:repeat(2,1fr); } .inference-ladder { grid-template-columns:repeat(3,1fr); } .chain { grid-template-columns:repeat(3,1fr); } .chain article:nth-child(3):after { display:none; } .hero-aside { display:none; } .mechanism-list div { grid-template-columns:52px 1fr; } .mechanism-list p { grid-column:2; } .evidence-score { padding:28px; } }
+    @media (max-width:600px) { body { display:block; overflow:auto; } .deck { width:100vw; height:auto; min-height:100dvh; overflow:visible; box-shadow:none; } .slide { padding:20px 18px 20px; } .slide.active { position:relative; min-height:100dvh; height:auto; } .topline { font-size:9px; } .topline .brand { width:78px; height:38px; } h1 { font-size:clamp(46px,15vw,72px); } h2,.statement h2 { font-size:clamp(34px,11vw,55px); } .lead { font-size:17px; } .comparison,.three,.four,.matrix,.dose-grid,.checklist,.inference-ladder,.chain { grid-template-columns:1fr; } .comparison article { min-height:0; } .comparison h3 { margin-top:12px; } .card .index,.chain span,.checklist span { margin-bottom:24px; } .chain article { min-height:0; } .chain article:after { right:auto; left:50%; top:auto; bottom:-14px; transform:translateX(-50%) rotate(90deg); } .chain article:nth-child(3):after { display:grid; } .chain article:last-child:after { display:none; } .formula { gap:8px; } .formula > div > b { font-size:58px; } .formula .operator { padding-bottom:18px; font-size:34px; } .formula .explain { margin-top:12px; font-size:11px; white-space:normal; } .dose-callout { padding:24px; } .mechanism-list div,.evidence-table div,.safety-list div { grid-template-columns:1fr; gap:7px; padding:11px 0; } .mechanism-list p { grid-column:auto; } .footer { padding-right:0; font-size:10px; } .progress { width:92px; } .hint { display:none; } .controls button { width:42px; height:42px; } }
+    @media (prefers-reduced-motion:reduce) { .slide.active *,.slide.active::before { animation:none!important; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+  </style>
+</head>
+<body><header class="site-header global-header global-header--flow" data-header><div class="shell header-inner"><a class="brand" href="../../" aria-label="FisioLógico, inicio"><picture><source media="(max-width: 820px)" srcset="../../assets/logo-fisiologico-cuadrado.png"><img src="../../assets/logo-fisiologico-horizontal.png" alt="FisioLógico" width="1100" height="220"></picture></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-principal"><span class="sr-only">Abrir menú</span><span></span><span></span></button><nav id="nav-principal" class="main-nav" aria-label="Navegación principal"><a href="../../index.html#enfoque">Enfoque</a><a href="../../tratamientos/">Tratamientos</a><a href="../../patients/">Pacientes</a><a href="../../profesionales/">Profesionales</a><a href="../../con-logica/">Con lógica</a><a href="../../sobre-fran/">Sobre Fran</a><a href="../../formacion/" aria-current="page">Formación</a><a class="nav-cta" href="../../index.html#contacto">Pedir cita</a></nav></div></header>
+  <main class="deck" aria-label="Presentación docente sobre PENS en fisioterapia">
+    <section class="slide dark hero active" data-note="Abre con la tesis docente: esta no es una clase para memorizar frecuencias. Es una clase para decidir si una intervención invasiva aporta algo verificable al plan funcional." tabindex="-1">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Formación clínica · evidencia actualizada al 19.07.2026</span></div>
+      <div class="slide-inner grid two center"><div><p class="kicker">Estimulación nerviosa eléctrica percutánea</p><h1>PENS no es una receta.<br><em>Es una decisión.</em></h1><p class="lead">Fundamentos, evidencia, seguridad, dosificación y transferencia clínica para fisioterapeutas.</p></div><aside class="hero-aside"><span>Tesis de la sesión</span><strong>La corriente solo tiene valor si facilita una conducta funcional que podemos medir.</strong></aside></div>
+      <div class="footer"><span>Francisco José Extremera García · FisioLógico</span><span class="slide-number">01 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="Pide respuestas rápidas, sin debatir todavía. Recuperar ideas previas permite localizar falsas certezas: que toda aguja con corriente sea PENS, que la contracción sea obligatoria o que una diferencia estadística implique utilidad clínica.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Activación inicial</span></div>
+      <div class="slide-inner statement"><div class="rule"></div><h2>Antes de avanzar:<br>¿qué crees que <em>define</em> PENS?</h2><p>¿Aguja? ¿Nervio? ¿Corriente? ¿Respuesta motora? Formula una respuesta y conserva la duda: volveremos a ella al final.</p></div>
+      <div class="footer"><span>Pregunta de entrada · no necesita respuesta pública</span><span class="slide-number">02 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Explicita que el resultado de aprendizaje es un proceso de decisión. Esta diapositiva justifica por qué se omiten detalles que no cambian conducta clínica.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Objetivos</span></div>
+      <div class="slide-inner center"><p class="kicker">Al terminar podrás</p><h2>Separar, interpretar,<br>decidir y medir.</h2><div class="grid four" style="margin-top:clamp(32px,5vh,66px)"><article class="card"><span class="index">01</span><h3>Nombrar</h3><p>Diferenciar PENS neural, IMES, electroacupuntura, TENS, electrólisis y PNS implantable.</p></article><article class="card"><span class="index">02</span><h3>Interpretar</h3><p>Distinguir mecanismo plausible, eficacia clínica, certeza y relevancia del efecto.</p></article><article class="card"><span class="index">03</span><h3>Seleccionar</h3><p>Elegir una persona, una diana y un objetivo funcional defendibles.</p></article><article class="card"><span class="index">04</span><h3>Comprobar</h3><p>Registrar la dosis, detectar riesgo y decidir si repetir, modificar o parar.</p></article></div></div>
+      <div class="footer"><span>El criterio precede a la técnica</span><span class="slide-number">03 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="La primera gran discriminación es de familias técnicas. La interfaz, la diana y la duración cambian la pregunta clínica y la evidencia útil.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Parte I · Definición</span></div>
+      <div class="slide-inner center definition"><p class="kicker">Error de partida</p><h2>Una aguja con corriente<br><em>no identifica</em> una intervención.</h2><div class="comparison grid" style="margin-top:clamp(28px,4vh,48px)"><article><span class="tag">Piel</span><h3>TENS</h3><p>Electrodos cutáneos; aferencias regionales; minutos u horas.</p></article><article><span class="tag">Nervio</span><h3>PENS neural</h3><p>Aguja próxima a nervio, rama o punto motor; sesiones breves repetidas.</p></article><article><span class="tag">Músculo</span><h3>IMES / EDN</h3><p>Agujas intramusculares o punto gatillo; objetivo muscular o neuromuscular.</p></article><article><span class="tag">Puntos</span><h3>Electroacupuntura</h3><p>Selección según marco de acupuntura y/o lectura neuroanatómica.</p></article><article><span class="tag">Interfaz</span><h3>EPI / PNE</h3><p>Corriente galvánica y efecto electroquímico local; no es PENS pulsada.</p></article><article><span class="tag">Implante</span><h3>PNS temporal</h3><p>Lead flexible cerca del nervio durante días o semanas; otro carril tecnológico.</p></article></div></div>
+      <div class="footer"><span>Interfaz + diana + objetivo + duración</span><span class="slide-number">04 / 24</span></div>
+    </section>
+
+    <section class="slide teal" data-note="Invita a sustituir el acrónimo por una descripción reproducible. Esto protege la búsqueda bibliográfica, el consentimiento y el registro clínico.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Nomenclatura clínica</span></div>
+      <div class="slide-inner statement"><p class="kicker">Estándar mínimo de denominación</p><h2>No digas solo “PENS”.<br>Describe la <em>diana real.</em></h2><div class="grid three" style="margin-top:38px"><article class="card good"><h3>Qué estructura</h3><p>Nervio, rama, punto motor, músculo, punto gatillo, interfaz perineural o punto de acupuntura.</p></article><article class="card good"><h3>Qué intervención</h3><p>Aguja o lead, guía ecográfica, distancia, forma de onda, polaridad si procede y respuesta buscada.</p></article><article class="card good"><h3>Qué dosis</h3><p>Frecuencia, ancho de pulso, intensidad, tiempo, sesiones, cointervención y criterio de continuidad.</p></article></div></div>
+      <div class="footer"><span>El acrónimo puede añadirse después; nunca sustituir la descripción</span><span class="slide-number">05 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Usa el diagrama para enseñar una regla de inferencia: cuanto más lejos está el nivel de evidencia de la conducta final, mayor prudencia exige el lenguaje clínico.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Parte II · Mecanismos</span></div>
+      <div class="slide-inner grid two center"><div><p class="kicker">Del mecanismo al resultado</p><h2>Lo plausible<br>no es lo <em>demostrado.</em></h2><p class="lead light-lead">Una misma aguja puede producir mecánica, electricidad, electroquímica, expectativa y aprendizaje. Compartir interfaz no permite transferir mecanismo ni eficacia.</p></div><div class="diagram"><i class="orbit one"></i><i class="orbit two"></i><i class="orbit three"></i><div class="node">Función<br>y conducta</div></div></div>
+      <div class="footer"><span>Biología ≠ resultado clínico</span><span class="slide-number">06 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="No es una taxonomía para memorizar. Presenta cada escala como una fuente de evidencia y su límite, especialmente la confusión entre biomarcador y beneficio clínico.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Escalera de inferencia</span></div>
+      <div class="slide-inner center"><p class="kicker">Cinco escalas, cinco límites</p><h2>Del estímulo<br>a la vida diaria.</h2><div class="inference-ladder"><article><span>0 · µs</span><h3>Campo</h3><p>Carga, pulso y despolarización. Un Hz o mA aislado no describen la dosis.</p></article><article><span>1 · célula</span><h3>Señales</h3><p>Ca²⁺, ATP o citocinas. Un biomarcador no demuestra eficacia clínica.</p></article><article><span>2 · tejido</span><h3>Respuesta</h3><p>Contracción, matriz o perfusión. Cambia con la geometría y el estado tisular.</p></article><article><span>3 · circuito</span><h3>Modulación</h3><p>Asta dorsal y control descendente. En PENS, muchas medidas son proxies indirectos.</p></article><article><span>4 · conducta</span><h3>Función</h3><p>Actividad, rendimiento, retención y participación. Aquí se decide el valor clínico.</p></article></div></div>
+      <div class="footer"><span>Cuanto más lejos de la función, más prudente debe ser el lenguaje</span><span class="slide-number">07 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="Presenta esta fórmula como un mapa, no como un cálculo clínico. La intención es romper la idea de que una cifra de Hz o mA equivale a dosis.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Física de la dosis</span></div>
+      <div class="slide-inner center"><p class="kicker">En pulsos</p><div class="formula"><div><b>q</b><div class="explain">carga por fase</div></div><b class="operator">≈</b><div><b>I</b><div class="explain">intensidad</div></div><b class="operator">×</b><div><b>t</b><div class="explain">ancho de pulso</div></div></div><div class="dose-callout"><p>Un valor aislado<br><em>no describe la dosis.</em></p><small>“2 Hz”, “100 Hz” o “3 mA” solo adquieren sentido con frecuencia, tiempo, ciclo de trabajo, geometría, distancia, orientación, impedancia tisular y tarea asociada.</small></div></div>
+      <div class="footer"><span>En galvánica: carga, polaridad, densidad y volumen cambian la respuesta</span><span class="slide-number">08 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="Corrige tres promesas frecuentes. No niegues mecanismos; asigna a cada uno su grado de evidencia y no permitas que funcionen como marketing terapéutico.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Trampas de lenguaje</span></div>
+      <div class="slide-inner grid three center"><article class="card bad"><span class="index">Promesa excesiva</span><h3>“Regenera el nervio”</h3><p>La estimulación perioperatoria directa en nervio lesionado no valida una PNM ambulatoria en un nervio atrapado o intacto.</p></article><article class="card bad"><span class="index">Promesa excesiva</span><h3>“Induce LTD analgésica”</h3><p>No existe un protocolo PENS humano que demuestre selectivamente LTD nociceptiva y analgesia predecible.</p></article><article class="card good"><span class="index">Formulación rigurosa</span><h3>“Puede modular”</h3><p>Puede cambiar síntomas temporalmente y facilitar una tarea. La retención y transferencia deben comprobarse sin corriente.</p></article></div>
+      <div class="footer"><span>Hipótesis mecanística ≠ eficacia demostrada</span><span class="slide-number">09 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Esta diapositiva evita una inferencia anatómica peligrosa: una respuesta evocada no prueba qué fascículo se ha estimulado, ni que el tejido sea la diana terapéutica correcta.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Nervio periférico</span></div>
+      <div class="slide-inner grid two center"><div><p class="kicker">Un órgano mixto</p><h2>Junto al nervio<br>no significa <em>dentro de la selectividad.</em></h2><p class="lead light-lead">Un nervio mezcla axones sensitivos, motores y autonómicos. Los fascículos cambian de posición; distancia, orientación e impedancia cambian el reclutamiento.</p></div><div class="grid three"><article class="card"><span class="index">Capa</span><h3>Endoneuro</h3><p>Rodea cada axón y contribuye al microambiente más fino.</p></article><article class="card"><span class="index">Capa</span><h3>Perineuro</h3><p>Organiza y protege cada fascículo como barrera interna.</p></article><article class="card"><span class="index">Capa</span><h3>Epineuro</h3><p>Envuelve el nervio, integra vasos y permite deslizamiento relativo.</p></article></div></div>
+      <div class="footer"><span>Una parestesia o contracción orienta; no demuestra selectividad fascicular</span><span class="slide-number">10 / 24</span></div>
+    </section>
+
+    <section class="slide yellow" data-note="La pregunta clave es qué tendría que medirse para sostener una promesa de regeneración. Esta conversación protege a los pacientes y clarifica límites de competencia.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Regeneración neural</span></div>
+      <div class="slide-inner statement"><p class="kicker" style="color:#594300">Frontera y falsación</p><h2>La continuidad anatómica<br>no la sustituye <em>una corriente.</em></h2><p style="color:#382e13">Para atribuir regeneración a una intervención harían falta marcadores preespecificados —neuroconducción/EMG, imagen o biomarcadores—, seguimiento suficiente, control creíble y replicación independiente.</p></div>
+      <div class="footer"><span>Grados IV–V o discontinuidad: valoración especializada; no ensayo de estimulación como alternativa</span><span class="slide-number">11 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="El resultado principal de la síntesis es modesto y debe formularse con precisión. No presentes el SMD como promesa individual.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Parte III · Evidencia</span></div>
+      <div class="slide-inner grid evidence center"><div class="evidence-score"><span class="label" style="color:#594300">Juicio global</span><span class="big">↘</span><h3>Analgesia a corto plazo</h3><p>Es la señal más reproducible. La certeza es baja y la heterogeneidad es alta.</p></div><div class="evidence-table"><div><span>Pregunta</span><strong>PENS vs sham</strong><p>Señal favorable en dolor; discapacidad con base más pequeña y heterogénea.</p></div><div><span>Pregunta</span><strong>PENS vs TENS</strong><p>Diferencia media ≈ −1 cm; por debajo de relevancia clínica y sin superioridad clara en estudios de menor sesgo.</p></div><div><span>Pregunta</span><strong>Función</strong><p>Menos consistente que el dolor. La función requiere una intervención activa específica.</p></div><div><span>Decisión</span><strong>No prometer magnitud</strong><p>Presentar como una posible ventana de práctica, no como resultado esperable de cada paciente.</p></div></div></div>
+      <div class="footer"><span>Dolor, discapacidad y participación no son el mismo desenlace</span><span class="slide-number">12 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Contrasta los escenarios sin ofrecer recetas. La pregunta no es ‘¿funciona PENS?’, sino ‘¿añade valor aquí, frente a qué y durante cuánto?’.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Lectura contextual</span></div>
+      <div class="slide-inner center"><p class="kicker">El comparador cambia la conclusión</p><h2>La evidencia depende<br>del <em>escenario.</em></h2><div class="grid matrix" style="margin-top:clamp(25px,4vh,46px)"><article class="card"><h3>Subacromial no operado</h3><p>Ejercicio ± PENS/sham: sin beneficio en discapacidad a 1–3 meses. No añadir de rutina.</p></article><article class="card"><h3>Posartroscopia hombro</h3><p>Señal favorable con dos sesiones, pero varias diferencias no superaron MCID.</p></article><article class="card"><h3>Artrosis de rodilla</h3><p>Educación + ejercicio + PENS/TENS/sham: mejoraron todos; sin interacción grupo × tiempo.</p></article></div></div>
+      <div class="footer"><span>Miofascial, neuropatías y PNS: señales distintas; no transferir resultados entre familias técnicas</span><span class="slide-number">13 / 24</span></div>
+    </section>
+
+    <section class="slide teal" data-note="Evita una confusión frecuente en fisioterapia invasiva: EPI/PNE y PENS pueden compartir aguja y ecografía, pero no tienen la misma intención biológica ni la misma base de evidencia.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>EPI / PNE y PENS</span></div>
+      <div class="slide-inner grid two center"><div><p class="kicker">No son sinónimos</p><h2>Compartir aguja<br>no comparte <em>mecanismo.</em></h2><p class="lead light-lead">La electrólisis usa corriente galvánica y busca una reacción electroquímica local; PENS pulsada busca despolarizar estructuras neurales o neuromusculares.</p></div><div class="grid"><article class="card warn"><h3>EPI / PNE</h3><p>Cuando se aplica junto a un nervio, la diana publicada suele ser la fibrosis o interfaz perineural. La evidencia neural es emergente y no permite recomendarla como tratamiento general del sistema nervioso.</p></article><article class="card good"><h3>PENS / PNM pulsada</h3><p>La diana debe ser un nervio, rama o punto motor defendible. La respuesta no asegura selectividad ni eficacia.</p></article></div></div>
+      <div class="footer"><span>Describe la diana como interfaz, nervio o músculo; no como un acrónimo ambiguo</span><span class="slide-number">14 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="Haz explícita la regla funcional: la corriente no es el resultado. Si no cambia una tarea medida, no hay razón para mantener la dependencia tecnológica.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Transferencia clínica</span></div>
+      <div class="slide-inner statement"><div class="rule"></div><h2>La corriente es un <em>medio</em>.<br>La tarea es el objetivo.</h2><p>La pregunta clínica no es “¿qué Hz usaré?”, sino “¿qué actividad limita el dolor y cómo sabré si la estimulación permitió practicarla mejor, sin ella?”</p></div>
+      <div class="footer"><span>Menos dependencia tecnológica · más conducta funcional</span><span class="slide-number">15 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="El marco PENS-6 ordena la toma de decisiones antes de insertar la aguja. Puede utilizarse como checklist de discusión de casos o como estructura de documentación.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Parte IV · Razonamiento</span></div>
+      <div class="slide-inner center"><p class="kicker">Marco de decisión PENS-6</p><h2>Si un eslabón no se sostiene,<br>se elige otra <em>alternativa.</em></h2><div class="chain" style="margin-top:clamp(26px,4vh,45px)"><article><span>01</span><h3>Problema</h3><p>¿Qué actividad limita? Define irritabilidad, mecanismo dominante y medida basal.</p></article><article><span>02</span><h3>Propósito</h3><p>¿Analgesia para cargar, activación, exposición, ventana de práctica o prueba?</p></article><article><span>03</span><h3>Persona</h3><p>¿Beneficio esperado mayor que riesgo y carga? Integra preferencias y alternativas.</p></article><article><span>04</span><h3>Precisión</h3><p>¿Diana defendible y localizable? Anatomía, ecografía, trayecto y respuesta prevista.</p></article><article><span>05</span><h3>Parámetros</h3><p>¿Forma de onda, pulso, intensidad, tiempo y progresión responden al objetivo?</p></article><article><span>06</span><h3>Prueba</h3><p>¿Qué resultado funcional, seguimiento, evento adverso y regla de parada decidirán continuar?</p></article></div></div>
+      <div class="footer"><span>Problema → propósito → persona → precisión → parámetros → prueba</span><span class="slide-number">16 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="No transformes estos rangos en protocolos. Lo importante es seleccionar la respuesta útil para el objetivo y proteger una práctica de calidad.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Respuesta y parámetros</span></div>
+      <div class="slide-inner center"><p class="kicker">No existe una dosificación universal validada</p><h2>La respuesta buscada<br>debe seguir al <em>propósito.</em></h2><div class="grid dose-grid" style="margin-top:clamp(26px,4vh,46px)"><article><span>Sensorial</span><h3>Parestesia tolerable</h3><p>Analgesia compatible con movimiento. No exige contracción; vigilar acomodación y efecto real sobre tarea.</p></article><article><span>Motora</span><h3>Contracción cómoda</h3><p>Activación, aferencia propioceptiva y práctica. Vigilar fatiga, dolor y desplazamiento de aguja.</p></article><article><span>IMES</span><h3>Respuesta intramuscular</h3><p>Objetivo muscular o punto gatillo. No confundirla con estimulación neural por compartir aguja.</p></article><article><span>Prueba</span><h3>Cambio inmediato</h3><p>Dosis breve y estandarizada para decidir si hay una ventana terapéutica; puede ser contextual y transitoria.</p></article></div></div>
+      <div class="footer"><span>Intensidad útil ≠ intensidad máxima tolerada</span><span class="slide-number">17 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Esta diapositiva es la traducción pedagógica de plasticidad. Un efecto durante la corriente es facilitación, no aprendizaje, hasta que se confirme permanencia y transferencia.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Diseño terapéutico</span></div>
+      <div class="slide-inner grid two center"><div><p class="kicker">De modulación a aprendizaje</p><h2>Empareja señal,<br>tarea y <em>comprobación.</em></h2><p class="lead light-lead">Una experiencia segura y relevante puede facilitar la práctica. El aprendizaje se demuestra fuera de la corriente y fuera del contexto entrenado.</p></div><div class="grid three"><article class="card good"><span class="index">Durante</span><h3>Práctica</h3><p>Asocia la aferencia a una tarea funcional relevante sin aumentar amenaza ni degradar la ejecución.</p></article><article class="card good"><span class="index">Después</span><h3>Retención</h3><p>Repite la medida sin estimulación al finalizar y en la siguiente sesión.</p></article><article class="card good"><span class="index">Fuera</span><h3>Transferencia</h3><p>Busca cambio en otra tarea o contexto: carga, velocidad, entorno o participación.</p></article></div></div>
+      <div class="footer"><span>Mejoría inmediata ≠ desaprendizaje del dolor</span><span class="slide-number">18 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="La seguridad no se resuelve solo con ecografía. Enfatiza el conjunto: competencia regional, asepsia, equipo, consentimiento, plan de incidentes y decisión de no proceder cuando toca.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Seguridad clínica</span></div>
+      <div class="slide-inner grid safety center"><div class="safety-panel"><p class="stop">SEGURIDAD</p><p>La ecografía mejora la localización y la gestión del riesgo. No convierte por sí sola una aplicación en segura.</p></div><div class="safety-list"><div><strong>Antes</strong><p>Competencia, autorización, entorno, equipo revisado, asepsia, material de cura y plan de emergencia.</p></div><div><strong>Cribado</strong><p>Hipótesis, infección, piel, hemorragia, fármacos, dispositivos, embarazo, síncope, sensibilidad y capacidad de consentir.</p></div><div><strong>Durante</strong><p>Trayecto seguro, titulación gradual, respuesta objetivo cómoda y vigilancia de signos autonómicos o neurológicos.</p></div><div><strong>Después</strong><p>Desconectar antes de retirar, hemostasia, revisión, instrucciones, medición funcional, documentación y decisión.</p></div></div></div>
+      <div class="footer"><span>Formación presencial supervisada, normativa aplicable y respuesta a incidentes</span><span class="slide-number">19 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Esta diapositiva diferencia entre situaciones donde no se procede, precauciones individualizadas y reglas claras de parada. No pretende sustituir protocolos locales ni evaluación médica.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Cribado y parada</span></div>
+      <div class="slide-inner center"><p class="kicker">Regla de seguridad</p><h2>Si la seguridad no está<br>clara, <em>no se procede.</em></h2><div class="grid three" style="margin-top:clamp(28px,4vh,48px)"><article class="card bad"><span class="index">No proceder</span><h3>Detén antes</h3><p>Sin consentimiento o capacidad, infección local, material no estéril, anatomía no identificable, urgencia o bandera roja.</p></article><article class="card warn"><span class="index">Valorar individualmente</span><h3>Modifica o evita</h3><p>Antitrombóticos, trastorno hemorrágico, inmunosupresión, embarazo, epilepsia, fragilidad cutánea o alteración sensitiva.</p></article><article class="card bad"><span class="index">Parada inmediata</span><h3>Activa protocolo</h3><p>Dolor eléctrico persistente, déficit nuevo, síncope progresivo, disnea, dolor torácico, sangrado no controlado o reacción intensa.</p></article></div></div>
+      <div class="footer"><span>Los dispositivos eléctricos implantados requieren comprobación específica; no asumir seguridad</span><span class="slide-number">20 / 24</span></div>
+    </section>
+
+    <section class="slide teal" data-note="Convertir la documentación en parte del tratamiento permite aprender de cada aplicación y evita que la dosis se vuelva invisible. Pide a los alumnos que identifiquen qué elemento suelen omitir.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Registro clínico</span></div>
+      <div class="slide-inner center"><p class="kicker">La dosis que no se registra no se puede interpretar</p><h2>Cuatro bloques para<br>registrar cada <em>sesión.</em></h2><div class="checklist" style="margin-top:clamp(25px,4vh,46px)"><article><span>01</span><h3>Objetivo</h3><p>Indicación, tarea limitada y medida basal.</p></article><article><span>02</span><h3>Diana y dosis</h3><p>Región, profundidad, guía, interfaz, onda, Hz, µs, intensidad y tiempo.</p></article><article><span>03</span><h3>Respuesta</h3><p>Cointervención activa, resultado pre-pos / 24–72 h y eventos adversos.</p></article><article><span>04</span><h3>Decisión</h3><p>Repetir, modificar, espaciar, derivar o suspender según beneficio, riesgo y preferencia.</p></article></div></div>
+      <div class="footer"><span>Registrar para repetir, interpretar y aprender</span><span class="slide-number">21 / 24</span></div>
+    </section>
+
+    <section class="slide" data-note="Da dos minutos de trabajo individual o en parejas. No reveles la solución como una receta: el propósito es que se recorra PENS-6 y se considere una alternativa no invasiva.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Aplicación</span></div>
+      <div class="slide-inner grid case center"><article class="case-question"><p class="kicker">Caso breve</p><h2>¿Qué tendría que ocurrir para justificar PENS?</h2><p>Persona con dolor de hombro persistente. La carga por encima de la cabeza limita su trabajo. El programa de ejercicio está diseñado, pero el dolor impide una dosis suficiente. No hay banderas rojas ni contraindicación evidente.</p></article><aside class="case-options"><div><span>1 · Problema</span><strong>Define una tarea y medida: por ejemplo, repeticiones toleradas y dolor durante el gesto.</strong></div><div><span>2 · Propósito</span><strong>¿La estimulación facilitaría exposición o solo añadiría un procedimiento pasivo?</strong></div><div><span>3 · Prueba</span><strong>Compara la tarea con y sin intervención; revisa retención y transferencia a las 24–72 h.</strong></div><div><span>4 · Alternativa</span><strong>Si la invasividad no añade un valor específico, prioriza una estrategia menos invasiva.</strong></div></aside></div>
+      <div class="footer"><span>Discusión: recorre PENS-6 antes de hablar de parámetros</span><span class="slide-number">22 / 24</span></div>
+    </section>
+
+    <section class="slide yellow" data-note="Vuelve a las preguntas iniciales. La salida es una regla de práctica, no un protocolo. Pide al alumno que formule cómo cambiará su próxima indicación.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Síntesis</span></div>
+      <div class="slide-inner summary"><div><p class="kicker" style="color:#594300">Idea que debe permanecer</p><h2>Menos<br>receta.<br><em>Más prueba.</em></h2></div><div class="summary-list"><div><span>01</span><strong>Nombra la intervención real; el acrónimo no basta.</strong></div><div><span>02</span><strong>No confundas mecanismo, respuesta evocada y eficacia clínica.</strong></div><div><span>03</span><strong>La evidencia apoya una posible analgesia breve, no superioridad estable ni función garantizada.</strong></div><div><span>04</span><strong>Usa invasividad solo si añade valor a una tarea medida y con una regla de salida.</strong></div><div><span>05</span><strong>Seguridad, consentimiento, documentación y reevaluación son parte de la intervención.</strong></div></div></div>
+      <div class="footer"><span>Vuelve ahora a la pregunta inicial: ¿qué define PENS?</span><span class="slide-number">23 / 24</span></div>
+    </section>
+
+    <section class="slide dark" data-note="Cierra declarando el alcance: presentación docente basada en el documento facilitado. Remite a las referencias completas del documento original para lectura y verificación.">
+      <div class="topline"><span class="brand"><i class="brand-mark"></i>FisioLógico</span><span>Fuentes y cierre</span></div>
+      <div class="slide-inner sources center"><div><p class="kicker">Para seguir estudiando</p><h2>Una práctica clínica<br>que tolera la <em>incertidumbre.</em></h2><p class="lead">Presentación elaborada a partir del documento de revisión facilitado por Francisco José Extremera García, actualizado el 19 de julio de 2026.</p></div><ul><li><strong>Plaza-Manzano et al., 2020.</strong> PENS para dolor musculoesquelético: revisión sistemática y metaanálisis.</li><li><strong>Beltrán-Alacreu et al., 2022.</strong> PENS frente a TENS en dolor musculoesquelético.</li><li><strong>Rodríguez Lagos et al., 2023.</strong> PENS/TENS y mecanismos endógenos del dolor.</li><li><strong>García-Collado et al., 2022.</strong> Estimulación dirigida a nervio periférico: revisión de alcance.</li><li><strong>Perreault et al., 2022.</strong> IMES en puntos gatillo: mecanismos y aplicaciones.</li><li><strong>Rabanal-Rodríguez et al., 2026.</strong> Eventos adversos de punción seca: revisión y metaanálisis.</li><li><strong>Documento fuente.</strong> Incluye bibliografía completa, matices metodológicos y referencias por escenario clínico.</li></ul></div>
+      <div class="footer"><span>FisioLógico · formación para observar, razonar, medir y decidir mejor</span><span class="slide-number">24 / 24</span></div>
+    </section>
+  </main>
+
+  <p class="hint" aria-hidden="true">← → navegar · N notas · F pantalla completa</p>
+  <div class="controls" aria-label="Controles de la presentación"><button type="button" id="previous" aria-label="Diapositiva anterior">←</button><button type="button" id="notes-toggle" aria-label="Mostrar notas del ponente">N</button><button type="button" id="next" aria-label="Diapositiva siguiente">→</button></div>
+  <aside class="notes" id="notes" aria-live="polite"><h3>Notas del ponente</h3><p id="notes-content"></p></aside>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const masterLogo = '../../assets/brand/fisiologico-logo-dark-horizontal.png';
+      const monochromeLogo = '../../assets/brand/fisiologico-logo-light-horizontal.png';
+      slides.forEach(slide => {
+        const logo = slide.classList.contains('dark') ? masterLogo : monochromeLogo;
+        const image = document.createElement('img');
+        image.className = 'brand-logo';
+        image.src = logo;
+        image.alt = 'Fisio Lógico';
+        slide.querySelector('.brand').replaceChildren(image);
+      });
+      const previous = document.querySelector('#previous');
+      const next = document.querySelector('#next');
+      const notes = document.querySelector('#notes');
+      const notesContent = document.querySelector('#notes-content');
+      const notesToggle = document.querySelector('#notes-toggle');
+      let current = 0;
+      const update = (index, focus = false) => {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const active = i === current;
+          slide.classList.toggle('active', active);
+          slide.setAttribute('aria-hidden', String(!active));
+          if (active) slide.style.setProperty('--progress', `${((i + 1) / slides.length) * 100}%`);
+        });
+        notesContent.textContent = slides[current].dataset.note || 'Sin notas para esta diapositiva.';
+        history.replaceState(null, '', `#${current + 1}`);
+        if (window.matchMedia('(max-width: 600px)').matches) window.scrollTo({ top:0, behavior:'auto' });
+        if (focus) slides[current].focus({preventScroll:true});
+      };
+      const initial = Number(location.hash.slice(1));
+      if (Number.isInteger(initial) && initial >= 1 && initial <= slides.length) update(initial - 1);
+      else update(0);
+      previous.addEventListener('click', () => update(current - 1, true));
+      next.addEventListener('click', () => update(current + 1, true));
+      notesToggle.addEventListener('click', () => { notes.classList.toggle('open'); notesToggle.setAttribute('aria-label', notes.classList.contains('open') ? 'Ocultar notas del ponente' : 'Mostrar notas del ponente'); });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') { event.preventDefault(); update(current + 1, true); }
+        if (event.key === 'ArrowLeft' || event.key === 'PageUp') { event.preventDefault(); update(current - 1, true); }
+        if (event.key.toLowerCase() === 'n') notesToggle.click();
+        if (event.key.toLowerCase() === 'f') { if (!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); }
+        if (event.key === 'Escape' && notes.classList.contains('open')) notes.classList.remove('open');
+      });
+      let startX = null;
+      document.addEventListener('touchstart', event => { startX = event.changedTouches[0].screenX; }, {passive:true});
+      document.addEventListener('touchend', event => { if (startX === null) return; const delta = event.changedTouches[0].screenX - startX; if (Math.abs(delta) > 55) update(current + (delta < 0 ? 1 : -1)); startX = null; }, {passive:true});
+    })();
+  </script>
+<script src="../../script.js?v=8" defer></script></body>
+</html>

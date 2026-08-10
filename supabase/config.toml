@@ -1,0 +1,7 @@
+project_id = "fisiologico-booking"
+
+[db.migrations]
+schema_paths = ["./schemas/*.sql"]
+
+[functions.online-booking]
+verify_jwt = false

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Campus Virtual FisioLógico</title>
+  <desc id="desc">Logo horizontal del Campus Virtual de FisioLógico en negro, blanco y amarillo.</desc>
+  <rect width="1200" height="400" rx="40" fill="#050505"/>
+
+  <!-- Símbolo: un libro abierto que también sugiere una pantalla y aprendizaje -->
+  <g transform="translate(78 82)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 45c42-16 82-10 116 16v150c-34-26-74-32-116-16z" stroke="#FFFFFF" stroke-width="14"/>
+    <path d="M254 45c-42-16-82-10-116 16v150c34-26 74-32 116-16z" stroke="#FFC400" stroke-width="14"/>
+    <path d="M138 61v150" stroke="#FFC400" stroke-width="14"/>
+    <path d="M56 99c22-4 42 0 58 10M56 135c22-4 42 0 58 10" stroke="#FFFFFF" stroke-width="10" opacity=".72"/>
+    <path d="M220 99c-22-4-42 0-58 10M220 135c-22-4-42 0-58 10" stroke="#FFC400" stroke-width="10" opacity=".82"/>
+  </g>
+
+  <rect x="380" y="70" width="3" height="260" rx="1.5" fill="#FFFFFF" opacity=".18"/>
+
+  <!-- Wordmark -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="430" y="194" fill="#FFFFFF" font-size="118" font-weight="700" letter-spacing="-5">Fisio</text>
+    <text x="693" y="194" fill="#FFC400" font-size="118" font-weight="700" letter-spacing="-5">Lógico</text>
+    <text x="437" y="275" fill="#FFFFFF" font-size="35" font-weight="600" letter-spacing="13">CAMPUS VIRTUAL</text>
+    <rect x="431" y="304" width="625" height="7" rx="3.5" fill="#FFC400"/>
+  </g>
+</svg>
