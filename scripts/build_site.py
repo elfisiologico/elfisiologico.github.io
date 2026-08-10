@@ -269,25 +269,45 @@ def scientific_visuals(a):
             f'<span class="visual-modifications">Cambios: {esc(item["modifications"])}</span>'
             if item.get("modified") else ""
         )
-        license_link = (
-            f'<a href="{esc(item["license_url"])}" target="_blank" rel="license noopener noreferrer">'
-            f'{esc(item["rights_basis"].replace("_", " ").upper())}</a>'
-        )
+        if item["source_type"] == "fisiologico_original":
+            provenance = "Creación original de FisioLógico"
+        else:
+            license_link = (
+                f'<a href="{esc(item["license_url"])}" target="_blank" rel="license noopener noreferrer">'
+                f'{esc(item["rights_basis"].replace("_", " ").upper())}</a>'
+            )
+            provenance = (
+                f'<a href="{esc(item["source_url"])}" target="_blank" rel="noopener noreferrer">Fuente</a>'
+                f' · Licencia {license_link}'
+            )
         figures.append(
             f'''<figure class="scientific-visual" id="visual-{esc(item["id"])}"><div class="scientific-visual-frame">'''
             f'''<img src="../../{esc(item["file"])}" width="{item["width"]}" height="{item["height"]}" '''
             f'''alt="{esc(item["alt"])}" loading="lazy" decoding="async"></div><figcaption>'''
             f'''<p class="visual-caption">{esc(item["caption"])}</p>'''
             f'''<p class="visual-limit"><strong>Cómo leerla</strong>{esc(item["clinical_limit"])}</p>'''
-            f'''<p class="visual-attribution">{esc(item["attribution"])} · <a href="{esc(item["source_url"])}" '''
-            f'''target="_blank" rel="noopener noreferrer">Fuente</a> · Licencia {license_link}.{changes}</p>'''
+            f'''<p class="visual-attribution">{esc(item["attribution"])} · {provenance}.{changes}</p>'''
             f'''</figcaption></figure>'''
+        )
+    original_count = sum(item["source_type"] == "fisiologico_original" for item in assets)
+    if original_count == len(assets):
+        intro = (
+            "Estas imágenes son creaciones originales del archivo clínico de FisioLógico. "
+            "Se muestran por su utilidad anatómica o técnica, no como prueba aislada de diagnóstico o eficacia."
+        )
+    elif original_count:
+        intro = (
+            "Estas imágenes proceden del archivo clínico de FisioLógico o de fuentes con derechos de reutilización verificados. "
+            "Se muestran por su utilidad anatómica o técnica, no como prueba aislada de diagnóstico o eficacia."
+        )
+    else:
+        intro = (
+            "Estas figuras proceden del artículo original y se reproducen con licencia abierta verificada. "
+            "Se muestran por su utilidad anatómica o técnica, no como prueba aislada de diagnóstico o eficacia."
         )
     section = (
         f'''<section class="scientific-visuals" id="figuras"><p class="section-label">Atlas del artículo</p>'''
-        f'''<h2>Imágenes para entender el procedimiento</h2><p class="visuals-intro">'''
-        f'''Estas figuras proceden del artículo original y se reproducen con licencia abierta verificada. '''
-        f'''Se muestran por su utilidad anatómica o técnica, no como prueba aislada de diagnóstico o eficacia.</p>'''
+        f'''<h2>Imágenes para entender el procedimiento</h2><p class="visuals-intro">{esc(intro)}</p>'''
         f'''<div class="scientific-visual-list">{"".join(figures)}</div></section>'''
     )
     return '<a href="#figuras">Imágenes</a>', section
