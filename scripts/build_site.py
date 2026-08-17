@@ -512,6 +512,7 @@ def build_sitemap(articles, categories, journeys, site):
         ("/instrumentos/rendimiento/test-marcha-seis-minutos/", "2026-07-18"),
         ("/con-logica/", "2026-07-14"),
         ("/con-logica/mas-alla-del-dolor/", "2026-08-17"),
+        ("/con-logica/minutos-educacion-dolor/", "2026-08-17"),
         ("/sobre-fran/", "2026-07-14"),
         ("/metodo-editorial/", "2026-07-14"),
     ]
