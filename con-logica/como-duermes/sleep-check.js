@@ -1,6 +1,8 @@
 (() => {
   const form = document.querySelector('[data-sleep-form]');
   if (!form) return;
+  const author = document.querySelector('.thought-author');
+  if (author) author.before(document.querySelector('.sleep-check'));
   const steps = Array.from(form.querySelectorAll('[data-step]'));
   const next = form.querySelector('[data-sleep-next]');
   const back = form.querySelector('[data-sleep-back]');
